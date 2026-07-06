@@ -24,6 +24,33 @@ sakura-blogs/   Sakurazaka46 blog data
 - **GitHub Actions** — daily scheduled workflow fetches and commits updated blog data
 - **pnpm** — package manager
 
+## Data format
+
+Each group directory (`nogi-blogs/`, `hinata-blogs/`, `keyaki-blogs/`, `sakura-blogs/`) contains one JSON file per year:
+
+```
+{group}-blogs/{year}.json
+```
+
+Schema:
+
+```jsonc
+{
+  "count": 891,          // total posts for the year
+  "days": [
+    {
+      "date": "2025-01-01",          // YYYY-MM-DD
+      "count": 5,                    // posts on this day
+      "members": ["55389", "55400"]  // uids from @sakamichi-blog-archive/utils
+    }
+  ]
+}
+```
+
+`days` contains an entry for every calendar day of the year. Days with no posts have `count: 0` and `members: []`.
+
+Member data (names, generations, etc.) is not stored here — import from `@sakamichi-blog-archive/utils`.
+
 ## Architecture
 
 Data is fetched and committed to the repo by a scheduled GitHub Actions workflow. The Astro build reads static data files from the group directories — no runtime data fetching.

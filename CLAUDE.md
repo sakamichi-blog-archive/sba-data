@@ -41,7 +41,7 @@ Schema:
     {
       "date": "2025-01-01",          // YYYY-MM-DD
       "count": 5,                    // posts on this day
-      "members": ["55389", "55400"]  // uids from @sakamichi-blog-archive/utils
+      "members": ["55389", "55400"]  // member UIDs
     }
   ]
 }
@@ -49,7 +49,7 @@ Schema:
 
 `days` contains an entry for every calendar day of the year. Days with no posts have `count: 0` and `members: []`.
 
-Member data (names, generations, etc.) is not stored here — import from `@sakamichi-blog-archive/utils`.
+Member data (names, generations, etc.) is not stored here — only their UIDs.
 
 ## Architecture
 

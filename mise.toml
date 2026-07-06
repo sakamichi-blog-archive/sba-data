@@ -1,0 +1,7 @@
+[settings]
+auto_install = false
+minimum_release_age = "3 days"
+pin = true
+
+[tools]
+node = "lts"

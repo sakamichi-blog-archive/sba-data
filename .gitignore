@@ -3,3 +3,5 @@
 !.web
 !.updater
 !**/.gitkeep
+node_modules
+**/node_modules

@@ -13,6 +13,7 @@ hinata-blogs/   Hinatazaka46 blog data
 keyaki-blogs/   Keyakizaka46 blog data
 nogi-blogs/     Nogizaka46 blog data
 sakura-blogs/   Sakurazaka46 blog data
+.updater/       Node.js project for fetching and updating blog data
 .web/           Astro web app + Cloudflare Workers config
 ```
 

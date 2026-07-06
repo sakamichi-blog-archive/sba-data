@@ -1,6 +1,6 @@
 [settings]
 auto_install = false
-minimum_release_age = "3 days"
+minimum_release_age = "3d"
 pin = true
 
 [tools]

@@ -51,7 +51,8 @@ async function fetchBlogs(group: Group): Promise<(Blog | SakuraBlog)[]> {
   return (await fetchSakuraBlogs()).blogs
 }
 
-export async function updateGroup(group: Group, targetDate = yesterdayJST()): Promise<void> {
+export async function updateGroup(group: Group): Promise<void> {
+  const targetDate = yesterdayJST()
   const blogs = await fetchBlogs(group)
 
   const filtered = blogs.filter(b => toJSTDateString(blogDate(b)) === targetDate)

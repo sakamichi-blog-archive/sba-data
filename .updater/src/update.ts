@@ -24,15 +24,22 @@ function blogDate(blog: Blog | SakuraBlog): Date {
   return 'datetime' in blog ? blog.datetime : blog.date
 }
 
-function toDateString(date: Date): string {
-  return date.toISOString().slice(0, 10)
+// Blogs are published in JST (UTC+9). We use JST dates throughout.
+function toJSTDateString(date: Date): string {
+  return new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
 }
 
-function allDaysOfYear(year: number): string[] {
-  const days: string[] = []
+function yesterdayJST(): string {
+  const jstNow = new Date(Date.now() + 9 * 60 * 60 * 1000)
+  jstNow.setUTCDate(jstNow.getUTCDate() - 1)
+  return jstNow.toISOString().slice(0, 10)
+}
+
+function allDaysOfYear(year: number): DayEntry[] {
+  const days: DayEntry[] = []
   const d = new Date(Date.UTC(year, 0, 1))
   while (d.getUTCFullYear() === year) {
-    days.push(d.toISOString().slice(0, 10))
+    days.push({ date: d.toISOString().slice(0, 10), count: 0, members: [] })
     d.setUTCDate(d.getUTCDate() + 1)
   }
   return days
@@ -44,43 +51,29 @@ async function fetchBlogs(group: Group): Promise<(Blog | SakuraBlog)[]> {
   return (await fetchSakuraBlogs()).blogs
 }
 
-export async function updateGroup(group: Group): Promise<void> {
+export async function updateGroup(group: Group, targetDate = yesterdayJST()): Promise<void> {
   const blogs = await fetchBlogs(group)
 
-  const byYear = new Map<number, Map<string, Set<string>>>()
-  for (const blog of blogs) {
-    const date = blogDate(blog)
-    const year = date.getUTCFullYear()
-    const dateStr = toDateString(date)
-    const uid = String(blog.uid)
-    if (!byYear.has(year)) byYear.set(year, new Map())
-    const byDate = byYear.get(year)!
-    if (!byDate.has(dateStr)) byDate.set(dateStr, new Set())
-    byDate.get(dateStr)!.add(uid)
-  }
+  const filtered = blogs.filter(b => toJSTDateString(blogDate(b)) === targetDate)
+  const members = [...new Set(filtered.map(b => String(b.uid)))].sort()
 
+  const year = parseInt(targetDate.slice(0, 4))
   const dir = join(ROOT, dirs[group])
+  const filePath = join(dir, `${year}.json`)
 
-  for (const [year, byDate] of byYear) {
-    const filePath = join(dir, `${year}.json`)
-
-    const dayMap = new Map<string, DayEntry>()
-    try {
-      const existing: YearData = JSON.parse(await readFile(filePath, 'utf8'))
-      for (const day of existing.days) dayMap.set(day.date, day)
-    } catch {}
-
-    for (const [date, uids] of byDate) {
-      const members = [...uids].sort()
-      dayMap.set(date, { date, count: members.length, members })
-    }
-
-    const days: DayEntry[] = allDaysOfYear(year).map(
-      date => dayMap.get(date) ?? { date, count: 0, members: [] }
-    )
-    const count = days.reduce((sum, d) => sum + d.count, 0)
-
-    await writeFile(filePath, JSON.stringify({ count, days }, null, 2) + '\n')
-    console.log(`updated ${dirs[group]}/${year}.json`)
+  let data: YearData
+  try {
+    data = JSON.parse(await readFile(filePath, 'utf8'))
+  } catch {
+    data = { count: 0, days: allDaysOfYear(year) }
   }
+
+  const dayIndex = data.days.findIndex(d => d.date === targetDate)
+  if (dayIndex !== -1) {
+    data.days[dayIndex] = { date: targetDate, count: members.length, members }
+  }
+  data.count = data.days.reduce((sum, d) => sum + d.count, 0)
+
+  await writeFile(filePath, JSON.stringify(data, null, 2) + '\n')
+  console.log(`updated ${dirs[group]}/${year}.json (${targetDate}: ${members.length} posts)`)
 }

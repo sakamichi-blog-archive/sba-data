@@ -2,9 +2,9 @@ packages:
   - .updater
 
 allowBuilds:
-  esbuild: true
+  esbuild: false
 blockExoticSubdeps: true
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
-  - "@sakamichi-blog-archive/utils"
+  - "@sakamichi-blog-archive/utils@0.2.0"
 trustPolicy: no-downgrade

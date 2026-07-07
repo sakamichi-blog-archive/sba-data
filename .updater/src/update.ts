@@ -5,6 +5,12 @@ import {
   type Blog,
   type SakuraBlog,
 } from '@sakamichi-blog-archive/utils/blogs'
+import {
+  hinataMembers,
+  nogiMembers,
+  sakuraMembers,
+  type Member,
+} from '@sakamichi-blog-archive/utils/members'
 import { readFile, writeFile } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -20,6 +26,21 @@ const dirs: Record<Group, string> = {
   hinata: 'hinata-blogs',
   nogi: 'nogi-blogs',
   sakura: 'sakura-blogs',
+}
+
+function buildNameMap(members: Member[]): Map<string, string> {
+  const map = new Map<string, string>()
+  for (const m of members) {
+    map.set(m.name, m.uid)
+    map.set(m.nameSpaced, m.uid)
+  }
+  return map
+}
+
+const nameToUid: Record<Group, Map<string, string>> = {
+  hinata: buildNameMap(hinataMembers),
+  nogi: buildNameMap(nogiMembers),
+  sakura: buildNameMap(sakuraMembers),
 }
 
 function blogDate(blog: Blog | SakuraBlog): Date {
@@ -59,7 +80,11 @@ export async function updateGroup(group: Group, targetDate = yesterdayJST()): Pr
 
   const filtered = blogs.filter(b => toJSTDateString(blogDate(b)) === targetDate)
   const postCount = filtered.length
-  const members = [...new Set(filtered.map(b => String(b.uid)))].sort()
+  const members = [...new Set(filtered.flatMap(b => {
+    const uid = nameToUid[group].get(b.memberName)
+    if (!uid) console.warn(`unknown member name "${b.memberName}" in ${group}`)
+    return uid ? [uid] : []
+  }))].sort()
 
   const year = parseInt(targetDate.slice(0, 4))
   const dir = join(ROOT, dirs[group])

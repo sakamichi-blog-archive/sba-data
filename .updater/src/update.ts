@@ -56,6 +56,7 @@ export async function updateGroup(group: Group): Promise<void> {
   const blogs = await fetchBlogs(group)
 
   const filtered = blogs.filter(b => toJSTDateString(blogDate(b)) === targetDate)
+  const postCount = filtered.length
   const members = [...new Set(filtered.map(b => String(b.uid)))].sort()
 
   const year = parseInt(targetDate.slice(0, 4))
@@ -71,7 +72,7 @@ export async function updateGroup(group: Group): Promise<void> {
 
   const dayIndex = data.days.findIndex(d => d.date === targetDate)
   if (dayIndex !== -1) {
-    data.days[dayIndex] = { date: targetDate, count: members.length, members }
+    data.days[dayIndex] = { date: targetDate, count: postCount, members }
   }
   data.count = data.days.reduce((sum, d) => sum + d.count, 0)
 

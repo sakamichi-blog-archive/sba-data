@@ -81,5 +81,5 @@ export async function updateGroup(group: Group): Promise<void> {
   data.count = data.days.reduce((sum, d) => sum + d.count, 0)
 
   await writeFile(filePath, JSON.stringify(data, null, 2) + '\n')
-  console.log(`updated ${dirs[group]}/${year}.json (${targetDate}: ${members.length} posts)`)
+  console.log(`updated ${dirs[group]}/${year}.json (${targetDate}: ${postCount} posts)`)
 }

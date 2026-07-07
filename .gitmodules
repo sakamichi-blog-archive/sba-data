@@ -1,0 +1,3 @@
+[submodule ".sba-contributions"]
+	path = .sba-contributions
+	url = https://github.com/sakamichi-blog-archive/sba-contributions.git

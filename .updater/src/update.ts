@@ -63,13 +63,16 @@ export async function updateGroup(group: Group): Promise<void> {
   const dir = join(ROOT, dirs[group])
   const filePath = join(dir, `${year}.json`)
 
-  let data: YearData
+  let raw: string | null = null
   try {
-    data = JSON.parse(await readFile(filePath, 'utf8'))
+    raw = await readFile(filePath, 'utf8')
   } catch (err) {
     if ((err as NodeJS.ErrnoException).code !== 'ENOENT') throw err
-    data = { count: 0, days: allDaysOfYear(year) }
   }
+
+  const data: YearData = raw !== null
+    ? JSON.parse(raw)
+    : { count: 0, days: allDaysOfYear(year) }
 
   const dayIndex = data.days.findIndex(d => d.date === targetDate)
   if (dayIndex !== -1) {

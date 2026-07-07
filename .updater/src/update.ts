@@ -37,10 +37,11 @@ function yesterdayJST(): string {
   return jstNow.toISOString().slice(0, 10)
 }
 
-function allDaysOfYear(year: number): DayEntry[] {
+function daysUpTo(targetDate: string): DayEntry[] {
   const days: DayEntry[] = []
+  const year = parseInt(targetDate.slice(0, 4))
   const d = new Date(Date.UTC(year, 0, 1))
-  while (d.getUTCFullYear() === year) {
+  while (d.toISOString().slice(0, 10) <= targetDate) {
     days.push({ date: d.toISOString().slice(0, 10), count: 0, members: [] })
     d.setUTCDate(d.getUTCDate() + 1)
   }
@@ -74,11 +75,13 @@ export async function updateGroup(group: Group): Promise<void> {
 
   const data: YearData = raw !== null
     ? JSON.parse(raw)
-    : { count: 0, days: allDaysOfYear(year) }
+    : { count: 0, days: daysUpTo(targetDate) }
 
   const dayIndex = data.days.findIndex(d => d.date === targetDate)
   if (dayIndex !== -1) {
     data.days[dayIndex] = { date: targetDate, count: postCount, members }
+  } else {
+    data.days.push({ date: targetDate, count: postCount, members })
   }
   data.count = data.days.reduce((sum, d) => sum + d.count, 0)
 

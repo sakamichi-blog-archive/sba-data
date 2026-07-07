@@ -10,9 +10,10 @@ The primary purpose of this repo is data. The web app (`.web/`) is a side-projec
 
 ```
 hinata-blogs/   Hinatazaka46 blog data
-keyaki-blogs/   Keyakizaka46 blog data
+keyaki-blogs/   Keyakizaka46 blog data (historical only — group became Sakurazaka46 in 2020)
 nogi-blogs/     Nogizaka46 blog data
 sakura-blogs/   Sakurazaka46 blog data
+.updater/       Node.js project for fetching and updating blog data
 .web/           Astro web app + Cloudflare Workers config
 ```
 
@@ -22,6 +23,33 @@ sakura-blogs/   Sakurazaka46 blog data
 - **Cloudflare Workers** — hosting
 - **GitHub Actions** — daily scheduled workflow fetches and commits updated blog data
 - **pnpm** — package manager
+
+## Data format
+
+Each group directory (`nogi-blogs/`, `hinata-blogs/`, `keyaki-blogs/`, `sakura-blogs/`) contains one JSON file per year:
+
+```
+{group}-blogs/{year}.json
+```
+
+Schema:
+
+```jsonc
+{
+  "count": 891,          // total posts for the year
+  "days": [
+    {
+      "date": "2025-01-01",          // YYYY-MM-DD
+      "count": 5,                    // posts on this day
+      "members": ["55389", "55400"]  // member UIDs
+    }
+  ]
+}
+```
+
+`days` contains an entry for every calendar day of the year. Days with no posts have `count: 0` and `members: []`.
+
+Member data (names, generations, etc.) is not stored here — only their UIDs.
 
 ## Architecture
 

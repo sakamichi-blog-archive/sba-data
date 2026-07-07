@@ -10,6 +10,8 @@ import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import type { DayEntry, YearData } from './types.js'
 
+// keyaki-blogs/ is historical data only — Keyakizaka46 became Sakurazaka46 in 2020
+// and no longer has an active blog.
 type Group = 'hinata' | 'nogi' | 'sakura'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '../../')

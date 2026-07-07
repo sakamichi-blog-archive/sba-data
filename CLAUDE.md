@@ -10,7 +10,7 @@ The primary purpose of this repo is data. The web app (`.web/`) is a side-projec
 
 ```
 hinata-blogs/   Hinatazaka46 blog data
-keyaki-blogs/   Keyakizaka46 blog data
+keyaki-blogs/   Keyakizaka46 blog data (historical only — group became Sakurazaka46 in 2020)
 nogi-blogs/     Nogizaka46 blog data
 sakura-blogs/   Sakurazaka46 blog data
 .updater/       Node.js project for fetching and updating blog data

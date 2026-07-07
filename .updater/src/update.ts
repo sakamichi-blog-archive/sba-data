@@ -66,7 +66,8 @@ export async function updateGroup(group: Group): Promise<void> {
   let data: YearData
   try {
     data = JSON.parse(await readFile(filePath, 'utf8'))
-  } catch {
+  } catch (err) {
+    if ((err as NodeJS.ErrnoException).code !== 'ENOENT') throw err
     data = { count: 0, days: allDaysOfYear(year) }
   }
 

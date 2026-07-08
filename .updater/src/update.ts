@@ -80,11 +80,11 @@ export async function updateGroup(group: Group, targetDate = yesterdayJST()): Pr
 
   const filtered = blogs.filter(b => toJSTDateString(blogDate(b)) === targetDate)
   const postCount = filtered.length
-  const members = [...new Set(filtered.flatMap(b => {
+  const members = filtered.flatMap(b => {
     const uid = nameToUid[group].get(b.memberName)
     if (!uid) console.warn(`unknown member name "${b.memberName}" in ${group}`)
     return uid ? [uid] : []
-  }))].sort()
+  }).sort()
 
   const year = parseInt(targetDate.slice(0, 4))
   const dir = join(ROOT, dirs[group])

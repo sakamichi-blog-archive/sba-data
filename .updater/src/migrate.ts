@@ -89,7 +89,7 @@ for (const { src, dest } of groups) {
     const days: DayEntry[] = srcData.days.map(day => ({
       date: day.date,
       count: day.count,
-      members: [...new Set((day.members ?? []).flatMap(id => {
+      members: (day.members ?? []).flatMap(id => {
         const corrected = corrections[`${src}:${day.date}`]?.[id]
         const uid = corrected ?? idToUid.get(`${src}:${id}`)
         if (!uid) {
@@ -97,7 +97,7 @@ for (const { src, dest } of groups) {
           return []
         }
         return uid
-      }))].sort(),
+      }).sort(),
     }))
 
     const data: YearData = { count: srcData.count, days }

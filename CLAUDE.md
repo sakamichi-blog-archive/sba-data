@@ -41,7 +41,7 @@ Schema:
     {
       "date": "2025-01-01",          // YYYY-MM-DD
       "count": 5,                    // posts on this day
-      "members": ["55389", "55400"]  // member UIDs
+      "members": ["55389", "55389", "55400"]  // member UIDs, one per post (duplicates preserved)
     }
   ]
 }

@@ -60,6 +60,8 @@ for (const [id, uid] of Object.entries(nogiSupplemental)) {
   idToUid.set(`nogi:${id}`, uid)
 }
 
+idToUid.set('hinata:', '000') // empty string id → ポカ
+
 const groups: { src: string; dest: string }[] = [
   { src: 'nogi',   dest: 'nogi-blogs' },
   { src: 'keyaki', dest: 'keyaki-blogs' },

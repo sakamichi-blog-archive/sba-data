@@ -60,7 +60,10 @@ for (const [id, uid] of Object.entries(nogiSupplemental)) {
   idToUid.set(`nogi:${id}`, uid)
 }
 
-idToUid.set('hinata:', '000') // empty string id → ポカ
+// Known data corrections: source entry has garbage id, confirmed correct uid
+const corrections: Record<string, Record<string, string>> = {
+  'hinata:2022-11-16': { '': '000' }, // empty string confirmed as ポカ
+}
 
 const groups: { src: string; dest: string }[] = [
   { src: 'nogi',   dest: 'nogi-blogs' },
@@ -87,7 +90,8 @@ for (const { src, dest } of groups) {
       date: day.date,
       count: day.count,
       members: [...new Set((day.members ?? []).flatMap(id => {
-        const uid = idToUid.get(`${src}:${id}`)
+        const corrected = corrections[`${src}:${day.date}`]?.[id]
+        const uid = corrected ?? idToUid.get(`${src}:${id}`)
         if (!uid) {
           console.warn(`  skipping unknown member id "${id}" in ${src}/${file}`)
           return []

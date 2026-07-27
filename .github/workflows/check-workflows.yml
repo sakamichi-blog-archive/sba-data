@@ -1,0 +1,32 @@
+name: Check workflows
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - .github/**
+      - mise.lock
+      - mise.toml
+      - zizmor.yml
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: jdx/mise-action@dad1bfd3df957f44999b559dd69dc1671cb4e9ea # v4.2.1
+        with:
+          install_args: actionlint pinact shellcheck zizmor
+      - run: actionlint
+      - run: zizmor --format github .github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: mise run pinact:check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

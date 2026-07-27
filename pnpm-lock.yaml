@@ -9,8 +9,8 @@ importers:
   .updater:
     dependencies:
       '@sakamichi-blog-archive/utils':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.0
+        version: 0.3.0
     devDependencies:
       '@types/node':
         specifier: ^24
@@ -180,8 +180,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sakamichi-blog-archive/utils@0.2.0':
-    resolution: {integrity: sha512-T4Ztly/l7L6RMGezWmtkIF/Z2qS72eE7lGwRp8O+8UeuKlTSsFjErgi8fCYvEI+URZk5pDdG5Jee8krzdAvY/Q==}
+  '@sakamichi-blog-archive/utils@0.3.0':
+    resolution: {integrity: sha512-yio1adqYu0/DWrjJpn7hubhPmi/sX32sl0ScwsrzOqb96zlVYQnovurgxSN5BGVQxa3YhA9CUyMm5XkprPYczw==}
     engines: {node: ^24.16.0}
 
   '@types/node@24.13.2':
@@ -373,7 +373,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@sakamichi-blog-archive/utils@0.2.0':
+  '@sakamichi-blog-archive/utils@0.3.0':
     dependencies:
       cheerio: 1.2.0
       zod: 4.4.3

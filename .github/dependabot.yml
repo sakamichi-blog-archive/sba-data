@@ -17,7 +17,7 @@ updates:
       timezone: Asia/Tokyo
 
   - package-ecosystem: npm
-    directory: /
+    directory: /.updater
     commit-message:
       prefix: 'deps(updater)'
     cooldown:

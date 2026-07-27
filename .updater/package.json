@@ -15,6 +15,12 @@
     "tsx": "^4.19.3",
     "typescript": "^6.0.3"
   },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.0.0"
+    }
+  },
   "engines": {
     "node": ">=24"
   },

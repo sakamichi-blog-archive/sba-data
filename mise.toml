@@ -4,4 +4,4 @@ minimum_release_age = "3d"
 pin = true
 
 [tools]
-node = "lts"
+node = "24"

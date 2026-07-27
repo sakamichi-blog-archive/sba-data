@@ -6,5 +6,5 @@ allowBuilds:
 blockExoticSubdeps: true
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
-  - "@sakamichi-blog-archive/utils@0.3.0"
+  - "@sakamichi-blog-archive/utils@0.5.0"
 trustPolicy: no-downgrade

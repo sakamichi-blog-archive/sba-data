@@ -1,6 +1,7 @@
 import {
   fetchHinataBlogs,
-  fetchNogiBlogs,
+  fetchNogiBlog,
+  fetchNogiBlogsByDate,
   fetchSakuraBlogs,
   type Blog,
   type SakuraBlog,
@@ -43,15 +44,6 @@ const nameToUid: Record<Group, Map<string, string>> = {
   sakura: buildNameMap(sakuraMembers),
 }
 
-function blogDate(blog: Blog | SakuraBlog): Date {
-  return 'datetime' in blog ? blog.datetime : blog.date
-}
-
-// Blogs are published in JST (UTC+9). We use JST dates throughout.
-function toJSTDateString(date: Date): string {
-  return new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
-}
-
 function yesterdayJST(): string {
   const jstNow = new Date(Date.now() + 9 * 60 * 60 * 1000)
   jstNow.setUTCDate(jstNow.getUTCDate() - 1)
@@ -69,18 +61,32 @@ function daysUpTo(targetDate: string): DayEntry[] {
   return days
 }
 
-async function fetchBlogs(group: Group): Promise<(Blog | SakuraBlog)[]> {
-  if (group === 'hinata') return (await fetchHinataBlogs()).blogs
-  if (group === 'nogi') return (await fetchNogiBlogs()).blogs
-  return (await fetchSakuraBlogs()).blogs
+async function fetchAllPages<T>(fetchPage: (page: number) => Promise<{ blogs: T[] }>): Promise<T[]> {
+  const all: T[] = []
+  for (let page = 0; ; page++) {
+    const { blogs } = await fetchPage(page)
+    if (blogs.length === 0) break
+    all.push(...blogs)
+  }
+  return all
+}
+
+// The nogi date-filtered list page doesn't expose member names, unlike the JSON
+// list API — so each post needs a follow-up fetch to resolve its member.
+async function fetchBlogs(group: Group, targetDate: string): Promise<(Blog | SakuraBlog)[]> {
+  const [year, month, day] = targetDate.split('-').map(Number)
+  if (group === 'hinata') return fetchAllPages(page => fetchHinataBlogs({ year, month, day, page }))
+  if (group === 'sakura') return fetchAllPages(page => fetchSakuraBlogs({ year, month, day, page }))
+
+  const summaries = await fetchAllPages(page => fetchNogiBlogsByDate({ year, month, day, page }))
+  return Promise.all(summaries.map(async s => (await fetchNogiBlog(s.uid)).blog))
 }
 
 export async function updateGroup(group: Group, targetDate = yesterdayJST()): Promise<void> {
-  const blogs = await fetchBlogs(group)
+  const blogs = await fetchBlogs(group, targetDate)
 
-  const filtered = blogs.filter(b => toJSTDateString(blogDate(b)) === targetDate)
-  const postCount = filtered.length
-  const members = filtered.flatMap(b => {
+  const postCount = blogs.length
+  const members = blogs.flatMap(b => {
     const uid = nameToUid[group].get(b.memberName)
     if (!uid) console.warn(`unknown member name "${b.memberName}" in ${group}`)
     return uid ? [uid] : []

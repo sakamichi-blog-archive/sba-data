@@ -2,7 +2,8 @@ name: Update blog data
 
 on:
   schedule:
-    - cron: '30 15 * * *'
+    - cron: '30 0 * * *'
+      timezone: 'Asia/Tokyo'
 
 permissions: {}
 

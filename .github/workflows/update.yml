@@ -18,7 +18,8 @@ jobs:
           permission-contents: write
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          persist-credentials: false
+          token: ${{ steps.app-token.outputs.token }}
+          persist-credentials: true
       - uses: jdx/mise-action@dad1bfd3df957f44999b559dd69dc1671cb4e9ea # v4.2.1
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
         with:
@@ -37,11 +38,9 @@ jobs:
         run: |
           git config user.name "${APP_SLUG}[bot]"
           git config user.email "$BOT_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
-          gh auth setup-git
           git add hinata-blogs nogi-blogs sakura-blogs
           git diff --staged --quiet || git commit -m "data: Update blog data"
           git push
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           BOT_USER_ID: ${{ steps.bot-user-id.outputs.id }}

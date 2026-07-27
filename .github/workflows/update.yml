@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   update:
@@ -20,10 +21,32 @@ jobs:
         working-directory: .updater
       - run: pnpm run update
         working-directory: .updater
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hinata-blogs nogi-blogs sakura-blogs
-          git diff --staged --quiet || git commit -m "data: Update blog data"
-          git push
+      - uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        id: cpr
+        with:
+          commit-message: 'data: Update blog data'
+          committer: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
+          author: 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'
+          branch: data-update
+          delete-branch: true
+          title: 'data: Update blog data'
+          add-paths: |
+            hinata-blogs
+            nogi-blogs
+            sakura-blogs
+      - if: steps.cpr.outputs.pull-request-number
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        id: app-token
+        with:
+          app-id: ${{ secrets.PR_APPROVER_APP_ID }}
+          private-key: ${{ secrets.PR_APPROVER_APP_PRIVATE_KEY }}
+      - if: steps.cpr.outputs.pull-request-number
+        run: gh pr review "$PR_NUMBER" --approve
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+      - if: steps.cpr.outputs.pull-request-number
+        run: gh pr merge "$PR_NUMBER" --auto --squash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}

@@ -4,4 +4,24 @@ minimum_release_age = "3d"
 pin = true
 
 [tools]
+actionlint = "1.7.12"
 node = "24"
+pinact = "4.1.0"
+shellcheck = "0.11.0" # Used via actionlint
+zizmor = "1.26.1"
+
+[tasks."check:workflows"]
+description = "Check GitHub Actions workflows"
+run = ["actionlint", "zizmor .github/workflows", "mise run pinact:check"]
+
+[tasks."pinact:check"]
+description = "Check GitHub Actions are pinned to commit SHAs"
+run = "pinact run --check --min-age 3"
+
+[tasks."pinact:run"]
+description = "Pin unpinned GitHub Actions to their commit SHAs"
+run = "pinact run --min-age 3"
+
+[tasks."pinact:update"]
+description = "Update pinned GitHub Actions to their latest commit SHAs"
+run = "pinact run --update --min-age 3"

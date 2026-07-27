@@ -29,7 +29,7 @@ jobs:
       - run: pnpm run update
         working-directory: .updater
       - name: Get GitHub App bot user ID
-        id: bot-user-id
+        id: updater-app-user-id
         run: echo "id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
@@ -37,10 +37,10 @@ jobs:
       - name: Commit changes
         run: |
           git config user.name "${APP_SLUG}[bot]"
-          git config user.email "$BOT_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
+          git config user.email "$UPDATER_APP_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
           git add hinata-blogs nogi-blogs sakura-blogs
           git diff --staged --quiet || git commit -m "data: Update blog data"
           git push
         env:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
-          BOT_USER_ID: ${{ steps.bot-user-id.outputs.id }}
+          UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}

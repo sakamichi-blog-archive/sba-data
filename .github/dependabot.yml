@@ -4,7 +4,7 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     commit-message:
-      prefix: 'chore(github)'
+      prefix: 'deps(github)'
     cooldown:
       default-days: 3
     groups:
@@ -19,7 +19,7 @@ updates:
   - package-ecosystem: npm
     directory: /
     commit-message:
-      prefix: 'chore(updater)'
+      prefix: 'deps(updater)'
     cooldown:
       default-days: 3
     groups:

@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - .github/workflows/**
+      - .github/**
       - mise.lock
       - mise.toml
       - zizmor.yml
@@ -24,7 +24,7 @@ jobs:
         with:
           install_args: actionlint pinact shellcheck zizmor
       - run: actionlint
-      - run: zizmor --format github .github/workflows
+      - run: zizmor --format github .github
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: mise run pinact:check

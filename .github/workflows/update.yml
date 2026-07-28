@@ -3,8 +3,8 @@ name: Update blog data
 on:
   schedule:
     # Every day at 0:30 JST
-    - cron: '30 0 * * *'
-      timezone: 'Asia/Tokyo'
+    - cron: "30 0 * * *"
+      timezone: "Asia/Tokyo"
 
 permissions: {}
 

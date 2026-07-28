@@ -4,32 +4,32 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     commit-message:
-      prefix: 'deps(github)'
+      prefix: "deps(github)"
     cooldown:
       default-days: 3
     groups:
       all-non-major:
-        patterns: ['*']
+        patterns: ["*"]
         update-types: [minor, patch]
     schedule:
       interval: daily
-      time: '08:00'
+      time: "08:00"
       timezone: Asia/Tokyo
 
   - package-ecosystem: npm
     directory: /.updater
     commit-message:
-      prefix: 'deps(updater)'
+      prefix: "deps(updater)"
     cooldown:
       default-days: 3
     groups:
       all-non-major:
-        patterns: ['*']
+        patterns: ["*"]
         update-types: [minor, patch]
     ignore:
-      - dependency-name: '@types/node'
-        update-types: ['version-update:semver-major']
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
     schedule:
       interval: daily
-      time: '08:00'
+      time: "08:00"
       timezone: Asia/Tokyo

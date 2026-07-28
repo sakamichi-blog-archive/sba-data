@@ -1,10 +1,15 @@
 packages:
   - .updater
+  - .web
 
 allowBuilds:
+  "@parcel/watcher": true
   esbuild: false
 blockExoticSubdeps: true
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:
   - "@sakamichi-blog-archive/utils@0.5.0"
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - "chokidar@4.0.3"
+  - "semver@6.3.1"

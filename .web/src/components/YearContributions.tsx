@@ -1,4 +1,4 @@
-import { type ChangeEvent, useMemo, useState } from "react"
+import { type ChangeEvent, type KeyboardEvent, useMemo, useState } from "react"
 
 import { BLOG_COUNT_STEP } from "../lib/constants"
 import type { MemberGeneration } from "../lib/members"
@@ -106,6 +106,13 @@ export default function YearContributions({
   const daysCount = filteredSegments.reduce((sum, segment) => sum + segment.days.length, 0)
   const displayCount = memberUid !== undefined ? filteredCount : count
 
+  function handleSquareKeyDown(event: KeyboardEvent<HTMLLIElement>, date: string): void {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault()
+      setActiveSquare(date)
+    }
+  }
+
   function handleMemberChange(event: ChangeEvent<HTMLSelectElement>): void {
     setActiveSquare(undefined)
     const uid = event.target.value === "" ? undefined : event.target.value
@@ -157,7 +164,10 @@ export default function YearContributions({
                     }
                     style={{ gridRowStart: dayIndex === 0 ? segment.offset + 1 : undefined }}
                     key={day.date}
+                    role="button"
+                    tabIndex={0}
                     onClick={() => setActiveSquare(day.date)}
+                    onKeyDown={event => handleSquareKeyDown(event, day.date)}
                   >
                     {day.count}
                     {day.count > 0 && (

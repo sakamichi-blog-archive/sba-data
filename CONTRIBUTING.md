@@ -10,12 +10,12 @@ Commits must follow [Conventional Commits](https://www.conventionalcommits.org/)
 
 ### Scopes
 
-| Scope | Area |
-|---|---|
-| `github` | GitHub Actions workflows and Dependabot config |
-| `updater` | `.updater/` — data fetching project |
-| `web` | `.web/` — Astro web app |
-| `data` | Blog data files (`*-blogs/`) |
+| Scope     | Area                                           |
+| --------- | ---------------------------------------------- |
+| `github`  | GitHub Actions workflows and Dependabot config |
+| `updater` | `.updater/` — data fetching project            |
+| `web`     | `.web/` — Astro web app                        |
+| `data`    | Blog data files (`*-blogs/`)                   |
 
 ### Examples
 

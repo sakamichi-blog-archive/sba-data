@@ -4,6 +4,8 @@ Astro + React web app that renders GitHub-style contribution heatmaps of each
 group's blog posting activity. Reads directly from the `*-blogs/` data
 directories at the repo root at build time — no runtime data fetching.
 
+All commands below are run from this directory (`.web/`).
+
 ## Development
 
 ```sh

@@ -11,6 +11,8 @@ pnpm install
 pnpm dev
 ```
 
+Visit http://localhost:4321.
+
 ## Preview
 
 Builds the static site and serves it locally the same way it'll be served in
@@ -20,6 +22,9 @@ production:
 pnpm run build
 pnpm run preview
 ```
+
+Visit http://localhost:4321 (if that port's already in use, astro picks the
+next free one and prints the actual URL to use instead).
 
 ## Deploying
 

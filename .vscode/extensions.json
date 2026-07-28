@@ -1,3 +1,6 @@
 {
-  "recommendations": ["oxc.oxc-vscode"]
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "oxc.oxc-vscode"
+  ]
 }

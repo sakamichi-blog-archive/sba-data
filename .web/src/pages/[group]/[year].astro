@@ -1,0 +1,35 @@
+---
+import "../../styles/year.scss"
+
+import YearContributions from "../../components/YearContributions"
+import Layout from "../../layouts/Layout.astro"
+import { getGroup } from "../../lib/groups"
+import { getGenerations } from "../../lib/members"
+import { getGroupYears, getYearData } from "../../lib/years"
+
+export function getStaticPaths() {
+  return getGroupYears().flatMap(({ key, years }) =>
+    years.map(year => ({ params: { group: key, year: `${year}` } }))
+  )
+}
+
+const { group, year } = Astro.params
+// getStaticPaths only ever generates params for groups returned by getGroupYears(),
+// so this is guaranteed to resolve.
+const groupData = getGroup(group)!
+
+const yearData = getYearData(group, year)
+const generations = getGenerations(group)
+---
+
+<Layout title={`${groupData.englishShort} ${year} Blog Contributions`}>
+  <YearContributions
+    client:load
+    count={yearData.count}
+    generations={generations}
+    groupKey={group}
+    groupName={groupData.englishShort}
+    segments={yearData.segments}
+    year={yearData.year}
+  />
+</Layout>

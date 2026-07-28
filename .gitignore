@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.github
+!.vscode
 !.web
 !.updater
 !.sba-contributions

@@ -45,5 +45,5 @@ export function getGenerations(group: string): MemberGeneration[] {
     entry.members.push(member)
   }
 
-  return generations.sort((a, b) => a.generation.seq - b.generation.seq)
+  return generations.toSorted((a, b) => a.generation.seq - b.generation.seq)
 }

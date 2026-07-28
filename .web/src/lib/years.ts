@@ -54,7 +54,7 @@ export function getGroupYears(): GroupYears[] {
       const years = readdirSync(groupDataDir(group.key))
         .filter(fileName => /^\d+\.json$/i.test(fileName))
         .map(fileName => Number(path.basename(fileName, ".json")))
-        .sort((a, b) => b - a)
+        .toSorted((a, b) => b - a)
 
       return { key: group.key, years }
     })

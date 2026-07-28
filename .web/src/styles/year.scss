@@ -144,12 +144,10 @@ $square-colors: (
             border-top: 9px solid $tooltip-color;
             margin-left: -9px;
           }
-          &.focused a.link {
-            visibility: visible;
-          }
         }
 
-        &:hover > span {
+        &:hover > span,
+        &.focused > span {
           visibility: visible;
           opacity: 1;
           z-index: 2;

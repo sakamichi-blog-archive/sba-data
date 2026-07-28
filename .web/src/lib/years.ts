@@ -39,6 +39,7 @@ interface RawYearData {
 }
 
 export interface GroupYears {
+  englishShort: string
   key: string
   years: number[]
 }
@@ -56,11 +57,11 @@ export function getGroupYears(): GroupYears[] {
         .map(fileName => Number(path.basename(fileName, ".json")))
         .toSorted((a, b) => b - a)
 
-      return { key: group.key, years }
+      return { englishShort: group.englishShort, key: group.key, years }
     })
 }
 
-export function getYearData(group: string, year: number | string): YearData {
+export function getYearData(group: string, year: string): YearData {
   const jsonPath = path.join(groupDataDir(group), `${year}.json`)
   const raw = JSON.parse(readFileSync(jsonPath, "utf8")) as RawYearData
 

@@ -11,7 +11,7 @@ pnpm install
 pnpm dev
 ```
 
-Visit http://localhost:4321.
+Visit http://localhost:6728.
 
 ## Preview
 
@@ -23,7 +23,7 @@ pnpm run build
 pnpm run preview
 ```
 
-Visit http://localhost:4321 (if that port's already in use, astro picks the
+Visit http://localhost:6728 (if that port's already in use, astro picks the
 next free one and prints the actual URL to use instead).
 
 ## Deploying

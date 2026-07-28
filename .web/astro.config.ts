@@ -5,5 +5,8 @@ export default defineConfig({
   build: {
     format: "file"
   },
-  integrations: [react()]
+  integrations: [react()],
+  server: {
+    port: 6728
+  }
 })

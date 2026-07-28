@@ -1,10 +1,10 @@
+@use "sass:color";
+
 $grid-gap: 3px;
 $square-size: 24px;
 $square-gap: 6px;
-// $font-color-black: #000000c0;
-// $tooltip-color: #000000b0;
-$black1: lighten(#000, 24%);
-$black2: lighten(#000, 36%);
+$black1: color.adjust(#000, $lightness: 24%);
+$black2: color.adjust(#000, $lightness: 36%);
 $tooltip-color: rgba(#000, 0.7);
 
 $square-colors: (

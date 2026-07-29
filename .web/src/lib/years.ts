@@ -76,7 +76,7 @@ export function getYearData(group: string, year: string): YearData {
 // past roughly half a year, so each block stays a reasonable width. Below
 // that threshold, this returns the total week count so the split condition
 // in buildSegments (weekIndex > maxWeeks) can never trigger.
-function getMaxWeeksPerSegment(days: DayData[], offset: number): number {
+export function getMaxWeeksPerSegment(days: DayData[], offset: number): number {
   const weekCount = Math.ceil((offset + days.length) / 7)
   if (weekCount <= 26) {
     return weekCount
@@ -89,7 +89,7 @@ function getMaxWeeksPerSegment(days: DayData[], offset: number): number {
 // Splits a year's days into calendar-grid segments (one segment per rendered
 // block of weeks). Short/in-progress years fit in a single segment; full
 // years are split roughly in half so each block stays a reasonable width.
-function buildSegments(days: DayData[]): Segment[] {
+export function buildSegments(days: DayData[]): Segment[] {
   if (days.length === 0) {
     return []
   }

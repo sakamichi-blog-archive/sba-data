@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "test": "vitest run",
     "typecheck": "astro check"
   },
   "dependencies": {
@@ -22,7 +23,8 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "sass": "^1.102.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
   },
   "engines": {
     "node": ">=22.12.0"

@@ -79,33 +79,36 @@ interface SrcYear {
   days: { date: string; count: number; members: string[] }[]
 }
 
-for (const { src, dest } of groups) {
-  const srcDir = join(SBA, "data", src)
-  const destDir = join(ROOT, dest)
+await Promise.all(
+  groups.map(async ({ src, dest }) => {
+    const srcDir = join(SBA, "data", src)
+    const destDir = join(ROOT, dest)
+    const files = (await readdir(srcDir)).filter(file => file.endsWith(".json"))
 
-  for (const file of await readdir(srcDir)) {
-    if (!file.endsWith(".json")) continue
+    await Promise.all(
+      files.map(async file => {
+        const srcData: SrcYear = JSON.parse(await readFile(join(srcDir, file), "utf8"))
 
-    const srcData: SrcYear = JSON.parse(await readFile(join(srcDir, file), "utf8"))
+        const days: DayEntry[] = srcData.days.map(day => ({
+          date: day.date,
+          count: day.count,
+          members: (day.members ?? [])
+            .flatMap(id => {
+              const corrected = corrections[`${src}:${day.date}`]?.[id]
+              const uid = corrected ?? idToUid.get(`${src}:${id}`)
+              if (!uid) {
+                console.warn(`  skipping unknown member id "${id}" in ${src}/${file}`)
+                return []
+              }
+              return uid
+            })
+            .toSorted()
+        }))
 
-    const days: DayEntry[] = srcData.days.map(day => ({
-      date: day.date,
-      count: day.count,
-      members: (day.members ?? [])
-        .flatMap(id => {
-          const corrected = corrections[`${src}:${day.date}`]?.[id]
-          const uid = corrected ?? idToUid.get(`${src}:${id}`)
-          if (!uid) {
-            console.warn(`  skipping unknown member id "${id}" in ${src}/${file}`)
-            return []
-          }
-          return uid
-        })
-        .sort()
-    }))
-
-    const data: YearData = { count: srcData.count, days }
-    await writeFile(join(destDir, file), JSON.stringify(data, null, 2) + "\n")
-    console.log(`migrated ${dest}/${file}`)
-  }
-}
+        const data: YearData = { count: srcData.count, days }
+        await writeFile(join(destDir, file), JSON.stringify(data, null, 2) + "\n")
+        console.log(`migrated ${dest}/${file}`)
+      })
+    )
+  })
+)

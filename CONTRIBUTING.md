@@ -4,6 +4,12 @@
 
 Use `features/NAME` for feature branches.
 
+## Tests
+
+`.updater` and `.web` each have a `vitest` suite (`pnpm test` in the package, or `pnpm run test` at the root for both). Add tests alongside new or changed non-trivial logic — e.g. date math, data merging, formatting/filtering helpers — rather than for framework glue (Astro pages, React components) or one-off scripts.
+
+`pnpm run check` runs format, lint, and tests, and is required in CI.
+
 ## Commits
 
 Commits must follow [Conventional Commits](https://www.conventionalcommits.org/).

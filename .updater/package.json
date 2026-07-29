@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "update": "tsx src/index.ts"
   },
@@ -13,7 +14,8 @@
   "devDependencies": {
     "@types/node": "^24",
     "tsx": "^4.23.1",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
   },
   "devEngines": {
     "runtime": {

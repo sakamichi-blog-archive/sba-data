@@ -46,13 +46,13 @@ const nameToUid: Record<Group, Map<string, string>> = {
   sakura: buildNameMap(sakuraMembers)
 }
 
-function yesterdayJST(): string {
+export function yesterdayJST(): string {
   const jstNow = new Date(Date.now() + 9 * 60 * 60 * 1000)
   jstNow.setUTCDate(jstNow.getUTCDate() - 1)
   return jstNow.toISOString().slice(0, 10)
 }
 
-function daysUpTo(targetDate: string): DayEntry[] {
+export function daysUpTo(targetDate: string): DayEntry[] {
   const days: DayEntry[] = []
   const year = parseInt(targetDate.slice(0, 4))
   const d = new Date(Date.UTC(year, 0, 1))

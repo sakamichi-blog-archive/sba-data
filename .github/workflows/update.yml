@@ -30,7 +30,8 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      - run: pnpm run update
+      - id: update
+        run: pnpm run update
         working-directory: .updater
       - name: Get GitHub App bot user ID
         id: updater-app-user-id
@@ -43,8 +44,9 @@ jobs:
           git config user.name "${APP_SLUG}[bot]"
           git config user.email "$UPDATER_APP_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
           git add hinata-blogs nogi-blogs sakura-blogs
-          git diff --staged --quiet || git commit -m "data: Update blog data"
+          git diff --staged --quiet || git commit -m "data: Update blog data for $UPDATE_DATE"
           git push
         env:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
+          UPDATE_DATE: ${{ steps.update.outputs.date }}

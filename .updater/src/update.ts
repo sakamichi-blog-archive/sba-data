@@ -68,6 +68,8 @@ async function fetchAllPages<T>(
 ): Promise<T[]> {
   const all: T[] = []
   for (let page = 0; ; page++) {
+    // Sequential by necessity: the total page count is unknown until a page comes back empty.
+    // oxlint-disable-next-line no-await-in-loop
     const { blogs } = await fetchPage(page)
     if (blogs.length === 0) break
     all.push(...blogs)
@@ -96,7 +98,7 @@ export async function updateGroup(group: Group, targetDate = yesterdayJST()): Pr
       if (!uid) console.warn(`unknown member name "${b.memberName}" in ${group}`)
       return uid ? [uid] : []
     })
-    .sort()
+    .toSorted()
 
   const year = parseInt(targetDate.slice(0, 4))
   const dir = join(ROOT, dirs[group])

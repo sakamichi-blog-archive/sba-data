@@ -1,8 +1,15 @@
 import { type ChangeEvent, type KeyboardEvent, useMemo, useState } from "react"
 
-import { BLOG_COUNT_STEP } from "../lib/constants"
+import {
+  filterSegmentsByMember,
+  getDateFormatted,
+  getLegendLabel,
+  getOfficialLink,
+  getOrdinal,
+  getSquareClassName
+} from "../lib/contributions"
 import type { MemberGeneration } from "../lib/members"
-import type { DayData, Segment } from "../lib/years"
+import type { Segment } from "../lib/years"
 
 interface YearContributionsProps {
   count: number
@@ -11,67 +18,6 @@ interface YearContributionsProps {
   groupName: string
   segments: Segment[]
   year: number
-}
-
-const pluralRules = new Intl.PluralRules("en", { type: "ordinal" })
-const numberSuffixes: Record<Intl.LDMLPluralRule, string> = {
-  few: "rd",
-  many: "th",
-  one: "st",
-  other: "th",
-  two: "nd",
-  zero: "th"
-}
-function getOrdinal(n: number): string {
-  return `${n}${numberSuffixes[pluralRules.select(n)]}`
-}
-
-function getDateFormatted(date: string): string {
-  const dateObject = new Date(date)
-  return `${dateObject.getMonth() + 1}/${dateObject.getDate()}`
-}
-
-function getClassName(count: number): string {
-  return count >= BLOG_COUNT_STEP * 3 + 1
-    ? "level-5"
-    : `level-${Math.ceil(count / BLOG_COUNT_STEP) + 1}`
-}
-
-function getOfficialLink(
-  groupKey: string,
-  day: DayData,
-  memberUid: string | undefined
-): string | undefined {
-  const dateEightDigit = day.date.replace(/-/g, "")
-  const now = new Date()
-  const ima = String(now.getHours()).padStart(2, "0") + String(now.getMinutes()).padStart(2, "0")
-
-  let link: string
-  switch (groupKey) {
-    case "nogi": {
-      link = `https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ima=${ima}`
-      break
-    }
-    case "keyaki": {
-      link = "https://www.keyakizaka46.com/s/k46o/diary/member/list?ima=0000"
-      break
-    }
-    case "hinata": {
-      link = "https://www.hinatazaka46.com/s/official/diary/member/list?ima=0000"
-      break
-    }
-    case "sakura": {
-      link = `https://sakurazaka46.com/s/s46/diary/blog/list?ima=${ima}`
-      break
-    }
-    default: {
-      return undefined
-    }
-  }
-  if (memberUid !== undefined) {
-    link += `&ct=${memberUid}`
-  }
-  return `${link}&dy=${dateEightDigit}`
 }
 
 function getInitialMemberUid(): string | undefined {
@@ -97,14 +43,17 @@ export default function YearContributions({
     [generations]
   )
   const selectedMember = members.find(member => member.uid === memberUid)
+  const displayName = selectedMember?.nameEnglish ?? groupName
 
-  const { filteredSegments, filteredCount } = useMemo(
-    () => filterSegments(segments, memberUid),
-    [segments, memberUid]
-  )
+  const { filteredSegments, displayCount } = useMemo(() => {
+    if (memberUid === undefined) {
+      return { filteredSegments: segments, displayCount: count }
+    }
+    const filtered = filterSegmentsByMember(segments, memberUid)
+    return { filteredSegments: filtered.segments, displayCount: filtered.count }
+  }, [segments, memberUid, count])
 
   const daysCount = filteredSegments.reduce((sum, segment) => sum + segment.days.length, 0)
-  const displayCount = memberUid !== undefined ? filteredCount : count
 
   function handleSquareKeyDown(event: KeyboardEvent<HTMLLIElement>, date: string): void {
     if (event.key === "Enter" || event.key === " ") {
@@ -131,7 +80,7 @@ export default function YearContributions({
     <>
       <div className="year">
         <h1 className="year__title">
-          {selectedMember?.nameEnglish ?? groupName} {year}{" "}
+          {displayName} {year}{" "}
           <span>
             {displayCount} contribution{displayCount !== 1 ? "s" : ""}
             {displayCount > 1 && <> ({(displayCount / daysCount).toFixed(1)} per day)</>}
@@ -141,8 +90,8 @@ export default function YearContributions({
           {filteredSegments.map((segment, segmentIndex) => (
             <div className="year__contributions__segment" key={segmentIndex}>
               <ul className="year__contributions__segment__months">
-                {segment.months.map((month, i) => (
-                  <li style={{ gridColumn: `${month.weekIndex + 1}` }} key={i}>
+                {segment.months.map(month => (
+                  <li style={{ gridColumn: `${month.weekIndex + 1}` }} key={month.weekIndex}>
                     {month.name}
                   </li>
                 ))}
@@ -160,7 +109,7 @@ export default function YearContributions({
                 {segment.days.map((day, dayIndex) => (
                   <li
                     className={
-                      getClassName(day.count) + (activeSquare === day.date ? " focused" : "")
+                      getSquareClassName(day.count) + (activeSquare === day.date ? " focused" : "")
                     }
                     style={{ gridRowStart: dayIndex === 0 ? segment.offset + 1 : undefined }}
                     key={day.date}
@@ -177,7 +126,7 @@ export default function YearContributions({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {selectedMember?.nameEnglish ?? groupName} {getDateFormatted(day.date)}
+                        {displayName} {getDateFormatted(day.date)}
                       </a>
                     )}
                     <span>
@@ -190,16 +139,10 @@ export default function YearContributions({
           ))}
           <div className="year__contributions__legend">
             <ul className="colors">
-              {[1, 2, 3, 4, 5].map(n => (
-                <li key={n}>
-                  <span className={`square level-${n}`}></span>
-                  <span>
-                    {n === 1
-                      ? "0"
-                      : n === 5
-                        ? "10-"
-                        : `${(n - 2) * BLOG_COUNT_STEP + 1}-${(n - 1) * BLOG_COUNT_STEP}`}
-                  </span>
+              {[1, 2, 3, 4, 5].map(level => (
+                <li key={level}>
+                  <span className={`square level-${level}`}></span>
+                  <span>{getLegendLabel(level)}</span>
                 </li>
               ))}
             </ul>
@@ -225,28 +168,4 @@ export default function YearContributions({
       </a>
     </>
   )
-}
-
-function filterSegments(
-  segments: Segment[],
-  memberUid: string | undefined
-): { filteredSegments: Segment[]; filteredCount: number } {
-  if (memberUid === undefined) {
-    const count = segments.reduce(
-      (sum, segment) => sum + segment.days.reduce((s, day) => s + day.count, 0),
-      0
-    )
-    return { filteredSegments: segments, filteredCount: count }
-  }
-
-  let filteredCount = 0
-  const filteredSegments = segments.map(segment => ({
-    ...segment,
-    days: segment.days.map(day => {
-      const dayCount = day.members.filter(member => member === memberUid).length
-      filteredCount += dayCount
-      return { ...day, count: dayCount }
-    })
-  }))
-  return { filteredSegments, filteredCount }
 }

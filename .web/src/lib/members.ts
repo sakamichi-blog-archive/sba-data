@@ -7,8 +7,6 @@ import {
   type Member
 } from "@sakamichi-blog-archive/utils/members"
 
-export type { Member }
-
 const membersByGroup: Record<string, Member[]> = {
   hinata: hinataMembers,
   keyaki: keyakiMembers,
@@ -20,10 +18,6 @@ export function getMembers(group: string): Member[] {
   return membersByGroup[group] ?? []
 }
 
-export function getMember(group: string, uid: string): Member | undefined {
-  return getMembers(group).find(member => member.uid === uid)
-}
-
 export interface MemberGeneration {
   generation: Generation
   members: Member[]
@@ -33,13 +27,14 @@ export function getGenerations(group: string): MemberGeneration[] {
   const generations: MemberGeneration[] = []
 
   for (const member of getMembers(group)) {
-    if (member.generation === undefined) {
+    const generation = member.generation
+    if (generation === undefined) {
       continue
     }
 
-    let entry = generations.find(g => g.generation.key === member.generation!.key)
+    let entry = generations.find(g => g.generation.key === generation.key)
     if (entry === undefined) {
-      entry = { generation: member.generation, members: [] }
+      entry = { generation, members: [] }
       generations.push(entry)
     }
     entry.members.push(member)

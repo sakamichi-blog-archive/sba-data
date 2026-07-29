@@ -2,7 +2,6 @@
 import "../styles/index.scss"
 
 import Layout from "../layouts/Layout.astro"
-import { getGroup } from "../lib/groups"
 import { getGroupYears } from "../lib/years"
 
 const groupYears = getGroupYears()
@@ -12,13 +11,13 @@ const groupYears = getGroupYears()
   <div class="index">
     <ul class="index__groups">
       {
-        groupYears.map(({ key, years }) => (
+        groupYears.map(({ englishShort, key, years }) => (
           <li class="index__groups__group">
-            <h2>{getGroup(key)?.englishShort}</h2>
+            <h2>{englishShort}</h2>
             <ul class="index__groups__group__years">
               {years.map(year => (
                 <li class="index__groups__group__years__year">
-                  <a href={`/${key}/${year}`} title={`${getGroup(key)?.englishShort} ${year}`}>
+                  <a href={`/${key}/${year}`} title={`${englishShort} ${year}`}>
                     {year}
                   </a>
                 </li>

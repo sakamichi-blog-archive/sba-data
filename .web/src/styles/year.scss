@@ -157,25 +157,14 @@ $square-colors: (
   }
 
   &__legend {
-    grid-area: legend;
     display: flex;
     justify-content: flex-end;
     margin-top: 9px;
-
-    p {
-      margin: 0;
-      line-height: $square-size;
-      color: $black1;
-    }
 
     .colors {
       list-style-type: none;
       padding: 0;
       margin: 0;
-      // display: grid;
-      // grid-template-columns: repeat(auto-fit, $square-size);
-      // gap: $square-gap;
-      // width: ($square-size + $square-gap) * 5 - $square-gap;
       display: flex;
 
       li {

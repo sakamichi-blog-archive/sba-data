@@ -39,6 +39,7 @@ interface RawYearData {
 }
 
 export interface GroupYears {
+  englishShort: string
   key: string
   years: number[]
 }
@@ -56,11 +57,11 @@ export function getGroupYears(): GroupYears[] {
         .map(fileName => Number(path.basename(fileName, ".json")))
         .toSorted((a, b) => b - a)
 
-      return { key: group.key, years }
+      return { englishShort: group.englishShort, key: group.key, years }
     })
 }
 
-export function getYearData(group: string, year: number | string): YearData {
+export function getYearData(group: string, year: string): YearData {
   const jsonPath = path.join(groupDataDir(group), `${year}.json`)
   const raw = JSON.parse(readFileSync(jsonPath, "utf8")) as RawYearData
 
@@ -69,6 +70,20 @@ export function getYearData(group: string, year: number | string): YearData {
     segments: buildSegments(raw.days),
     year: Number(year)
   }
+}
+
+// A year's grid is split into multiple horizontal segments once it grows
+// past roughly half a year, so each block stays a reasonable width. Below
+// that threshold, this returns the total week count so the split condition
+// in buildSegments (weekIndex > maxWeeks) can never trigger.
+function getMaxWeeksPerSegment(days: DayData[], offset: number): number {
+  const weekCount = Math.ceil((offset + days.length) / 7)
+  if (weekCount <= 26) {
+    return weekCount
+  }
+
+  const monthsPresent = new Set(days.map(day => day.date.slice(0, 7)))
+  return monthsPresent.size < 12 ? Math.round((offset + days.length - 4) / 7 / 2) : 24
 }
 
 // Splits a year's days into calendar-grid segments (one segment per rendered
@@ -80,15 +95,7 @@ function buildSegments(days: DayData[]): Segment[] {
   }
 
   const offset = dayjs(days[0].date).day()
-  const weekCount = Math.ceil((offset + days.length) / 7)
-  const monthsPresent = new Set(days.map(day => day.date.slice(0, 7)))
-
-  const maxWeeks =
-    weekCount <= 26
-      ? weekCount
-      : monthsPresent.size < 12
-        ? Math.round((offset + days.length - 4) / 7 / 2)
-        : 24
+  const maxWeeks = getMaxWeeksPerSegment(days, offset)
 
   const segments: Segment[] = []
   let segmentIndex = 0

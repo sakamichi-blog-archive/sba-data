@@ -30,9 +30,13 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      - id: update
-        run: pnpm run update
+      - name: Calculate date to update
+        id: date
+        run: echo "date=$(date -u -d '+9 hours -1 day' +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - run: pnpm run update "$UPDATE_DATE"
         working-directory: .updater
+        env:
+          UPDATE_DATE: ${{ steps.date.outputs.date }}
       - name: Get GitHub App bot user ID
         id: updater-app-user-id
         run: echo "id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
@@ -49,4 +53,4 @@ jobs:
         env:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
-          UPDATE_DATE: ${{ steps.update.outputs.date }}
+          UPDATE_DATE: ${{ steps.date.outputs.date }}

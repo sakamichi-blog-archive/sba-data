@@ -4,7 +4,6 @@
 !.vscode
 !.web
 !.updater
-!.sba-contributions
 !**/.gitkeep
 node_modules
 **/node_modules

@@ -30,8 +30,13 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      - run: pnpm run update
+      - name: Calculate date to update
+        id: date
+        run: echo "date=$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - run: pnpm run update "$UPDATE_DATE"
         working-directory: .updater
+        env:
+          UPDATE_DATE: ${{ steps.date.outputs.date }}
       - name: Get GitHub App bot user ID
         id: updater-app-user-id
         run: echo "id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
@@ -43,8 +48,9 @@ jobs:
           git config user.name "${APP_SLUG}[bot]"
           git config user.email "$UPDATER_APP_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
           git add hinata-blogs nogi-blogs sakura-blogs
-          git diff --staged --quiet || git commit -m "data: Update blog data"
+          git diff --staged --quiet || git commit -m "data: Update blog data for $UPDATE_DATE"
           git push
         env:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
+          UPDATE_DATE: ${{ steps.date.outputs.date }}

@@ -1,0 +1,2431 @@
+{
+  "count": 201,
+  "events": [
+    {
+      "date": "2026-08-01",
+      "category": "TV",
+      "title": "テレビ東京「ピッカルチャー『ＢＬＥＡＣＨの魅力にピカッと世界横断ＳＰ』」田村真佑※ナレーション出演",
+      "member_uids": [
+        "48015"
+      ],
+      "time_start": "09:30",
+      "time_end": "10:00",
+      "id": "107250",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107250?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=01"
+    },
+    {
+      "date": "2026-08-01",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=01"
+    },
+    {
+      "date": "2026-08-01",
+      "category": "TV",
+      "title": "NHK「Venue101」",
+      "member_uids": [],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "107235",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107235?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=01"
+    },
+    {
+      "date": "2026-08-01",
+      "category": "WEB",
+      "title": "「iza(前編)」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107260",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107260?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=01"
+    },
+    {
+      "date": "2026-08-01",
+      "category": "ライブ/イベント",
+      "title": "「TOKYO IDOL FESTIVAL 2026 supported by にしたんクリニック」五百城茉央、奥田いろは",
+      "member_uids": [
+        "55394",
+        "55396"
+      ],
+      "id": "107136",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107136?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=01"
+    },
+    {
+      "date": "2026-08-01",
+      "category": "モバイル",
+      "title": "のぎ動画「乃木坂あそぶだけ #83 “1万円であそぼう！ 前編”」池田瑛紗、岩本蓮加、大越ひなの、小川彩、川端晃菜、田村真佑、筒井あやめ、吉田綾乃クリスティー",
+      "member_uids": [
+        "36750",
+        "36759",
+        "48015",
+        "48017",
+        "55392",
+        "55397",
+        "63102",
+        "63105"
+      ],
+      "id": "107262",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107262?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=01"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、吉田綾乃クリスティー",
+      "member_uids": [
+        "36759",
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107232",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107232?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=02"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」川﨑桜、冨里奈央、吉田綾乃クリスティー",
+      "member_uids": [
+        "36759",
+        "55393",
+        "55400"
+      ],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "107234",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107234?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=02"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=02"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "WEB",
+      "title": "「iza(後編)」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107261",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107261?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=02"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ライブ/イベント",
+      "title": "「TOKYO IDOL FESTIVAL 2026 supported by にしたんクリニック」",
+      "member_uids": [],
+      "id": "107228",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107228?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=02"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ライブ/イベント",
+      "title": "「乃木坂46のオールナイトニッポン in TIF（TOKYO IDOL FESTIVAL 2026 supported by にしたんクリニック）」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107221",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107221?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=02"
+    },
+    {
+      "date": "2026-08-03",
+      "category": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "20:30",
+      "id": "107264",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107264?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=03"
+    },
+    {
+      "date": "2026-08-03",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107113",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107113?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=03"
+    },
+    {
+      "date": "2026-08-03",
+      "category": "TV",
+      "title": "テレビ朝日系「ホリケンのみんなともだち」菅原咲月、冨里奈央",
+      "member_uids": [
+        "55391",
+        "55393"
+      ],
+      "time_start": "24:16",
+      "time_end": "24:59",
+      "id": "107241",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107241?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=03"
+    },
+    {
+      "date": "2026-08-03",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=03"
+    },
+    {
+      "date": "2026-08-03",
+      "category": "モバイル",
+      "title": "のぎ動画「ひとりでできるもん セカンド #7」川端晃菜",
+      "member_uids": [
+        "63105"
+      ],
+      "id": "107265",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107265?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=03"
+    },
+    {
+      "date": "2026-08-04",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=04"
+    },
+    {
+      "date": "2026-08-04",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=04"
+    },
+    {
+      "date": "2026-08-04",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=04"
+    },
+    {
+      "date": "2026-08-04",
+      "category": "TV",
+      "title": "フジテレビ「コントラスト」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "24:45",
+      "time_end": "25:15",
+      "id": "107122",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107122?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=04"
+    },
+    {
+      "date": "2026-08-04",
+      "category": "モバイル",
+      "title": "のぎ動画「良質で文化的な最大限度の乃木坂46を営む。#11 13th YEAR BIRTHDAY LIVE “設定温度” & “アトノマツリ” Music Video」池田瑛紗、林瑠奈、中西アルノ",
+      "member_uids": [
+        "55385",
+        "55395",
+        "55397"
+      ],
+      "id": "107271",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107271?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=04"
+    },
+    {
+      "date": "2026-08-05",
+      "category": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107116",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107116?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=05"
+    },
+    {
+      "date": "2026-08-05",
+      "category": "TV",
+      "title": "フジテレビ系「奇跡体験！アンビリバボー」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107268",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107268?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=05"
+    },
+    {
+      "date": "2026-08-05",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=05"
+    },
+    {
+      "date": "2026-08-05",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=05"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=06"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "ライブ/イベント",
+      "title": "「プロ野球 福岡ソフトバンクホークス vs 北海道日本ハムファイターズ＠みずほPayPayドーム福岡」乃木坂野球部",
+      "member_uids": [
+        "48010",
+        "48013",
+        "55383",
+        "55392",
+        "63107",
+        "63108"
+      ],
+      "id": "106809",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106809?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=06"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "18:00",
+      "time_end": "22:00",
+      "id": "107115",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107115?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "TV",
+      "title": "日本テレビ「夜バゲット」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107252",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107252?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」吉田綾乃クリスティー、弓木奈於、林瑠奈",
+      "member_uids": [
+        "36759",
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107223",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107223?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "書籍",
+      "title": "「BOMB」川﨑桜、長嶋凛桜",
+      "member_uids": [
+        "55400",
+        "63108"
+      ],
+      "id": "107132",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107132?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=07"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "ラジオ",
+      "title": "FM FUJI「FM FUJI開局38周年特別番組「Shine on, YAMANASHI」」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "08:00",
+      "time_end": "15:53",
+      "id": "107267",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107267?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=08"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=08"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "ライブ/イベント",
+      "title": "「真夏の全国ツアー2026 福岡公演」",
+      "member_uids": [],
+      "id": "106707",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106707?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=08"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "誕生日",
+      "title": "賀喜 遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "id": "100058",
+      "url": "https://www.nogizaka46.com/s/n46/artist/48008?ima=5125"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、一ノ瀬美空",
+      "member_uids": [
+        "55390",
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107263",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107263?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=09"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "TV",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107251",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107251?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=09"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、筒井あやめ、林瑠奈",
+      "member_uids": [
+        "48017",
+        "55385",
+        "55396"
+      ],
+      "time_start": "21:05",
+      "time_end": "22:55",
+      "id": "107266",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107266?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=09"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=09"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "ライブ/イベント",
+      "title": "「真夏の全国ツアー2026 福岡公演」",
+      "member_uids": [],
+      "id": "106707",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106707?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=09"
+    },
+    {
+      "date": "2026-08-10",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107114",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107114?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=10"
+    },
+    {
+      "date": "2026-08-10",
+      "category": "TV",
+      "title": "UHB北海道文化放送「TANTO MUSIK」金川紗耶、瀬戸口心月、長嶋凛桜",
+      "member_uids": [
+        "48010",
+        "63107",
+        "63108"
+      ],
+      "time_start": "24:35",
+      "time_end": "24:45",
+      "id": "107220",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107220?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=10"
+    },
+    {
+      "date": "2026-08-10",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=10"
+    },
+    {
+      "date": "2026-08-10",
+      "category": "書籍",
+      "title": "「ar」一ノ瀬美空",
+      "member_uids": [
+        "55390"
+      ],
+      "id": "107108",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107108?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=10"
+    },
+    {
+      "date": "2026-08-11",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=11"
+    },
+    {
+      "date": "2026-08-11",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=11"
+    },
+    {
+      "date": "2026-08-11",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=11"
+    },
+    {
+      "date": "2026-08-11",
+      "category": "TV",
+      "title": "フジテレビ「コントラスト」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "24:45",
+      "time_end": "25:15",
+      "id": "107122",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107122?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=11"
+    },
+    {
+      "date": "2026-08-12",
+      "category": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107116",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107116?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=12"
+    },
+    {
+      "date": "2026-08-12",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=12"
+    },
+    {
+      "date": "2026-08-12",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=12"
+    },
+    {
+      "date": "2026-08-13",
+      "category": "TV",
+      "title": "日本テレビ系「秘密のケンミンSHOW極」一ノ瀬美空",
+      "member_uids": [
+        "55390"
+      ],
+      "time_start": "20:54",
+      "time_end": "21:54",
+      "id": "107269",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107269?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=13"
+    },
+    {
+      "date": "2026-08-13",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=13"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=14"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=14"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=14"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=14"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "TV",
+      "title": "日本テレビ「夜バゲット」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107253",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107253?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=14"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107224",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107224?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=14"
+    },
+    {
+      "date": "2026-08-15",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=15"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=16"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=16"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=16"
+    },
+    {
+      "date": "2026-08-17",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107113",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107113?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=17"
+    },
+    {
+      "date": "2026-08-17",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:35",
+      "time_end": "26:05",
+      "id": "107258",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107258?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=17"
+    },
+    {
+      "date": "2026-08-18",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=18"
+    },
+    {
+      "date": "2026-08-18",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=18"
+    },
+    {
+      "date": "2026-08-18",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=18"
+    },
+    {
+      "date": "2026-08-18",
+      "category": "TV",
+      "title": "フジテレビ「コントラスト」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "24:45",
+      "time_end": "25:15",
+      "id": "107122",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107122?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=18"
+    },
+    {
+      "date": "2026-08-19",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=19"
+    },
+    {
+      "date": "2026-08-19",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=19"
+    },
+    {
+      "date": "2026-08-20",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=20"
+    },
+    {
+      "date": "2026-08-20",
+      "category": "ライブ/イベント",
+      "title": "「真夏の全国ツアー2026 東京公演」",
+      "member_uids": [],
+      "id": "106708",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106708?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=20"
+    },
+    {
+      "date": "2026-08-20",
+      "category": "誕生日",
+      "title": "奥田 いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "100883",
+      "url": "https://www.nogizaka46.com/s/n46/artist/55394?ima=5125"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "18:00",
+      "time_end": "22:00",
+      "id": "107115",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107115?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "TV",
+      "title": "日本テレビ「夜バゲット」小津玲奈",
+      "member_uids": [
+        "63103"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107254",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107254?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107224",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107224?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107226",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107226?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "書籍",
+      "title": "「アップトゥボーイ」森平麗心、愛宕心響",
+      "member_uids": [
+        "63101",
+        "63110"
+      ],
+      "id": "107239",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107239?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ライブ/イベント",
+      "title": "「真夏の全国ツアー2026 東京公演」",
+      "member_uids": [],
+      "id": "106708",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106708?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=21"
+    },
+    {
+      "date": "2026-08-22",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=22"
+    },
+    {
+      "date": "2026-08-22",
+      "category": "TV",
+      "title": "TBSチャンネル1「Spicy Sessions with KAZ（GENERATIONS/数原龍友）」中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "23:30",
+      "time_end": "24:30",
+      "id": "107131",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107131?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=22"
+    },
+    {
+      "date": "2026-08-22",
+      "category": "ライブ/イベント",
+      "title": "「真夏の全国ツアー2026 東京公演」",
+      "member_uids": [],
+      "id": "106708",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106708?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=22"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=23"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=23"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=23"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "ライブ/イベント",
+      "title": "「真夏の全国ツアー2026 東京公演」",
+      "member_uids": [],
+      "id": "106708",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106708?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=23"
+    },
+    {
+      "date": "2026-08-24",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107114",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107114?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=24"
+    },
+    {
+      "date": "2026-08-24",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:40",
+      "time_end": "26:10",
+      "id": "107259",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107259?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=24"
+    },
+    {
+      "date": "2026-08-24",
+      "category": "書籍",
+      "title": "「B.L.T. SUMMER CANDY 2026」川端晃菜",
+      "member_uids": [
+        "63105"
+      ],
+      "id": "107247",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107247?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=24"
+    },
+    {
+      "date": "2026-08-25",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=25"
+    },
+    {
+      "date": "2026-08-25",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=25"
+    },
+    {
+      "date": "2026-08-25",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=25"
+    },
+    {
+      "date": "2026-08-26",
+      "category": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107117?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=26"
+    },
+    {
+      "date": "2026-08-26",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=26"
+    },
+    {
+      "date": "2026-08-26",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=26"
+    },
+    {
+      "date": "2026-08-26",
+      "category": "リリース",
+      "title": "LIVE Blu-ray＆DVD「SHIORI KUBO GRADUATION CONCERT」",
+      "member_uids": [],
+      "id": "107168",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107168?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=26"
+    },
+    {
+      "date": "2026-08-27",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=27"
+    },
+    {
+      "date": "2026-08-27",
+      "category": "WEB",
+      "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "id": "107237",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107237?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=27"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=28"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=28"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=28"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=28"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "TV",
+      "title": "日本テレビ「夜バゲット」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107255",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107255?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=28"
+    },
+    {
+      "date": "2026-08-29",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=29"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=30"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=30"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=30"
+    },
+    {
+      "date": "2026-08-31",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107113",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107113?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=31"
+    },
+    {
+      "date": "2026-08-31",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5125&pri1=202608&wd00=2026&wd01=08&wd02=31"
+    },
+    {
+      "date": "2026-09-01",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=01"
+    },
+    {
+      "date": "2026-09-01",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=01"
+    },
+    {
+      "date": "2026-09-01",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=01"
+    },
+    {
+      "date": "2026-09-02",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=02"
+    },
+    {
+      "date": "2026-09-02",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=02"
+    },
+    {
+      "date": "2026-09-03",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=03"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "18:00",
+      "time_end": "22:00",
+      "id": "107115",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107115?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "TV",
+      "title": "日本テレビ「夜バゲット」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107256",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107256?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107227",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107227?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=04"
+    },
+    {
+      "date": "2026-09-05",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=05"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=06"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=06"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=06"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "誕生日",
+      "title": "吉田 綾乃クリスティー",
+      "member_uids": [
+        "36759"
+      ],
+      "id": "100055",
+      "url": "https://www.nogizaka46.com/s/n46/artist/36759?ima=5100"
+    },
+    {
+      "date": "2026-09-07",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107114",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107114?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=07"
+    },
+    {
+      "date": "2026-09-07",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=07"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=08"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=08"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=08"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=09"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=09"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "リリース",
+      "title": "「舞台「鬼太郎誕生 ゲゲゲの謎」Blu-ray発売」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "id": "106569",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106569?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=09"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=10"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=11"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=11"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=11"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=11"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107227",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107227?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=11"
+    },
+    {
+      "date": "2026-09-12",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=12"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=13"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=13"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=13"
+    },
+    {
+      "date": "2026-09-14",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107113",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107113?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=14"
+    },
+    {
+      "date": "2026-09-14",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=14"
+    },
+    {
+      "date": "2026-09-15",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=15"
+    },
+    {
+      "date": "2026-09-15",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=15"
+    },
+    {
+      "date": "2026-09-15",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=15"
+    },
+    {
+      "date": "2026-09-16",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=16"
+    },
+    {
+      "date": "2026-09-16",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=16"
+    },
+    {
+      "date": "2026-09-17",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=17"
+    },
+    {
+      "date": "2026-09-17",
+      "category": "誕生日",
+      "title": "愛宕 心響",
+      "member_uids": [
+        "63101"
+      ],
+      "id": "105452",
+      "url": "https://www.nogizaka46.com/s/n46/artist/63101?ima=5100"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "18:00",
+      "time_end": "22:00",
+      "id": "107115",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107115?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=18"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=18"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=18"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=18"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=18"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107227",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107227?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=18"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "誕生日",
+      "title": "冨里 奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "id": "100882",
+      "url": "https://www.nogizaka46.com/s/n46/artist/55393?ima=5100"
+    },
+    {
+      "date": "2026-09-19",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=19"
+    },
+    {
+      "date": "2026-09-19",
+      "category": "ライブ/イベント",
+      "title": "「プロ野球 東北楽天ゴールデンイーグルス vs 福岡ソフトバンクホークス＠楽天モバイル 最強パーク宮城」乃木坂野球部",
+      "member_uids": [
+        "48010",
+        "48013",
+        "55383",
+        "55392",
+        "63107",
+        "63108"
+      ],
+      "id": "106810",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106810?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=19"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=20"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=20"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=20"
+    },
+    {
+      "date": "2026-09-21",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107114",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107114?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=21"
+    },
+    {
+      "date": "2026-09-21",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=21"
+    },
+    {
+      "date": "2026-09-22",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=22"
+    },
+    {
+      "date": "2026-09-22",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=22"
+    },
+    {
+      "date": "2026-09-22",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=22"
+    },
+    {
+      "date": "2026-09-23",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=23"
+    },
+    {
+      "date": "2026-09-23",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=23"
+    },
+    {
+      "date": "2026-09-24",
+      "category": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106859?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=24"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106410?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=25"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106841?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=25"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106963?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=25"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107207",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107207?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=25"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "TV",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
+      "member_uids": [
+        "55385",
+        "55387"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107227",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107227?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=25"
+    },
+    {
+      "date": "2026-09-26",
+      "category": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107022?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=26"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "105350",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105350?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=27"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106124?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=27"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "TV",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107110",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107110?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=27"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "WEB",
+      "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "id": "107237",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107237?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=27"
+    },
+    {
+      "date": "2026-09-28",
+      "category": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107113",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107113?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=28"
+    },
+    {
+      "date": "2026-09-28",
+      "category": "TV",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107257",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107257?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=28"
+    },
+    {
+      "date": "2026-09-29",
+      "category": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "106849",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106849?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=29"
+    },
+    {
+      "date": "2026-09-29",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105431?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=29"
+    },
+    {
+      "date": "2026-09-29",
+      "category": "TV",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/105027?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=29"
+    },
+    {
+      "date": "2026-09-30",
+      "category": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/106548?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=30"
+    },
+    {
+      "date": "2026-09-30",
+      "category": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107173",
+      "url": "https://www.nogizaka46.com/s/n46/media/detail/107173?ima=5100&pri1=202609&wd00=2026&wd01=09&wd02=30"
+    }
+  ]
+}

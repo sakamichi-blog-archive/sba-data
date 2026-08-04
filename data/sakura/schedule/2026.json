@@ -1,0 +1,1113 @@
+{
+  "count": 124,
+  "events": [
+    {
+      "date": "2026-08-01",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-08-01",
+      "category": "ライブ",
+      "title": "「OSAKA GIGANTIC MUSIC FESTIVAL 2026 -THANKS 10TH GIGA-」",
+      "member_uids": [],
+      "id": "11602"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "イベント",
+      "title": "15th Double A-side Single『Lonesome rabbit / What’s “KAZOKU”?』購入者応募抽選スペシャルイベント！リアルサイン会",
+      "member_uids": [],
+      "id": "11845"
+    },
+    {
+      "date": "2026-08-02",
+      "category": "ミート&グリート",
+      "title": "15th Double A-side Single『Lonesome rabbit / What’s “KAZOKU”?』購入者応募抽選企画リアルミート&グリート",
+      "member_uids": [],
+      "id": "11847"
+    },
+    {
+      "date": "2026-08-04",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "イベント",
+      "title": "「マイナビ閃光ライオット2026 produced by SCHOOL OF LOCK!」FINAL STAGE",
+      "member_uids": [
+        "51"
+      ],
+      "id": "11842"
+    },
+    {
+      "date": "2026-08-06",
+      "category": "イベント",
+      "title": "テレビ朝日「サクラミーツ」公開収録",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "id": "11841"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "配信",
+      "title": "Lemino「櫻坂46ライブアーカイブ Vol.6 三期生ライブ-東京公演-」配信開始",
+      "member_uids": [],
+      "time_start": "12:00",
+      "id": "11956"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-08-07",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-08-09",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-11",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-13",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-08-13",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-08-14",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-15",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-08-15",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-08-16",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-18",
+      "category": "誕生日",
+      "title": "村井 優の誕生日",
+      "member_uids": [
+        "67"
+      ],
+      "id": "7596"
+    },
+    {
+      "date": "2026-08-18",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-20",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-08-20",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-08-21",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-22",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-08-22",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-08-23",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-25",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-27",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-08-27",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-08-28",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-08-29",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-08-29",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-08-29",
+      "category": "誕生日",
+      "title": "藤吉 夏鈴の誕生日",
+      "member_uids": [
+        "47"
+      ],
+      "id": "3779"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
+      "member_uids": [],
+      "id": "11567"
+    },
+    {
+      "date": "2026-09-01",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-03",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-09-03",
+      "category": "配信",
+      "title": "15th Double A-side Single『Lonesome rabbit / What’s “KAZOKU”?』配信ミニライブ",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "11849"
+    },
+    {
+      "date": "2026-09-03",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-09-04",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-05",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-09-06",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-09-08",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-09",
+      "category": "リリース",
+      "title": "LIVE Blu-ray&DVD『5th YEAR ANNIVERSARY LIVE at MUFG STADIUM』",
+      "member_uids": [],
+      "id": "11957"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-09-10",
+      "category": "イベント",
+      "title": "「第4回サクラミーツフェス」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "id": "11773"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-09-11",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-12",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-09-12",
+      "category": "ミート＆グリート",
+      "title": "15th Double A-side Single『Lonesome rabbit / What's “KAZOKU”?』発売記念 オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "11660"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-09-13",
+      "category": "ミート＆グリート",
+      "title": "15th Double A-side Single『Lonesome rabbit / What's “KAZOKU”?』発売記念 オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "11660"
+    },
+    {
+      "date": "2026-09-15",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-16",
+      "category": "誕生日",
+      "title": "中川 智尋の誕生日",
+      "member_uids": [
+        "74"
+      ],
+      "id": "10467"
+    },
+    {
+      "date": "2026-09-17",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-09-17",
+      "category": "配信",
+      "title": "15th Double A-side Single『Lonesome rabbit / What’s “KAZOKU”?』配信ミニライブ・アーカイブ配信",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "11850"
+    },
+    {
+      "date": "2026-09-17",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "映画",
+      "title": "映画「踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！」",
+      "member_uids": [
+        "47"
+      ],
+      "id": "11815"
+    },
+    {
+      "date": "2026-09-18",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-19",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-09-19",
+      "category": "誕生日",
+      "title": "山川 宇衣の誕生日",
+      "member_uids": [
+        "77"
+      ],
+      "id": "10470"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-09-20",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-09-21",
+      "category": "イベント",
+      "title": "「ROCK IN JAPAN FESTIVAL 2026」",
+      "member_uids": [],
+      "id": "11744"
+    },
+    {
+      "date": "2026-09-22",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-24",
+      "category": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-09-24",
+      "category": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-09-25",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-26",
+      "category": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "66"
+      ],
+      "time_start": "19:00",
+      "id": "11479"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-09-27",
+      "category": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-09-28",
+      "category": "誕生日",
+      "title": "山﨑 天の誕生日",
+      "member_uids": [
+        "51"
+      ],
+      "id": "3775"
+    },
+    {
+      "date": "2026-09-29",
+      "category": "ライブ",
+      "title": "「15th Single BACKS LIVE!!」",
+      "member_uids": [
+        "53",
+        "55",
+        "56",
+        "57",
+        "59",
+        "60",
+        "61",
+        "64",
+        "68",
+        "71",
+        "72",
+        "73",
+        "75",
+        "76",
+        "78"
+      ],
+      "id": "11765"
+    },
+    {
+      "date": "2026-09-29",
+      "category": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-09-30",
+      "category": "ライブ",
+      "title": "「15th Single BACKS LIVE!!」「増本綺良 卒業セレモニー」",
+      "member_uids": [
+        "53",
+        "55",
+        "56",
+        "57",
+        "59",
+        "60",
+        "61",
+        "64",
+        "68",
+        "71",
+        "72",
+        "73",
+        "75",
+        "76",
+        "78"
+      ],
+      "id": "11766"
+    }
+  ]
+}

@@ -9,12 +9,12 @@ The primary purpose of this repo is data. The web app (`.web/`) is a side-projec
 ## Repository structure
 
 ```
-hinata-blogs/   Hinatazaka46 blog data
-keyaki-blogs/   Keyakizaka46 blog data (historical only — group became Sakurazaka46 in 2020)
-nogi-blogs/     Nogizaka46 blog data
-sakura-blogs/   Sakurazaka46 blog data
-.updater/       Node.js project for fetching and updating blog data
-.web/           Astro web app + Cloudflare Workers config
+data/hinata/blogs/   Hinatazaka46 blog data
+data/keyaki/blogs/   Keyakizaka46 blog data (historical only — group became Sakurazaka46 in 2020)
+data/nogi/blogs/     Nogizaka46 blog data
+data/sakura/blogs/   Sakurazaka46 blog data
+.updater/            Node.js project for fetching and updating blog data
+.web/                Astro web app + Cloudflare Workers config
 ```
 
 ## Stack
@@ -26,10 +26,10 @@ sakura-blogs/   Sakurazaka46 blog data
 
 ## Data format
 
-Each group directory (`nogi-blogs/`, `hinata-blogs/`, `keyaki-blogs/`, `sakura-blogs/`) contains one JSON file per year:
+Each group directory (`data/nogi/blogs/`, `data/hinata/blogs/`, `data/keyaki/blogs/`, `data/sakura/blogs/`) contains one JSON file per year:
 
 ```
-{group}-blogs/{year}.json
+data/{group}/blogs/{year}.json
 ```
 
 Schema:

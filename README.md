@@ -7,12 +7,12 @@ Successor to [sba-contributions](https://github.com/sakamichi-blog-archive/sba-c
 ## Repository structure
 
 ```
-hinata-blogs/   Hinatazaka46 blog data
-keyaki-blogs/   Keyakizaka46 blog data
-nogi-blogs/     Nogizaka46 blog data
-sakura-blogs/   Sakurazaka46 blog data
-.updater/       Node.js project for fetching and updating blog data
-.web/           Astro web app + Cloudflare Workers config
+data/hinata/blogs/   Hinatazaka46 blog data
+data/keyaki/blogs/   Keyakizaka46 blog data
+data/nogi/blogs/     Nogizaka46 blog data
+data/sakura/blogs/   Sakurazaka46 blog data
+.updater/            Node.js project for fetching and updating blog data
+.web/                Astro web app + Cloudflare Workers config
 ```
 
 ## Data pipeline

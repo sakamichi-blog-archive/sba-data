@@ -108,7 +108,7 @@ describe("updateGroup", () => {
 
     expect(writeFileMock).toHaveBeenCalledTimes(1)
     const [filePath, contents] = writeFileMock.mock.calls[0]!
-    expect(filePath).toContain("hinata-blogs/2024.json")
+    expect(filePath).toContain("data/hinata/blogs/2024.json")
 
     const written = JSON.parse(contents as string)
     expect(written.count).toBe(1)

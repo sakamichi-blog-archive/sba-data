@@ -33,7 +33,7 @@ jobs:
       - name: Calculate date to update
         id: date
         run: echo "date=$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
-      - run: pnpm run update "$UPDATE_DATE"
+      - run: pnpm run update:blogs "$UPDATE_DATE"
         working-directory: .updater
         env:
           UPDATE_DATE: ${{ steps.date.outputs.date }}

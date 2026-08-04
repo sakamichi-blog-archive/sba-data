@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "update": "tsx src/index.ts"
+    "update": "tsx src/index.ts",
+    "update:schedule": "tsx src/schedule-index.ts"
   },
   "dependencies": {
     "@sakamichi-blog-archive/utils": "^0.6.0"

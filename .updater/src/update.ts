@@ -19,16 +19,16 @@ import {
 
 import type { DayEntry, YearData } from "./types.js"
 
-// keyaki-blogs/ is historical data only — Keyakizaka46 became Sakurazaka46 in 2020
+// data/keyaki/blogs/ is historical data only — Keyakizaka46 became Sakurazaka46 in 2020
 // and no longer has an active blog.
 type Group = "hinata" | "nogi" | "sakura"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../")
 
 const dirs: Record<Group, string> = {
-  hinata: "hinata-blogs",
-  nogi: "nogi-blogs",
-  sakura: "sakura-blogs"
+  hinata: "data/hinata/blogs",
+  nogi: "data/nogi/blogs",
+  sakura: "data/sakura/blogs"
 }
 
 function buildNameMap(members: Member[]): Map<string, string> {

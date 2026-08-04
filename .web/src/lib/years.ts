@@ -45,7 +45,7 @@ export interface GroupYears {
 }
 
 function groupDataDir(group: string): string {
-  return path.join(REPO_ROOT, `${group}-blogs`)
+  return path.join(REPO_ROOT, "data", group, "blogs")
 }
 
 export function getGroupYears(): GroupYears[] {

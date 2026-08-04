@@ -21,7 +21,7 @@ Commits must follow [Conventional Commits](https://www.conventionalcommits.org/)
 | `github`  | GitHub Actions workflows and Dependabot config |
 | `updater` | `.updater/` — data fetching project            |
 | `web`     | `.web/` — Astro web app                        |
-| `data`    | Blog data files (`*-blogs/`)                   |
+| `data`    | Blog data files (`data/*/blogs/`)              |
 
 ### Examples
 

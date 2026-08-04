@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "${APP_SLUG}[bot]"
           git config user.email "$UPDATER_APP_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
-          git add hinata-blogs nogi-blogs sakura-blogs
+          git add data/hinata/blogs data/nogi/blogs data/sakura/blogs
           git diff --staged --quiet || git commit -m "data: Update blog data for $UPDATE_DATE"
           git push
         env:

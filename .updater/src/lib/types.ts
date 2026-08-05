@@ -21,7 +21,6 @@ export interface ScheduleEventEntry {
   time_start?: string
   time_end?: string
   id?: string
-  url?: string
 }
 
 export interface ScheduleYearData {

@@ -8,10 +8,9 @@
     "typecheck": "tsc --noEmit",
     "update:blogs": "tsx src/blogs.ts",
     "update:schedule": "tsx src/schedule.ts",
-    "update:calendars": "tsx src/ics.ts"
+    "build:calendars": "tsx src/ics.ts"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.906.0",
     "@sakamichi-blog-archive/utils": "^0.7.0",
     "ics": "^3.12.0"
   },

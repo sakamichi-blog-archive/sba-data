@@ -52,9 +52,14 @@ jobs:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           UPDATE_DATE: ${{ steps.date.outputs.date }}
           UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
-      - run: pnpm run update:calendars
+      - run: pnpm run build:calendars
         working-directory: .updater
+      - name: Publish calendars to R2
+        run: |
+          aws s3 sync .updater/dist/calendars "s3://sakamichi-blog-archive-calendars-production" \
+            --endpoint-url "https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
         env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
-          CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}

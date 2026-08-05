@@ -7,3 +7,4 @@
 !**/.gitkeep
 node_modules
 **/node_modules
+.updater/dist

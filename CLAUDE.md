@@ -83,7 +83,7 @@ Schema:
 
 Unlike `blogs/`, `events` only lists days that actually have events (no zero-event placeholder entries), and isn't split into one entry per calendar day. Each update run refetches the current and next JST calendar month and replaces just those months' events in the target year file(s) — event content isn't diffed or hashed; git history is the record of what changed.
 
-No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) via `@sakamichi-blog-archive/utils`'s `get*ScheduleEventUrl`/`getSakuraScheduleUrl` helpers whenever a consumer needs a link.
+No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) via `@sakamichi-blog-archive/utils`'s `get*ScheduleEventUrl`/`getSakuraScheduleUrl` helpers whenever a consumer needs a link. Exception: nogi's `category: "誕生日"` (birthday) entries link to the member's profile page (`/artist/{member_uid}`) rather than an event detail page, so their link must be built from `member_uids` instead of `id`.
 
 ## Architecture
 

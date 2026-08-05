@@ -7,7 +7,6 @@ on:
       - .github/**
       - mise.lock
       - mise.toml
-      - zizmor.yml
 
 permissions: {}
 

@@ -20,6 +20,9 @@ importers:
       '@sakamichi-blog-archive/utils':
         specifier: ^0.6.0
         version: 0.6.0
+      p-limit:
+        specifier: ^7.3.1
+        version: 7.3.1
     devDependencies:
       '@types/node':
         specifier: ^24

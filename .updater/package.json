@@ -10,7 +10,8 @@
     "update:schedule": "tsx src/schedule-index.ts"
   },
   "dependencies": {
-    "@sakamichi-blog-archive/utils": "^0.6.0"
+    "@sakamichi-blog-archive/utils": "^0.6.0",
+    "p-limit": "^7.3.1"
   },
   "devDependencies": {
     "@types/node": "^24",

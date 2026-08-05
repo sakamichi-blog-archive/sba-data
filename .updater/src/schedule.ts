@@ -9,6 +9,7 @@ import {
   fetchSakuraScheduleEvents,
   type ScheduleFilter
 } from "@sakamichi-blog-archive/utils/schedule"
+import pLimit from "p-limit"
 
 import { nameToUid } from "./name-to-uid.js"
 import type { Group, ScheduleEventEntry, ScheduleYearData } from "./types.js"
@@ -60,12 +61,27 @@ async function fetchRawEvents(group: Group, filter: ScheduleFilter): Promise<Raw
   return (await fetchSakuraScheduleEvents(filter)).events
 }
 
+const HINATA_DETAIL_CONCURRENCY = 5
+
 // Unlike nogi/sakura, hinata's list events carry no members — fetch each unique event
-// id's detail once (recurring events share an id) rather than once per occurrence.
+// id's detail once (recurring events share an id across occurrences, including across
+// the two fetched months) rather than once per occurrence. Capped concurrency keeps a
+// single failed/slow request from blowing up dozens of simultaneous requests, and keeps
+// load on the official site reasonable.
 async function fetchHinataMembersById(events: RawScheduleEvent[]): Promise<Map<string, string[]>> {
   const ids = [...new Set(events.map(e => e.id).filter((id): id is string => id !== undefined))]
-  const details = await Promise.all(ids.map(id => fetchHinataScheduleEvent(id)))
-  return new Map(ids.map((id, index) => [id, details[index]!.event.members]))
+  const limit = pLimit(HINATA_DETAIL_CONCURRENCY)
+  const members = await limit.map(ids, async id => {
+    try {
+      return (await fetchHinataScheduleEvent(id)).event.members
+    } catch (err) {
+      console.warn(
+        `failed to fetch hinata schedule event detail for id "${id}": ${(err as Error).message}`
+      )
+      return []
+    }
+  })
+  return new Map(ids.map((id, index) => [id, members[index]!]))
 }
 
 function isInMonth(date: string, year: number, month: number): boolean {
@@ -82,40 +98,58 @@ function compareEvents(a: ScheduleEventEntry, b: ScheduleEventEntry): number {
   return a.title.localeCompare(b.title)
 }
 
-export async function updateGroupSchedule(group: Group, referenceDate = todayJST()): Promise<void> {
-  for (const filter of monthsToFetch(referenceDate)) {
-    // Sequential by necessity: consecutive months can land in the same year file,
-    // so the second iteration's read-modify-write must see the first's result.
-    // oxlint-disable-next-line no-await-in-loop
-    const rawEvents = await fetchRawEvents(group, filter)
-    let hinataMembersById: Map<string, string[]> | undefined
-    if (group === "hinata") {
-      // oxlint-disable-next-line no-await-in-loop
-      hinataMembersById = await fetchHinataMembersById(rawEvents)
+function buildEntries(
+  group: Group,
+  rawEvents: RawScheduleEvent[],
+  hinataMembersById: Map<string, string[]> | undefined
+): ScheduleEventEntry[] {
+  return rawEvents.map(e => {
+    const names = hinataMembersById
+      ? e.id
+        ? (hinataMembersById.get(e.id) ?? [])
+        : []
+      : (e.members ?? [])
+    const memberUids = names.flatMap(name => {
+      const uid = nameToUid[group].get(name)
+      if (!uid) console.warn(`unknown member name "${name}" in ${group} schedule`)
+      return uid ? [uid] : []
+    })
+
+    return {
+      date: formatJstDate(e.date),
+      category: e.category,
+      title: e.title,
+      member_uids: memberUids,
+      time_start: e.timeStart,
+      time_end: e.timeEnd,
+      id: e.id,
+      url: e.url
     }
+  })
+}
 
-    const newEvents: ScheduleEventEntry[] = rawEvents.map(e => {
-      const names = hinataMembersById
-        ? e.id
-          ? (hinataMembersById.get(e.id) ?? [])
-          : []
-        : (e.members ?? [])
-      const memberUids = names.flatMap(name => {
-        const uid = nameToUid[group].get(name)
-        if (!uid) console.warn(`unknown member name "${name}" in ${group} schedule`)
-        return uid ? [uid] : []
-      })
+export async function updateGroupSchedule(group: Group, referenceDate = todayJST()): Promise<void> {
+  const filters = monthsToFetch(referenceDate)
+  // The two months' list fetches are independent reads, safe to run in parallel.
+  const rawEventsByMonth = await Promise.all(filters.map(filter => fetchRawEvents(group, filter)))
 
-      return {
-        date: formatJstDate(e.date),
-        category: e.category,
-        title: e.title,
-        member_uids: memberUids,
-        time_start: e.timeStart,
-        time_end: e.timeEnd,
-        id: e.id,
-        url: e.url
+  // Deduped across both months up front, so a recurring event spanning the boundary
+  // (e.g. a weekly show occurring in both the current and next month) only triggers
+  // one detail request instead of one per month.
+  let hinataMembersById: Map<string, string[]> | undefined
+  if (group === "hinata") {
+    hinataMembersById = await fetchHinataMembersById(rawEventsByMonth.flat())
+  }
+
+  for (const [index, filter] of filters.entries()) {
+    const newEvents = buildEntries(group, rawEventsByMonth[index]!, hinataMembersById).filter(e => {
+      const inMonth = isInMonth(e.date, filter.year, filter.month)
+      if (!inMonth) {
+        console.warn(
+          `dropping ${group} schedule event "${e.title}" dated ${e.date}, outside requested month ${filter.year}-${String(filter.month).padStart(2, "0")}`
+        )
       }
+      return inMonth
     })
 
     const dir = join(ROOT, dirs[group])
@@ -123,6 +157,8 @@ export async function updateGroupSchedule(group: Group, referenceDate = todayJST
 
     let raw: string | null = null
     try {
+      // Sequential by necessity: consecutive months can land in the same year file,
+      // so the second iteration's read-modify-write must see the first's result.
       // oxlint-disable-next-line no-await-in-loop
       raw = await readFile(filePath, "utf8")
     } catch (err) {

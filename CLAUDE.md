@@ -75,8 +75,7 @@ Schema:
       "member_uids": ["25", "31"], // member UIDs; empty if none listed
       "time_start": "18:00", // optional, HH:mm JST
       "time_end": "20:00", // optional, HH:mm JST
-      "id": "12345", // optional site event id; recurring events share an id
-      "url": "https://..." // optional
+      "id": "12345" // optional site event id; recurring events share an id
     }
   ]
 }
@@ -84,7 +83,7 @@ Schema:
 
 Unlike `blogs/`, `events` only lists days that actually have events (no zero-event placeholder entries), and isn't split into one entry per calendar day. Each update run refetches the current and next JST calendar month and replaces just those months' events in the target year file(s) — event content isn't diffed or hashed; git history is the record of what changed.
 
-`url` has any rotating/session-only query params (e.g. nogi's `ima`) stripped before storage, so the same event's `url` stays stable across runs instead of producing a diff every update.
+No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) via `@sakamichi-blog-archive/utils`'s `get*ScheduleEventUrl`/`getSakuraScheduleUrl` helpers whenever a consumer needs a link.
 
 ## Architecture
 

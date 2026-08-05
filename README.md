@@ -7,17 +7,20 @@ Successor to [sba-contributions](https://github.com/sakamichi-blog-archive/sba-c
 ## Repository structure
 
 ```
-data/hinata/blogs/   Hinatazaka46 blog data
-data/keyaki/blogs/   Keyakizaka46 blog data
-data/nogi/blogs/     Nogizaka46 blog data
-data/sakura/blogs/   Sakurazaka46 blog data
-.updater/            Node.js project for fetching and updating blog data
-.web/                Astro web app + Cloudflare Workers config
+data/hinata/blogs/      Hinatazaka46 blog data
+data/hinata/schedule/   Hinatazaka46 schedule event data
+data/keyaki/blogs/      Keyakizaka46 blog data
+data/nogi/blogs/        Nogizaka46 blog data
+data/nogi/schedule/     Nogizaka46 schedule event data
+data/sakura/blogs/      Sakurazaka46 blog data
+data/sakura/schedule/   Sakurazaka46 schedule event data
+.updater/               Node.js project for fetching and updating blog and schedule data
+.web/                   Astro web app + Cloudflare Workers config
 ```
 
 ## Data pipeline
 
-A GitHub Actions workflow runs daily, fetches blog post data from each group's official blog, and commits updated files to the group directories above.
+GitHub Actions workflows fetch data from each group's official site and commit updated files to the group directories above: blog post data daily, schedule event data every 6 hours.
 
 ## Web app
 

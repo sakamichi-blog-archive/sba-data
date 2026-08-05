@@ -8,7 +8,7 @@ import {
 } from "@sakamichi-blog-archive/utils/blogs"
 import { beforeEach, describe, expect, it, vi } from "vitest"
 
-import { daysUpTo, updateGroup, yesterdayJST } from "./update.js"
+import { daysUpTo, updateGroup, yesterdayJST } from "./blogs.js"
 
 vi.mock("node:fs/promises", () => ({
   readFile: vi.fn(),

@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "pnpm run format && pnpm run lint && pnpm run test",
+    "check": "pnpm run format && pnpm run lint && pnpm run typecheck && pnpm run test",
     "format": "oxfmt --check",
     "format:fix": "oxfmt",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
-    "test": "pnpm --filter @sakamichi-blog-archive/updater --filter @sakamichi-blog-archive/web run test"
+    "test": "pnpm --filter @sakamichi-blog-archive/updater --filter @sakamichi-blog-archive/web run test",
+    "typecheck": "pnpm --filter @sakamichi-blog-archive/updater --filter @sakamichi-blog-archive/web run typecheck"
   },
   "devDependencies": {
     "oxfmt": "^0.60.0",

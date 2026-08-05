@@ -10,40 +10,16 @@ import {
   type Blog,
   type SakuraBlog
 } from "@sakamichi-blog-archive/utils/blogs"
-import {
-  hinataMembers,
-  nogiMembers,
-  sakuraMembers,
-  type Member
-} from "@sakamichi-blog-archive/utils/members"
 
-import type { DayEntry, YearData } from "./types.js"
+import { nameToUid } from "./name-to-uid.js"
+import type { DayEntry, Group, YearData } from "./types.js"
 
-// data/keyaki/blogs/ is historical data only — Keyakizaka46 became Sakurazaka46 in 2020
-// and no longer has an active blog.
-type Group = "hinata" | "nogi" | "sakura"
-
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../")
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../")
 
 const dirs: Record<Group, string> = {
   hinata: "data/hinata/blogs",
   nogi: "data/nogi/blogs",
   sakura: "data/sakura/blogs"
-}
-
-function buildNameMap(members: Member[]): Map<string, string> {
-  const map = new Map<string, string>()
-  for (const m of members) {
-    map.set(m.name, m.uid)
-    map.set(m.nameSpaced, m.uid)
-  }
-  return map
-}
-
-const nameToUid: Record<Group, Map<string, string>> = {
-  hinata: buildNameMap(hinataMembers),
-  nogi: buildNameMap(nogiMembers),
-  sakura: buildNameMap(sakuraMembers)
 }
 
 export function yesterdayJST(): string {

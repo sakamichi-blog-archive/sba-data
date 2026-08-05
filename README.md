@@ -22,6 +22,14 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 
 GitHub Actions workflows fetch data from each group's official site and commit updated files to the group directories above: blog post data daily, schedule event data every 6 hours.
 
+## Schedule calendars
+
+Each group's upcoming schedule (current + next month) is published as a subscribable `.ics` calendar, regenerated every 6 hours alongside the schedule data:
+
+- Hinatazaka46: https://calendars.sakamichi.co/hinata/calendar.ics
+- Nogizaka46: https://calendars.sakamichi.co/nogi/calendar.ics
+- Sakurazaka46: https://calendars.sakamichi.co/sakura/calendar.ics
+
 ## Web app
 
 The Astro site lives in `.web/` and is deployed to Cloudflare Workers. It reads the data files at build time to render the contribution heatmaps.

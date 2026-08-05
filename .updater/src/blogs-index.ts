@@ -1,4 +1,4 @@
-import { updateGroup } from "./update.js"
+import { updateGroup } from "./blogs.js"
 
 const date = process.argv[2]
 

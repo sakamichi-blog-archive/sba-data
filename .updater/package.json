@@ -6,7 +6,7 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "update:blogs": "tsx src/index.ts",
+    "update:blogs": "tsx src/blogs-index.ts",
     "update:schedule": "tsx src/schedule-index.ts"
   },
   "dependencies": {

@@ -26,6 +26,7 @@ Keyaki has no `schedule/` directory — Keyakizaka46 no longer has an active sch
 
 - **Astro** — static site with islands where interactivity is needed
 - **Cloudflare Workers** — hosting
+- **Cloudflare R2** — hosts the generated `.ics` schedule calendars
 - **GitHub Actions** — scheduled workflows fetch and commit updated data: blogs daily, schedule events every 6 hours
 - **pnpm** — package manager
 
@@ -88,6 +89,8 @@ No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) 
 ## Architecture
 
 Data is fetched and committed to the repo by scheduled GitHub Actions workflows (one for blogs, one for schedule). The Astro build reads static data files from the group directories — no runtime data fetching.
+
+Each schedule update run also regenerates a per-group `.ics` calendar (current + next JST month, `data/{group}/schedule/` events, one event per occurrence) and uploads it to Cloudflare R2 at `{group}/calendar.ics`. Calendars aren't stored in the repo — they're rebuilt from the just-updated data on every run.
 
 ## What to avoid
 

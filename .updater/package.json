@@ -7,10 +7,12 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "update:blogs": "tsx src/blogs.ts",
-    "update:schedule": "tsx src/schedule.ts"
+    "update:schedule": "tsx src/schedule.ts",
+    "build:calendars": "tsx src/ics.ts"
   },
   "dependencies": {
-    "@sakamichi-blog-archive/utils": "^0.6.0"
+    "@sakamichi-blog-archive/utils": "^0.7.0",
+    "ics": "^3.12.0"
   },
   "devDependencies": {
     "@types/node": "^24",

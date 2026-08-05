@@ -1,5 +1,5 @@
 {
-  "count": 143,
+  "count": 145,
   "events": [
     {
       "date": "2026-08-01",
@@ -188,6 +188,17 @@
     },
     {
       "date": "2026-08-06",
+      "category": "配信",
+      "title": "SHOWROOM配信(石塚瑶季)",
+      "member_uids": [
+        "25"
+      ],
+      "time_start": "22:00",
+      "id": "11972",
+      "url": "https://www.hinatazaka46.com/s/official/media/detail/11972?ima=0000"
+    },
+    {
+      "date": "2026-08-06",
       "category": "ラジオ",
       "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
       "member_uids": [
@@ -304,6 +315,18 @@
       "time_start": "08:30",
       "id": "10118",
       "url": "https://www.hinatazaka46.com/s/official/media/detail/10118?ima=0000"
+    },
+    {
+      "date": "2026-08-08",
+      "category": "テレビ",
+      "title": "TBS系「THE鬼タイジ」",
+      "member_uids": [
+        "12",
+        "22"
+      ],
+      "time_start": "19:00",
+      "id": "11973",
+      "url": "https://www.hinatazaka46.com/s/official/media/detail/11973?ima=0000"
     },
     {
       "date": "2026-08-08",

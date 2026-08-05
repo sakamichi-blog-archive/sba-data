@@ -122,8 +122,7 @@ describe("updateGroupSchedule", () => {
         member_uids: ["7639"],
         time_start: "18:00",
         time_end: "19:00",
-        id: "e1",
-        url: "https://example.com/e1"
+        id: "e1"
       }
     ])
   })
@@ -228,8 +227,7 @@ describe("updateGroupSchedule", () => {
         member_uids: [],
         time_start: undefined,
         time_end: undefined,
-        id: "e2",
-        url: undefined
+        id: "e2"
       }
     ])
   })
@@ -391,67 +389,6 @@ describe("date-membership filtering", () => {
     const written = JSON.parse(contents as string)
     expect(written.events.map((e: { title: string }) => e.title)).toEqual(["In month"])
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("Spillover"))
-  })
-})
-
-describe("url normalization", () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-    fetchHinataScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-    fetchNogiScheduleEventsMock.mockResolvedValue({ events: [], js: "", url: "" })
-    fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-  })
-
-  it("strips the rotating ima param so the same event's url is stable across runs", async () => {
-    readFileMock.mockRejectedValue(enoent())
-    fetchNogiScheduleEventsMock.mockResolvedValueOnce({
-      events: [
-        {
-          category: "TV",
-          date: jstMidnight("2026-08-05"),
-          group: "nogi",
-          html: "",
-          id: "e1",
-          members: [],
-          title: "Show",
-          url: "https://www.nogizaka46.com/s/n46/media/detail/107250?ima=2736&pri1=202608&wd00=2026&wd01=08&wd02=01"
-        }
-      ],
-      js: "",
-      url: ""
-    })
-
-    await updateGroupSchedule("nogi", "2026-08-15")
-
-    const [, contents] = writeFileMock.mock.calls[0]!
-    const written = JSON.parse(contents as string)
-    expect(written.events[0].url).toBe(
-      "https://www.nogizaka46.com/s/n46/media/detail/107250?pri1=202608&wd00=2026&wd01=08&wd02=01"
-    )
-  })
-
-  it("leaves an undefined url untouched", async () => {
-    readFileMock.mockRejectedValue(enoent())
-    fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
-      events: [
-        {
-          date: jstMidnight("2026-08-05"),
-          group: "sakura",
-          html: "",
-          id: "e1",
-          members: [],
-          title: "Event"
-        }
-      ],
-      html: "",
-      url: ""
-    })
-
-    await updateGroupSchedule("sakura", "2026-08-15")
-
-    const [, contents] = writeFileMock.mock.calls[0]!
-    const written = JSON.parse(contents as string)
-    expect(written.events[0].url).toBeUndefined()
   })
 })
 

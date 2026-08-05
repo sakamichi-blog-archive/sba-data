@@ -51,7 +51,6 @@ interface RawScheduleEvent {
   timeStart?: string
   timeEnd?: string
   title: string
-  url?: string
 }
 
 async function fetchRawEvents(group: Group, filter: ScheduleFilter): Promise<RawScheduleEvent[]> {
@@ -97,17 +96,6 @@ function compareEvents(a: ScheduleEventEntry, b: ScheduleEventEntry): number {
   return a.title.localeCompare(b.title)
 }
 
-// `ima` is a rotating cache-busting/session value the site attaches to detail links —
-// it changes on every fetch even for the same event (hinata hardcodes it to "0000" for
-// the same reason) and has no bearing on which page it links to. Stripping it keeps a
-// given event's stored url stable across runs instead of producing a diff every update.
-function stripImaParam(url: string | undefined): string | undefined {
-  if (url === undefined) return undefined
-  const parsed = new URL(url)
-  parsed.searchParams.delete("ima")
-  return parsed.toString()
-}
-
 function buildEntries(
   group: Group,
   rawEvents: RawScheduleEvent[],
@@ -132,8 +120,7 @@ function buildEntries(
       member_uids: memberUids,
       time_start: e.timeStart,
       time_end: e.timeEnd,
-      id: e.id,
-      url: stripImaParam(e.url)
+      id: e.id
     }
   })
 }

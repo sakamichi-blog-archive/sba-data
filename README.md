@@ -18,17 +18,17 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 .web/                   Astro web app + Cloudflare Workers config
 ```
 
-## Data pipeline
-
-GitHub Actions workflows fetch data from each group's official site and commit updated files to the group directories above: blog post data daily, schedule event data every 6 hours.
-
 ## Schedule calendars
 
 Each group's upcoming schedule (current + next month) is published as a subscribable `.ics` calendar, regenerated every 6 hours alongside the schedule data:
 
-- Hinatazaka46: https://calendars.sakamichi.co/hinata/calendar.ics
-- Nogizaka46: https://calendars.sakamichi.co/nogi/calendar.ics
-- Sakurazaka46: https://calendars.sakamichi.co/sakura/calendar.ics
+- Hinatazaka46: <https://calendars.sakamichi.co/hinata/calendar.ics>
+- Nogizaka46: <https://calendars.sakamichi.co/nogi/calendar.ics>
+- Sakurazaka46: <https://calendars.sakamichi.co/sakura/calendar.ics>
+
+## Data pipeline
+
+GitHub Actions workflows fetch data from each group's official site and commit updated files to the group directories above: blog post data daily, schedule event data every 6 hours.
 
 ## Web app
 

@@ -22,23 +22,7 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 
 Each group's upcoming schedule (current + next month) is published as a subscribable `.ics` calendar, regenerated every 6 hours alongside the schedule data:
 
-**Hinatazaka46**
-
-```text
-https://calendars.sakamichi.co/hinata/calendar.ics
-```
-
-**Nogizaka46**
-
-```text
-https://calendars.sakamichi.co/nogi/calendar.ics
-```
-
-**Sakurazaka46**
-
-```text
-https://calendars.sakamichi.co/sakura/calendar.ics
-```
+### How to subscribe
 
 - **Apple Calendar:** File → New Calendar Subscription
   - [Use iCloud calendar subscriptions - Apple Support](https://support.apple.com/en-us/102301)
@@ -46,6 +30,26 @@ https://calendars.sakamichi.co/sakura/calendar.ics
   - [Subscribe to someone else's calendar - Computer - Google Calendar Help](https://support.google.com/calendar/answer/37100?hl=en)
 - **Outlook:** Add calendar → Subscribe from web
   - [Import or subscribe to a calendar in Outlook.com or Outlook on the web | Microsoft Support](https://support.microsoft.com/en-us/outlook/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web)
+
+### URLs
+
+Nogizaka46:
+
+```text
+https://calendars.sakamichi.co/nogi/calendar.ics
+```
+
+Hinatazaka46:
+
+```text
+https://calendars.sakamichi.co/hinata/calendar.ics
+```
+
+Sakurazaka46:
+
+```text
+https://calendars.sakamichi.co/sakura/calendar.ics
+```
 
 ## Data pipeline
 

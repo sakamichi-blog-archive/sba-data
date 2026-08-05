@@ -52,3 +52,9 @@ jobs:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
           UPDATE_DATE: ${{ steps.date.outputs.date }}
           UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
+      - run: pnpm run update:calendars
+        working-directory: .updater
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_R2_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          CLOUDFLARE_R2_SECRET_ACCESS_KEY: ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}

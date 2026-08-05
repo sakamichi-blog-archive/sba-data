@@ -82,7 +82,7 @@ async function fetchHinataMembersById(events: RawScheduleEvent[]): Promise<Map<s
   return membersById
 }
 
-function isInMonth(date: string, year: number, month: number): boolean {
+export function isInMonth(date: string, year: number, month: number): boolean {
   return date.startsWith(`${year}-${String(month).padStart(2, "0")}`)
 }
 

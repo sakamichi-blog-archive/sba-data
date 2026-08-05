@@ -6,12 +6,11 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "update:blogs": "tsx src/blogs-index.ts",
-    "update:schedule": "tsx src/schedule-index.ts"
+    "update:blogs": "tsx src/blogs.ts",
+    "update:schedule": "tsx src/schedule.ts"
   },
   "dependencies": {
-    "@sakamichi-blog-archive/utils": "^0.6.0",
-    "p-limit": "^7.3.1"
+    "@sakamichi-blog-archive/utils": "^0.6.0"
   },
   "devDependencies": {
     "@types/node": "^24",

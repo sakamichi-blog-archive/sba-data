@@ -2,8 +2,10 @@ name: Update schedule data
 
 on:
   schedule:
-    # Every day at 1:00 JST
-    - cron: "0 1 * * *"
+    # Every 6 hours (0:00, 6:00, 12:00, 18:00 JST) — schedule events get announced and
+    # revised throughout the day, unlike blog posts. 0:00 stays clear of the blogs
+    # workflow's 0:30 JST run.
+    - cron: "0 */6 * * *"
       timezone: "Asia/Tokyo"
 
 permissions: {}

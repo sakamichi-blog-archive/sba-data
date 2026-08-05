@@ -20,7 +20,7 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 
 ## Data pipeline
 
-GitHub Actions workflows run daily, fetching blog post and schedule event data from each group's official site and committing updated files to the group directories above.
+GitHub Actions workflows fetch data from each group's official site and commit updated files to the group directories above: blog post data daily, schedule event data every 6 hours.
 
 ## Web app
 

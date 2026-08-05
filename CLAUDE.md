@@ -26,7 +26,7 @@ Keyaki has no `schedule/` directory — Keyakizaka46 no longer has an active sch
 
 - **Astro** — static site with islands where interactivity is needed
 - **Cloudflare Workers** — hosting
-- **GitHub Actions** — daily scheduled workflows fetch and commit updated blog and schedule data
+- **GitHub Actions** — scheduled workflows fetch and commit updated data: blogs daily, schedule events every 6 hours
 - **pnpm** — package manager
 
 ## Data format
@@ -82,7 +82,9 @@ Schema:
 }
 ```
 
-Unlike `blogs/`, `events` only lists days that actually have events (no zero-event placeholder entries), and isn't split into one entry per calendar day. The daily update refetches the current and next JST calendar month each run and replaces just those months' events in the target year file(s) — event content isn't diffed or hashed; git history is the record of what changed.
+Unlike `blogs/`, `events` only lists days that actually have events (no zero-event placeholder entries), and isn't split into one entry per calendar day. Each update run refetches the current and next JST calendar month and replaces just those months' events in the target year file(s) — event content isn't diffed or hashed; git history is the record of what changed.
+
+`url` has any rotating/session-only query params (e.g. nogi's `ima`) stripped before storage, so the same event's `url` stays stable across runs instead of producing a diff every update.
 
 ## Architecture
 

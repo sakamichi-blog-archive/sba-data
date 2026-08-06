@@ -56,20 +56,21 @@ function birthdayTitle(group: Group, event: ScheduleEventEntry): string {
 
   const eventYear = Number(event.date.split("-")[0])
   const birthYear = Number(member.birthdate.split("-")[0])
-  return `🎂 ${member.nameSpaced}の${eventYear - birthYear}歳の誕生日`
+  return `🎂 ${member.name}の${eventYear - birthYear}歳の誕生日`
 }
 
-// The nogi schedule API's own event id resolves to a media/announcement page, but for a
-// "誕生日" (birthday) entry the official site instead links to the member's profile page —
-// there's no id-based URL for that. Building it directly from member_uids is the only option.
-function nogiArtistUrl(memberUid: string): string {
-  return `https://www.nogizaka46.com/s/n46/artist/${memberUid}`
+// None of the schedule APIs give a birthday entry an id-based detail URL — the official sites
+// link these to the member's own profile page instead, so it has to be built from member_uids.
+function memberProfileUrl(group: Group, memberUid: string): string {
+  if (group === "nogi") return `https://www.nogizaka46.com/s/n46/artist/${memberUid}`
+  if (group === "hinata") return `https://www.hinatazaka46.com/s/official/artist/${memberUid}`
+  return `https://sakurazaka46.com/s/s46/artist/${memberUid}`
 }
 
 function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
-  if (group === "nogi" && event.category === "誕生日") {
+  if (event.category === BIRTHDAY_CATEGORY) {
     const memberUid = event.member_uids[0]
-    return memberUid !== undefined ? nogiArtistUrl(memberUid) : undefined
+    return memberUid !== undefined ? memberProfileUrl(group, memberUid) : undefined
   }
   if (group === "hinata")
     return event.id !== undefined ? getHinataScheduleEventUrl(event.id) : undefined
@@ -78,6 +79,14 @@ function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
 
   const [year, month, day] = event.date.split("-").map(Number)
   return getSakuraScheduleUrl({ year: year!, month: month!, day })
+}
+
+// Birthday events for graduated members should stop showing up on birthdays.ics once they've
+// actually left — "now" is real wall-clock time (the GitHub Actions run), not `referenceDate`,
+// since graduation isn't tied to which JST calendar day the calendar happens to be built for.
+function isGraduatedMember(group: Group, uid: string | undefined): boolean {
+  const member = uid !== undefined ? membersByUid[group].get(uid) : undefined
+  return member?.graduatedAt !== undefined && new Date(member.graduatedAt).getTime() < Date.now()
 }
 
 // ics UIDs must stay stable across runs so calendar clients update existing events instead of
@@ -189,7 +198,7 @@ export async function buildGroupBirthdaysIcs(
   const allEvents = await readYears(group, [currentYear, currentYear + 1])
 
   const events = allEvents
-    .filter(e => e.category === BIRTHDAY_CATEGORY)
+    .filter(e => e.category === BIRTHDAY_CATEGORY && !isGraduatedMember(group, e.member_uids[0]))
     .map(e => toIcsEvent(group, e))
 
   const { error, value } = createEvents(events, {

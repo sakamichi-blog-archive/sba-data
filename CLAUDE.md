@@ -84,7 +84,7 @@ Schema:
 
 Unlike `blogs/`, `events` only lists days that actually have events (no zero-event placeholder entries), and isn't split into one entry per calendar day. Each update run refetches the current and next JST calendar month and replaces just those months' events in the target year file(s) — event content isn't diffed or hashed; git history is the record of what changed.
 
-No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) via `@sakamichi-blog-archive/utils`'s `get*ScheduleEventUrl`/`getSakuraScheduleUrl` helpers whenever a consumer needs a link. Exception: nogi's `category: "誕生日"` (birthday) entries link to the member's profile page (`/artist/{member_uid}`) rather than an event detail page, so their link must be built from `member_uids` instead of `id`.
+No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) via `@sakamichi-blog-archive/utils`'s `get*ScheduleEventUrl`/`getSakuraScheduleUrl` helpers whenever a consumer needs a link. Exception: `category: "誕生日"` (birthday) entries link to the member's profile page (`/artist/{member_uid}`) rather than an event detail page, for every group — so their link must be built from `member_uids` instead of `id`.
 
 ## Architecture
 
@@ -93,7 +93,7 @@ Data is fetched and committed to the repo by scheduled GitHub Actions workflows 
 Each schedule update run also regenerates two per-group `.ics` calendars and uploads them to Cloudflare R2. Calendars aren't stored in the repo — they're rebuilt from the just-updated data on every run.
 
 - `{group}/events.ics` — current + next JST month, `data/{group}/schedule/` events excluding `category: "誕生日"` (birthdays), one event per occurrence
-- `{group}/birthdays.ics` — `category: "誕生日"` events for the current and next calendar year (not month-windowed, since a birthday only recurs once a year). Titles are rebuilt from `@sakamichi-blog-archive/utils`'s member roster as `🎂 {name}の{age}歳の誕生日` (age = event year − birth year) rather than using the raw per-group title, which is inconsistently formatted and never includes age.
+- `{group}/birthdays.ics` — `category: "誕生日"` events for the current and next calendar year (not month-windowed, since a birthday only recurs once a year). Titles are rebuilt from `@sakamichi-blog-archive/utils`'s member roster as `🎂 {name}の{age}歳の誕生日` (unspaced name; age = event year − birth year) rather than using the raw per-group title, which is inconsistently formatted and never includes age. Members with `graduatedAt` in the past (as of the run) are omitted entirely, even if their birthday event is still sitting in the underlying schedule data.
 
 ## What to avoid
 

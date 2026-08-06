@@ -22,7 +22,7 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 
 Each group publishes two subscribable `.ics` calendars, regenerated every 6 hours alongside the schedule data:
 
-- `birthdays.ics`: member birthdays for the current and next year (e.g. "🎂 伊藤 理々杏の24歳の誕生日")
+- `birthdays.ics`: member birthdays for the current and next year (e.g. "🎂 伊藤理々杏の24歳の誕生日")
 - `events.ics`: upcoming schedule (current + next month), excluding member birthdays
 
 ### How to subscribe

@@ -17,16 +17,16 @@ Visit http://localhost:6728.
 
 ## Preview
 
-Builds the static site and serves it locally the same way it'll be served in
-production:
+Builds the static site and serves it locally through the same Workers
+runtime (workerd) used in production, rather than Astro's own preview
+server:
 
 ```sh
 pnpm run build
 pnpm run preview
 ```
 
-Visit http://localhost:6728 (if that port's already in use, astro picks the
-next free one and prints the actual URL to use instead).
+Visit http://localhost:6728.
 
 ## Deploying
 

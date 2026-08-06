@@ -5,6 +5,9 @@
   "assets": {
     "directory": "./dist"
   },
+  "dev": {
+    "port": 6728
+  },
   "routes": [
     {
       "pattern": "contributions.sakamichi.co",

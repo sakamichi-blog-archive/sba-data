@@ -24,10 +24,12 @@ async function submitCapture(url: string, accessKey: string, secretKey: string):
 // the job to completion, and never throws — a failed submission is only logged, since this
 // must never block the caller's other work (e.g. committing data-JSON changes).
 export async function archiveUrls(urls: string[]): Promise<void> {
-  const accessKey = process.env.WAYBACK_ACCESS_KEY
-  const secretKey = process.env.WAYBACK_SECRET_KEY
+  const accessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY
+  const secretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY
   if (!accessKey || !secretKey) {
-    console.warn("WAYBACK_ACCESS_KEY/WAYBACK_SECRET_KEY not set — skipping archive step")
+    console.warn(
+      "INTERNET_ARCHIVE_ACCESS_KEY/INTERNET_ARCHIVE_SECRET_KEY not set — skipping archive step"
+    )
     return
   }
 

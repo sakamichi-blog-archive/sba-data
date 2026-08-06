@@ -81,5 +81,5 @@ jobs:
         working-directory: .updater
         env:
           ARCHIVE_DATE: ${{ steps.date.outputs.date }}
-          WAYBACK_ACCESS_KEY: ${{ secrets.WAYBACK_ACCESS_KEY }}
-          WAYBACK_SECRET_KEY: ${{ secrets.WAYBACK_SECRET_KEY }}
+          INTERNET_ARCHIVE_ACCESS_KEY: ${{ secrets.INTERNET_ARCHIVE_ACCESS_KEY }}
+          INTERNET_ARCHIVE_SECRET_KEY: ${{ secrets.INTERNET_ARCHIVE_SECRET_KEY }}

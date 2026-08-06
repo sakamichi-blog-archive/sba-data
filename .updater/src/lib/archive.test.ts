@@ -12,8 +12,8 @@ describe("archiveUrls", () => {
   const originalEnv = { ...process.env }
 
   beforeEach(() => {
-    process.env.WAYBACK_ACCESS_KEY = "key"
-    process.env.WAYBACK_SECRET_KEY = "secret"
+    process.env.INTERNET_ARCHIVE_ACCESS_KEY = "key"
+    process.env.INTERNET_ARCHIVE_SECRET_KEY = "secret"
   })
 
   afterEach(() => {
@@ -23,8 +23,8 @@ describe("archiveUrls", () => {
   })
 
   it("skips archiving and warns when credentials are missing", async () => {
-    delete process.env.WAYBACK_ACCESS_KEY
-    delete process.env.WAYBACK_SECRET_KEY
+    delete process.env.INTERNET_ARCHIVE_ACCESS_KEY
+    delete process.env.INTERNET_ARCHIVE_SECRET_KEY
     const fetchMock = vi.fn()
     vi.stubGlobal("fetch", fetchMock)
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
@@ -32,7 +32,7 @@ describe("archiveUrls", () => {
     await archiveUrls(["https://example.com/post"])
 
     expect(fetchMock).not.toHaveBeenCalled()
-    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("WAYBACK_ACCESS_KEY"))
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("INTERNET_ARCHIVE_ACCESS_KEY"))
   })
 
   it("logs the job id once a capture is submitted", async () => {

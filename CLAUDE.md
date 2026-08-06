@@ -90,7 +90,10 @@ No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) 
 
 Data is fetched and committed to the repo by scheduled GitHub Actions workflows (one for blogs, one for schedule). The Astro build reads static data files from the group directories — no runtime data fetching.
 
-Each schedule update run also regenerates a per-group `.ics` calendar (current + next JST month, `data/{group}/schedule/` events, one event per occurrence) and uploads it to Cloudflare R2 at `{group}/calendar.ics`. Calendars aren't stored in the repo — they're rebuilt from the just-updated data on every run.
+Each schedule update run also regenerates two per-group `.ics` calendars and uploads them to Cloudflare R2. Calendars aren't stored in the repo — they're rebuilt from the just-updated data on every run.
+
+- `{group}/events.ics` — current + next JST month, `data/{group}/schedule/` events excluding `category: "誕生日"` (birthdays), one event per occurrence
+- `{group}/birthdays.ics` — `category: "誕生日"` events for the current and next calendar year (not month-windowed, since a birthday only recurs once a year). Titles are rebuilt from `@sakamichi-blog-archive/utils`'s member roster as `🎂 {name}の{age}歳の誕生日` (age = event year − birth year) rather than using the raw per-group title, which is inconsistently formatted and never includes age.
 
 ## What to avoid
 

@@ -20,7 +20,10 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 
 ## Schedule calendars
 
-Each group's upcoming schedule (current + next month) is published as a subscribable `.ics` calendar, regenerated every 6 hours alongside the schedule data:
+Each group publishes two subscribable `.ics` calendars, regenerated every 6 hours alongside the schedule data:
+
+- **events.ics** — upcoming schedule (current + next month), excluding member birthdays
+- **birthdays.ics** — member birthdays for the current and next calendar year, titled with the member's name and age (e.g. "🎂 賀喜 遥香の26歳の誕生日")
 
 ### How to subscribe
 
@@ -36,19 +39,22 @@ Each group's upcoming schedule (current + next month) is published as a subscrib
 Nogizaka46:
 
 ```text
-https://calendars.sakamichi.co/nogi/calendar.ics
+https://calendars.sakamichi.co/nogi/events.ics
+https://calendars.sakamichi.co/nogi/birthdays.ics
 ```
 
 Hinatazaka46:
 
 ```text
-https://calendars.sakamichi.co/hinata/calendar.ics
+https://calendars.sakamichi.co/hinata/events.ics
+https://calendars.sakamichi.co/hinata/birthdays.ics
 ```
 
 Sakurazaka46:
 
 ```text
-https://calendars.sakamichi.co/sakura/calendar.ics
+https://calendars.sakamichi.co/sakura/events.ics
+https://calendars.sakamichi.co/sakura/birthdays.ics
 ```
 
 ## Data pipeline

@@ -92,7 +92,7 @@ Data is fetched and committed to the repo by scheduled GitHub Actions workflows 
 
 Each schedule update run also regenerates two per-group `.ics` calendars and uploads them to Cloudflare R2. Calendars aren't stored in the repo — they're rebuilt from the just-updated data on every run.
 
-- `{group}/events.ics` — current + next JST month, `data/{group}/schedule/` events excluding `category: "誕生日"` (birthdays), one event per occurrence
+- `{group}/events.ics` — current + next JST month, `data/{group}/schedule/` events excluding `category: "誕生日"` (birthdays), one event per occurrence. Each event's `member_uids` are resolved to unspaced names and set as the ics `DESCRIPTION` (`メンバー：{name} {name}...`), omitted when the event lists no members.
 - `{group}/birthdays.ics` — `category: "誕生日"` events for the current and next calendar year (not month-windowed, since a birthday only recurs once a year). Titles are rebuilt from `@sakamichi-blog-archive/utils`'s member roster as `🎂 {name}の{age}歳の誕生日` (unspaced name; age = event year − birth year) rather than using the raw per-group title, which is inconsistently formatted and never includes age. Members with `graduatedAt` in the past (as of the run) are omitted entirely, even if their birthday event is still sitting in the underlying schedule data.
 
 ## What to avoid

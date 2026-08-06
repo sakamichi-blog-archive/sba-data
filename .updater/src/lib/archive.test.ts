@@ -31,6 +31,20 @@ describe("archiveUrls", () => {
     expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("job-1"))
   })
 
+  it("strips the query string and fragment before submitting", async () => {
+    const fetchMock = vi.fn().mockResolvedValueOnce(jsonResponse({ job_id: "job-1" }))
+    vi.stubGlobal("fetch", fetchMock)
+    const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
+
+    await archiveUrls(["https://example.com/post?ima=1234&cd=member#section"], "key", "secret")
+
+    const [, options] = fetchMock.mock.calls[0] as [string, RequestInit]
+    expect((options.body as URLSearchParams).get("url")).toBe("https://example.com/post")
+    expect(logSpy).toHaveBeenCalledWith(
+      expect.stringContaining("submitted https://example.com/post ")
+    )
+  })
+
   it("warns without throwing when the submit response has no job id", async () => {
     const fetchMock = vi
       .fn()

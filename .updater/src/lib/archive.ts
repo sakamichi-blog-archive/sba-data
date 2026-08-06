@@ -5,6 +5,16 @@ interface SubmitResponse {
   message?: string
 }
 
+// Blog detail pages are fully identified by their path alone; the query string is just
+// site-generated noise (e.g. a request-echoed cache-buster) that differs on every fetch and
+// would otherwise fragment the same post across many distinct-looking archived URLs.
+function normalizeUrl(url: string): string {
+  const parsed = new URL(url)
+  parsed.search = ""
+  parsed.hash = ""
+  return parsed.href
+}
+
 async function submitCapture(url: string, accessKey: string, secretKey: string): Promise<string> {
   const res = await fetch(SAVE_ENDPOINT, {
     method: "POST",
@@ -28,7 +38,8 @@ export async function archiveUrls(
   accessKey: string,
   secretKey: string
 ): Promise<void> {
-  for (const url of urls) {
+  for (const rawUrl of urls) {
+    const url = normalizeUrl(rawUrl)
     try {
       // Sequential by design: daily volume is small and SPN2 rate limits concurrent jobs per account.
       // oxlint-disable-next-line no-await-in-loop

@@ -25,10 +25,10 @@ async function submitCapture(url: string, accessKey: string, secretKey: string):
 // must never block the caller's other work (e.g. committing data-JSON changes).
 export async function archiveUrls(urls: string[]): Promise<void> {
   const accessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY
-  const secretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY
+  const secretKey = process.env.INTERNET_ARCHIVE_SECRET
   if (!accessKey || !secretKey) {
     console.warn(
-      "INTERNET_ARCHIVE_ACCESS_KEY/INTERNET_ARCHIVE_SECRET_KEY not set — skipping archive step"
+      "INTERNET_ARCHIVE_ACCESS_KEY/INTERNET_ARCHIVE_SECRET not set — skipping archive step"
     )
     return
   }

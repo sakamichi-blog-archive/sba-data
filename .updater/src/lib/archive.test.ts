@@ -13,7 +13,7 @@ describe("archiveUrls", () => {
 
   beforeEach(() => {
     process.env.INTERNET_ARCHIVE_ACCESS_KEY = "key"
-    process.env.INTERNET_ARCHIVE_SECRET_KEY = "secret"
+    process.env.INTERNET_ARCHIVE_SECRET = "secret"
   })
 
   afterEach(() => {
@@ -24,7 +24,7 @@ describe("archiveUrls", () => {
 
   it("skips archiving and warns when credentials are missing", async () => {
     delete process.env.INTERNET_ARCHIVE_ACCESS_KEY
-    delete process.env.INTERNET_ARCHIVE_SECRET_KEY
+    delete process.env.INTERNET_ARCHIVE_SECRET
     const fetchMock = vi.fn()
     vi.stubGlobal("fetch", fetchMock)
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})

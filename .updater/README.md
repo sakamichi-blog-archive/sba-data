@@ -17,6 +17,6 @@ pnpm run update:schedule 2026-07-06 # same, using this date to determine current
 
 `archive:blogs` re-fetches the given date's posts independently (it doesn't read the committed
 JSON, which doesn't store post URLs) and submits each to the Internet Archive's Save Page Now API.
-Requires `INTERNET_ARCHIVE_ACCESS_KEY`/`INTERNET_ARCHIVE_SECRET_KEY` env vars (S3-style keys from
+Requires `INTERNET_ARCHIVE_ACCESS_KEY`/`INTERNET_ARCHIVE_SECRET` env vars (S3-style keys from
 [archive.org/account/s3.php](https://archive.org/account/s3.php)); without them it logs a warning
 and skips archiving.

@@ -16,10 +16,10 @@ await Promise.all(
     const dir = join(OUTPUT_DIR, group)
     await mkdir(dir, { recursive: true })
 
-    const [eventsIcs, birthdaysIcs] = await Promise.all([
-      buildGroupEventsIcs(group),
+    const [eventsIcs, birthdaysIcs] = [
+      await buildGroupEventsIcs(group),
       buildGroupBirthdaysIcs(group)
-    ])
+    ]
     await Promise.all([
       writeFile(join(dir, "events.ics"), eventsIcs),
       writeFile(join(dir, "birthdays.ics"), birthdaysIcs)

@@ -47,7 +47,8 @@ vi.mock("@sakamichi-blog-archive/utils/members", () => ({
       nameSpaced: "賀喜 遥香",
       nameEnglish: "",
       birthdate: "2000-08-08"
-    }
+    },
+    { uid: "99999", name: "誕生日不明", nameSpaced: "誕生日 不明", nameEnglish: "" }
   ],
   sakuraMembers: [
     { uid: "67", name: "村井優", nameSpaced: "村井 優", nameEnglish: "", birthdate: "1999-08-18" },
@@ -333,201 +334,90 @@ describe("buildGroupEventsIcs", () => {
 })
 
 describe("buildGroupBirthdaysIcs", () => {
-  it("includes only 誕生日-category events", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          { date: "2026-08-08", category: "誕生日", title: "Birthday", member_uids: ["48008"] },
-          { date: "2026-08-09", title: "Regular event", member_uids: [] }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
-
-    const ics = await buildGroupBirthdaysIcs("nogi", "2026-08-05")
+  it("generates one birthday per active member per year straight from the roster", () => {
+    // No schedule files are read — birthdays come from the member roster alone.
+    const ics = buildGroupBirthdaysIcs("nogi", "2026-08-05")
 
     const events = parseEvents(ics)
-    expect(events).toHaveLength(1)
-    expect(events[0]!.SUMMARY).toBe("🎂 賀喜遥香の26歳の誕生日")
+    expect(events.map(e => e.SUMMARY).toSorted()).toEqual([
+      "🎂 賀喜遥香の26歳の誕生日",
+      "🎂 賀喜遥香の27歳の誕生日"
+    ])
+    expect(readFileMock).not.toHaveBeenCalled()
   })
 
-  it("spans the current and next full calendar year, not just the current and next month", async () => {
-    readFileMock.mockImplementation(async (path: unknown) => {
-      const p = path as string
-      if (p.endsWith("2026.json")) {
-        return JSON.stringify(
-          yearData([
-            { date: "2026-01-15", category: "誕生日", title: "Early in year", member_uids: [] }
-          ])
-        )
-      }
-      if (p.endsWith("2027.json")) {
-        return JSON.stringify(
-          yearData([
-            { date: "2027-12-20", category: "誕生日", title: "Late next year", member_uids: [] }
-          ])
-        )
-      }
-      throw enoent()
-    })
+  it("spans the current and next full calendar year, not just the current and next month", () => {
+    // 小坂菜緒's Jan 1 birthday is months behind the Aug reference date, yet still appears — the
+    // roster-driven calendar covers whole years, so nothing is dropped for being out of a window.
+    const ics = buildGroupBirthdaysIcs("hinata", "2026-08-05")
 
-    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-
-    const events = parseEvents(ics)
-    expect(events.map(e => e.SUMMARY).toSorted()).toEqual(["Early in year", "Late next year"])
+    const koakina = parseEvents(ics).filter(e => e.SUMMARY.includes("小坂菜緒"))
+    expect(koakina.map(e => e["DTSTART;VALUE=DATE"]).toSorted()).toEqual(["20260101", "20270101"])
   })
 
-  it("formats a birthday title with the member's unspaced name and age", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          { date: "2026-08-18", category: "誕生日", title: "村井 優の誕生日", member_uids: ["67"] }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
+  it("formats a birthday title with the member's unspaced name and age", () => {
+    const ics = buildGroupBirthdaysIcs("sakura", "2026-08-05")
 
-    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-
-    const [event] = parseEvents(ics)
+    const event = parseEvents(ics).find(e => e["DTSTART;VALUE=DATE"] === "20260818")
     expect(event!.SUMMARY).toBe("🎂 村井優の27歳の誕生日")
   })
 
-  it("falls back to the raw title when the member has no birthdate on record", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          { date: "2026-08-01", category: "誕生日", title: "Unknown member", member_uids: ["999"] }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
+  it("skips members with no birthdate on record", () => {
+    // The nogi roster includes 誕生日不明, who has no birthdate; only 賀喜遥香's events appear.
+    const ics = buildGroupBirthdaysIcs("nogi", "2026-08-05")
 
-    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-
-    const [event] = parseEvents(ics)
-    expect(event!.SUMMARY).toBe("Unknown member")
+    const events = parseEvents(ics)
+    expect(events.every(e => e.SUMMARY.includes("賀喜遥香"))).toBe(true)
+    expect(events.some(e => e.SUMMARY.includes("誕生日不明"))).toBe(false)
   })
 
-  it("builds a nogi birthday event's url from the member's artist page instead of id", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          {
-            date: "2026-08-08",
-            category: "誕生日",
-            title: "Birthday",
-            member_uids: ["48008"],
-            id: "100058"
-          }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
-
-    const ics = await buildGroupBirthdaysIcs("nogi", "2026-08-05")
+  it("builds a nogi birthday event's url from the member's artist page instead of id", () => {
+    const ics = buildGroupBirthdaysIcs("nogi", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!.URL).toBe("https://www.nogizaka46.com/s/n46/artist/48008")
     expect(getNogiScheduleEventUrlMock).not.toHaveBeenCalled()
   })
 
-  it("computes the correct age for a leap-day birthdate observed in a non-leap year", async () => {
-    // Age comes from subtracting calendar years, not from diffing dates, so it's unaffected by
-    // which day (Feb 28 or Mar 1) the source site lands a Feb 29 birthday on in a non-leap year.
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          {
-            date: "2026-03-01",
-            category: "誕生日",
-            title: "うるう年生の誕生日",
-            member_uids: ["68"]
-          }
-        ])
-      )
+  it("observes a Feb 29 birthdate on Feb 28 in non-leap years, with the age still correct", () => {
+    // 2026 and 2027 are both non-leap, so うるう年生's Feb 29 birthdate lands on Feb 28. Age is a
+    // plain calendar-year difference, unaffected by the day shift.
+    const ics = buildGroupBirthdaysIcs("sakura", "2026-08-05")
+
+    const leap = parseEvents(ics).filter(e => e.SUMMARY.includes("うるう年生"))
+    expect(leap.map(e => e["DTSTART;VALUE=DATE"]).toSorted()).toEqual(["20260228", "20270228"])
+    expect(leap.find(e => e["DTSTART;VALUE=DATE"] === "20260228")!.SUMMARY).toBe(
+      "🎂 うるう年生の26歳の誕生日"
     )
-    readFileMock.mockRejectedValueOnce(enoent())
-
-    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-
-    const [event] = parseEvents(ics)
-    expect(event!.SUMMARY).toBe("🎂 うるう年生の26歳の誕生日")
   })
 
-  it("builds hinata and sakura birthday event urls from the member's profile page too", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          {
-            date: "2026-08-06",
-            category: "誕生日",
-            title: "Birthday",
-            member_uids: ["25"],
-            id: "e1"
-          }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
-
-    const hinataIcs = await buildGroupBirthdaysIcs("hinata", "2026-08-05")
-    expect(parseEvents(hinataIcs)[0]!.URL).toBe("https://www.hinatazaka46.com/s/official/artist/25")
+  it("builds hinata and sakura birthday event urls from the member's profile page too", () => {
+    const hinataIcs = buildGroupBirthdaysIcs("hinata", "2026-08-05")
+    const ishizuka = parseEvents(hinataIcs).find(e => e.SUMMARY.includes("石塚瑶季"))
+    expect(ishizuka!.URL).toBe("https://www.hinatazaka46.com/s/official/artist/25")
     expect(getHinataScheduleEventUrlMock).not.toHaveBeenCalled()
 
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          { date: "2026-08-18", category: "誕生日", title: "Birthday", member_uids: ["67"] }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
-
-    const sakuraIcs = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-    expect(parseEvents(sakuraIcs)[0]!.URL).toBe("https://sakurazaka46.com/s/s46/artist/67")
+    const sakuraIcs = buildGroupBirthdaysIcs("sakura", "2026-08-05")
+    const murai = parseEvents(sakuraIcs).find(e => e.SUMMARY.includes("村井優"))
+    expect(murai!.URL).toBe("https://sakurazaka46.com/s/s46/artist/67")
     expect(getSakuraScheduleUrlMock).not.toHaveBeenCalled()
   })
 
-  it("omits birthday events for members who have already graduated", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          { date: "2026-05-01", category: "誕生日", title: "Graduated", member_uids: ["70"] },
-          {
-            date: "2026-05-01",
-            category: "誕生日",
-            title: "Not yet graduated",
-            member_uids: ["71"]
-          },
-          { date: "2026-08-18", category: "誕生日", title: "Active", member_uids: ["67"] }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
+  it("omits birthday events for members who have already graduated", () => {
+    // The sakura roster has 卒業花子 (graduated 2020) and 未来卒業子 (graduates 2030); only the
+    // latter — still active as of the 2026 run — keeps her birthday.
+    const ics = buildGroupBirthdaysIcs("sakura", "2026-08-05")
 
-    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-
-    const events = parseEvents(ics)
-    expect(events.map(e => e.SUMMARY).toSorted()).toEqual([
-      "🎂 未来卒業子の27歳の誕生日",
-      "🎂 村井優の27歳の誕生日"
-    ])
+    const names = parseEvents(ics).map(e => e.SUMMARY)
+    expect(names.some(n => n.includes("未来卒業子"))).toBe(true)
+    expect(names.some(n => n.includes("卒業花子"))).toBe(false)
   })
 
-  it("does not set a description, since the title already names the member", async () => {
-    readFileMock.mockResolvedValueOnce(
-      JSON.stringify(
-        yearData([
-          { date: "2026-08-18", category: "誕生日", title: "Birthday", member_uids: ["67"] }
-        ])
-      )
-    )
-    readFileMock.mockRejectedValueOnce(enoent())
+  it("does not set a description, since the title already names the member", () => {
+    const ics = buildGroupBirthdaysIcs("sakura", "2026-08-05")
 
-    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
-
-    const [event] = parseEvents(ics)
-    expect(event!.DESCRIPTION).toBeUndefined()
+    for (const event of parseEvents(ics)) {
+      expect(event.DESCRIPTION).toBeUndefined()
+    }
   })
 })

@@ -45,22 +45,14 @@ const membersByUid: Record<Group, Map<string, Member>> = {
   sakura: buildMemberMap(sakuraMembers)
 }
 
-// Raw titles are inconsistent across groups (nogi's is just the member's name; hinata/sakura
-// append "の誕生日") and none of them show age. Rebuilding from the member roster gives every
-// group the same "🎂 {name}の{age}歳の誕生日" format. Falls back to the raw title if the member
-// or their birthdate isn't in the roster (e.g. a name-matching miss upstream).
-function birthdayTitle(group: Group, event: ScheduleEventEntry): string {
-  const uid = event.member_uids[0]
-  const member = uid !== undefined ? membersByUid[group].get(uid) : undefined
-  if (member?.birthdate === undefined) return event.title
-
-  const eventYear = Number(event.date.split("-")[0])
-  const birthYear = Number(member.birthdate.split("-")[0])
-  return `🎂 ${member.name}の${eventYear - birthYear}歳の誕生日`
+const rosters: Record<Group, Member[]> = {
+  hinata: hinataMembers,
+  nogi: nogiMembers,
+  sakura: sakuraMembers
 }
 
 // None of the schedule APIs give a birthday entry an id-based detail URL — the official sites
-// link these to the member's own profile page instead, so it has to be built from member_uids.
+// link these to the member's own profile page instead, so it has to be built from the uid.
 function memberProfileUrl(group: Group, memberUid: string): string {
   if (group === "nogi") return `https://www.nogizaka46.com/s/n46/artist/${memberUid}`
   if (group === "hinata") return `https://www.hinatazaka46.com/s/official/artist/${memberUid}`
@@ -68,10 +60,6 @@ function memberProfileUrl(group: Group, memberUid: string): string {
 }
 
 function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
-  if (event.category === BIRTHDAY_CATEGORY) {
-    const memberUid = event.member_uids[0]
-    return memberUid !== undefined ? memberProfileUrl(group, memberUid) : undefined
-  }
   if (group === "hinata")
     return event.id !== undefined ? getHinataScheduleEventUrl(event.id) : undefined
   if (group === "nogi")
@@ -84,9 +72,8 @@ function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
 // Birthday events for graduated members should stop showing up on birthdays.ics once they've
 // actually left — "now" is real wall-clock time (the GitHub Actions run), not `referenceDate`,
 // since graduation isn't tied to which JST calendar day the calendar happens to be built for.
-function isGraduatedMember(group: Group, uid: string | undefined): boolean {
-  const member = uid !== undefined ? membersByUid[group].get(uid) : undefined
-  return member?.graduatedAt !== undefined && new Date(member.graduatedAt).getTime() < Date.now()
+function isGraduated(member: Member): boolean {
+  return member.graduatedAt !== undefined && new Date(member.graduatedAt).getTime() < Date.now()
 }
 
 // Matches sba-background's "メンバー：{name} {name}..." format. Skips uids that don't resolve to
@@ -145,8 +132,8 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
 
   return {
     uid: eventUid(group, event),
-    title: event.category === BIRTHDAY_CATEGORY ? birthdayTitle(group, event) : event.title,
-    description: event.category === BIRTHDAY_CATEGORY ? undefined : eventDescription(group, event),
+    title: event.title,
+    description: eventDescription(group, event),
     start,
     startInputType: "utc",
     startOutputType: "utc",
@@ -197,20 +184,53 @@ export async function buildGroupEventsIcs(
   return value!
 }
 
-// Unlike buildGroupEventsIcs, this isn't windowed to the current + next JST month — birthdays
-// recur once a year, so a short window would make the calendar mostly empty. Two full calendar
-// years (current + next) gives a stable one-year-ahead view, matching how contacts apps surface
-// birthdays.
-export async function buildGroupBirthdaysIcs(
-  group: Group,
-  referenceDate = todayJST()
-): Promise<string> {
-  const currentYear = Number(referenceDate.split("-")[0])
-  const allEvents = await readYears(group, [currentYear, currentYear + 1])
+function isLeapYear(year: number): boolean {
+  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
+}
 
-  const events = allEvents
-    .filter(e => e.category === BIRTHDAY_CATEGORY && !isGraduatedMember(group, e.member_uids[0]))
-    .map(e => toIcsEvent(group, e))
+// A member's all-day birthday event for one calendar year, built entirely from the roster's
+// name + birthdate — no schedule data involved. Feb 29 birthdays are observed on Feb 28 in
+// non-leap years (the only month/day that can be missing from a target year); age is a plain
+// calendar-year difference, so it's unaffected by that shift. Members with no birthdate on
+// record can't produce an event and are skipped.
+function birthdayEvent(group: Group, member: Member, year: number): EventAttributes | undefined {
+  if (member.birthdate === undefined) return undefined
+
+  const [birthYear, month, day] = member.birthdate.split("-").map(Number) as [
+    number,
+    number,
+    number
+  ]
+  const observedDay = month === 2 && day === 29 && !isLeapYear(year) ? 28 : day
+  const date = `${year}-${String(month).padStart(2, "0")}-${String(observedDay).padStart(2, "0")}`
+
+  return {
+    // Stable across runs so calendar clients update the same event each year instead of
+    // duplicating it: one recurrence per member per year.
+    uid: `${group}-birthday-${member.uid}-${year}`,
+    title: `🎂 ${member.name}の${year - birthYear}歳の誕生日`,
+    // Date-only start/end (no input/output type) makes this a floating all-day event: a birthday
+    // is a calendar date, not an instant, so every client shows it on that day in its own local
+    // time rather than shifting it by timezone the way a UTC-anchored event would.
+    start: [year, month, observedDay],
+    end: nextDateArray(date),
+    url: memberProfileUrl(group, member.uid),
+    categories: [BIRTHDAY_CATEGORY]
+  }
+}
+
+// Unlike buildGroupEventsIcs, this is generated from the member roster rather than schedule data,
+// and isn't windowed to the current + next JST month. Schedule 誕生日 entries only exist for months
+// the fetcher has actually run for, which would leave the calendar full of gaps; the roster has
+// every active member's birthdate, so it yields a complete, stable one-year-ahead view (current +
+// next calendar year) matching how contacts apps surface birthdays. Graduated members are omitted.
+export function buildGroupBirthdaysIcs(group: Group, referenceDate = todayJST()): string {
+  const currentYear = Number(referenceDate.split("-")[0])
+  const years = [currentYear, currentYear + 1]
+
+  const events = rosters[group]
+    .filter(member => !isGraduated(member))
+    .flatMap(member => years.flatMap(year => birthdayEvent(group, member, year) ?? []))
 
   const { error, value } = createEvents(events, {
     calName: `${calNames[group]} Birthdays`,

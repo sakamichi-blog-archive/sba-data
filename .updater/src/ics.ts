@@ -16,10 +16,11 @@ await Promise.all(
     const dir = join(OUTPUT_DIR, group)
     await mkdir(dir, { recursive: true })
 
-    const [eventsIcs, birthdaysIcs] = await Promise.all([
-      buildGroupEventsIcs(group),
-      buildGroupBirthdaysIcs(group)
-    ])
+    // Kick off events' file reads first, then compute the synchronous birthdays while that I/O is
+    // in flight, and only then await events — so the two builds overlap instead of serializing.
+    const eventsPromise = buildGroupEventsIcs(group)
+    const birthdaysIcs = buildGroupBirthdaysIcs(group)
+    const eventsIcs = await eventsPromise
     await Promise.all([
       writeFile(join(dir, "events.ics"), eventsIcs),
       writeFile(join(dir, "birthdays.ics"), birthdaysIcs)

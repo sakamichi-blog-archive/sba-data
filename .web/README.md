@@ -30,5 +30,13 @@ next free one and prints the actual URL to use instead).
 
 ## Deploying
 
-`pnpm run build` writes a fully static site to `dist/` — deploy that directory
-as-is, no server runtime required.
+`pnpm run build` writes a fully static site to `dist/`, served as Cloudflare
+Workers static assets (no server runtime required):
+
+```sh
+pnpm run build
+pnpm run deploy
+```
+
+Deploys to `contributions.sakamichi.co`. In CI, the `Deploy web` workflow does
+this automatically on pushes to `main` that touch `.web/` or `data/`.

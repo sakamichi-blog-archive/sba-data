@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "deploy": "wrangler deploy",
     "test": "vitest run",
     "typecheck": "astro check"
   },
@@ -24,7 +25,8 @@
     "@types/react-dom": "^19.2.4",
     "sass": "^1.102.0",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "wrangler": "^4.118.0"
   },
   "engines": {
     "node": ">=22.12.0"

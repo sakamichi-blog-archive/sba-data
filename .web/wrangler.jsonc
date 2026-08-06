@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sakamichi-blog-archive-web",
+  "compatibility_date": "2026-08-06",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "contributions.sakamichi.co",
+      "custom_domain": true
+    }
+  ]
+}

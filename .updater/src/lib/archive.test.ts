@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
+import { afterEach, describe, expect, it, vi } from "vitest"
 
 import { archiveUrls } from "./archive.js"
 
@@ -9,30 +9,9 @@ function jsonResponse(body: unknown): Response {
 }
 
 describe("archiveUrls", () => {
-  const originalEnv = { ...process.env }
-
-  beforeEach(() => {
-    process.env.INTERNET_ARCHIVE_ACCESS_KEY = "key"
-    process.env.INTERNET_ARCHIVE_SECRET_KEY = "secret"
-  })
-
   afterEach(() => {
-    process.env = { ...originalEnv }
     vi.unstubAllGlobals()
     vi.restoreAllMocks()
-  })
-
-  it("skips archiving and warns when credentials are missing", async () => {
-    delete process.env.INTERNET_ARCHIVE_ACCESS_KEY
-    delete process.env.INTERNET_ARCHIVE_SECRET_KEY
-    const fetchMock = vi.fn()
-    vi.stubGlobal("fetch", fetchMock)
-    const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
-
-    await archiveUrls(["https://example.com/post"])
-
-    expect(fetchMock).not.toHaveBeenCalled()
-    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("INTERNET_ARCHIVE_ACCESS_KEY"))
   })
 
   it("logs the job id once a capture is submitted", async () => {
@@ -40,7 +19,7 @@ describe("archiveUrls", () => {
     vi.stubGlobal("fetch", fetchMock)
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post"])
+    await archiveUrls(["https://example.com/post"], "key", "secret")
 
     expect(fetchMock).toHaveBeenCalledWith(
       "https://web.archive.org/save/",
@@ -59,7 +38,9 @@ describe("archiveUrls", () => {
     vi.stubGlobal("fetch", fetchMock)
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
-    await expect(archiveUrls(["https://example.com/post"])).resolves.toBeUndefined()
+    await expect(
+      archiveUrls(["https://example.com/post"], "key", "secret")
+    ).resolves.toBeUndefined()
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("url is blocked from saving"))
   })
@@ -69,7 +50,9 @@ describe("archiveUrls", () => {
     vi.stubGlobal("fetch", fetchMock)
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
-    await expect(archiveUrls(["https://example.com/post"])).resolves.toBeUndefined()
+    await expect(
+      archiveUrls(["https://example.com/post"], "key", "secret")
+    ).resolves.toBeUndefined()
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("network down"))
   })
@@ -83,7 +66,7 @@ describe("archiveUrls", () => {
     vi.spyOn(console, "warn").mockImplementation(() => {})
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post-1", "https://example.com/post-2"])
+    await archiveUrls(["https://example.com/post-1", "https://example.com/post-2"], "key", "secret")
 
     expect(fetchMock).toHaveBeenCalledTimes(2)
     expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("post-2"))

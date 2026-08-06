@@ -21,18 +21,13 @@ async function submitCapture(url: string, accessKey: string, secretKey: string):
 }
 
 // Submits each URL to the Wayback Machine's Save Page Now API. Fire-and-forget: doesn't poll
-// the job to completion, and never throws — a failed submission is only logged, since this
-// must never block the caller's other work (e.g. committing data-JSON changes).
-export async function archiveUrls(urls: string[]): Promise<void> {
-  const accessKey = process.env.INTERNET_ARCHIVE_ACCESS_KEY
-  const secretKey = process.env.INTERNET_ARCHIVE_SECRET_KEY
-  if (!accessKey || !secretKey) {
-    console.warn(
-      "INTERNET_ARCHIVE_ACCESS_KEY/INTERNET_ARCHIVE_SECRET_KEY not set — skipping archive step"
-    )
-    return
-  }
-
+// the job to completion, and never throws on an individual submission failure — that's only
+// logged, since one bad URL must never block the rest of the batch.
+export async function archiveUrls(
+  urls: string[],
+  accessKey: string,
+  secretKey: string
+): Promise<void> {
   for (const url of urls) {
     try {
       // Sequential by design: daily volume is small and SPN2 rate limits concurrent jobs per account.

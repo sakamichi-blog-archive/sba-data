@@ -1,18 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sba-data-production",
-  "compatibility_date": "2026-08-06",
-  "workers_dev": false,
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page"
   },
+  "compatibility_date": "2026-08-06",
+  "routes": [{ "custom_domain": true, "pattern": "contributions.sakamichi.co" }],
+  "workers_dev": false,
   "dev": {
     "port": 6728
-  },
-  "routes": [
-    {
-      "pattern": "contributions.sakamichi.co",
-      "custom_domain": true
-    }
-  ]
+  }
 }

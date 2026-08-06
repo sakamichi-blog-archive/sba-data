@@ -31,6 +31,13 @@ vi.mock("@sakamichi-blog-archive/utils/members", () => ({
       nameSpaced: "石塚 瑶季",
       nameEnglish: "",
       birthdate: "2000-08-06"
+    },
+    {
+      uid: "26",
+      name: "小坂菜緒",
+      nameSpaced: "小坂 菜緒",
+      nameEnglish: "",
+      birthdate: "2001-01-01"
     }
   ],
   nogiMembers: [
@@ -261,6 +268,41 @@ describe("buildGroupEventsIcs", () => {
     expect(events[1]!.CATEGORIES).toBeUndefined()
   })
 
+  it("sets a メンバー-prefixed description from member_uids, space-joining unspaced names", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(yearData([{ date: "2026-08-01", title: "Live", member_uids: ["25", "26"] }]))
+    )
+
+    const ics = await buildGroupEventsIcs("hinata", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.DESCRIPTION).toBe("メンバー：石塚瑶季 小坂菜緒")
+  })
+
+  it("omits the description when the event has no member_uids", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(yearData([{ date: "2026-08-01", title: "No members", member_uids: [] }]))
+    )
+
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.DESCRIPTION).toBeUndefined()
+  })
+
+  it("skips member_uids that don't resolve to a roster member instead of leaking the raw uid", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([{ date: "2026-08-01", title: "Live", member_uids: ["67", "unknown-uid"] }])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.DESCRIPTION).toBe("メンバー：村井優")
+  })
+
   it("reads both year files and merges events when the month range crosses a year boundary", async () => {
     readFileMock.mockImplementation(async (path: unknown) => {
       const p = path as string
@@ -471,5 +513,21 @@ describe("buildGroupBirthdaysIcs", () => {
       "🎂 未来卒業子の27歳の誕生日",
       "🎂 村井優の27歳の誕生日"
     ])
+  })
+
+  it("does not set a description, since the title already names the member", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          { date: "2026-08-18", category: "誕生日", title: "Birthday", member_uids: ["67"] }
+        ])
+      )
+    )
+    readFileMock.mockRejectedValueOnce(enoent())
+
+    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.DESCRIPTION).toBeUndefined()
   })
 })

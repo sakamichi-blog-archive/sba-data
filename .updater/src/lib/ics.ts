@@ -89,6 +89,16 @@ function isGraduatedMember(group: Group, uid: string | undefined): boolean {
   return member?.graduatedAt !== undefined && new Date(member.graduatedAt).getTime() < Date.now()
 }
 
+// Matches sba-background's "メンバー：{name} {name}..." format. Skips uids that don't resolve to
+// a roster member instead of leaking a raw internal uid into a user-facing field.
+function eventDescription(group: Group, event: ScheduleEventEntry): string | undefined {
+  const names = event.member_uids.flatMap(uid => {
+    const name = membersByUid[group].get(uid)?.name
+    return name !== undefined ? [name] : []
+  })
+  return names.length > 0 ? `メンバー：${names.join(" ")}` : undefined
+}
+
 // ics UIDs must stay stable across runs so calendar clients update existing events instead of
 // duplicating them. id alone isn't enough — hinata/sakura recurring events share one id across
 // many dates — so id+date disambiguates occurrences. Events with no id (rare) fall back to a
@@ -136,6 +146,7 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
   return {
     uid: eventUid(group, event),
     title: event.category === BIRTHDAY_CATEGORY ? birthdayTitle(group, event) : event.title,
+    description: event.category === BIRTHDAY_CATEGORY ? undefined : eventDescription(group, event),
     start,
     startInputType: "utc",
     startOutputType: "utc",

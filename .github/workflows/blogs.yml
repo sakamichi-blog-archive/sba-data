@@ -82,4 +82,4 @@ jobs:
         env:
           ARCHIVE_DATE: ${{ steps.date.outputs.date }}
           INTERNET_ARCHIVE_ACCESS_KEY: ${{ secrets.INTERNET_ARCHIVE_ACCESS_KEY }}
-          INTERNET_ARCHIVE_SECRET: ${{ secrets.INTERNET_ARCHIVE_SECRET }}
+          INTERNET_ARCHIVE_SECRET_KEY: ${{ secrets.INTERNET_ARCHIVE_SECRET_KEY }}

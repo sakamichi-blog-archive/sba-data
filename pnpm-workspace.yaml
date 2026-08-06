@@ -5,6 +5,7 @@ packages:
 allowBuilds:
   "@parcel/watcher": true
   esbuild: false
+  workerd: false
 blockExoticSubdeps: true
 minimumReleaseAge: 4320
 minimumReleaseAgeExclude:

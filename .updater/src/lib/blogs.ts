@@ -55,7 +55,10 @@ async function fetchAllPages<T>(
 
 // The nogi date-filtered list page doesn't expose member names, unlike the JSON
 // list API — so each post needs a follow-up fetch to resolve its member.
-async function fetchBlogs(group: Group, targetDate: string): Promise<(Blog | SakuraBlog)[]> {
+export async function fetchBlogs(
+  group: Group,
+  targetDate = yesterdayJST()
+): Promise<(Blog | SakuraBlog)[]> {
   const [year, month, day] = targetDate.split("-").map(Number)
   if (group === "hinata") return fetchAllPages(page => fetchHinataBlogs({ year, month, day, page }))
   if (group === "sakura") return fetchAllPages(page => fetchSakuraBlogs({ year, month, day, page }))

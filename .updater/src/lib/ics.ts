@@ -209,12 +209,11 @@ function birthdayEvent(group: Group, member: Member, year: number): EventAttribu
     // duplicating it: one recurrence per member per year.
     uid: `${group}-birthday-${member.uid}-${year}`,
     title: `🎂 ${member.name}の${year - birthYear}歳の誕生日`,
+    // Date-only start/end (no input/output type) makes this a floating all-day event: a birthday
+    // is a calendar date, not an instant, so every client shows it on that day in its own local
+    // time rather than shifting it by timezone the way a UTC-anchored event would.
     start: [year, month, observedDay],
-    startInputType: "utc",
-    startOutputType: "utc",
     end: nextDateArray(date),
-    endInputType: "utc",
-    endOutputType: "utc",
     url: memberProfileUrl(group, member.uid),
     categories: [BIRTHDAY_CATEGORY]
   }

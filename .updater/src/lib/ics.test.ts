@@ -43,7 +43,14 @@ vi.mock("@sakamichi-blog-archive/utils/members", () => ({
     }
   ],
   sakuraMembers: [
-    { uid: "67", name: "村井優", nameSpaced: "村井 優", nameEnglish: "", birthdate: "1999-08-18" }
+    { uid: "67", name: "村井優", nameSpaced: "村井 優", nameEnglish: "", birthdate: "1999-08-18" },
+    {
+      uid: "68",
+      name: "うるう年生",
+      nameSpaced: "うるう 年生",
+      nameEnglish: "",
+      birthdate: "2000-02-29"
+    }
   ]
 }))
 
@@ -365,5 +372,28 @@ describe("buildGroupBirthdaysIcs", () => {
     const [event] = parseEvents(ics)
     expect(event!.URL).toBe("https://www.nogizaka46.com/s/n46/artist/48008")
     expect(getNogiScheduleEventUrlMock).not.toHaveBeenCalled()
+  })
+
+  it("computes the correct age for a leap-day birthdate observed in a non-leap year", async () => {
+    // Age comes from subtracting calendar years, not from diffing dates, so it's unaffected by
+    // which day (Feb 28 or Mar 1) the source site lands a Feb 29 birthday on in a non-leap year.
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-03-01",
+            category: "誕生日",
+            title: "うるう年生の誕生日",
+            member_uids: ["68"]
+          }
+        ])
+      )
+    )
+    readFileMock.mockRejectedValueOnce(enoent())
+
+    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.SUMMARY).toBe("🎂 うるう 年生の26歳の誕生日")
   })
 })

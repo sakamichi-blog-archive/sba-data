@@ -39,4 +39,4 @@ pnpm run deploy
 ```
 
 Deploys to `contributions.sakamichi.co`. In CI, the `Deploy web` workflow does
-this automatically on pushes to `main` that touch `.web/` or `data/`.
+this automatically on pushes to `main` that touch `.web/` or `data/*/blogs/`.

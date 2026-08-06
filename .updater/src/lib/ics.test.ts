@@ -7,7 +7,7 @@ import {
 } from "@sakamichi-blog-archive/utils/schedule"
 import { beforeEach, describe, expect, it, vi } from "vitest"
 
-import { buildGroupIcs } from "./ics.js"
+import { buildGroupBirthdaysIcs, buildGroupEventsIcs } from "./ics.js"
 import type { ScheduleEventEntry, ScheduleYearData } from "./types.js"
 
 vi.mock("node:fs/promises", () => ({
@@ -21,6 +21,30 @@ vi.mock("@sakamichi-blog-archive/utils/schedule", () => ({
     (filter: { year: number; month: number; day?: number }) =>
       `https://sakura.example/${filter.year}-${filter.month}-${filter.day}`
   )
+}))
+
+vi.mock("@sakamichi-blog-archive/utils/members", () => ({
+  hinataMembers: [
+    {
+      uid: "25",
+      name: "石塚瑶季",
+      nameSpaced: "石塚 瑶季",
+      nameEnglish: "",
+      birthdate: "2000-08-06"
+    }
+  ],
+  nogiMembers: [
+    {
+      uid: "48008",
+      name: "賀喜遥香",
+      nameSpaced: "賀喜 遥香",
+      nameEnglish: "",
+      birthdate: "2000-08-08"
+    }
+  ],
+  sakuraMembers: [
+    { uid: "67", name: "村井優", nameSpaced: "村井 優", nameEnglish: "", birthdate: "1999-08-18" }
+  ]
 }))
 
 const readFileMock = vi.mocked(readFile)
@@ -57,7 +81,7 @@ beforeEach(() => {
   vi.setSystemTime(new Date("2026-08-05T00:00:00Z"))
 })
 
-describe("buildGroupIcs", () => {
+describe("buildGroupEventsIcs", () => {
   it("drops events outside the current and next JST month", async () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
@@ -69,7 +93,7 @@ describe("buildGroupIcs", () => {
       )
     )
 
-    const ics = await buildGroupIcs("sakura", "2026-08-05")
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const events = parseEvents(ics)
     expect(events.map(e => e.SUMMARY)).toEqual(["In range"])
@@ -89,7 +113,7 @@ describe("buildGroupIcs", () => {
       )
     )
 
-    const ics = await buildGroupIcs("sakura", "2026-08-05")
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!.DTSTART).toBe("20260731T233000Z")
@@ -111,7 +135,7 @@ describe("buildGroupIcs", () => {
       )
     )
 
-    const ics = await buildGroupIcs("nogi", "2026-08-05")
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!.DTSTART).toBe("20260801T003000Z")
@@ -123,7 +147,7 @@ describe("buildGroupIcs", () => {
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Release", member_uids: [] }]))
     )
 
-    const ics = await buildGroupIcs("sakura", "2026-08-05")
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!["DTSTART;VALUE=DATE"]).toBe("20260801")
@@ -135,7 +159,7 @@ describe("buildGroupIcs", () => {
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Radio", member_uids: [], id: "e1" }]))
     )
 
-    const ics = await buildGroupIcs("hinata", "2026-08-05")
+    const ics = await buildGroupEventsIcs("hinata", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!.UID).toBe("hinata-e1-2026-08-01")
@@ -146,7 +170,7 @@ describe("buildGroupIcs", () => {
       JSON.stringify(yearData([{ date: "2026-08-01", title: "No id event", member_uids: [] }]))
     )
 
-    const ics = await buildGroupIcs("hinata", "2026-08-05")
+    const ics = await buildGroupEventsIcs("hinata", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!.UID).toMatch(/^hinata-[0-9a-f]{12}$/)
@@ -157,38 +181,32 @@ describe("buildGroupIcs", () => {
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Radio", member_uids: [], id: "e1" }]))
     )
 
-    const hinataIcs = await buildGroupIcs("hinata", "2026-08-05")
+    const hinataIcs = await buildGroupEventsIcs("hinata", "2026-08-05")
     expect(parseEvents(hinataIcs)[0]!.URL).toBe("https://hinata.example/e1")
     expect(getHinataScheduleEventUrlMock).toHaveBeenCalledWith("e1")
 
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Show", member_uids: [], id: "e2" }]))
     )
-    const nogiIcs = await buildGroupIcs("nogi", "2026-08-05")
+    const nogiIcs = await buildGroupEventsIcs("nogi", "2026-08-05")
     expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.example/e2")
     expect(getNogiScheduleEventUrlMock).toHaveBeenCalledWith("e2")
   })
 
-  it("builds a nogi birthday event's url from the member's artist page instead of id", async () => {
+  it("excludes birthday-category events from the events calendar", async () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
         yearData([
-          {
-            date: "2026-08-08",
-            category: "誕生日",
-            title: "Birthday",
-            member_uids: ["48008"],
-            id: "100058"
-          }
+          { date: "2026-08-08", category: "誕生日", title: "Birthday", member_uids: ["48008"] },
+          { date: "2026-08-09", title: "Regular event", member_uids: [] }
         ])
       )
     )
 
-    const ics = await buildGroupIcs("nogi", "2026-08-05")
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
 
-    const [event] = parseEvents(ics)
-    expect(event!.URL).toBe("https://www.nogizaka46.com/s/n46/artist/48008")
-    expect(getNogiScheduleEventUrlMock).not.toHaveBeenCalled()
+    const events = parseEvents(ics)
+    expect(events.map(e => e.SUMMARY)).toEqual(["Regular event"])
   })
 
   it("derives a sakura event url as a date-scoped listing link", async () => {
@@ -196,7 +214,7 @@ describe("buildGroupIcs", () => {
       JSON.stringify(yearData([{ date: "2026-08-12", title: "Event", member_uids: [] }]))
     )
 
-    const ics = await buildGroupIcs("sakura", "2026-08-05")
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const [event] = parseEvents(ics)
     expect(event!.URL).toBe("https://sakura.example/2026-8-12")
@@ -213,7 +231,7 @@ describe("buildGroupIcs", () => {
       )
     )
 
-    const ics = await buildGroupIcs("sakura", "2026-08-05")
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const events = parseEvents(ics)
     expect(events[0]!.CATEGORIES).toBe("ライブ")
@@ -234,7 +252,7 @@ describe("buildGroupIcs", () => {
       throw enoent()
     })
 
-    const ics = await buildGroupIcs("sakura", "2026-12-20")
+    const ics = await buildGroupEventsIcs("sakura", "2026-12-20")
 
     const events = parseEvents(ics)
     expect(events.map(e => e.SUMMARY).toSorted()).toEqual(["December", "January"])
@@ -243,8 +261,109 @@ describe("buildGroupIcs", () => {
   it("treats a missing year file as having no events instead of throwing", async () => {
     readFileMock.mockRejectedValue(enoent())
 
-    const ics = await buildGroupIcs("sakura", "2026-08-05")
+    const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     expect(parseEvents(ics)).toEqual([])
+  })
+})
+
+describe("buildGroupBirthdaysIcs", () => {
+  it("includes only 誕生日-category events", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          { date: "2026-08-08", category: "誕生日", title: "Birthday", member_uids: ["48008"] },
+          { date: "2026-08-09", title: "Regular event", member_uids: [] }
+        ])
+      )
+    )
+    readFileMock.mockRejectedValueOnce(enoent())
+
+    const ics = await buildGroupBirthdaysIcs("nogi", "2026-08-05")
+
+    const events = parseEvents(ics)
+    expect(events).toHaveLength(1)
+    expect(events[0]!.SUMMARY).toBe("🎂 賀喜 遥香の26歳の誕生日")
+  })
+
+  it("spans the current and next full calendar year, not just the current and next month", async () => {
+    readFileMock.mockImplementation(async (path: unknown) => {
+      const p = path as string
+      if (p.endsWith("2026.json")) {
+        return JSON.stringify(
+          yearData([
+            { date: "2026-01-15", category: "誕生日", title: "Early in year", member_uids: [] }
+          ])
+        )
+      }
+      if (p.endsWith("2027.json")) {
+        return JSON.stringify(
+          yearData([
+            { date: "2027-12-20", category: "誕生日", title: "Late next year", member_uids: [] }
+          ])
+        )
+      }
+      throw enoent()
+    })
+
+    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
+
+    const events = parseEvents(ics)
+    expect(events.map(e => e.SUMMARY).toSorted()).toEqual(["Early in year", "Late next year"])
+  })
+
+  it("formats a birthday title with the member's spaced name and age", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          { date: "2026-08-18", category: "誕生日", title: "村井 優の誕生日", member_uids: ["67"] }
+        ])
+      )
+    )
+    readFileMock.mockRejectedValueOnce(enoent())
+
+    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.SUMMARY).toBe("🎂 村井 優の27歳の誕生日")
+  })
+
+  it("falls back to the raw title when the member has no birthdate on record", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          { date: "2026-08-01", category: "誕生日", title: "Unknown member", member_uids: ["999"] }
+        ])
+      )
+    )
+    readFileMock.mockRejectedValueOnce(enoent())
+
+    const ics = await buildGroupBirthdaysIcs("sakura", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.SUMMARY).toBe("Unknown member")
+  })
+
+  it("builds a nogi birthday event's url from the member's artist page instead of id", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            category: "誕生日",
+            title: "Birthday",
+            member_uids: ["48008"],
+            id: "100058"
+          }
+        ])
+      )
+    )
+    readFileMock.mockRejectedValueOnce(enoent())
+
+    const ics = await buildGroupBirthdaysIcs("nogi", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.URL).toBe("https://www.nogizaka46.com/s/n46/artist/48008")
+    expect(getNogiScheduleEventUrlMock).not.toHaveBeenCalled()
   })
 })

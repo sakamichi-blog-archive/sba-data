@@ -76,6 +76,7 @@ jobs:
       - name: Publish calendars to R2
         run: |
           aws s3 sync .updater/dist/calendars "s3://sakamichi-blog-archive-calendars-production" \
+            --delete \
             --endpoint-url "https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}

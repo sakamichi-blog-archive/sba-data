@@ -19,7 +19,6 @@ describe("archiveUrls", () => {
   afterEach(() => {
     process.env = { ...originalEnv }
     vi.unstubAllGlobals()
-    vi.useRealTimers()
     vi.restoreAllMocks()
   })
 
@@ -36,42 +35,33 @@ describe("archiveUrls", () => {
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("WAYBACK_ACCESS_KEY"))
   })
 
-  it("logs success once the capture job reports success", async () => {
-    const fetchMock = vi
-      .fn()
-      .mockResolvedValueOnce(jsonResponse({ job_id: "job-1" }))
-      .mockResolvedValueOnce(jsonResponse({ status: "success", timestamp: "20260806000000" }))
+  it("logs the job id once a capture is submitted", async () => {
+    const fetchMock = vi.fn().mockResolvedValueOnce(jsonResponse({ job_id: "job-1" }))
     vi.stubGlobal("fetch", fetchMock)
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
     await archiveUrls(["https://example.com/post"])
 
-    expect(fetchMock).toHaveBeenNthCalledWith(
-      1,
+    expect(fetchMock).toHaveBeenCalledWith(
       "https://web.archive.org/save/",
       expect.objectContaining({ method: "POST" })
     )
-    expect(fetchMock).toHaveBeenNthCalledWith(
-      2,
-      "https://web.archive.org/save/status/job-1",
-      expect.anything()
-    )
     expect(logSpy).toHaveBeenCalledWith(
-      expect.stringContaining("archived https://example.com/post")
+      expect.stringContaining("submitted https://example.com/post")
     )
+    expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("job-1"))
   })
 
-  it("warns without throwing when the capture job reports an error", async () => {
+  it("warns without throwing when the submit response has no job id", async () => {
     const fetchMock = vi
       .fn()
-      .mockResolvedValueOnce(jsonResponse({ job_id: "job-1" }))
-      .mockResolvedValueOnce(jsonResponse({ status: "error", status_ext: "error:blocked" }))
+      .mockResolvedValueOnce(jsonResponse({ message: "url is blocked from saving" }))
     vi.stubGlobal("fetch", fetchMock)
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
     await expect(archiveUrls(["https://example.com/post"])).resolves.toBeUndefined()
 
-    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("error:blocked"))
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("url is blocked from saving"))
   })
 
   it("warns without throwing when the submit request itself fails", async () => {
@@ -84,19 +74,18 @@ describe("archiveUrls", () => {
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("network down"))
   })
 
-  it("gives up and warns after polling times out", async () => {
-    vi.useFakeTimers()
+  it("submits every url even when an earlier one fails", async () => {
     const fetchMock = vi
       .fn()
-      .mockResolvedValueOnce(jsonResponse({ job_id: "job-1" }))
-      .mockImplementation(async () => jsonResponse({ status: "pending" }))
+      .mockRejectedValueOnce(new Error("network down"))
+      .mockResolvedValueOnce(jsonResponse({ job_id: "job-2" }))
     vi.stubGlobal("fetch", fetchMock)
-    const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
+    vi.spyOn(console, "warn").mockImplementation(() => {})
+    const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
-    const promise = archiveUrls(["https://example.com/post"])
-    await vi.advanceTimersByTimeAsync(3 * 60 * 1000)
-    await promise
+    await archiveUrls(["https://example.com/post-1", "https://example.com/post-2"])
 
-    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("timed out"))
+    expect(fetchMock).toHaveBeenCalledTimes(2)
+    expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("post-2"))
   })
 })

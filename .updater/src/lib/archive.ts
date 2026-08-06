@@ -1,18 +1,8 @@
 const SAVE_ENDPOINT = "https://web.archive.org/save/"
-const STATUS_ENDPOINT = "https://web.archive.org/save/status"
-const POLL_INTERVAL_MS = 5000
-const POLL_TIMEOUT_MS = 2 * 60 * 1000
 
 interface SubmitResponse {
   job_id?: string
   message?: string
-}
-
-interface StatusResponse {
-  status: "pending" | "success" | "error"
-  status_ext?: string
-  message?: string
-  timestamp?: string
 }
 
 async function submitCapture(url: string, accessKey: string, secretKey: string): Promise<string> {
@@ -30,30 +20,9 @@ async function submitCapture(url: string, accessKey: string, secretKey: string):
   return data.job_id
 }
 
-async function pollCapture(
-  jobId: string,
-  accessKey: string,
-  secretKey: string
-): Promise<StatusResponse> {
-  const deadline = Date.now() + POLL_TIMEOUT_MS
-  // Polling by necessity: SPN2 has no push notification, only a status endpoint to re-check.
-  while (Date.now() < deadline) {
-    // oxlint-disable-next-line no-await-in-loop
-    const res = await fetch(`${STATUS_ENDPOINT}/${jobId}`, {
-      headers: { Authorization: `LOW ${accessKey}:${secretKey}` }
-    })
-    // oxlint-disable-next-line no-await-in-loop
-    const data = (await res.json()) as StatusResponse
-    if (data.status !== "pending") return data
-    // oxlint-disable-next-line no-await-in-loop
-    await new Promise(resolve => setTimeout(resolve, POLL_INTERVAL_MS))
-  }
-  return { status: "error", message: "timed out waiting for capture to complete" }
-}
-
-// Submits each URL to the Wayback Machine's Save Page Now API and waits for it to complete.
-// Never throws: a failed or timed-out capture is only logged, since this must never block
-// the caller's other work (e.g. committing data-JSON changes).
+// Submits each URL to the Wayback Machine's Save Page Now API. Fire-and-forget: doesn't poll
+// the job to completion, and never throws — a failed submission is only logged, since this
+// must never block the caller's other work (e.g. committing data-JSON changes).
 export async function archiveUrls(urls: string[]): Promise<void> {
   const accessKey = process.env.WAYBACK_ACCESS_KEY
   const secretKey = process.env.WAYBACK_SECRET_KEY
@@ -67,17 +36,9 @@ export async function archiveUrls(urls: string[]): Promise<void> {
       // Sequential by design: daily volume is small and SPN2 rate limits concurrent jobs per account.
       // oxlint-disable-next-line no-await-in-loop
       const jobId = await submitCapture(url, accessKey, secretKey)
-      // oxlint-disable-next-line no-await-in-loop
-      const result = await pollCapture(jobId, accessKey, secretKey)
-      if (result.status === "success") {
-        console.log(`archived ${url} (timestamp ${result.timestamp ?? "unknown"})`)
-      } else {
-        console.warn(
-          `failed to archive ${url}: ${result.status_ext ?? result.message ?? "unknown error"}`
-        )
-      }
+      console.log(`submitted ${url} for archiving (job ${jobId})`)
     } catch (err) {
-      console.warn(`failed to archive ${url}: ${(err as Error).message}`)
+      console.warn(`failed to submit ${url} for archiving: ${(err as Error).message}`)
     }
   }
 }

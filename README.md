@@ -22,39 +22,58 @@ data/sakura/schedule/   Sakurazaka46 schedule event data
 
 Each group publishes two subscribable `.ics` calendars, regenerated every 6 hours alongside the schedule data:
 
-- **events.ics** — upcoming schedule (current + next month), excluding member birthdays
-- **birthdays.ics** — member birthdays for the current and next calendar year, titled with the member's name and age (e.g. "🎂 賀喜 遥香の26歳の誕生日")
+- `birthdays.ics`: member birthdays for the current and next year (e.g. "🎂 伊藤 理々杏の24歳の誕生日")
+- `events.ics`: upcoming schedule (current + next month), excluding member birthdays
 
 ### How to subscribe
 
-- **Apple Calendar:** File → New Calendar Subscription
+- Apple Calendar: File → New Calendar Subscription
   - [Use iCloud calendar subscriptions - Apple Support](https://support.apple.com/en-us/102301)
-- **Google Calendar:** Other calendars → From URL
+- Google Calendar: Other calendars → From URL
   - [Subscribe to someone else's calendar - Computer - Google Calendar Help](https://support.google.com/calendar/answer/37100?hl=en)
-- **Outlook:** Add calendar → Subscribe from web
+- Outlook: Add calendar → Subscribe from web
   - [Import or subscribe to a calendar in Outlook.com or Outlook on the web | Microsoft Support](https://support.microsoft.com/en-us/outlook/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web)
 
-### URLs
+### Nogizaka46 URLs
 
-Nogizaka46:
+Birthdays:
 
 ```text
-https://calendars.sakamichi.co/nogi/events.ics
 https://calendars.sakamichi.co/nogi/birthdays.ics
 ```
 
-Hinatazaka46:
+Events:
 
 ```text
-https://calendars.sakamichi.co/hinata/events.ics
+https://calendars.sakamichi.co/nogi/events.ics
+```
+
+### Hinatazaka46 URLs
+
+Birthdays:
+
+```text
 https://calendars.sakamichi.co/hinata/birthdays.ics
 ```
 
-Sakurazaka46:
+Events:
+
+```text
+https://calendars.sakamichi.co/hinata/events.ics
+```
+
+### Sakurazaka46 URLs
+
+Birthdays:
+
+```text
+https://calendars.sakamichi.co/sakura/birthdays.ics
+```
+
+Events:
 
 ```text
 https://calendars.sakamichi.co/sakura/events.ics
-https://calendars.sakamichi.co/sakura/birthdays.ics
 ```
 
 ## Data pipeline

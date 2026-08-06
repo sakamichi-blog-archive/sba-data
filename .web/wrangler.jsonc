@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sakamichi-blog-archive-web",
+  "name": "sba-data-production",
   "compatibility_date": "2026-08-06",
   "workers_dev": false,
   "assets": {

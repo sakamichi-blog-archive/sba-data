@@ -85,4 +85,17 @@ describe("archiveUrls", () => {
     expect(fetchMock).toHaveBeenCalledTimes(2)
     expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("post-2"))
   })
+
+  it("submits every url even when an earlier one is malformed", async () => {
+    const fetchMock = vi.fn().mockResolvedValueOnce(jsonResponse({ job_id: "job-2" }))
+    vi.stubGlobal("fetch", fetchMock)
+    const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
+    const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
+
+    await archiveUrls(["not a url", "https://example.com/post-2"], "key", "secret")
+
+    expect(fetchMock).toHaveBeenCalledTimes(1)
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("not a url"))
+    expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("post-2"))
+  })
 })

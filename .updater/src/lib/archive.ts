@@ -39,14 +39,14 @@ export async function archiveUrls(
   secretKey: string
 ): Promise<void> {
   for (const rawUrl of urls) {
-    const url = normalizeUrl(rawUrl)
     try {
+      const url = normalizeUrl(rawUrl)
       // Sequential by design: daily volume is small and SPN2 rate limits concurrent jobs per account.
       // oxlint-disable-next-line no-await-in-loop
       const jobId = await submitCapture(url, accessKey, secretKey)
       console.log(`submitted ${url} for archiving (job ${jobId})`)
     } catch (err) {
-      console.warn(`failed to submit ${url} for archiving: ${(err as Error).message}`)
+      console.warn(`failed to submit ${rawUrl} for archiving: ${(err as Error).message}`)
     }
   }
 }

@@ -4,6 +4,12 @@ import { dirname, join, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
 import {
+  hinataMembers,
+  nogiMembers,
+  sakuraMembers,
+  type Member
+} from "@sakamichi-blog-archive/utils/members"
+import {
   getHinataScheduleEventUrl,
   getNogiScheduleEventUrl,
   getSakuraScheduleUrl
@@ -14,6 +20,8 @@ import { isInMonth, monthsToFetch, todayJST } from "./schedule.js"
 import type { Group, ScheduleEventEntry, ScheduleYearData } from "./types.js"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../")
+
+const BIRTHDAY_CATEGORY = "誕生日"
 
 const dirs: Record<Group, string> = {
   hinata: "data/hinata/schedule",
@@ -27,17 +35,42 @@ const calNames: Record<Group, string> = {
   sakura: "Sakurazaka46 Schedule"
 }
 
-// The nogi schedule API's own event id resolves to a media/announcement page, but for a
-// "誕生日" (birthday) entry the official site instead links to the member's profile page —
-// there's no id-based URL for that. Building it directly from member_uids is the only option.
-function nogiArtistUrl(memberUid: string): string {
-  return `https://www.nogizaka46.com/s/n46/artist/${memberUid}`
+function buildMemberMap(members: Member[]): Map<string, Member> {
+  return new Map(members.map(m => [m.uid, m]))
+}
+
+const membersByUid: Record<Group, Map<string, Member>> = {
+  hinata: buildMemberMap(hinataMembers),
+  nogi: buildMemberMap(nogiMembers),
+  sakura: buildMemberMap(sakuraMembers)
+}
+
+// Raw titles are inconsistent across groups (nogi's is just the member's name; hinata/sakura
+// append "の誕生日") and none of them show age. Rebuilding from the member roster gives every
+// group the same "🎂 {name}の{age}歳の誕生日" format. Falls back to the raw title if the member
+// or their birthdate isn't in the roster (e.g. a name-matching miss upstream).
+function birthdayTitle(group: Group, event: ScheduleEventEntry): string {
+  const uid = event.member_uids[0]
+  const member = uid !== undefined ? membersByUid[group].get(uid) : undefined
+  if (member?.birthdate === undefined) return event.title
+
+  const eventYear = Number(event.date.split("-")[0])
+  const birthYear = Number(member.birthdate.split("-")[0])
+  return `🎂 ${member.name}の${eventYear - birthYear}歳の誕生日`
+}
+
+// None of the schedule APIs give a birthday entry an id-based detail URL — the official sites
+// link these to the member's own profile page instead, so it has to be built from member_uids.
+function memberProfileUrl(group: Group, memberUid: string): string {
+  if (group === "nogi") return `https://www.nogizaka46.com/s/n46/artist/${memberUid}`
+  if (group === "hinata") return `https://www.hinatazaka46.com/s/official/artist/${memberUid}`
+  return `https://sakurazaka46.com/s/s46/artist/${memberUid}`
 }
 
 function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
-  if (group === "nogi" && event.category === "誕生日") {
+  if (event.category === BIRTHDAY_CATEGORY) {
     const memberUid = event.member_uids[0]
-    return memberUid !== undefined ? nogiArtistUrl(memberUid) : undefined
+    return memberUid !== undefined ? memberProfileUrl(group, memberUid) : undefined
   }
   if (group === "hinata")
     return event.id !== undefined ? getHinataScheduleEventUrl(event.id) : undefined
@@ -46,6 +79,14 @@ function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
 
   const [year, month, day] = event.date.split("-").map(Number)
   return getSakuraScheduleUrl({ year: year!, month: month!, day })
+}
+
+// Birthday events for graduated members should stop showing up on birthdays.ics once they've
+// actually left — "now" is real wall-clock time (the GitHub Actions run), not `referenceDate`,
+// since graduation isn't tied to which JST calendar day the calendar happens to be built for.
+function isGraduatedMember(group: Group, uid: string | undefined): boolean {
+  const member = uid !== undefined ? membersByUid[group].get(uid) : undefined
+  return member?.graduatedAt !== undefined && new Date(member.graduatedAt).getTime() < Date.now()
 }
 
 // ics UIDs must stay stable across runs so calendar clients update existing events instead of
@@ -94,7 +135,7 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
 
   return {
     uid: eventUid(group, event),
-    title: event.title,
+    title: event.category === BIRTHDAY_CATEGORY ? birthdayTitle(group, event) : event.title,
     start,
     startInputType: "utc",
     startOutputType: "utc",
@@ -118,19 +159,51 @@ async function readYear(group: Group, year: number): Promise<ScheduleYearData> {
   }
 }
 
-export async function buildGroupIcs(group: Group, referenceDate = todayJST()): Promise<string> {
+async function readYears(group: Group, years: number[]): Promise<ScheduleEventEntry[]> {
+  const yearData = await Promise.all(years.map(year => readYear(group, year)))
+  return yearData.flatMap(d => d.events)
+}
+
+export async function buildGroupEventsIcs(
+  group: Group,
+  referenceDate = todayJST()
+): Promise<string> {
   const filters = monthsToFetch(referenceDate)
   const years = [...new Set(filters.map(f => f.year))]
-  const yearData = await Promise.all(years.map(year => readYear(group, year)))
+  const allEvents = await readYears(group, years)
 
-  const events = yearData
-    .flatMap(d => d.events)
-    .filter(e => filters.some(f => isInMonth(e.date, f.year, f.month)))
+  const events = allEvents
+    .filter(
+      e => e.category !== BIRTHDAY_CATEGORY && filters.some(f => isInMonth(e.date, f.year, f.month))
+    )
     .map(e => toIcsEvent(group, e))
 
   const { error, value } = createEvents(events, {
     calName: calNames[group],
     productId: "-//sba-data//schedule//EN"
+  })
+  if (error) throw error
+  return value!
+}
+
+// Unlike buildGroupEventsIcs, this isn't windowed to the current + next JST month — birthdays
+// recur once a year, so a short window would make the calendar mostly empty. Two full calendar
+// years (current + next) gives a stable one-year-ahead view, matching how contacts apps surface
+// birthdays.
+export async function buildGroupBirthdaysIcs(
+  group: Group,
+  referenceDate = todayJST()
+): Promise<string> {
+  const currentYear = Number(referenceDate.split("-")[0])
+  const allEvents = await readYears(group, [currentYear, currentYear + 1])
+
+  const events = allEvents
+    .filter(e => e.category === BIRTHDAY_CATEGORY && !isGraduatedMember(group, e.member_uids[0]))
+    .map(e => toIcsEvent(group, e))
+
+  const { error, value } = createEvents(events, {
+    calName: `${calNames[group]} Birthdays`,
+    productId: "-//sba-data//birthdays//EN"
   })
   if (error) throw error
   return value!

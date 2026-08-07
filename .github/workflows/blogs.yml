@@ -5,6 +5,7 @@ on:
     # Every day at 0:30 JST
     - cron: "30 0 * * *"
       timezone: "Asia/Tokyo"
+  workflow_dispatch:
 
 permissions: {}
 
@@ -30,13 +31,20 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      - name: Calculate date to update
-        id: date
-        run: echo "date=$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
-      - run: pnpm run update:blogs "$UPDATE_DATE"
+      - name: Calculate date range to update
+        id: dates
+        run: |
+          echo "from=$(TZ=Asia/Tokyo date -d '3 days ago' +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          echo "to=$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - name: Update blog data for the last 3 days
         working-directory: .updater
-        env:
-          UPDATE_DATE: ${{ steps.date.outputs.date }}
+        run: |
+          for offset in 3 2 1; do
+            date="$(TZ=Asia/Tokyo date -d "$offset days ago" +%Y-%m-%d)"
+            echo "::group::Updating blogs for $date"
+            pnpm run update:blogs "$date"
+            echo "::endgroup::"
+          done
       - name: Get GitHub App bot user ID
         id: updater-app-user-id
         run: echo "id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
@@ -48,12 +56,13 @@ jobs:
           git config user.name "${APP_SLUG}[bot]"
           git config user.email "$UPDATER_APP_USER_ID+${APP_SLUG}[bot]@users.noreply.github.com"
           git add data/hinata/blogs data/nogi/blogs data/sakura/blogs
-          git diff --staged --quiet || git commit -m "data: Update blog data for $UPDATE_DATE"
+          git diff --staged --quiet || git commit -m "data: Update blog data for $UPDATE_FROM to $UPDATE_TO"
           git push
         env:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
+          UPDATE_FROM: ${{ steps.dates.outputs.from }}
+          UPDATE_TO: ${{ steps.dates.outputs.to }}
           UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
-          UPDATE_DATE: ${{ steps.date.outputs.date }}
 
   # Independent of update-data: re-fetches the same date's posts itself to get their URLs
   # (not stored in the committed JSON) and submits them to the Wayback Machine. Runs on the
@@ -74,12 +83,15 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      - name: Calculate date to archive
-        id: date
-        run: echo "date=$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
-      - run: pnpm run archive:blogs "$ARCHIVE_DATE"
+      - name: Archive blogs for the last 3 days
         working-directory: .updater
+        run: |
+          for offset in 3 2 1; do
+            date="$(TZ=Asia/Tokyo date -d "$offset days ago" +%Y-%m-%d)"
+            echo "::group::Archiving blogs for $date"
+            pnpm run archive:blogs "$date"
+            echo "::endgroup::"
+          done
         env:
-          ARCHIVE_DATE: ${{ steps.date.outputs.date }}
           INTERNET_ARCHIVE_ACCESS_KEY: ${{ secrets.INTERNET_ARCHIVE_ACCESS_KEY }}
           INTERNET_ARCHIVE_SECRET_KEY: ${{ secrets.INTERNET_ARCHIVE_SECRET_KEY }}

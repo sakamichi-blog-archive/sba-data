@@ -62,9 +62,9 @@ jobs:
           git push
         env:
           APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
-          UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
           UPDATE_FROM: ${{ steps.dates.outputs.from }}
           UPDATE_TO: ${{ steps.dates.outputs.to }}
+          UPDATER_APP_USER_ID: ${{ steps.updater-app-user-id.outputs.id }}
 
   # Independent of update-data: re-fetches the same date's posts itself to get their URLs
   # (not stored in the committed JSON) and submits them to the Wayback Machine. Runs on the

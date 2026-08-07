@@ -36,8 +36,6 @@ jobs:
         run: |
           echo "from=$(TZ=Asia/Tokyo date -d '3 days ago' +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
           echo "to=$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
-      # Span the last 3 days rather than only yesterday, so late-posted or
-      # backfilled blogs from earlier days are still picked up.
       - name: Update blog data for the last 3 days
         working-directory: .updater
         run: |
@@ -85,8 +83,6 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      # Mirror the update job's 3-day span so newly-seen posts from earlier
-      # days also get archived.
       - name: Archive blogs for the last 3 days
         working-directory: .updater
         run: |

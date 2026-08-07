@@ -5,6 +5,7 @@ on:
     # NOTE: Stay clear of the blogs workflow's 0:30 JST run
     - cron: 0 */6 * * *
       timezone: Asia/Tokyo
+  workflow_dispatch:
 
 permissions: {}
 

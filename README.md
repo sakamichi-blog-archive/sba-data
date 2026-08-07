@@ -1,6 +1,6 @@
 # sba-data
 
-This repo stores the following data in [`data/`](./data/):
+This repo stores the Sakamichi groups' following data in [`data/`](./data/):
 
 - Blogs data: Each item representing a date and members that posted on that date
 - Schedule data: Items for each event
@@ -58,4 +58,4 @@ Both are updated through GitHub Actions schedule events.
 - Blogs: Updated daily at 00:30 JST
 - Schedule: Updated every 6 hours
 
-*Don't expect GitHub Actions to run on the dot; they eventually do run before the next interval.
+> Note: Don't expect GitHub Actions to run on the dot; they eventually do run before the next interval.

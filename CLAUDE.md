@@ -90,6 +90,8 @@ No `url` is stored — it's cheaply derivable from `id` (and `date` for sakura) 
 
 Data is fetched and committed to the repo by scheduled GitHub Actions workflows (one for blogs, one for schedule). The Astro build reads static data files from the group directories — no runtime data fetching.
 
+Each blog update run refetches the last 3 JST days (yesterday through 3 days ago) so late-posted or backfilled blogs are still captured. The `update:blogs` script itself only handles a single day; the workflow loops it over the 3-day span.
+
 Each schedule update run also regenerates two per-group `.ics` calendars and uploads them to Cloudflare R2. Calendars aren't stored in the repo — they're rebuilt from the just-updated data on every run.
 
 - `{group}/events.ics` — current + next JST month, `data/{group}/schedule/` events excluding `category: "誕生日"` (birthdays), one event per occurrence. Each event's `member_uids` are resolved to unspaced names and set as the ics `DESCRIPTION` (`メンバー：{name} {name}...`), omitted when the event lists no members.

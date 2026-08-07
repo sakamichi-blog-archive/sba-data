@@ -1,29 +1,32 @@
 # sba-data
 
-Blog post data for the Sakamichi Series (Nogizaka46, Keyakizaka46, Sakurazaka46, Hinatazaka46), with a companion web app that visualizes posting activity as GitHub-style contribution heatmaps.
+This repo stores the following data in [`data/`](./data/):
 
-Successor to [sba-contributions](https://github.com/sakamichi-blog-archive/sba-contributions).
+- Blogs data: Each item representing a date and members that posted on that date
+- Schedule data: Items for each event
+
+In addition, the following are published as side projects:
+
+- Blog contributions web app, that visualizes blog post frequency as GitHub style heatmaps
+- Subscribable calendars, generated from official schedule
 
 ## Repository structure
 
+```text
+data/<group>/blogs/     Blog data
+data/<group>/schedule/  Schedule data
 ```
-data/hinata/blogs/      Hinatazaka46 blog data
-data/hinata/schedule/   Hinatazaka46 schedule event data
-data/keyaki/blogs/      Keyakizaka46 blog data
-data/nogi/blogs/        Nogizaka46 blog data
-data/nogi/schedule/     Nogizaka46 schedule event data
-data/sakura/blogs/      Sakurazaka46 blog data
-data/sakura/schedule/   Sakurazaka46 schedule event data
-.updater/               Node.js project for fetching and updating blog and schedule data
-.web/                   Astro web app + Cloudflare Workers config
-```
+
+## Blog contributions web app
+
+<https://contributions.sakamichi.co>
 
 ## Schedule calendars
 
-Each group publishes two subscribable `.ics` calendars, regenerated every 6 hours alongside the schedule data:
+Each group publishes 2 subscribable `.ics` calendars:
 
-- `birthdays.ics`: member birthdays for the current and next year (e.g. "🎂 伊藤理々杏の24歳の誕生日")
-- `events.ics`: upcoming schedule (current + next month), excluding member birthdays
+- `birthdays.ics`: Member birthdays (current + next year)
+- `events.ics`: Upcoming schedule (current + next month), excluding member birthdays
 
 ### How to subscribe
 
@@ -34,58 +37,25 @@ Each group publishes two subscribable `.ics` calendars, regenerated every 6 hour
 - Outlook: Add calendar → Subscribe from web
   - [Import or subscribe to a calendar in Outlook.com or Outlook on the web | Microsoft Support](https://support.microsoft.com/en-us/outlook/import-or-subscribe-to-a-calendar-in-outlook-com-or-outlook-on-the-web)
 
-### Nogizaka46 URLs
+### URLs
 
-Birthdays:
+- Nogizaka46
+  - Birthdays: <https://calendars.sakamichi.co/nogi/birthdays.ics>
+  - Events: <https://calendars.sakamichi.co/nogi/events.ics>
 
-```text
-https://calendars.sakamichi.co/nogi/birthdays.ics
-```
+- Hinatazaka46
+  - Birthdays: <https://calendars.sakamichi.co/hinata/birthdays.ics>
+  - Events: <https://calendars.sakamichi.co/hinata/events.ics>
 
-Events:
+- Sakurazaka46
+  - Birthdays: <https://calendars.sakamichi.co/sakura/birthdays.ics>
+  - Events: <https://calendars.sakamichi.co/sakura/events.ics>
 
-```text
-https://calendars.sakamichi.co/nogi/events.ics
-```
+## Data update frequency
 
-### Hinatazaka46 URLs
+Both are updated through GitHub Actions schedule events.
 
-Birthdays:
+- Blogs: Updated daily at 00:30 JST
+- Schedule: Updated every 6 hours
 
-```text
-https://calendars.sakamichi.co/hinata/birthdays.ics
-```
-
-Events:
-
-```text
-https://calendars.sakamichi.co/hinata/events.ics
-```
-
-### Sakurazaka46 URLs
-
-Birthdays:
-
-```text
-https://calendars.sakamichi.co/sakura/birthdays.ics
-```
-
-Events:
-
-```text
-https://calendars.sakamichi.co/sakura/events.ics
-```
-
-## Data pipeline
-
-GitHub Actions workflows fetch data from each group's official site and commit updated files to the group directories above: blog post data daily, schedule event data every 6 hours.
-
-## Web app
-
-The Astro site lives in `.web/` and is deployed to Cloudflare Workers. It reads the data files at build time to render the contribution heatmaps.
-
-```sh
-cd .web
-pnpm install
-pnpm dev
-```
+*Don't expect GitHub Actions to run on the dot; they eventually do run before the next interval.

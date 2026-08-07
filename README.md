@@ -1,6 +1,6 @@
 # sba-data
 
-This repo stores the Sakamichi groups' following data in [`data/`](./data/):
+This repo stores Sakamichi groups' following data in [`data/`](./data/):
 
 - Blogs data: Each item representing a date and members that posted on that date
 - Schedule data: Items for each event

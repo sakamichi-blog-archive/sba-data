@@ -10,6 +10,7 @@ pnpm run update:blogs 2026-07-06    # updates a specific date's blog posts
 
 pnpm run archive:blogs               # submits yesterday's blog posts (JST) to the Wayback Machine
 pnpm run archive:blogs 2026-07-06    # same, for a specific date
+pnpm run archive:blogs --group=nogi  # same, for one group only (default: all three)
 
 pnpm run update:schedule            # updates the current and next JST calendar month's schedule events
 pnpm run update:schedule 2026-07-06 # same, using this date to determine current/next month
@@ -21,3 +22,13 @@ JSON, which doesn't store post URLs) and submits each to the Internet Archive's
 Requires `INTERNET_ARCHIVE_ACCESS_KEY`/`INTERNET_ARCHIVE_SECRET_KEY` env vars (S3-style keys from
 [archive.org/account/s3.php](https://archive.org/account/s3.php)); without them it exits with a
 non-zero status before fetching anything.
+
+SPN2 caps concurrent capture sessions per account, so posts are submitted strictly one at a
+time: each job is polled to completion (giving up after 3 minutes, though the capture keeps
+running server-side) before the next is submitted. A submission that fails — including one
+rejected because the session pool is full — is not retried; the post is skipped and the next
+one waits a minute first, so the pool has a chance to drain without any single post costing
+more than that. Runtime therefore scales with post count, which is why the
+scheduled workflow archives only yesterday while `update:blogs` covers a 3-day window, and runs
+one group per job via `--group=`. Those jobs must not overlap — the SPN session limit is per
+account, so the workflow serialises them with `max-parallel: 1`.

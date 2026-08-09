@@ -73,10 +73,19 @@ jobs:
   # peaks at ~109 posts (New Year), which can exceed the 6h job limit if captures are slow.
   # A single day peaks at ~68. Backfilled posts that update-data picks up on a later day are
   # therefore not archived.
+  #
+  # Split per group so one group's slow or failing captures can't eat the others' budget, and
+  # so each leg gets its own 6h job limit (worst single group-day is ~35 posts). max-parallel
+  # is 1 because the SPN session limit is per account, not per job — legs must never overlap.
   archive:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        group: [nogi, hinata, sakura]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -91,7 +100,10 @@ jobs:
         working-directory: .updater
       - name: Archive yesterday's blogs
         working-directory: .updater
-        run: pnpm run archive:blogs "$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)"
+        run: |
+          pnpm run archive:blogs "$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)" \
+            --group="$GROUP"
         env:
+          GROUP: ${{ matrix.group }}
           INTERNET_ARCHIVE_ACCESS_KEY: ${{ secrets.INTERNET_ARCHIVE_ACCESS_KEY }}
           INTERNET_ARCHIVE_SECRET_KEY: ${{ secrets.INTERNET_ARCHIVE_SECRET_KEY }}

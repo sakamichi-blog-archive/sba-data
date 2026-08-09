@@ -25,8 +25,10 @@ non-zero status before fetching anything.
 
 SPN2 caps concurrent capture sessions per account, so posts are submitted strictly one at a
 time: each job is polled to completion (giving up after 3 minutes, though the capture keeps
-running server-side) before the next is submitted, and a submission that still hits the session
-limit is retried after a wait. Runtime therefore scales with post count, which is why the
+running server-side) before the next is submitted. A submission that fails — including one
+rejected because the session pool is full — is not retried; the post is skipped and the next
+one waits a minute first, so the pool has a chance to drain without any single post costing
+more than that. Runtime therefore scales with post count, which is why the
 scheduled workflow archives only yesterday while `update:blogs` covers a 3-day window, and runs
 one group per job via `--group=`. Those jobs must not overlap — the SPN session limit is per
 account, so the workflow serialises them with `max-parallel: 1`.

@@ -1,5 +1,5 @@
 {
-  "count": 125,
+  "count": 126,
   "events": [
     {
       "date": "2026-08-01",
@@ -225,6 +225,16 @@
       "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
       "member_uids": [],
       "id": "11567"
+    },
+    {
+      "date": "2026-08-10",
+      "category": "テレビ",
+      "title": "TBS「ラヴィット！」",
+      "member_uids": [
+        "64"
+      ],
+      "time_start": "08:00",
+      "id": "11989"
     },
     {
       "date": "2026-08-11",

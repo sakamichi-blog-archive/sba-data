@@ -9,6 +9,15 @@ on:
 
 permissions: {}
 
+# The Save Page Now session limit is per account, so archive legs must not overlap across runs
+# either — the matrix's max-parallel only serialises legs within a single run, and a manual
+# dispatch can otherwise start alongside the scheduled one. Serialising whole runs also keeps two
+# update-data jobs from racing to push commits. Queue rather than cancel: an in-flight run holds
+# capture sessions that a cancellation would strand.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 jobs:
   update-data:
     runs-on: ubuntu-latest

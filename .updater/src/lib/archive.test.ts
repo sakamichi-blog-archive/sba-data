@@ -105,6 +105,52 @@ describe("archiveUrls", () => {
     expect(polls).toBe(3)
   })
 
+  // A failed status read says nothing about the capture, which still holds a session. Advancing
+  // on it would submit the next url on top of the running job.
+  it("keeps polling when a status read fails transiently", async () => {
+    let polls = 0
+    const fetchMock = vi.fn((input: string) => {
+      if (input.startsWith("https://web.archive.org/save/status/")) {
+        polls++
+        if (polls === 1) return Promise.reject(new Error("socket hang up"))
+        if (polls === 2) return Promise.resolve(new Response("<html>502</html>"))
+        return Promise.resolve(jsonResponse({ status: "success" }))
+      }
+      return Promise.resolve(jsonResponse({ job_id: "job-1" }))
+    })
+    vi.stubGlobal("fetch", fetchMock)
+    const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
+    vi.spyOn(console, "warn").mockImplementation(() => {})
+
+    await archiveUrls(["https://example.com/post"], "key", "secret", {
+      pollIntervalMs: 0,
+      maxWaitMs: 10_000,
+      failureDelayMs: 0
+    })
+
+    expect(polls).toBe(3)
+    expect(logSpy).toHaveBeenCalledWith("archived https://example.com/post")
+  })
+
+  it("gives up rather than throwing when status reads keep failing", async () => {
+    const fetchMock = vi.fn((input: string) => {
+      if (input.startsWith("https://web.archive.org/save/status/")) {
+        return Promise.reject(new Error("socket hang up"))
+      }
+      return Promise.resolve(jsonResponse({ job_id: "job-1" }))
+    })
+    vi.stubGlobal("fetch", fetchMock)
+    const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
+    const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
+
+    await expect(
+      archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+    ).resolves.toBeUndefined()
+
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("gave up waiting for job job-1"))
+    expect(logSpy).not.toHaveBeenCalledWith(expect.stringContaining("archived"))
+  })
+
   it("does not claim a url was archived when the wait times out", async () => {
     const fetchMock = mockFetch([{ job_id: "job-1" }], { status: "pending" })
     vi.stubGlobal("fetch", fetchMock)

@@ -69,15 +69,27 @@ async function waitForCapture(
   for (;;) {
     // oxlint-disable-next-line no-await-in-loop
     await sleep(pollIntervalMs)
-    // oxlint-disable-next-line no-await-in-loop
-    const res = await fetch(`${STATUS_ENDPOINT}${jobId}`, {
-      headers: {
-        Accept: "application/json",
-        Authorization: `LOW ${accessKey}:${secretKey}`
-      }
-    })
-    // oxlint-disable-next-line no-await-in-loop
-    const data = (await res.json()) as StatusResponse
+
+    let data: StatusResponse
+    try {
+      // oxlint-disable-next-line no-await-in-loop
+      const res = await fetch(`${STATUS_ENDPOINT}${jobId}`, {
+        headers: {
+          Accept: "application/json",
+          Authorization: `LOW ${accessKey}:${secretKey}`
+        }
+      })
+      // oxlint-disable-next-line no-await-in-loop
+      data = (await res.json()) as StatusResponse
+    } catch (err) {
+      // Failing to read the status says nothing about the capture — it's still running and still
+      // holding a session. Returning here would let the next URL be submitted on top of it, so
+      // keep polling until the deadline and only then give up.
+      if (Date.now() >= deadline) return false
+      console.warn(`status check for job ${jobId} failed, still waiting: ${(err as Error).message}`)
+      continue
+    }
+
     if (data.status === "success") return true
     if (data.status === "error") throw new Error(data.message ?? `job ${jobId} failed`)
     if (Date.now() >= deadline) return false

@@ -67,6 +67,12 @@ jobs:
   # Independent of update-data: re-fetches the same date's posts itself to get their URLs
   # (not stored in the committed JSON) and submits them to the Wayback Machine. Runs on the
   # same schedule but isn't ordered relative to update-data — it neither reads nor writes data/.
+  #
+  # Covers yesterday only, unlike update-data's 3-day window. Save Page Now captures are
+  # submitted one at a time and waited on, so runtime scales with post count: a 3-day window
+  # peaks at ~109 posts (New Year), which can exceed the 6h job limit if captures are slow.
+  # A single day peaks at ~68. Backfilled posts that update-data picks up on a later day are
+  # therefore not archived.
   archive:
     runs-on: ubuntu-latest
     permissions:
@@ -83,15 +89,9 @@ jobs:
           package_json_file: .updater/package.json
       - run: pnpm install
         working-directory: .updater
-      - name: Archive blogs for the last 3 days
+      - name: Archive yesterday's blogs
         working-directory: .updater
-        run: |
-          for offset in 3 2 1; do
-            date="$(TZ=Asia/Tokyo date -d "$offset days ago" +%Y-%m-%d)"
-            echo "::group::Archiving blogs for $date"
-            pnpm run archive:blogs "$date"
-            echo "::endgroup::"
-          done
+        run: pnpm run archive:blogs "$(TZ=Asia/Tokyo date -d yesterday +%Y-%m-%d)"
         env:
           INTERNET_ARCHIVE_ACCESS_KEY: ${{ secrets.INTERNET_ARCHIVE_ACCESS_KEY }}
           INTERNET_ARCHIVE_SECRET_KEY: ${{ secrets.INTERNET_ARCHIVE_SECRET_KEY }}

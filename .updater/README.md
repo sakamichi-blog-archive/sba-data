@@ -21,3 +21,9 @@ JSON, which doesn't store post URLs) and submits each to the Internet Archive's
 Requires `INTERNET_ARCHIVE_ACCESS_KEY`/`INTERNET_ARCHIVE_SECRET_KEY` env vars (S3-style keys from
 [archive.org/account/s3.php](https://archive.org/account/s3.php)); without them it exits with a
 non-zero status before fetching anything.
+
+SPN2 caps concurrent capture sessions per account, so posts are submitted strictly one at a
+time: each job is polled to completion (giving up after 3 minutes, though the capture keeps
+running server-side) before the next is submitted, and a submission that still hits the session
+limit is retried after a wait. Runtime therefore scales with post count, which is why the
+scheduled workflow archives only yesterday while `update:blogs` covers a 3-day window.

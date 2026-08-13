@@ -1,5 +1,5 @@
 {
-  "count": 222,
+  "count": 224,
   "events": [
     {
       "date": "2026-08-01",
@@ -841,6 +841,16 @@
     },
     {
       "date": "2026-08-14",
+      "category": "WEB",
+      "title": "SHOWROOM「のぎおび」伊藤理々杏",
+      "member_uids": [
+        "36749"
+      ],
+      "time_start": "17:15",
+      "id": "107299"
+    },
+    {
+      "date": "2026-08-14",
       "category": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
@@ -932,6 +942,17 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-08-15",
+      "category": "WEB",
+      "title": "ニコニコ生放送「生のアイドルが好き」愛宕心響、田村真佑",
+      "member_uids": [
+        "48015",
+        "63101"
+      ],
+      "time_start": "20:00",
+      "id": "107300"
     },
     {
       "date": "2026-08-16",

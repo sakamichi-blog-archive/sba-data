@@ -1,5 +1,5 @@
 {
-  "count": 224,
+  "count": 228,
   "events": [
     {
       "date": "2026-08-01",
@@ -968,6 +968,17 @@
     },
     {
       "date": "2026-08-16",
+      "category": "TV",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107304"
+    },
+    {
+      "date": "2026-08-16",
       "category": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」川﨑桜、大越ひなの、瀬戸口心月",
       "member_uids": [
@@ -1245,6 +1256,22 @@
     {
       "date": "2026-08-22",
       "category": "TV",
+      "title": "TBSチャンネル1「乃木坂お試し中」伊藤理々杏、愛宕心響、小津玲奈、川端晃菜、瀬戸口心月、森平麗心",
+      "member_uids": [
+        "36749",
+        "63101",
+        "63103",
+        "63105",
+        "63107",
+        "63110"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "107303"
+    },
+    {
+      "date": "2026-08-22",
+      "category": "TV",
       "title": "TBSチャンネル1「Spicy Sessions with KAZ（GENERATIONS/数原龍友）」中西アルノ",
       "member_uids": [
         "55395"
@@ -1485,6 +1512,17 @@
     },
     {
       "date": "2026-08-28",
+      "category": "TV",
+      "title": "フジテレビ(関東ローカル)「TIF PLAY BACK〜みんなのONE SONG〜」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "26:45",
+      "time_end": "27:45",
+      "id": "107301"
+    },
+    {
+      "date": "2026-08-28",
       "category": "書籍",
       "title": "「B.L.T.」小津玲奈",
       "member_uids": [
@@ -1522,6 +1560,17 @@
       "time_start": "20:05",
       "time_end": "22:55",
       "id": "106124"
+    },
+    {
+      "date": "2026-08-30",
+      "category": "TV",
+      "title": "フジテレビNEXT(CS/再放送)「TIF PLAY BACK〜みんなのONE SONG〜」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "23:00",
+      "time_end": "24:00",
+      "id": "107302"
     },
     {
       "date": "2026-08-30",

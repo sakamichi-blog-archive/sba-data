@@ -221,7 +221,12 @@ describe("buildGroupEventsIcs", () => {
     )
     const nogiIcs = await buildGroupEventsIcs("nogi", "2026-08-05")
     expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.example/e2")
-    expect(getNogiScheduleEventUrlMock).toHaveBeenCalledWith("e2")
+    // The occurrence's own date is passed so a recurring nogi event, whose occurrences share one
+    // id, doesn't link to the date it was first listed on.
+    expect(getNogiScheduleEventUrlMock).toHaveBeenCalledWith(
+      "e2",
+      new Date("2026-08-01T00:00:00+09:00")
+    )
   })
 
   it("excludes birthday-category events from the events calendar", async () => {

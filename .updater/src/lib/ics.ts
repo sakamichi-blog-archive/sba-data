@@ -62,8 +62,13 @@ function memberProfileUrl(group: Group, memberUid: string): string {
 function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
   if (group === "hinata")
     return event.id !== undefined ? getHinataScheduleEventUrl(event.id) : undefined
+  // A nogi recurring event's occurrences share one id, and the detail page renders whichever
+  // date the URL carries — so pass the occurrence's own date rather than letting the page fall
+  // back to the date the event was first listed.
   if (group === "nogi")
-    return event.id !== undefined ? getNogiScheduleEventUrl(event.id) : undefined
+    return event.id !== undefined
+      ? getNogiScheduleEventUrl(event.id, new Date(`${event.date}T00:00:00+09:00`))
+      : undefined
 
   const [year, month, day] = event.date.split("-").map(Number)
   return getSakuraScheduleUrl({ year: year!, month: month!, day })

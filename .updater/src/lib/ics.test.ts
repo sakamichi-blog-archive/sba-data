@@ -15,18 +15,18 @@ vi.mock("node:fs/promises", () => ({
 }))
 
 vi.mock("@sakamichi-blog-archive/utils/schedule", () => ({
-  getHinataScheduleEventUrl: vi.fn((id: string) => `https://hinata.example/${id}`),
+  getHinataScheduleEventUrl: vi.fn((id: string) => `https://hinata.invalid/${id}`),
   // Mirrors utils' real signature, and folds the date into the returned URL so the occurrence
   // date shows up in the generated ics rather than only in the call arguments. Like utils, it
   // reads the date's JST calendar day.
   getNogiScheduleEventUrl: vi.fn((id: string, date?: Date) => {
-    if (date === undefined) return `https://nogi.example/${id}`
+    if (date === undefined) return `https://nogi.invalid/${id}`
     const jst = new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
-    return `https://nogi.example/${id}?d=${jst}`
+    return `https://nogi.invalid/${id}?d=${jst}`
   }),
   getSakuraScheduleUrl: vi.fn(
     (filter: { year: number; month: number; day?: number }) =>
-      `https://sakura.example/${filter.year}-${filter.month}-${filter.day}`
+      `https://sakura.invalid/${filter.year}-${filter.month}-${filter.day}`
   )
 }))
 
@@ -220,14 +220,14 @@ describe("buildGroupEventsIcs", () => {
     )
 
     const hinataIcs = await buildGroupEventsIcs("hinata", "2026-08-05")
-    expect(parseEvents(hinataIcs)[0]!.URL).toBe("https://hinata.example/e1")
+    expect(parseEvents(hinataIcs)[0]!.URL).toBe("https://hinata.invalid/e1")
     expect(getHinataScheduleEventUrlMock).toHaveBeenCalledWith("e1")
 
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Show", member_uids: [], id: "e2" }]))
     )
     const nogiIcs = await buildGroupEventsIcs("nogi", "2026-08-05")
-    expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.example/e2?d=2026-08-01")
+    expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.invalid/e2?d=2026-08-01")
   })
 
   // The reason getNogiScheduleEventUrl is given a date at all: a recurring nogi event's
@@ -247,9 +247,9 @@ describe("buildGroupEventsIcs", () => {
     const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
 
     expect(parseEvents(ics).map(e => e.URL)).toEqual([
-      "https://nogi.example/e2?d=2026-08-01",
-      "https://nogi.example/e2?d=2026-08-08",
-      "https://nogi.example/e2?d=2026-09-05"
+      "https://nogi.invalid/e2?d=2026-08-01",
+      "https://nogi.invalid/e2?d=2026-08-08",
+      "https://nogi.invalid/e2?d=2026-09-05"
     ])
   })
 
@@ -275,7 +275,7 @@ describe("buildGroupEventsIcs", () => {
 
     const [event] = parseEvents(ics)
     expect(event!.DTSTART).toBe("20260807T160000Z")
-    expect(event!.URL).toBe("https://nogi.example/e3?d=2026-08-08")
+    expect(event!.URL).toBe("https://nogi.invalid/e3?d=2026-08-08")
   })
 
   it("excludes birthday-category events from the events calendar", async () => {
@@ -350,7 +350,7 @@ describe("buildGroupEventsIcs", () => {
     const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const [event] = parseEvents(ics)
-    expect(event!.URL).toBe("https://sakura.example/2026-8-12")
+    expect(event!.URL).toBe("https://sakura.invalid/2026-8-12")
     expect(getSakuraScheduleUrlMock).toHaveBeenCalledWith({ year: 2026, month: 8, day: 12 })
   })
 

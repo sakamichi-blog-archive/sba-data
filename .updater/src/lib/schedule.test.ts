@@ -101,7 +101,7 @@ describe("updateGroupSchedule", () => {
           timeStart: "18:00",
           timeEnd: "19:00",
           title: "Live",
-          url: "https://example.com/e1"
+          url: "https://nogi.invalid/e1"
         }
       ],
       js: "",

@@ -39,14 +39,14 @@ describe("archiveUrls", () => {
     vi.stubGlobal("fetch", fetchMock)
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+    await archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
 
     expect(fetchMock).toHaveBeenCalledWith(
       "https://web.archive.org/save/",
       expect.objectContaining({ method: "POST" })
     )
     expect(logSpy).toHaveBeenCalledWith(
-      expect.stringContaining("submitted https://example.com/post")
+      expect.stringContaining("submitted https://example.invalid/post")
     )
     expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("job-1"))
   })
@@ -56,9 +56,9 @@ describe("archiveUrls", () => {
     vi.stubGlobal("fetch", fetchMock)
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+    await archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
 
-    expect(logSpy).toHaveBeenCalledWith("archived https://example.com/post")
+    expect(logSpy).toHaveBeenCalledWith("archived https://example.invalid/post")
   })
 
   it("waits for a capture to finish before submitting the next url", async () => {
@@ -75,7 +75,7 @@ describe("archiveUrls", () => {
     vi.spyOn(console, "log").mockImplementation(() => {})
 
     await archiveUrls(
-      ["https://example.com/post-1", "https://example.com/post-2"],
+      ["https://example.invalid/post-1", "https://example.invalid/post-2"],
       "key",
       "secret",
       fastOptions
@@ -96,7 +96,7 @@ describe("archiveUrls", () => {
     vi.stubGlobal("fetch", fetchMock)
     vi.spyOn(console, "log").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post"], "key", "secret", {
+    await archiveUrls(["https://example.invalid/post"], "key", "secret", {
       pollIntervalMs: 0,
       maxWaitMs: 10_000,
       failureDelayMs: 0
@@ -122,14 +122,14 @@ describe("archiveUrls", () => {
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
     vi.spyOn(console, "warn").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post"], "key", "secret", {
+    await archiveUrls(["https://example.invalid/post"], "key", "secret", {
       pollIntervalMs: 0,
       maxWaitMs: 10_000,
       failureDelayMs: 0
     })
 
     expect(polls).toBe(3)
-    expect(logSpy).toHaveBeenCalledWith("archived https://example.com/post")
+    expect(logSpy).toHaveBeenCalledWith("archived https://example.invalid/post")
   })
 
   it("gives up rather than throwing when status reads keep failing", async () => {
@@ -144,7 +144,7 @@ describe("archiveUrls", () => {
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
     await expect(
-      archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+      archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
     ).resolves.toBeUndefined()
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("gave up waiting for job job-1"))
@@ -157,7 +157,7 @@ describe("archiveUrls", () => {
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
-    await archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+    await archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("gave up waiting for job job-1"))
     expect(logSpy).not.toHaveBeenCalledWith(expect.stringContaining("archived"))
@@ -173,7 +173,7 @@ describe("archiveUrls", () => {
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
     await archiveUrls(
-      ["https://example.com/post-1", "https://example.com/post-2"],
+      ["https://example.invalid/post-1", "https://example.invalid/post-2"],
       "key",
       "secret",
       fastOptions
@@ -198,7 +198,7 @@ describe("archiveUrls", () => {
     })
 
     await archiveUrls(
-      ["https://example.com/post-1", "https://example.com/post-2"],
+      ["https://example.invalid/post-1", "https://example.invalid/post-2"],
       "key",
       "secret",
       { pollIntervalMs: 0, maxWaitMs: 0, failureDelayMs: 30_000 }
@@ -219,7 +219,7 @@ describe("archiveUrls", () => {
       return realSetTimeout(fn, 0)
     })
 
-    await archiveUrls(["not a url", "https://example.com/post-2"], "key", "secret", {
+    await archiveUrls(["not a url", "https://example.invalid/post-2"], "key", "secret", {
       pollIntervalMs: 0,
       maxWaitMs: 0,
       failureDelayMs: 30_000
@@ -234,16 +234,16 @@ describe("archiveUrls", () => {
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
     await archiveUrls(
-      ["https://example.com/post?ima=1234&cd=member#section"],
+      ["https://example.invalid/post?ima=1234&cd=member#section"],
       "key",
       "secret",
       fastOptions
     )
 
     const [, options] = submitCalls(fetchMock)[0] as unknown as [string, RequestInit]
-    expect((options.body as URLSearchParams).get("url")).toBe("https://example.com/post")
+    expect((options.body as URLSearchParams).get("url")).toBe("https://example.invalid/post")
     expect(logSpy).toHaveBeenCalledWith(
-      expect.stringContaining("submitted https://example.com/post ")
+      expect.stringContaining("submitted https://example.invalid/post ")
     )
   })
 
@@ -253,7 +253,7 @@ describe("archiveUrls", () => {
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
     await expect(
-      archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+      archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
     ).resolves.toBeUndefined()
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("url is blocked from saving"))
@@ -269,7 +269,7 @@ describe("archiveUrls", () => {
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
     await expect(
-      archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+      archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
     ).resolves.toBeUndefined()
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("live page is not available"))
@@ -281,7 +281,7 @@ describe("archiveUrls", () => {
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
 
     await expect(
-      archiveUrls(["https://example.com/post"], "key", "secret", fastOptions)
+      archiveUrls(["https://example.invalid/post"], "key", "secret", fastOptions)
     ).resolves.toBeUndefined()
 
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("network down"))
@@ -294,7 +294,7 @@ describe("archiveUrls", () => {
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
     await archiveUrls(
-      ["https://example.com/post-1", "https://example.com/post-2"],
+      ["https://example.invalid/post-1", "https://example.invalid/post-2"],
       "key",
       "secret",
       fastOptions
@@ -310,7 +310,7 @@ describe("archiveUrls", () => {
     const warnSpy = vi.spyOn(console, "warn").mockImplementation(() => {})
     const logSpy = vi.spyOn(console, "log").mockImplementation(() => {})
 
-    await archiveUrls(["not a url", "https://example.com/post-2"], "key", "secret", fastOptions)
+    await archiveUrls(["not a url", "https://example.invalid/post-2"], "key", "secret", fastOptions)
 
     expect(submitCalls(fetchMock)).toHaveLength(1)
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("not a url"))

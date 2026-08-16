@@ -18,8 +18,8 @@ importers:
   .updater:
     dependencies:
       '@sakamichi-blog-archive/utils':
-        specifier: ^0.7.0
-        version: 0.7.0
+        specifier: ^0.8.0
+        version: 0.8.0
       ics:
         specifier: ^3.12.0
         version: 3.12.0
@@ -43,8 +43,8 @@ importers:
         specifier: ^6.0.2
         version: 6.0.2(@types/node@24.13.3)(@types/react-dom@19.2.4(@types/react@19.2.18))(@types/react@19.2.18)(esbuild@0.28.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(sass@1.102.0)(supports-color@10.2.2)(tsx@4.23.12)(yaml@2.9.0)
       '@sakamichi-blog-archive/utils':
-        specifier: ^0.7.0
-        version: 0.7.0
+        specifier: ^0.8.0
+        version: 0.8.0
       astro:
         specifier: ^7.2.0
         version: 7.2.0(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@24.13.3)(sass@1.102.0)(tsx@4.23.12)(yaml@2.9.0)
@@ -1526,8 +1526,8 @@ packages:
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
 
-  '@sakamichi-blog-archive/utils@0.7.0':
-    resolution: {integrity: sha512-sjeCu59V1X9GWUr6pe4jDoz0sARYY2zDBxstp40YkAEasUKLzlTUSI7MWIiwwe25eRRpbWYUz4dBYb5Z2XxjEg==}
+  '@sakamichi-blog-archive/utils@0.8.0':
+    resolution: {integrity: sha512-V8I6jo7xN4CgBpUEY/bN6BOEWvf/7hFIur5DSntrNNY5vAUWXt8Ctf3hRRqxSs/klgXWqODduZV/gX4t2Dp7Mg==}
     engines: {node: ^22.12.0 || ^24.0.0}
 
   '@shikijs/core@4.4.1':
@@ -4280,7 +4280,7 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.1': {}
 
-  '@sakamichi-blog-archive/utils@0.7.0':
+  '@sakamichi-blog-archive/utils@0.8.0':
     dependencies:
       cheerio: 1.2.0
       zod: 4.4.3

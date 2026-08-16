@@ -92,9 +92,9 @@ describe("updateGroupSchedule", () => {
     fetchNogiScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
-          category: "配信",
+          categoryKey: "live",
+          categoryName: "配信",
           date: jstMidnight("2026-08-05"),
-          group: "nogi",
           html: "",
           id: "e1",
           members: ["秋元真夏"],
@@ -131,16 +131,29 @@ describe("updateGroupSchedule", () => {
     readFileMock.mockRejectedValue(enoent())
     fetchHinataScheduleEventsMock.mockResolvedValueOnce({
       events: [
-        { date: jstMidnight("2026-08-03"), group: "hinata", id: "r1", title: "Radio" },
-        { date: jstMidnight("2026-08-10"), group: "hinata", id: "r1", title: "Radio" }
+        {
+          categoryKey: "",
+          categoryName: "",
+          date: jstMidnight("2026-08-03"),
+          id: "r1",
+          title: "Radio"
+        },
+        {
+          categoryKey: "",
+          categoryName: "",
+          date: jstMidnight("2026-08-10"),
+          id: "r1",
+          title: "Radio"
+        }
       ],
       html: "",
       url: ""
     })
     fetchHinataScheduleEventMock.mockResolvedValue({
       event: {
+        categoryKey: "",
+        categoryName: "",
         date: jstMidnight("2026-08-03"),
-        group: "hinata",
         html: "",
         id: "r1",
         members: ["井口眞緒"],
@@ -167,8 +180,9 @@ describe("updateGroupSchedule", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e1",
           members: ["誰かさん"],
@@ -200,8 +214,9 @@ describe("updateGroupSchedule", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-12"),
-          group: "sakura",
           html: "",
           id: "e2",
           members: [],
@@ -238,8 +253,9 @@ describe("updateGroupSchedule", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-20"),
-          group: "sakura",
           html: "",
           id: "e1",
           members: [],
@@ -252,8 +268,9 @@ describe("updateGroupSchedule", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-09-05"),
-          group: "sakura",
           html: "",
           id: "e2",
           members: [],
@@ -287,19 +304,36 @@ describe("hinata member detail fetching", () => {
   it("fetches detail once per unique id even when it recurs across both fetched months", async () => {
     readFileMock.mockRejectedValue(enoent())
     fetchHinataScheduleEventsMock.mockResolvedValueOnce({
-      events: [{ date: jstMidnight("2026-08-03"), group: "hinata", id: "r1", title: "Radio" }],
+      events: [
+        {
+          categoryKey: "",
+          categoryName: "",
+          date: jstMidnight("2026-08-03"),
+          id: "r1",
+          title: "Radio"
+        }
+      ],
       html: "",
       url: ""
     })
     fetchHinataScheduleEventsMock.mockResolvedValueOnce({
-      events: [{ date: jstMidnight("2026-09-07"), group: "hinata", id: "r1", title: "Radio" }],
+      events: [
+        {
+          categoryKey: "",
+          categoryName: "",
+          date: jstMidnight("2026-09-07"),
+          id: "r1",
+          title: "Radio"
+        }
+      ],
       html: "",
       url: ""
     })
     fetchHinataScheduleEventMock.mockResolvedValue({
       event: {
+        categoryKey: "",
+        categoryName: "",
         date: jstMidnight("2026-08-03"),
-        group: "hinata",
         html: "",
         id: "r1",
         members: ["井口眞緒"],
@@ -317,7 +351,9 @@ describe("hinata member detail fetching", () => {
   it("resolves an event with no id to empty members without calling the detail fetch", async () => {
     readFileMock.mockRejectedValue(enoent())
     fetchHinataScheduleEventsMock.mockResolvedValueOnce({
-      events: [{ date: jstMidnight("2026-08-03"), group: "hinata", title: "No id event" }],
+      events: [
+        { categoryKey: "", categoryName: "", date: jstMidnight("2026-08-03"), title: "No id event" }
+      ],
       html: "",
       url: ""
     })
@@ -333,7 +369,15 @@ describe("hinata member detail fetching", () => {
   it("treats a failed detail fetch as empty members instead of aborting the whole update", async () => {
     readFileMock.mockRejectedValue(enoent())
     fetchHinataScheduleEventsMock.mockResolvedValueOnce({
-      events: [{ date: jstMidnight("2026-08-03"), group: "hinata", id: "r1", title: "Radio" }],
+      events: [
+        {
+          categoryKey: "",
+          categoryName: "",
+          date: jstMidnight("2026-08-03"),
+          id: "r1",
+          title: "Radio"
+        }
+      ],
       html: "",
       url: ""
     })
@@ -362,16 +406,18 @@ describe("date-membership filtering", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e1",
           members: [],
           title: "In month"
         },
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-07-31"),
-          group: "sakura",
           html: "",
           id: "e2",
           members: [],
@@ -405,8 +451,9 @@ describe("compareEvents ordering", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e1",
           members: [],
@@ -414,16 +461,18 @@ describe("compareEvents ordering", () => {
           title: "Evening"
         },
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e2",
           members: [],
           title: "No time"
         },
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e3",
           members: [],
@@ -451,8 +500,9 @@ describe("compareEvents ordering", () => {
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e1",
           members: [],
@@ -460,8 +510,9 @@ describe("compareEvents ordering", () => {
           title: "Zebra"
         },
         {
+          categoryKey: "",
+          categoryName: "",
           date: jstMidnight("2026-08-05"),
-          group: "sakura",
           html: "",
           id: "e2",
           members: [],

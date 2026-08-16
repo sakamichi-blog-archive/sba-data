@@ -1,5 +1,5 @@
 {
-  "count": 229,
+  "count": 230,
   "events": [
     {
       "date": "2026-08-01",
@@ -1417,23 +1417,39 @@
       "date": "2026-08-23",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、川端晃菜",
       "member_uids": [
-        "55391"
+        "55391",
+        "63105"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "105350"
+      "id": "107311"
+    },
+    {
+      "date": "2026-08-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107305"
     },
     {
       "date": "2026-08-23",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、川﨑桜",
+      "member_uids": [
+        "55396",
+        "55400"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107312"
     },
     {
       "date": "2026-08-23",

@@ -1,5 +1,5 @@
 {
-  "count": 148,
+  "count": 149,
   "events": [
     {
       "date": "2026-08-01",
@@ -603,6 +603,18 @@
       "member_uids": [],
       "time_start": "15:00",
       "id": "11965"
+    },
+    {
+      "date": "2026-08-17",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "テレビ愛知「大須テレビ」SHOWROOM配信（山下葉留花）",
+      "member_uids": [
+        "35"
+      ],
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "id": "11998"
     },
     {
       "date": "2026-08-17",

@@ -44,6 +44,7 @@ export function monthsToFetch(referenceDate: string): ScheduleFilter[] {
 }
 
 interface RawScheduleEvent {
+  categoryKey: string
   categoryName: string
   date: Date
   id?: string
@@ -115,9 +116,10 @@ function buildEntries(
 
     return {
       date: formatJstDate(e.date),
-      // The stored `category` is the label as shown on the site. utils reports a missing one as
-      // an empty string, which the data format spells as an absent field.
-      category: e.categoryName === "" ? undefined : e.categoryName,
+      // utils reports a missing category as an empty string; the data format spells that as an
+      // absent field.
+      category_key: e.categoryKey === "" ? undefined : e.categoryKey,
+      category_name: e.categoryName === "" ? undefined : e.categoryName,
       title: e.title,
       member_uids: memberUids,
       time_start: e.timeStart,

@@ -233,7 +233,13 @@ describe("buildGroupEventsIcs", () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
         yearData([
-          { date: "2026-08-08", category: "誕生日", title: "Birthday", member_uids: ["48008"] },
+          {
+            date: "2026-08-08",
+            category_key: "birthday",
+            category_name: "誕生日",
+            title: "Birthday",
+            member_uids: ["48008"]
+          },
           { date: "2026-08-09", title: "Regular event", member_uids: [] }
         ])
       )
@@ -243,6 +249,48 @@ describe("buildGroupEventsIcs", () => {
 
     const events = parseEvents(ics)
     expect(events.map(e => e.SUMMARY)).toEqual(["Regular event"])
+  })
+
+  // Keying the exclusion off category_key rather than the displayed label is the point of storing
+  // both: the site can relabel 誕生日 without birthdays leaking into the events calendar.
+  it("excludes birthday events by key even when the displayed label has changed", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            category_key: "birthday",
+            category_name: "お誕生日",
+            title: "Birthday",
+            member_uids: ["48008"]
+          }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    expect(parseEvents(ics)).toEqual([])
+  })
+
+  it("keeps a non-birthday event whose label merely reads 誕生日", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            category_key: "live",
+            category_name: "誕生日",
+            title: "Birthday live",
+            member_uids: []
+          }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    expect(parseEvents(ics).map(e => e.SUMMARY)).toEqual(["Birthday live"])
   })
 
   it("derives a sakura event url as a date-scoped listing link", async () => {
@@ -261,7 +309,13 @@ describe("buildGroupEventsIcs", () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
         yearData([
-          { date: "2026-08-01", title: "With category", member_uids: [], category: "ライブ" },
+          {
+            date: "2026-08-01",
+            title: "With category",
+            member_uids: [],
+            category_key: "event",
+            category_name: "ライブ"
+          },
           { date: "2026-08-02", title: "No category", member_uids: [] }
         ])
       )

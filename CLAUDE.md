@@ -71,7 +71,8 @@ Schema:
   "events": [
     {
       "date": "2026-08-05", // YYYY-MM-DD
-      "category": "ライブ/イベント", // optional, as shown on the official site
+      "category_key": "live", // optional, the site's stable category key
+      "category_name": "ライブ/イベント", // optional, the label as shown on the official site
       "title": "...",
       "member_uids": ["25", "31"], // member UIDs; empty if none listed
       "time_start": "18:00", // optional, HH:mm JST

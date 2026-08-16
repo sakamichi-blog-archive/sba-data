@@ -15,7 +15,11 @@ export interface YearData {
 
 export interface ScheduleEventEntry {
   date: string
-  category?: string
+  // The site's stable category key (e.g. "media") and the label it displays (e.g. "テレビ"). Both
+  // are kept: the key survives relabelling and is what logic should branch on, but it's coarser
+  // than the label for hinata/sakura, where one "media" key covers テレビ/ラジオ/雑誌/写真集/...
+  category_key?: string
+  category_name?: string
   title: string
   member_uids: string[]
   time_start?: string

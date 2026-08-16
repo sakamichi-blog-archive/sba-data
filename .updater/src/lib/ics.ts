@@ -21,7 +21,10 @@ import type { Group, ScheduleEventEntry, ScheduleYearData } from "./types.js"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../")
 
-const BIRTHDAY_CATEGORY = "誕生日"
+// Every group keys birthdays as "birthday", so the key identifies them across all three — and,
+// unlike the displayed label, it doesn't move when the site relabels a category.
+const BIRTHDAY_CATEGORY_KEY = "birthday"
+const BIRTHDAY_CATEGORY_NAME = "誕生日"
 
 const dirs: Record<Group, string> = {
   hinata: "data/hinata/schedule",
@@ -147,7 +150,8 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
       : {}),
     ...endOrDuration,
     url: eventUrl(group, event),
-    categories: event.category !== undefined ? [event.category] : undefined
+    // The displayed label, not the key, is what a calendar client shows.
+    categories: event.category_name !== undefined ? [event.category_name] : undefined
   }
 }
 
@@ -177,7 +181,9 @@ export async function buildGroupEventsIcs(
 
   const events = allEvents
     .filter(
-      e => e.category !== BIRTHDAY_CATEGORY && filters.some(f => isInMonth(e.date, f.year, f.month))
+      e =>
+        e.category_key !== BIRTHDAY_CATEGORY_KEY &&
+        filters.some(f => isInMonth(e.date, f.year, f.month))
     )
     .map(e => toIcsEvent(group, e))
 
@@ -220,7 +226,7 @@ function birthdayEvent(group: Group, member: Member, year: number): EventAttribu
     start: [year, month, observedDay],
     end: nextDateArray(date),
     url: memberProfileUrl(group, member.uid),
-    categories: [BIRTHDAY_CATEGORY]
+    categories: [BIRTHDAY_CATEGORY_NAME]
   }
 }
 

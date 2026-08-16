@@ -16,7 +16,14 @@ vi.mock("node:fs/promises", () => ({
 
 vi.mock("@sakamichi-blog-archive/utils/schedule", () => ({
   getHinataScheduleEventUrl: vi.fn((id: string) => `https://hinata.example/${id}`),
-  getNogiScheduleEventUrl: vi.fn((id: string) => `https://nogi.example/${id}`),
+  // Mirrors utils' real signature, and folds the date into the returned URL so the occurrence
+  // date shows up in the generated ics rather than only in the call arguments. Like utils, it
+  // reads the date's JST calendar day.
+  getNogiScheduleEventUrl: vi.fn((id: string, date?: Date) => {
+    if (date === undefined) return `https://nogi.example/${id}`
+    const jst = new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
+    return `https://nogi.example/${id}?d=${jst}`
+  }),
   getSakuraScheduleUrl: vi.fn(
     (filter: { year: number; month: number; day?: number }) =>
       `https://sakura.example/${filter.year}-${filter.month}-${filter.day}`
@@ -220,13 +227,55 @@ describe("buildGroupEventsIcs", () => {
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Show", member_uids: [], id: "e2" }]))
     )
     const nogiIcs = await buildGroupEventsIcs("nogi", "2026-08-05")
-    expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.example/e2")
-    // The occurrence's own date is passed so a recurring nogi event, whose occurrences share one
-    // id, doesn't link to the date it was first listed on.
-    expect(getNogiScheduleEventUrlMock).toHaveBeenCalledWith(
-      "e2",
-      new Date("2026-08-01T00:00:00+09:00")
+    expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.example/e2?d=2026-08-01")
+  })
+
+  // The reason getNogiScheduleEventUrl is given a date at all: a recurring nogi event's
+  // occurrences share one id, and the detail page renders whichever date the url carries, so
+  // without a per-occurrence date every occurrence would link to the same day.
+  it("gives each occurrence of a recurring nogi event its own dated url", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          { date: "2026-08-01", title: "Weekly show", member_uids: [], id: "e2" },
+          { date: "2026-08-08", title: "Weekly show", member_uids: [], id: "e2" },
+          { date: "2026-09-05", title: "Weekly show", member_uids: [], id: "e2" }
+        ])
+      )
     )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    expect(parseEvents(ics).map(e => e.URL)).toEqual([
+      "https://nogi.example/e2?d=2026-08-01",
+      "https://nogi.example/e2?d=2026-08-08",
+      "https://nogi.example/e2?d=2026-09-05"
+    ])
+  })
+
+  // DTSTART is UTC, so an early-morning JST event starts on the previous UTC day. The url is
+  // dated from the stored JST date and so stays on the event's own calendar day, which is the
+  // day the site expects — the two legitimately disagree here.
+  it("dates a nogi url by the JST day while DTSTART lands on the previous UTC day", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            title: "Late show",
+            member_uids: [],
+            id: "e3",
+            time_start: "01:00"
+          }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.DTSTART).toBe("20260807T160000Z")
+    expect(event!.URL).toBe("https://nogi.example/e3?d=2026-08-08")
   })
 
   it("excludes birthday-category events from the events calendar", async () => {
@@ -316,7 +365,10 @@ describe("buildGroupEventsIcs", () => {
             category_key: "event",
             category_name: "ライブ"
           },
-          { date: "2026-08-02", title: "No category", member_uids: [] }
+          { date: "2026-08-02", title: "No category", member_uids: [] },
+          // A key the site's category nav doesn't cover is stored with no name; CATEGORIES
+          // carries the label, so there's nothing to emit.
+          { date: "2026-08-03", title: "Key only", member_uids: [], category_key: "media" }
         ])
       )
     )
@@ -326,6 +378,7 @@ describe("buildGroupEventsIcs", () => {
     const events = parseEvents(ics)
     expect(events[0]!.CATEGORIES).toBe("ライブ")
     expect(events[1]!.CATEGORIES).toBeUndefined()
+    expect(events[2]!.CATEGORIES).toBeUndefined()
   })
 
   it("sets a メンバー-prefixed description from member_uids, space-joining unspaced names", async () => {

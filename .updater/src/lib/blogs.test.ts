@@ -93,7 +93,7 @@ describe("updateGroup", () => {
           datetime: new Date(),
           memberName: "井口眞緒",
           title: "t",
-          uid: 1,
+          uid: "1",
           url: "u",
           html: "",
           images: []
@@ -131,7 +131,7 @@ describe("updateGroup", () => {
           datetime: new Date(),
           memberName: "井口眞緒",
           title: "t",
-          uid: 2,
+          uid: "2",
           url: "u",
           html: "",
           images: []
@@ -155,8 +155,8 @@ describe("updateGroup", () => {
     readFileMock.mockRejectedValue(enoent())
     fetchSakuraBlogsMock.mockResolvedValueOnce({
       blogs: [
-        { date: new Date(), memberName: "上村莉菜", title: "t", uid: 1, url: "u" },
-        { date: new Date(), memberName: "誰かさん", title: "t", uid: 2, url: "u" }
+        { date: new Date(), memberName: "上村莉菜", title: "t", uid: "1", url: "u" },
+        { date: new Date(), memberName: "誰かさん", title: "t", uid: "2", url: "u" }
       ],
       html: "",
       url: ""
@@ -175,7 +175,7 @@ describe("updateGroup", () => {
   it("resolves each nogi date-summary to its full blog before mapping members", async () => {
     readFileMock.mockRejectedValue(enoent())
     fetchNogiBlogsByDateMock.mockResolvedValueOnce({
-      blogs: [{ datetime: new Date(), title: "t", uid: 42, url: "u" }],
+      blogs: [{ datetime: new Date(), title: "t", uid: "42", url: "u" }],
       html: "",
       url: ""
     } as never)
@@ -185,7 +185,7 @@ describe("updateGroup", () => {
         datetime: new Date(),
         memberName: "秋元真夏",
         title: "t",
-        uid: 42,
+        uid: "42",
         url: "u",
         html: "",
         images: []
@@ -196,7 +196,7 @@ describe("updateGroup", () => {
 
     await updateGroup("nogi", "2024-01-01")
 
-    expect(fetchNogiBlogMock).toHaveBeenCalledWith(42)
+    expect(fetchNogiBlogMock).toHaveBeenCalledWith("42")
     const [, contents] = writeFileMock.mock.calls[0]!
     const written = JSON.parse(contents as string)
     expect(written.days[0]).toEqual({ count: 1, date: "2024-01-01", members: ["7639"] })

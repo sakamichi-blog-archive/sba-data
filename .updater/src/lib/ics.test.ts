@@ -15,11 +15,18 @@ vi.mock("node:fs/promises", () => ({
 }))
 
 vi.mock("@sakamichi-blog-archive/utils/schedule", () => ({
-  getHinataScheduleEventUrl: vi.fn((id: string) => `https://hinata.example/${id}`),
-  getNogiScheduleEventUrl: vi.fn((id: string) => `https://nogi.example/${id}`),
+  getHinataScheduleEventUrl: vi.fn((id: string) => `https://hinata.invalid/${id}`),
+  // Mirrors utils' real signature, and folds the date into the returned URL so the occurrence
+  // date shows up in the generated ics rather than only in the call arguments. Like utils, it
+  // reads the date's JST calendar day.
+  getNogiScheduleEventUrl: vi.fn((id: string, date?: Date) => {
+    if (date === undefined) return `https://nogi.invalid/${id}`
+    const jst = new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
+    return `https://nogi.invalid/${id}?d=${jst}`
+  }),
   getSakuraScheduleUrl: vi.fn(
     (filter: { year: number; month: number; day?: number }) =>
-      `https://sakura.example/${filter.year}-${filter.month}-${filter.day}`
+      `https://sakura.invalid/${filter.year}-${filter.month}-${filter.day}`
   )
 }))
 
@@ -213,22 +220,75 @@ describe("buildGroupEventsIcs", () => {
     )
 
     const hinataIcs = await buildGroupEventsIcs("hinata", "2026-08-05")
-    expect(parseEvents(hinataIcs)[0]!.URL).toBe("https://hinata.example/e1")
+    expect(parseEvents(hinataIcs)[0]!.URL).toBe("https://hinata.invalid/e1")
     expect(getHinataScheduleEventUrlMock).toHaveBeenCalledWith("e1")
 
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(yearData([{ date: "2026-08-01", title: "Show", member_uids: [], id: "e2" }]))
     )
     const nogiIcs = await buildGroupEventsIcs("nogi", "2026-08-05")
-    expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.example/e2")
-    expect(getNogiScheduleEventUrlMock).toHaveBeenCalledWith("e2")
+    expect(parseEvents(nogiIcs)[0]!.URL).toBe("https://nogi.invalid/e2?d=2026-08-01")
+  })
+
+  // The reason getNogiScheduleEventUrl is given a date at all: a recurring nogi event's
+  // occurrences share one id, and the detail page renders whichever date the url carries, so
+  // without a per-occurrence date every occurrence would link to the same day.
+  it("gives each occurrence of a recurring nogi event its own dated url", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          { date: "2026-08-01", title: "Weekly show", member_uids: [], id: "e2" },
+          { date: "2026-08-08", title: "Weekly show", member_uids: [], id: "e2" },
+          { date: "2026-09-05", title: "Weekly show", member_uids: [], id: "e2" }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    expect(parseEvents(ics).map(e => e.URL)).toEqual([
+      "https://nogi.invalid/e2?d=2026-08-01",
+      "https://nogi.invalid/e2?d=2026-08-08",
+      "https://nogi.invalid/e2?d=2026-09-05"
+    ])
+  })
+
+  // DTSTART is UTC, so an early-morning JST event starts on the previous UTC day. The url is
+  // dated from the stored JST date and so stays on the event's own calendar day, which is the
+  // day the site expects — the two legitimately disagree here.
+  it("dates a nogi url by the JST day while DTSTART lands on the previous UTC day", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            title: "Late show",
+            member_uids: [],
+            id: "e3",
+            time_start: "01:00"
+          }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    const [event] = parseEvents(ics)
+    expect(event!.DTSTART).toBe("20260807T160000Z")
+    expect(event!.URL).toBe("https://nogi.invalid/e3?d=2026-08-08")
   })
 
   it("excludes birthday-category events from the events calendar", async () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
         yearData([
-          { date: "2026-08-08", category: "誕生日", title: "Birthday", member_uids: ["48008"] },
+          {
+            date: "2026-08-08",
+            category_key: "birthday",
+            category_name: "誕生日",
+            title: "Birthday",
+            member_uids: ["48008"]
+          },
           { date: "2026-08-09", title: "Regular event", member_uids: [] }
         ])
       )
@@ -240,6 +300,48 @@ describe("buildGroupEventsIcs", () => {
     expect(events.map(e => e.SUMMARY)).toEqual(["Regular event"])
   })
 
+  // Keying the exclusion off category_key rather than the displayed label is the point of storing
+  // both: the site can relabel 誕生日 without birthdays leaking into the events calendar.
+  it("excludes birthday events by key even when the displayed label has changed", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            category_key: "birthday",
+            category_name: "お誕生日",
+            title: "Birthday",
+            member_uids: ["48008"]
+          }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    expect(parseEvents(ics)).toEqual([])
+  })
+
+  it("keeps a non-birthday event whose label merely reads 誕生日", async () => {
+    readFileMock.mockResolvedValueOnce(
+      JSON.stringify(
+        yearData([
+          {
+            date: "2026-08-08",
+            category_key: "live",
+            category_name: "誕生日",
+            title: "Birthday live",
+            member_uids: []
+          }
+        ])
+      )
+    )
+
+    const ics = await buildGroupEventsIcs("nogi", "2026-08-05")
+
+    expect(parseEvents(ics).map(e => e.SUMMARY)).toEqual(["Birthday live"])
+  })
+
   it("derives a sakura event url as a date-scoped listing link", async () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(yearData([{ date: "2026-08-12", title: "Event", member_uids: [] }]))
@@ -248,7 +350,7 @@ describe("buildGroupEventsIcs", () => {
     const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const [event] = parseEvents(ics)
-    expect(event!.URL).toBe("https://sakura.example/2026-8-12")
+    expect(event!.URL).toBe("https://sakura.invalid/2026-8-12")
     expect(getSakuraScheduleUrlMock).toHaveBeenCalledWith({ year: 2026, month: 8, day: 12 })
   })
 
@@ -256,8 +358,17 @@ describe("buildGroupEventsIcs", () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
         yearData([
-          { date: "2026-08-01", title: "With category", member_uids: [], category: "ライブ" },
-          { date: "2026-08-02", title: "No category", member_uids: [] }
+          {
+            date: "2026-08-01",
+            title: "With category",
+            member_uids: [],
+            category_key: "event",
+            category_name: "ライブ"
+          },
+          { date: "2026-08-02", title: "No category", member_uids: [] },
+          // A key the site's category nav doesn't cover is stored with no name; CATEGORIES
+          // carries the label, so there's nothing to emit.
+          { date: "2026-08-03", title: "Key only", member_uids: [], category_key: "media" }
         ])
       )
     )
@@ -267,6 +378,7 @@ describe("buildGroupEventsIcs", () => {
     const events = parseEvents(ics)
     expect(events[0]!.CATEGORIES).toBe("ライブ")
     expect(events[1]!.CATEGORIES).toBeUndefined()
+    expect(events[2]!.CATEGORIES).toBeUndefined()
   })
 
   it("sets a メンバー-prefixed description from member_uids, space-joining unspaced names", async () => {

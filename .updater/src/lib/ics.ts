@@ -21,7 +21,10 @@ import type { Group, ScheduleEventEntry, ScheduleYearData } from "./types.js"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../../../")
 
-const BIRTHDAY_CATEGORY = "誕生日"
+// Every group keys birthdays as "birthday", so the key identifies them across all three — and,
+// unlike the displayed label, it doesn't move when the site relabels a category.
+const BIRTHDAY_CATEGORY_KEY = "birthday"
+const BIRTHDAY_CATEGORY_NAME = "誕生日"
 
 const dirs: Record<Group, string> = {
   hinata: "data/hinata/schedule",
@@ -62,8 +65,13 @@ function memberProfileUrl(group: Group, memberUid: string): string {
 function eventUrl(group: Group, event: ScheduleEventEntry): string | undefined {
   if (group === "hinata")
     return event.id !== undefined ? getHinataScheduleEventUrl(event.id) : undefined
+  // A nogi recurring event's occurrences share one id, and the detail page renders whichever
+  // date the URL carries — so pass the occurrence's own date rather than letting the page fall
+  // back to the date the event was first listed.
   if (group === "nogi")
-    return event.id !== undefined ? getNogiScheduleEventUrl(event.id) : undefined
+    return event.id !== undefined
+      ? getNogiScheduleEventUrl(event.id, new Date(`${event.date}T00:00:00+09:00`))
+      : undefined
 
   const [year, month, day] = event.date.split("-").map(Number)
   return getSakuraScheduleUrl({ year: year!, month: month!, day })
@@ -142,7 +150,8 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
       : {}),
     ...endOrDuration,
     url: eventUrl(group, event),
-    categories: event.category !== undefined ? [event.category] : undefined
+    // The displayed label, not the key, is what a calendar client shows.
+    categories: event.category_name !== undefined ? [event.category_name] : undefined
   }
 }
 
@@ -172,7 +181,9 @@ export async function buildGroupEventsIcs(
 
   const events = allEvents
     .filter(
-      e => e.category !== BIRTHDAY_CATEGORY && filters.some(f => isInMonth(e.date, f.year, f.month))
+      e =>
+        e.category_key !== BIRTHDAY_CATEGORY_KEY &&
+        filters.some(f => isInMonth(e.date, f.year, f.month))
     )
     .map(e => toIcsEvent(group, e))
 
@@ -215,7 +226,7 @@ function birthdayEvent(group: Group, member: Member, year: number): EventAttribu
     start: [year, month, observedDay],
     end: nextDateArray(date),
     url: memberProfileUrl(group, member.uid),
-    categories: [BIRTHDAY_CATEGORY]
+    categories: [BIRTHDAY_CATEGORY_NAME]
   }
 }
 

@@ -3,7 +3,8 @@
   "events": [
     {
       "date": "2026-08-01",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京「ピッカルチャー『ＢＬＥＡＣＨの魅力にピカッと世界横断ＳＰ』」田村真佑※ナレーション出演",
       "member_uids": [
         "48015"
@@ -14,7 +15,8 @@
     },
     {
       "date": "2026-08-01",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -25,7 +27,8 @@
     },
     {
       "date": "2026-08-01",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "NHK「Venue101」",
       "member_uids": [],
       "time_start": "23:00",
@@ -34,7 +37,8 @@
     },
     {
       "date": "2026-08-01",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「iza(前編)」井上和",
       "member_uids": [
         "55389"
@@ -43,7 +47,8 @@
     },
     {
       "date": "2026-08-01",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「TOKYO IDOL FESTIVAL 2026 supported by にしたんクリニック」五百城茉央、奥田いろは",
       "member_uids": [
         "55394",
@@ -53,7 +58,8 @@
     },
     {
       "date": "2026-08-01",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「乃木坂あそぶだけ #83 “1万円であそぼう！ 前編”」池田瑛紗、岩本蓮加、大越ひなの、小川彩、川端晃菜、田村真佑、筒井あやめ、吉田綾乃クリスティー",
       "member_uids": [
         "36750",
@@ -69,7 +75,8 @@
     },
     {
       "date": "2026-08-02",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月、吉田綾乃クリスティー",
       "member_uids": [
         "36759",
@@ -81,7 +88,8 @@
     },
     {
       "date": "2026-08-02",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」川﨑桜、冨里奈央、吉田綾乃クリスティー",
       "member_uids": [
         "36759",
@@ -94,7 +102,8 @@
     },
     {
       "date": "2026-08-02",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -103,7 +112,8 @@
     },
     {
       "date": "2026-08-02",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「iza(後編)」井上和",
       "member_uids": [
         "55389"
@@ -112,14 +122,16 @@
     },
     {
       "date": "2026-08-02",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「TOKYO IDOL FESTIVAL 2026 supported by にしたんクリニック」",
       "member_uids": [],
       "id": "107228"
     },
     {
       "date": "2026-08-02",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「乃木坂46のオールナイトニッポン in TIF（TOKYO IDOL FESTIVAL 2026 supported by にしたんクリニック）」井上和",
       "member_uids": [
         "55389"
@@ -128,7 +140,8 @@
     },
     {
       "date": "2026-08-03",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
       "member_uids": [
         "55391"
@@ -138,7 +151,8 @@
     },
     {
       "date": "2026-08-03",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -149,7 +163,8 @@
     },
     {
       "date": "2026-08-03",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ朝日系「ホリケンのみんなともだち」菅原咲月、冨里奈央",
       "member_uids": [
         "55391",
@@ -161,7 +176,8 @@
     },
     {
       "date": "2026-08-03",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -181,7 +197,8 @@
     },
     {
       "date": "2026-08-03",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「ひとりでできるもん セカンド #7」川端晃菜",
       "member_uids": [
         "63105"
@@ -190,7 +207,8 @@
     },
     {
       "date": "2026-08-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -201,7 +219,8 @@
     },
     {
       "date": "2026-08-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -212,7 +231,8 @@
     },
     {
       "date": "2026-08-04",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -223,7 +243,8 @@
     },
     {
       "date": "2026-08-04",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビ「コントラスト」冨里奈央",
       "member_uids": [
         "55393"
@@ -234,7 +255,8 @@
     },
     {
       "date": "2026-08-04",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「良質で文化的な最大限度の乃木坂46を営む。#11 13th YEAR BIRTHDAY LIVE “設定温度” & “アトノマツリ” Music Video」池田瑛紗、林瑠奈、中西アルノ",
       "member_uids": [
         "55385",
@@ -245,7 +267,8 @@
     },
     {
       "date": "2026-08-05",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -255,7 +278,8 @@
     },
     {
       "date": "2026-08-05",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「猫舌SHOWROOM」菅原咲月、中西アルノ",
       "member_uids": [
         "55391",
@@ -267,7 +291,8 @@
     },
     {
       "date": "2026-08-05",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビ系「奇跡体験！アンビリバボー」冨里奈央",
       "member_uids": [
         "55393"
@@ -278,7 +303,8 @@
     },
     {
       "date": "2026-08-05",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -289,7 +315,8 @@
     },
     {
       "date": "2026-08-05",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -300,7 +327,8 @@
     },
     {
       "date": "2026-08-05",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「Bezzy」川﨑桜、小川彩",
       "member_uids": [
         "55392",
@@ -310,7 +338,8 @@
     },
     {
       "date": "2026-08-06",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」田村真佑",
       "member_uids": [
         "48015"
@@ -320,7 +349,8 @@
     },
     {
       "date": "2026-08-06",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -331,7 +361,8 @@
     },
     {
       "date": "2026-08-06",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「プロ野球 福岡ソフトバンクホークス vs 北海道日本ハムファイターズ＠みずほPayPayドーム福岡」乃木坂野球部",
       "member_uids": [
         "48010",
@@ -345,7 +376,8 @@
     },
     {
       "date": "2026-08-06",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「週刊少年チャンピオン」賀喜遥香",
       "member_uids": [
         "48008"
@@ -354,7 +386,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビ系「めざましテレビ」五百城茉央",
       "member_uids": [
         "55396"
@@ -365,7 +398,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "RKB毎日放送「タダイマ！」一ノ瀬美空",
       "member_uids": [
         "55390"
@@ -376,7 +410,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
       "member_uids": [
         "48010"
@@ -387,7 +422,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」吉田綾乃クリスティー",
       "member_uids": [
         "36759"
@@ -397,7 +433,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -408,7 +445,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -419,7 +457,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -431,7 +470,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -442,7 +482,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -453,7 +494,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」吉田綾乃クリスティー、弓木奈於、林瑠奈",
       "member_uids": [
         "36759",
@@ -466,7 +508,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「BOMB」川﨑桜、長嶋凛桜",
       "member_uids": [
         "55400",
@@ -476,7 +519,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「乃木坂あそぶだけ #84 “1万円であそぼう！ 後編”」池田瑛紗、岩本蓮加、大越ひなの、小川彩、川端晃菜、田村真佑、筒井あやめ、吉田綾乃クリスティー",
       "member_uids": [
         "36750",
@@ -492,7 +536,8 @@
     },
     {
       "date": "2026-08-07",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「良質で格別な最大限度のケータリングをたしなむ。名古屋飯特別編」大越ひなの、筒井あやめ、林瑠奈",
       "member_uids": [
         "48017",
@@ -503,7 +548,8 @@
     },
     {
       "date": "2026-08-08",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「FM FUJI開局38周年特別番組「Shine on, YAMANASHI」」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -514,7 +560,8 @@
     },
     {
       "date": "2026-08-08",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -525,7 +572,8 @@
     },
     {
       "date": "2026-08-08",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「リアルサウンド映画部」川﨑桜、小川彩",
       "member_uids": [
         "55392",
@@ -535,14 +583,16 @@
     },
     {
       "date": "2026-08-08",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「真夏の全国ツアー2026 福岡公演」",
       "member_uids": [],
       "id": "106707"
     },
     {
       "date": "2026-08-08",
-      "category": "誕生日",
+      "category_key": "birthday",
+      "category_name": "誕生日",
       "title": "賀喜 遥香",
       "member_uids": [
         "48008"
@@ -551,7 +601,8 @@
     },
     {
       "date": "2026-08-09",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月、一ノ瀬美空",
       "member_uids": [
         "55390",
@@ -563,7 +614,8 @@
     },
     {
       "date": "2026-08-09",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
       "member_uids": [
         "55389"
@@ -574,7 +626,8 @@
     },
     {
       "date": "2026-08-09",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」五百城茉央、筒井あやめ、林瑠奈",
       "member_uids": [
         "48017",
@@ -587,7 +640,8 @@
     },
     {
       "date": "2026-08-09",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:25",
@@ -596,14 +650,16 @@
     },
     {
       "date": "2026-08-09",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「真夏の全国ツアー2026 福岡公演」",
       "member_uids": [],
       "id": "106707"
     },
     {
       "date": "2026-08-10",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
       "member_uids": [
         "55391"
@@ -613,7 +669,8 @@
     },
     {
       "date": "2026-08-10",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」矢田萌華",
       "member_uids": [
         "63111"
@@ -623,7 +680,8 @@
     },
     {
       "date": "2026-08-10",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
       "member_uids": [
         "63111"
@@ -634,7 +692,8 @@
     },
     {
       "date": "2026-08-10",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "UHB北海道文化放送「TANTO MUSIK」金川紗耶、瀬戸口心月、長嶋凛桜",
       "member_uids": [
         "48010",
@@ -647,7 +706,8 @@
     },
     {
       "date": "2026-08-10",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -667,7 +727,8 @@
     },
     {
       "date": "2026-08-10",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「ar」一ノ瀬美空",
       "member_uids": [
         "55390"
@@ -676,7 +737,8 @@
     },
     {
       "date": "2026-08-11",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -687,7 +749,8 @@
     },
     {
       "date": "2026-08-11",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -698,7 +761,8 @@
     },
     {
       "date": "2026-08-11",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -709,7 +773,8 @@
     },
     {
       "date": "2026-08-11",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビ「コントラスト」冨里奈央",
       "member_uids": [
         "55393"
@@ -720,7 +785,8 @@
     },
     {
       "date": "2026-08-11",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「良質で文化的な最大限度の乃木坂46を営む。#12 5th YEAR BIRTHDAY LIVE “光合成希望”」池田瑛紗、林瑠奈、中西アルノ",
       "member_uids": [
         "55385",
@@ -731,7 +797,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」大越ひなの",
       "member_uids": [
         "63102"
@@ -741,7 +808,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "ミヤギテレビ「DRAMATIC BASEBALL2026　東北楽天ゴールデンイーグルスvsオリックス・バファローズ」黒見明香",
       "member_uids": [
         "55383"
@@ -752,7 +820,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「猫舌SHOWROOM」遠藤さくら、弓木奈於",
       "member_uids": [
         "48006",
@@ -764,7 +833,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -775,7 +845,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -786,7 +857,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「vois」井上和",
       "member_uids": [
         "55389"
@@ -795,7 +867,8 @@
     },
     {
       "date": "2026-08-12",
-      "category": "モバイル",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
       "title": "のぎ動画「良質で格別な最大限度のケータリングをたしなむ。福岡編」池田瑛紗、大越ひなの、筒井あやめ、林瑠奈、矢田萌華",
       "member_uids": [
         "48017",
@@ -808,7 +881,8 @@
     },
     {
       "date": "2026-08-13",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「佑捺の部屋」鈴木佑捺、井上和",
       "member_uids": [
         "55389",
@@ -819,7 +893,8 @@
     },
     {
       "date": "2026-08-13",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ系「秘密のケンミンSHOW極」一ノ瀬美空",
       "member_uids": [
         "55390"
@@ -830,7 +905,8 @@
     },
     {
       "date": "2026-08-13",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -841,7 +917,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」伊藤理々杏",
       "member_uids": [
         "36749"
@@ -851,7 +928,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -862,7 +940,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -873,7 +952,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -885,7 +965,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -896,7 +977,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TBSラジオ「JUNK バナナマンのバナナムーンGOLD」池田瑛紗、川﨑桜、菅原咲月",
       "member_uids": [
         "55391",
@@ -909,7 +991,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -920,7 +1003,8 @@
     },
     {
       "date": "2026-08-14",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈、五百城茉央、冨里奈央",
       "member_uids": [
         "55385",
@@ -934,7 +1018,8 @@
     },
     {
       "date": "2026-08-15",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -945,7 +1030,8 @@
     },
     {
       "date": "2026-08-15",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "ニコニコ生放送「生のアイドルが好き」愛宕心響、田村真佑",
       "member_uids": [
         "48015",
@@ -956,7 +1042,8 @@
     },
     {
       "date": "2026-08-15",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「Yahoo!ニュース」林瑠奈",
       "member_uids": [
         "55385"
@@ -965,7 +1052,8 @@
     },
     {
       "date": "2026-08-16",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月、冨里奈央",
       "member_uids": [
         "55391",
@@ -977,7 +1065,8 @@
     },
     {
       "date": "2026-08-16",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
       "member_uids": [
         "55389"
@@ -988,7 +1077,8 @@
     },
     {
       "date": "2026-08-16",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」川﨑桜、大越ひなの、瀬戸口心月",
       "member_uids": [
         "55400",
@@ -1001,7 +1091,8 @@
     },
     {
       "date": "2026-08-16",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -1010,7 +1101,8 @@
     },
     {
       "date": "2026-08-17",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -1021,7 +1113,8 @@
     },
     {
       "date": "2026-08-17",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -1041,7 +1134,8 @@
     },
     {
       "date": "2026-08-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -1052,7 +1146,8 @@
     },
     {
       "date": "2026-08-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -1063,7 +1158,8 @@
     },
     {
       "date": "2026-08-18",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1074,7 +1170,8 @@
     },
     {
       "date": "2026-08-18",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビ「コントラスト」冨里奈央",
       "member_uids": [
         "55393"
@@ -1085,7 +1182,8 @@
     },
     {
       "date": "2026-08-19",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -1096,7 +1194,8 @@
     },
     {
       "date": "2026-08-19",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -1107,7 +1206,8 @@
     },
     {
       "date": "2026-08-20",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -1118,14 +1218,16 @@
     },
     {
       "date": "2026-08-20",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「真夏の全国ツアー2026 東京公演」",
       "member_uids": [],
       "id": "106708"
     },
     {
       "date": "2026-08-20",
-      "category": "誕生日",
+      "category_key": "birthday",
+      "category_name": "誕生日",
       "title": "奥田 いろは",
       "member_uids": [
         "55394"
@@ -1134,7 +1236,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
       "member_uids": [
         "48010"
@@ -1145,7 +1248,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -1156,7 +1260,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1167,7 +1272,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -1179,7 +1285,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -1190,7 +1297,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」小津玲奈",
       "member_uids": [
         "63103"
@@ -1201,7 +1309,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
       "member_uids": [
         "55385",
@@ -1213,7 +1322,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈、五百城茉央、冨里奈央",
       "member_uids": [
         "55385",
@@ -1227,7 +1337,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「アップトゥボーイ」森平麗心、愛宕心響",
       "member_uids": [
         "63101",
@@ -1237,7 +1348,8 @@
     },
     {
       "date": "2026-08-21",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「東京カレンダー」菅原咲月",
       "member_uids": [
         "55391"
@@ -1246,14 +1358,16 @@
     },
     {
       "date": "2026-08-21",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「真夏の全国ツアー2026 東京公演」",
       "member_uids": [],
       "id": "106708"
     },
     {
       "date": "2026-08-22",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -1264,7 +1378,8 @@
     },
     {
       "date": "2026-08-22",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TBSチャンネル1「乃木坂お試し中」伊藤理々杏、愛宕心響、小津玲奈、川端晃菜、瀬戸口心月、森平麗心",
       "member_uids": [
         "36749",
@@ -1280,7 +1395,8 @@
     },
     {
       "date": "2026-08-22",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TBSチャンネル1「Spicy Sessions with KAZ（GENERATIONS/数原龍友）」中西アルノ",
       "member_uids": [
         "55395"
@@ -1291,14 +1407,16 @@
     },
     {
       "date": "2026-08-22",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「真夏の全国ツアー2026 東京公演」",
       "member_uids": [],
       "id": "106708"
     },
     {
       "date": "2026-08-23",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月",
       "member_uids": [
         "55391"
@@ -1309,7 +1427,8 @@
     },
     {
       "date": "2026-08-23",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」",
       "member_uids": [],
       "time_start": "20:05",
@@ -1318,7 +1437,8 @@
     },
     {
       "date": "2026-08-23",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -1327,14 +1447,16 @@
     },
     {
       "date": "2026-08-23",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「真夏の全国ツアー2026 東京公演」",
       "member_uids": [],
       "id": "106708"
     },
     {
       "date": "2026-08-24",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
       "member_uids": [
         "63111"
@@ -1345,7 +1467,8 @@
     },
     {
       "date": "2026-08-24",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -1365,7 +1488,8 @@
     },
     {
       "date": "2026-08-24",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「B.L.T. SUMMER CANDY 2026」川端晃菜",
       "member_uids": [
         "63105"
@@ -1374,7 +1498,8 @@
     },
     {
       "date": "2026-08-25",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -1385,7 +1510,8 @@
     },
     {
       "date": "2026-08-25",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -1396,7 +1522,8 @@
     },
     {
       "date": "2026-08-25",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1407,7 +1534,8 @@
     },
     {
       "date": "2026-08-26",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「猫舌SHOWROOM」",
       "member_uids": [],
       "time_start": "19:00",
@@ -1416,7 +1544,8 @@
     },
     {
       "date": "2026-08-26",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -1427,7 +1556,8 @@
     },
     {
       "date": "2026-08-26",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -1438,14 +1568,16 @@
     },
     {
       "date": "2026-08-26",
-      "category": "リリース",
+      "category_key": "release",
+      "category_name": "CD/音楽配信/映像商品",
       "title": "LIVE Blu-ray＆DVD「SHIORI KUBO GRADUATION CONCERT」",
       "member_uids": [],
       "id": "107168"
     },
     {
       "date": "2026-08-27",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -1456,7 +1588,8 @@
     },
     {
       "date": "2026-08-27",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
       "member_uids": [
         "63111"
@@ -1465,7 +1598,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -1476,7 +1610,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1487,7 +1622,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -1499,7 +1635,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -1510,7 +1647,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」瀬戸口心月",
       "member_uids": [
         "63107"
@@ -1521,7 +1659,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビ(関東ローカル)「TIF PLAY BACK〜みんなのONE SONG〜」井上和",
       "member_uids": [
         "55389"
@@ -1532,7 +1671,8 @@
     },
     {
       "date": "2026-08-28",
-      "category": "書籍",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「B.L.T.」小津玲奈",
       "member_uids": [
         "63103"
@@ -1541,7 +1681,8 @@
     },
     {
       "date": "2026-08-29",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -1552,7 +1693,8 @@
     },
     {
       "date": "2026-08-30",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月",
       "member_uids": [
         "55391"
@@ -1563,7 +1705,8 @@
     },
     {
       "date": "2026-08-30",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」",
       "member_uids": [],
       "time_start": "20:05",
@@ -1572,7 +1715,8 @@
     },
     {
       "date": "2026-08-30",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "フジテレビNEXT(CS/再放送)「TIF PLAY BACK〜みんなのONE SONG〜」井上和",
       "member_uids": [
         "55389"
@@ -1583,7 +1727,8 @@
     },
     {
       "date": "2026-08-30",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -1592,7 +1737,8 @@
     },
     {
       "date": "2026-08-31",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -1603,7 +1749,8 @@
     },
     {
       "date": "2026-08-31",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -1623,7 +1770,8 @@
     },
     {
       "date": "2026-09-01",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -1634,7 +1782,8 @@
     },
     {
       "date": "2026-09-01",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -1645,7 +1794,8 @@
     },
     {
       "date": "2026-09-01",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1656,7 +1806,8 @@
     },
     {
       "date": "2026-09-02",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -1667,7 +1818,8 @@
     },
     {
       "date": "2026-09-02",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -1678,7 +1830,8 @@
     },
     {
       "date": "2026-09-03",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -1689,7 +1842,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
       "member_uids": [
         "48010"
@@ -1700,7 +1854,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -1711,7 +1866,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1722,7 +1878,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -1734,7 +1891,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -1745,7 +1903,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」愛宕心響",
       "member_uids": [
         "63101"
@@ -1756,7 +1915,8 @@
     },
     {
       "date": "2026-09-04",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
       "member_uids": [
         "55385",
@@ -1768,7 +1928,8 @@
     },
     {
       "date": "2026-09-05",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -1779,7 +1940,8 @@
     },
     {
       "date": "2026-09-06",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月",
       "member_uids": [
         "55391"
@@ -1790,7 +1952,8 @@
     },
     {
       "date": "2026-09-06",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」",
       "member_uids": [],
       "time_start": "20:05",
@@ -1799,7 +1962,8 @@
     },
     {
       "date": "2026-09-06",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -1808,7 +1972,8 @@
     },
     {
       "date": "2026-09-06",
-      "category": "誕生日",
+      "category_key": "birthday",
+      "category_name": "誕生日",
       "title": "吉田 綾乃クリスティー",
       "member_uids": [
         "36759"
@@ -1817,7 +1982,8 @@
     },
     {
       "date": "2026-09-07",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
       "member_uids": [
         "63111"
@@ -1828,7 +1994,8 @@
     },
     {
       "date": "2026-09-07",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -1848,7 +2015,8 @@
     },
     {
       "date": "2026-09-08",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -1859,7 +2027,8 @@
     },
     {
       "date": "2026-09-08",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -1870,7 +2039,8 @@
     },
     {
       "date": "2026-09-08",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1881,7 +2051,8 @@
     },
     {
       "date": "2026-09-09",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -1892,7 +2063,8 @@
     },
     {
       "date": "2026-09-09",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -1903,7 +2075,8 @@
     },
     {
       "date": "2026-09-09",
-      "category": "リリース",
+      "category_key": "release",
+      "category_name": "CD/音楽配信/映像商品",
       "title": "「舞台「鬼太郎誕生 ゲゲゲの謎」Blu-ray発売」岡本姫奈",
       "member_uids": [
         "55401"
@@ -1912,7 +2085,8 @@
     },
     {
       "date": "2026-09-10",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -1923,7 +2097,8 @@
     },
     {
       "date": "2026-09-11",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -1934,7 +2109,8 @@
     },
     {
       "date": "2026-09-11",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -1945,7 +2121,8 @@
     },
     {
       "date": "2026-09-11",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -1957,7 +2134,8 @@
     },
     {
       "date": "2026-09-11",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -1968,7 +2146,8 @@
     },
     {
       "date": "2026-09-11",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
       "member_uids": [
         "55385",
@@ -1980,7 +2159,8 @@
     },
     {
       "date": "2026-09-12",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -1991,7 +2171,8 @@
     },
     {
       "date": "2026-09-13",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月",
       "member_uids": [
         "55391"
@@ -2002,7 +2183,8 @@
     },
     {
       "date": "2026-09-13",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」",
       "member_uids": [],
       "time_start": "20:05",
@@ -2011,7 +2193,8 @@
     },
     {
       "date": "2026-09-13",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -2020,7 +2203,8 @@
     },
     {
       "date": "2026-09-14",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -2031,7 +2215,8 @@
     },
     {
       "date": "2026-09-14",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -2051,7 +2236,8 @@
     },
     {
       "date": "2026-09-15",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -2062,7 +2248,8 @@
     },
     {
       "date": "2026-09-15",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -2073,7 +2260,8 @@
     },
     {
       "date": "2026-09-15",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -2084,7 +2272,8 @@
     },
     {
       "date": "2026-09-16",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -2095,7 +2284,8 @@
     },
     {
       "date": "2026-09-16",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -2106,7 +2296,8 @@
     },
     {
       "date": "2026-09-17",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -2117,7 +2308,8 @@
     },
     {
       "date": "2026-09-17",
-      "category": "誕生日",
+      "category_key": "birthday",
+      "category_name": "誕生日",
       "title": "愛宕 心響",
       "member_uids": [
         "63101"
@@ -2126,7 +2318,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
       "member_uids": [
         "48010"
@@ -2137,7 +2330,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -2148,7 +2342,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -2159,7 +2354,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -2171,7 +2367,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -2182,7 +2379,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
       "member_uids": [
         "55385",
@@ -2194,7 +2392,8 @@
     },
     {
       "date": "2026-09-18",
-      "category": "誕生日",
+      "category_key": "birthday",
+      "category_name": "誕生日",
       "title": "冨里 奈央",
       "member_uids": [
         "55393"
@@ -2203,7 +2402,8 @@
     },
     {
       "date": "2026-09-19",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -2214,7 +2414,8 @@
     },
     {
       "date": "2026-09-19",
-      "category": "ライブ/イベント",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「プロ野球 東北楽天ゴールデンイーグルス vs 福岡ソフトバンクホークス＠楽天モバイル 最強パーク宮城」乃木坂野球部",
       "member_uids": [
         "48010",
@@ -2228,7 +2429,8 @@
     },
     {
       "date": "2026-09-20",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月",
       "member_uids": [
         "55391"
@@ -2239,7 +2441,8 @@
     },
     {
       "date": "2026-09-20",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」",
       "member_uids": [],
       "time_start": "20:05",
@@ -2248,7 +2451,8 @@
     },
     {
       "date": "2026-09-20",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -2257,7 +2461,8 @@
     },
     {
       "date": "2026-09-21",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
       "member_uids": [
         "63111"
@@ -2268,7 +2473,8 @@
     },
     {
       "date": "2026-09-21",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -2288,7 +2494,8 @@
     },
     {
       "date": "2026-09-22",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -2299,7 +2506,8 @@
     },
     {
       "date": "2026-09-22",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -2310,7 +2518,8 @@
     },
     {
       "date": "2026-09-22",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -2321,7 +2530,8 @@
     },
     {
       "date": "2026-09-23",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -2332,7 +2542,8 @@
     },
     {
       "date": "2026-09-23",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"
@@ -2343,7 +2554,8 @@
     },
     {
       "date": "2026-09-24",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
       "member_uids": [
         "48008"
@@ -2354,7 +2566,8 @@
     },
     {
       "date": "2026-09-25",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
       "member_uids": [
         "63106"
@@ -2365,7 +2578,8 @@
     },
     {
       "date": "2026-09-25",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
       "member_uids": [
         "55397"
@@ -2376,7 +2590,8 @@
     },
     {
       "date": "2026-09-25",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
       "member_uids": [
         "48015",
@@ -2388,7 +2603,8 @@
     },
     {
       "date": "2026-09-25",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「沈黙の金曜日」弓木奈於",
       "member_uids": [
         "55387"
@@ -2399,7 +2615,8 @@
     },
     {
       "date": "2026-09-25",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、林瑠奈",
       "member_uids": [
         "55385",
@@ -2411,7 +2628,8 @@
     },
     {
       "date": "2026-09-26",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -2422,7 +2640,8 @@
     },
     {
       "date": "2026-09-27",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「乃木坂46の「の」」菅原咲月",
       "member_uids": [
         "55391"
@@ -2433,7 +2652,8 @@
     },
     {
       "date": "2026-09-27",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "NHK AM「らじらー！サンデー」",
       "member_uids": [],
       "time_start": "20:05",
@@ -2442,7 +2662,8 @@
     },
     {
       "date": "2026-09-27",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
       "time_start": "24:15",
@@ -2451,7 +2672,8 @@
     },
     {
       "date": "2026-09-27",
-      "category": "WEB",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
       "member_uids": [
         "63111"
@@ -2460,7 +2682,8 @@
     },
     {
       "date": "2026-09-28",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -2471,7 +2694,8 @@
     },
     {
       "date": "2026-09-28",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -2491,7 +2715,8 @@
     },
     {
       "date": "2026-09-29",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -2502,7 +2727,8 @@
     },
     {
       "date": "2026-09-29",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
       "member_uids": [
         "48013"
@@ -2513,7 +2739,8 @@
     },
     {
       "date": "2026-09-29",
-      "category": "TV",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
       "member_uids": [
         "55397"
@@ -2524,7 +2751,8 @@
     },
     {
       "date": "2026-09-30",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
       "member_uids": [
         "55392"
@@ -2535,7 +2763,8 @@
     },
     {
       "date": "2026-09-30",
-      "category": "ラジオ",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
       "member_uids": [
         "55389"

@@ -1,5 +1,5 @@
 {
-  "count": 230,
+  "count": 232,
   "events": [
     {
       "date": "2026-08-01",
@@ -1098,6 +1098,28 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107284"
+    },
+    {
+      "date": "2026-08-17",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」一ノ瀬美空",
+      "member_uids": [
+        "55390"
+      ],
+      "time_start": "18:15",
+      "id": "107315"
+    },
+    {
+      "date": "2026-08-17",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:00",
+      "id": "107314"
     },
     {
       "date": "2026-08-17",

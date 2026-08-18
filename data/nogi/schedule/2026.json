@@ -1,5 +1,5 @@
 {
-  "count": 234,
+  "count": 235,
   "events": [
     {
       "date": "2026-08-01",
@@ -1201,6 +1201,17 @@
       "time_start": "24:55",
       "time_end": "25:25",
       "id": "107289"
+    },
+    {
+      "date": "2026-08-18",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「FOD INFO」川﨑桜、小川彩",
+      "member_uids": [
+        "55392",
+        "55400"
+      ],
+      "id": "107313"
     },
     {
       "date": "2026-08-18",

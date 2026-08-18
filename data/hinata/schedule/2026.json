@@ -1,5 +1,5 @@
 {
-  "count": 151,
+  "count": 156,
   "events": [
     {
       "date": "2026-08-01",
@@ -644,17 +644,6 @@
       "date": "2026-08-18",
       "category_key": "media",
       "category_name": "テレビ",
-      "title": "NHK Eテレ「理科チューバーズ」",
-      "member_uids": [
-        "34"
-      ],
-      "time_start": "19:40",
-      "id": "11999"
-    },
-    {
-      "date": "2026-08-18",
-      "category_key": "media",
-      "category_name": "テレビ",
       "title": "テレビ東京「世の中お金で見てみよう ～火曜ヨルの学べる経済～」",
       "member_uids": [
         "34"
@@ -731,6 +720,29 @@
     {
       "date": "2026-08-21",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK Eテレ「理科チューバーズ」",
+      "member_uids": [
+        "34"
+      ],
+      "time_start": "16:05",
+      "id": "11999"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "ABEMA「カンニング竹山のイチバン研究所」",
+      "member_uids": [
+        "23",
+        "30"
+      ],
+      "time_start": "21:00",
+      "id": "12002"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "J-WAVE「LOGISTEED RADIONOMICS」",
       "member_uids": [
@@ -753,10 +765,52 @@
     {
       "date": "2026-08-21",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「ラブ!!Jリーグ」",
+      "member_uids": [
+        "34"
+      ],
+      "time_start": "25:15",
+      "id": "12001"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「BRODY」10月号",
+      "member_uids": [
+        "37",
+        "44"
+      ],
+      "id": "12006"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「CanCam」",
+      "member_uids": [
+        "38"
+      ],
+      "id": "12004"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "5192"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「VOCE」",
+      "member_uids": [
+        "12"
+      ],
+      "id": "12005"
     },
     {
       "date": "2026-08-22",
@@ -768,16 +822,6 @@
       ],
       "time_start": "08:30",
       "id": "10118"
-    },
-    {
-      "date": "2026-08-22",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「VOCE」",
-      "member_uids": [
-        "12"
-      ],
-      "id": "11679"
     },
     {
       "date": "2026-08-23",
@@ -820,16 +864,6 @@
     },
     {
       "date": "2026-08-23",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「CanCam」",
-      "member_uids": [
-        "38"
-      ],
-      "id": "11696"
-    },
-    {
-      "date": "2026-08-23",
       "category_key": "event",
       "category_name": "ライブ",
       "title": "日向坂46「三期生LIVE」",
@@ -854,12 +888,45 @@
       "date": "2026-08-24",
       "category_key": "media",
       "category_name": "ラジオ",
+      "title": "TOKYO FM「エフエムレインボー」",
+      "member_uids": [
+        "30",
+        "42"
+      ],
+      "time_start": "20:00",
+      "id": "12007"
+    },
+    {
+      "date": "2026-08-24",
+      "category_key": "media",
+      "category_name": "ラジオ",
       "title": "bayfm「清水理央のCheer up！」",
       "member_uids": [
         "28"
       ],
       "time_start": "24:00",
       "id": "10858"
+    },
+    {
+      "date": "2026-08-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「B.L.T. SUMMER CANDY 2026」",
+      "member_uids": [
+        "36",
+        "41"
+      ],
+      "id": "12008"
+    },
+    {
+      "date": "2026-08-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「月刊ジャイアンツ」2026年10月号",
+      "member_uids": [
+        "25"
+      ],
+      "id": "12009"
     },
     {
       "date": "2026-08-26",
@@ -1432,16 +1499,6 @@
       "id": "10858"
     },
     {
-      "date": "2026-09-22",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「VOCE」",
-      "member_uids": [
-        "12"
-      ],
-      "id": "11679"
-    },
-    {
       "date": "2026-09-23",
       "category_key": "media",
       "category_name": "雑誌",
@@ -1449,7 +1506,7 @@
       "member_uids": [
         "38"
       ],
-      "id": "11696"
+      "id": "12003"
     },
     {
       "date": "2026-09-24",

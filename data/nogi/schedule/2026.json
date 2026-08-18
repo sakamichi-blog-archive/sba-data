@@ -1,5 +1,5 @@
 {
-  "count": 235,
+  "count": 237,
   "events": [
     {
       "date": "2026-08-01",
@@ -1281,6 +1281,18 @@
       "date": "2026-08-21",
       "category_key": "radio",
       "category_name": "ラジオ",
+      "title": "NHK-FM（千葉放送局）「花ラジちば」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "11:00",
+      "time_end": "12:00",
+      "id": "107321"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
       "member_uids": [
         "48010"
@@ -1470,6 +1482,18 @@
       "title": "「真夏の全国ツアー2026 東京公演」",
       "member_uids": [],
       "id": "106708"
+    },
+    {
+      "date": "2026-08-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「令和観察日記2026夏」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "16:00",
+      "time_end": "17:15",
+      "id": "107318"
     },
     {
       "date": "2026-08-23",

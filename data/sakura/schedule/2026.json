@@ -1,5 +1,5 @@
 {
-  "count": 126,
+  "count": 130,
   "events": [
     {
       "date": "2026-08-01",
@@ -443,6 +443,26 @@
     {
       "date": "2026-08-21",
       "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「MAQUIA」10月号",
+      "member_uids": [
+        "58"
+      ],
+      "id": "12012"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「ViVi」10月号",
+      "member_uids": [
+        "51"
+      ],
+      "id": "12011"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
@@ -522,6 +542,28 @@
       "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」",
       "member_uids": [],
       "id": "11567"
+    },
+    {
+      "date": "2026-08-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「B.L.T. SUMMER CANDY 2026」",
+      "member_uids": [
+        "78"
+      ],
+      "id": "12013"
+    },
+    {
+      "date": "2026-08-25",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "RNC「アイドルしか勝たん！」",
+      "member_uids": [
+        "66",
+        "78"
+      ],
+      "time_start": "23:30",
+      "id": "12014"
     },
     {
       "date": "2026-08-25",

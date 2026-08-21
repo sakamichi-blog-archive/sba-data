@@ -1,5 +1,5 @@
 {
-  "count": 130,
+  "count": 132,
   "events": [
     {
       "date": "2026-08-01",
@@ -435,6 +435,19 @@
     {
       "date": "2026-08-21",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK仙台放送「てれまさ」",
+      "member_uids": [
+        "56",
+        "59",
+        "60"
+      ],
+      "time_start": "18:10",
+      "id": "12018"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
@@ -459,6 +472,16 @@
         "51"
       ],
       "id": "12011"
+    },
+    {
+      "date": "2026-08-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「VOCE」10月号",
+      "member_uids": [
+        "46"
+      ],
+      "id": "12019"
     },
     {
       "date": "2026-08-21",

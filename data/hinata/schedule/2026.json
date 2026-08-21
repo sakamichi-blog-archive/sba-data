@@ -1,5 +1,5 @@
 {
-  "count": 157,
+  "count": 158,
   "events": [
     {
       "date": "2026-08-01",
@@ -948,6 +948,15 @@
       "member_uids": [],
       "time_start": "15:00",
       "id": "11965"
+    },
+    {
+      "date": "2026-08-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "MRT宮崎放送「わけもん‼ ひなたフェス2026直前！1時間SP　〜宮崎と日向坂46が創る二度目の夏への軌跡〜」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "id": "12020"
     },
     {
       "date": "2026-08-27",

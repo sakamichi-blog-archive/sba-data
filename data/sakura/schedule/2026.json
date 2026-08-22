@@ -1,5 +1,5 @@
 {
-  "count": 132,
+  "count": 133,
   "events": [
     {
       "date": "2026-08-01",
@@ -781,6 +781,17 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-09-05",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「デス(青春)ゲーム」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "00:30",
+      "id": "12021"
     },
     {
       "date": "2026-09-05",

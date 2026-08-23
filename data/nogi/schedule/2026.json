@@ -1,5 +1,5 @@
 {
-  "count": 244,
+  "count": 245,
   "events": [
     {
       "date": "2026-08-01",
@@ -1828,6 +1828,18 @@
       "time_start": "18:00",
       "time_end": "18:30",
       "id": "105350"
+    },
+    {
+      "date": "2026-08-30",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107306"
     },
     {
       "date": "2026-08-30",

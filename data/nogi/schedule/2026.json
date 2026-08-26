@@ -1,5 +1,5 @@
 {
-  "count": 246,
+  "count": 247,
   "events": [
     {
       "date": "2026-08-01",
@@ -1875,6 +1875,18 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107284"
+    },
+    {
+      "date": "2026-08-31",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ朝日系 「Qさま!! 3時間SP」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "19:00",
+      "time_end": "21:54",
+      "id": "107334"
     },
     {
       "date": "2026-08-31",

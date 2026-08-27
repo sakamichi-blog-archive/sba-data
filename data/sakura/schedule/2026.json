@@ -1,5 +1,5 @@
 {
-  "count": 133,
+  "count": 135,
   "events": [
     {
       "date": "2026-08-01",
@@ -853,6 +853,16 @@
       "id": "8793"
     },
     {
+      "date": "2026-09-06",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "映画「踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！」完成報告イベント",
+      "member_uids": [
+        "47"
+      ],
+      "id": "12037"
+    },
+    {
       "date": "2026-09-08",
       "category_key": "media",
       "category_name": "ファンクラブ",
@@ -1086,6 +1096,22 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-09-19",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「第43回 マイナビ 東京ガールズコレクション 2026 AUTUMN/WINTER」",
+      "member_uids": [
+        "46",
+        "47",
+        "58",
+        "51",
+        "65",
+        "69",
+        "70"
+      ],
+      "id": "12036"
     },
     {
       "date": "2026-09-19",

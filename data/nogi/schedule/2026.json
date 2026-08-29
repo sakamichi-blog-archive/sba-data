@@ -1,5 +1,5 @@
 {
-  "count": 248,
+  "count": 249,
   "events": [
     {
       "date": "2026-08-01",
@@ -2123,6 +2123,18 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107227"
+    },
+    {
+      "date": "2026-09-05",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「土曜ワイドラジオTOKYO ナイツのちゃきちゃき大放送」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "09:00",
+      "time_end": "12:45",
+      "id": "107336"
     },
     {
       "date": "2026-09-05",

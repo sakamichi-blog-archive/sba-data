@@ -1,5 +1,5 @@
 {
-  "count": 135,
+  "count": 136,
   "events": [
     {
       "date": "2026-08-01",
@@ -675,6 +675,15 @@
       ],
       "time_start": "19:00",
       "id": "11479"
+    },
+    {
+      "date": "2026-08-30",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "櫻坂チャンネル「『Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-』完走記念 緊急生配信！」",
+      "member_uids": [],
+      "time_start": "20:45",
+      "id": "12047"
     },
     {
       "date": "2026-08-30",

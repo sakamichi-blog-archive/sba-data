@@ -1,5 +1,5 @@
 {
-  "count": 249,
+  "count": 251,
   "events": [
     {
       "date": "2026-08-01",
@@ -1878,6 +1878,17 @@
     },
     {
       "date": "2026-08-31",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "19:00",
+      "id": "107338"
+    },
+    {
+      "date": "2026-08-31",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "テレビ朝日系 「Qさま!! 3時間SP」池田瑛紗",
@@ -1943,6 +1954,16 @@
         "63108"
       ],
       "id": "107333"
+    },
+    {
+      "date": "2026-08-31",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「リアルサウンド」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107337"
     },
     {
       "date": "2026-09-01",
@@ -2152,13 +2173,14 @@
       "date": "2026-09-06",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、小川彩",
       "member_uids": [
-        "55391"
+        "55391",
+        "55392"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "105350"
+      "id": "107339"
     },
     {
       "date": "2026-09-06",

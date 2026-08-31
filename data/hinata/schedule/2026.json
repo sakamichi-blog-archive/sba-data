@@ -1,5 +1,5 @@
 {
-  "count": 167,
+  "count": 170,
   "events": [
     {
       "date": "2026-08-01",
@@ -1198,6 +1198,17 @@
     {
       "date": "2026-09-03",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS系「プレバト!!」",
+      "member_uids": [
+        "12"
+      ],
+      "time_start": "19:00",
+      "id": "12049"
+    },
+    {
+      "date": "2026-09-03",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
       "member_uids": [
@@ -1205,6 +1216,17 @@
       ],
       "time_start": "24:00",
       "id": "11486"
+    },
+    {
+      "date": "2026-09-03",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "日向市駅(日向坂46駅) 出発式",
+      "member_uids": [
+        "22",
+        "33"
+      ],
+      "id": "12050"
     },
     {
       "date": "2026-09-04",
@@ -1219,6 +1241,18 @@
       ],
       "time_start": "11:30",
       "id": "11521"
+    },
+    {
+      "date": "2026-09-04",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "ABEMA「カンニング竹山のイチバン研究所」",
+      "member_uids": [
+        "27",
+        "46"
+      ],
+      "time_start": "21:00",
+      "id": "12051"
     },
     {
       "date": "2026-09-04",

@@ -1,5 +1,5 @@
 {
-  "count": 252,
+  "count": 261,
   "events": [
     {
       "date": "2026-08-01",
@@ -3059,6 +3059,94 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107173"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "林 瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "100070"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "遠藤 さくら",
+      "member_uids": [
+        "48006"
+      ],
+      "id": "100057"
+    },
+    {
+      "date": "2026-10-05",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "森平 麗心",
+      "member_uids": [
+        "63110"
+      ],
+      "id": "105460"
+    },
+    {
+      "date": "2026-10-08",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "伊藤 理々杏",
+      "member_uids": [
+        "36749"
+      ],
+      "id": "100045"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「Spicy Sessions -THE LIVE- 2026」中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "id": "107229"
+    },
+    {
+      "date": "2026-10-27",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "id": "107237"
+    },
+    {
+      "date": "2026-10-29",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「MTV VMAJ 2026」",
+      "member_uids": [],
+      "id": "107278"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "菅原 咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "100879"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "金川 紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "id": "100060"
     }
   ]
 }

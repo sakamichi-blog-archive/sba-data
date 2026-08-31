@@ -1,5 +1,5 @@
 {
-  "count": 170,
+  "count": 226,
   "events": [
     {
       "date": "2026-08-01",
@@ -1789,6 +1789,597 @@
       ],
       "time_start": "24:00",
       "id": "10858"
+    },
+    {
+      "date": "2026-10-01",
+      "category_key": "media",
+      "category_name": "WEB連載",
+      "title": "「日向坂46平岡海月のあま〜い漂流記　お菓子い散文連載」",
+      "member_uids": [
+        "32"
+      ],
+      "time_start": "18:00",
+      "id": "11510"
+    },
+    {
+      "date": "2026-10-01",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "24:00",
+      "id": "11486"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ローソン presents 日向坂46のほっとひといき！」",
+      "member_uids": [
+        "22",
+        "33",
+        "35",
+        "46"
+      ],
+      "time_start": "11:30",
+      "id": "11521"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「LOGISTEED RADIONOMICS」",
+      "member_uids": [
+        "45"
+      ],
+      "time_start": "22:30",
+      "id": "11487"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SONY SONPO QUEST FOR THE FUTURE」",
+      "member_uids": [
+        "14"
+      ],
+      "time_start": "24:00",
+      "id": "10111"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "5192"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "エフエム山陰「日向坂46 平尾帆夏のひら砲らじお」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "08:30",
+      "id": "10118"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "小西 夏菜実の誕生日",
+      "member_uids": [
+        "27"
+      ],
+      "id": "7038"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送『日向坂46の「ひ」』",
+      "member_uids": [
+        "21"
+      ],
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "id": "9892"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "11665"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「まだまだ！日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11806"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「日向坂で会いましょう」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11666"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「日経エンタテインメント！」",
+      "member_uids": [
+        "31"
+      ],
+      "id": "11830"
+    },
+    {
+      "date": "2026-10-05",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "bayfm「清水理央のCheer up！」",
+      "member_uids": [
+        "28"
+      ],
+      "time_start": "24:00",
+      "id": "10858"
+    },
+    {
+      "date": "2026-10-08",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "24:00",
+      "id": "11486"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ローソン presents 日向坂46のほっとひといき！」",
+      "member_uids": [
+        "22",
+        "33",
+        "35",
+        "46"
+      ],
+      "time_start": "11:30",
+      "id": "11521"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「LOGISTEED RADIONOMICS」",
+      "member_uids": [
+        "45"
+      ],
+      "time_start": "22:30",
+      "id": "11487"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SONY SONPO QUEST FOR THE FUTURE」",
+      "member_uids": [
+        "14"
+      ],
+      "time_start": "24:00",
+      "id": "10111"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "5192"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "エフエム山陰「日向坂46 平尾帆夏のひら砲らじお」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "08:30",
+      "id": "10118"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送『日向坂46の「ひ」』",
+      "member_uids": [
+        "21"
+      ],
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "id": "9892"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "11665"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「まだまだ！日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11806"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「日向坂で会いましょう」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11666"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "bayfm「清水理央のCheer up！」",
+      "member_uids": [
+        "28"
+      ],
+      "time_start": "24:00",
+      "id": "10858"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "24:00",
+      "id": "11486"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「コマーシャル・フォト」連載",
+      "member_uids": [
+        "12"
+      ],
+      "id": "11771"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ローソン presents 日向坂46のほっとひといき！」",
+      "member_uids": [
+        "22",
+        "33",
+        "35",
+        "46"
+      ],
+      "time_start": "11:30",
+      "id": "11521"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「LOGISTEED RADIONOMICS」",
+      "member_uids": [
+        "45"
+      ],
+      "time_start": "22:30",
+      "id": "11487"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SONY SONPO QUEST FOR THE FUTURE」",
+      "member_uids": [
+        "14"
+      ],
+      "time_start": "24:00",
+      "id": "10111"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "5192"
+    },
+    {
+      "date": "2026-10-17",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "エフエム山陰「日向坂46 平尾帆夏のひら砲らじお」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "08:30",
+      "id": "10118"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送『日向坂46の「ひ」』",
+      "member_uids": [
+        "21"
+      ],
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "id": "9892"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "11665"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「まだまだ！日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11806"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「日向坂で会いましょう」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11666"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "bayfm「清水理央のCheer up！」",
+      "member_uids": [
+        "28"
+      ],
+      "time_start": "24:00",
+      "id": "10858"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「non-no」",
+      "member_uids": [
+        "14"
+      ],
+      "id": "11915"
+    },
+    {
+      "date": "2026-10-22",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "24:00",
+      "id": "11486"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ローソン presents 日向坂46のほっとひといき！」",
+      "member_uids": [
+        "22",
+        "33",
+        "35",
+        "46"
+      ],
+      "time_start": "11:30",
+      "id": "11521"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「LOGISTEED RADIONOMICS」",
+      "member_uids": [
+        "45"
+      ],
+      "time_start": "22:30",
+      "id": "11487"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SONY SONPO QUEST FOR THE FUTURE」",
+      "member_uids": [
+        "14"
+      ],
+      "time_start": "24:00",
+      "id": "10111"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「CanCam」",
+      "member_uids": [
+        "38"
+      ],
+      "id": "12003"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "5192"
+    },
+    {
+      "date": "2026-10-24",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "エフエム山陰「日向坂46 平尾帆夏のひら砲らじお」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "08:30",
+      "id": "10118"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送『日向坂46の「ひ」』",
+      "member_uids": [
+        "21"
+      ],
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "id": "9892"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "11665"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「まだまだ！日向坂で会いましょう」",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11806"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「日向坂で会いましょう」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:50",
+      "id": "11666"
+    },
+    {
+      "date": "2026-10-26",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "bayfm「清水理央のCheer up！」",
+      "member_uids": [
+        "28"
+      ],
+      "time_start": "24:00",
+      "id": "10858"
+    },
+    {
+      "date": "2026-10-29",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「日向坂46・正源司陽子のオールナイトニッポンX(クロス)」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "24:00",
+      "id": "11486"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ローソン presents 日向坂46のほっとひといき！」",
+      "member_uids": [
+        "22",
+        "33",
+        "35",
+        "46"
+      ],
+      "time_start": "11:30",
+      "id": "11521"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「LOGISTEED RADIONOMICS」",
+      "member_uids": [
+        "45"
+      ],
+      "time_start": "22:30",
+      "id": "11487"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SONY SONPO QUEST FOR THE FUTURE」",
+      "member_uids": [
+        "14"
+      ],
+      "time_start": "24:00",
+      "id": "10111"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "5192"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "エフエム山陰「日向坂46 平尾帆夏のひら砲らじお」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "08:30",
+      "id": "10118"
     }
   ]
 }

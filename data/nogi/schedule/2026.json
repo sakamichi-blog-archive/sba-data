@@ -1,5 +1,5 @@
 {
-  "count": 262,
+  "count": 263,
   "events": [
     {
       "date": "2026-08-01",
@@ -2073,6 +2073,17 @@
     },
     {
       "date": "2026-09-03",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "18:00",
+      "id": "107348"
+    },
+    {
+      "date": "2026-09-03",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -2197,15 +2208,15 @@
       "id": "107022"
     },
     {
-      "date": "2026-09-06",
+      "date": "2026-09-05",
       "category_key": "tv",
       "category_name": "テレビ",
-      "title": "テレビ東京 「誰でも考えたくなる「正解の無いクイズ」」 池田瑛紗 ※解答者としてVTR出演",
+      "title": "テレビ東京「誰でも考えたくなる「正解の無いクイズ」」池田瑛紗",
       "member_uids": [
         "55397"
       ],
-      "time_start": "01:25",
-      "time_end": "02:10",
+      "time_start": "25:25",
+      "time_end": "26:10",
       "id": "107346"
     },
     {
@@ -2421,18 +2432,6 @@
     },
     {
       "date": "2026-09-12",
-      "category_key": "tv",
-      "category_name": "テレビ",
-      "title": "テレビ東京 「誰でも考えたくなる「正解の無いクイズ」」 池田瑛紗 ※解答者としてVTR出演",
-      "member_uids": [
-        "55397"
-      ],
-      "time_start": "01:25",
-      "time_end": "02:10",
-      "id": "107347"
-    },
-    {
-      "date": "2026-09-12",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
@@ -2442,6 +2441,18 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-09-12",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京「誰でも考えたくなる「正解の無いクイズ」」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "25:25",
+      "time_end": "26:10",
+      "id": "107347"
     },
     {
       "date": "2026-09-13",

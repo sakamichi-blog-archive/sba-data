@@ -1,5 +1,5 @@
 {
-  "count": 228,
+  "count": 229,
   "events": [
     {
       "date": "2026-08-01",
@@ -1215,7 +1215,7 @@
       "date": "2026-09-03",
       "category_key": "media",
       "category_name": "テレビ",
-      "title": "MRT宮崎放送「Check！」",
+      "title": "※出演中止※　MRT宮崎放送「Check！」",
       "member_uids": [
         "22",
         "33"
@@ -1249,7 +1249,7 @@
       "date": "2026-09-03",
       "category_key": "event",
       "category_name": "イベント",
-      "title": "日向市駅(日向坂46駅) 出発式",
+      "title": "※開催中止※　日向市駅(日向坂46駅) 出発式",
       "member_uids": [
         "22",
         "33"
@@ -1337,7 +1337,7 @@
       "date": "2026-09-05",
       "category_key": "event",
       "category_name": "ライブ",
-      "title": "「ひなたフェス2026」",
+      "title": "※開催中止※「ひなたフェス2026」",
       "member_uids": [],
       "id": "11736"
     },
@@ -1379,6 +1379,14 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
+    },
+    {
+      "date": "2026-09-06",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "※開催中止※「ひなたフェス2026」",
+      "member_uids": [],
+      "id": "11736"
     },
     {
       "date": "2026-09-07",

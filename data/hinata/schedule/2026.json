@@ -1,5 +1,5 @@
 {
-  "count": 227,
+  "count": 228,
   "events": [
     {
       "date": "2026-08-01",
@@ -1210,6 +1210,18 @@
         "38"
       ],
       "id": "12033"
+    },
+    {
+      "date": "2026-09-03",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "MRT宮崎放送「Check！」",
+      "member_uids": [
+        "22",
+        "33"
+      ],
+      "time_start": "16:50",
+      "id": "12053"
     },
     {
       "date": "2026-09-03",

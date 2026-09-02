@@ -2028,11 +2028,24 @@
       "date": "2026-09-02",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
+      "title": "SHOWROOM「のぎおび」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "18:15",
+      "id": "107344"
+    },
+    {
+      "date": "2026-09-02",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」瀬戸口心月 矢田萌華",
+      "member_uids": [
+        "63107",
+        "63111"
+      ],
       "time_start": "19:00",
-      "time_end": "21:00",
-      "id": "107117"
+      "id": "107343"
     },
     {
       "date": "2026-09-02",
@@ -2298,16 +2311,6 @@
       "time_start": "24:00",
       "time_end": "24:30",
       "id": "105027"
-    },
-    {
-      "date": "2026-09-09",
-      "category_key": "web",
-      "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
-      "time_start": "19:00",
-      "time_end": "21:00",
-      "id": "107117"
     },
     {
       "date": "2026-09-09",

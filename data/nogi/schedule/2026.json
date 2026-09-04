@@ -1,5 +1,5 @@
 {
-  "count": 264,
+  "count": 266,
   "events": [
     {
       "date": "2026-08-01",
@@ -2108,6 +2108,17 @@
     },
     {
       "date": "2026-09-04",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107351"
+    },
+    {
+      "date": "2026-09-04",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
@@ -2429,6 +2440,18 @@
       "time_start": "21:00",
       "time_end": "23:00",
       "id": "107331"
+    },
+    {
+      "date": "2026-09-11",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「全力！脱力タイムズ」遠藤さくら",
+      "member_uids": [
+        "48006"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "107350"
     },
     {
       "date": "2026-09-11",

@@ -1,5 +1,5 @@
 {
-  "count": 267,
+  "count": 268,
   "events": [
     {
       "date": "2026-08-01",
@@ -2287,6 +2287,17 @@
         "36759"
       ],
       "id": "100055"
+    },
+    {
+      "date": "2026-09-07",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "19:00",
+      "id": "107353"
     },
     {
       "date": "2026-09-07",

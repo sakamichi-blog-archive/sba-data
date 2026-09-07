@@ -1,5 +1,5 @@
 {
-  "count": 270,
+  "count": 273,
   "events": [
     {
       "date": "2026-08-01",
@@ -2345,6 +2345,17 @@
     },
     {
       "date": "2026-09-08",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "19:00",
+      "id": "107360"
+    },
+    {
+      "date": "2026-09-08",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
@@ -2402,6 +2413,16 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107173"
+    },
+    {
+      "date": "2026-09-09",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「anan」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "107358"
     },
     {
       "date": "2026-09-09",
@@ -2501,6 +2522,16 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107349"
+    },
+    {
+      "date": "2026-09-11",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「sweet」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "107359"
     },
     {
       "date": "2026-09-12",

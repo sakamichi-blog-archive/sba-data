@@ -1,5 +1,5 @@
 {
-  "count": 268,
+  "count": 270,
   "events": [
     {
       "date": "2026-08-01",
@@ -2301,6 +2301,17 @@
     },
     {
       "date": "2026-09-07",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:40",
+      "id": "107356"
+    },
+    {
+      "date": "2026-09-07",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
@@ -2505,6 +2516,18 @@
     },
     {
       "date": "2026-09-12",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「A&G TRIBAL RADIO エジソン」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107357"
+    },
+    {
+      "date": "2026-09-12",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "テレビ東京「誰でも考えたくなる「正解の無いクイズ」」池田瑛紗",
@@ -2519,23 +2542,28 @@
       "date": "2026-09-13",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、鈴木佑捺",
       "member_uids": [
-        "55391"
+        "55391",
+        "63106"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "105350"
+      "id": "107354"
     },
     {
       "date": "2026-09-13",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、鈴木佑捺、矢田萌華",
+      "member_uids": [
+        "55396",
+        "63106",
+        "63111"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107355"
     },
     {
       "date": "2026-09-13",

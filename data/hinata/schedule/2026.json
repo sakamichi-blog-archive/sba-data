@@ -1,5 +1,5 @@
 {
-  "count": 233,
+  "count": 234,
   "events": [
     {
       "date": "2026-08-01",
@@ -1452,6 +1452,16 @@
       ],
       "time_start": "24:15",
       "id": "12061"
+    },
+    {
+      "date": "2026-09-09",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「anan」No.2511",
+      "member_uids": [
+        "33"
+      ],
+      "id": "12063"
     },
     {
       "date": "2026-09-10",

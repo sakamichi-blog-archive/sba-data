@@ -1,5 +1,5 @@
 {
-  "count": 234,
+  "count": 237,
   "events": [
     {
       "date": "2026-08-01",
@@ -1511,6 +1511,18 @@
     {
       "date": "2026-09-11",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK「沼にハマってきいてみた」",
+      "member_uids": [
+        "12",
+        "21"
+      ],
+      "time_start": "19:30",
+      "id": "12066"
+    },
+    {
+      "date": "2026-09-11",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "J-WAVE「LOGISTEED RADIONOMICS」",
       "member_uids": [
@@ -1598,6 +1610,32 @@
       ],
       "time_start": "24:00",
       "id": "10858"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "MBS「ライバルたちがめっちゃ褒めてくる」",
+      "member_uids": [
+        "39"
+      ],
+      "time_start": "24:31",
+      "id": "12068"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「EX大衆」10月号",
+      "member_uids": [
+        "12",
+        "23",
+        "25",
+        "30",
+        "31",
+        "42"
+      ],
+      "id": "12067"
     },
     {
       "date": "2026-09-15",

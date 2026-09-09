@@ -1,5 +1,5 @@
 {
-  "count": 275,
+  "count": 276,
   "events": [
     {
       "date": "2026-08-01",
@@ -2456,6 +2456,17 @@
         "55401"
       ],
       "id": "106569"
+    },
+    {
+      "date": "2026-09-10",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "19:00",
+      "id": "107363"
     },
     {
       "date": "2026-09-10",

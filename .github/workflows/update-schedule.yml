@@ -3,7 +3,7 @@ name: Update schedule data
 on:
   schedule:
     # NOTE: Stay clear of the blogs workflow's 0:30 JST run
-    - cron: 0 */6 * * *
+    - cron: 0 */3 * * *
       timezone: Asia/Tokyo
   workflow_dispatch:
 

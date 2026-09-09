@@ -27,7 +27,7 @@ Keyaki has no `schedule/` directory — Keyakizaka46 no longer has an active sch
 - **Astro** — static site with islands where interactivity is needed
 - **Cloudflare Workers** — hosting
 - **Cloudflare R2** — hosts the generated `.ics` schedule calendars
-- **GitHub Actions** — scheduled workflows fetch and commit updated data: blogs daily, schedule events every 6 hours
+- **GitHub Actions** — scheduled workflows fetch and commit updated data: blogs daily, schedule events every 3 hours
 - **pnpm** — package manager
 
 ## Data format

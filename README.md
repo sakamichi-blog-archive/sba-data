@@ -56,6 +56,6 @@ Each group publishes 2 subscribable `.ics` calendars:
 Both are updated through GitHub Actions schedule events.
 
 - Blogs: Updated daily at 00:30 JST
-- Schedule: Updated every 6 hours
+- Schedule: Updated every 3 hours
 
 > Note: Don't expect GitHub Actions to run on the dot; they eventually do run before the next interval.

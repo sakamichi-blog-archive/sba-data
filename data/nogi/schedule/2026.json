@@ -1,5 +1,5 @@
 {
-  "count": 273,
+  "count": 275,
   "events": [
     {
       "date": "2026-08-01",
@@ -2389,6 +2389,29 @@
       "time_start": "24:00",
       "time_end": "24:30",
       "id": "105027"
+    },
+    {
+      "date": "2026-09-09",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "18:15",
+      "id": "107361"
+    },
+    {
+      "date": "2026-09-09",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」大越ひなの、森平麗心",
+      "member_uids": [
+        "63102",
+        "63110"
+      ],
+      "time_start": "19:00",
+      "id": "107362"
     },
     {
       "date": "2026-09-09",

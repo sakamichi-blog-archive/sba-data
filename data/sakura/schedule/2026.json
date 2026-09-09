@@ -1,5 +1,5 @@
 {
-  "count": 191,
+  "count": 193,
   "events": [
     {
       "date": "2026-08-01",
@@ -881,6 +881,16 @@
     },
     {
       "date": "2026-09-09",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「anan」No.2511",
+      "member_uids": [
+        "69"
+      ],
+      "id": "12064"
+    },
+    {
+      "date": "2026-09-09",
       "category_key": "release",
       "category_name": "リリース",
       "title": "LIVE Blu-ray&DVD『5th YEAR ANNIVERSARY LIVE at MUFG STADIUM』",
@@ -926,6 +936,22 @@
         "64"
       ],
       "id": "11773"
+    },
+    {
+      "date": "2026-09-11",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "櫻坂チャンネル「『櫻坂けん玉部』腕前披露の生配信！」",
+      "member_uids": [
+        "47",
+        "48",
+        "51",
+        "63",
+        "67",
+        "78"
+      ],
+      "time_start": "20:00",
+      "id": "12065"
     },
     {
       "date": "2026-09-11",

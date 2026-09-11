@@ -1,5 +1,5 @@
 {
-  "count": 276,
+  "count": 280,
   "events": [
     {
       "date": "2026-08-01",
@@ -2482,6 +2482,17 @@
     },
     {
       "date": "2026-09-11",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "19:00",
+      "id": "107366"
+    },
+    {
+      "date": "2026-09-11",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
@@ -2708,6 +2719,39 @@
       "time_start": "24:00",
       "time_end": "24:30",
       "id": "105027"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "khb東日本放送「突撃！ナマイキTV」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "09:55",
+      "id": "107367"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "ABS秋田放送「エキマイク」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "13:00",
+      "id": "107368"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "ABS秋田放送「news every.」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "18:15",
+      "id": "107369"
     },
     {
       "date": "2026-09-16",

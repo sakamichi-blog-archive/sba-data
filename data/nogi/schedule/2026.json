@@ -1,5 +1,5 @@
 {
-  "count": 280,
+  "count": 287,
   "events": [
     {
       "date": "2026-08-01",
@@ -2746,6 +2746,18 @@
       "date": "2026-09-16",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "テレビ愛知「5時スタ」遠藤さくら、井上和",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "17:00",
+      "id": "107371"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "ABS秋田放送「news every.」矢田萌華",
       "member_uids": [
         "63111"
@@ -2777,6 +2789,30 @@
     },
     {
       "date": "2026-09-17",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "東海テレビ「スイッチ！」遠藤さくら、井上和",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "09:50",
+      "id": "107370"
+    },
+    {
+      "date": "2026-09-17",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「bre:eze」遠藤さくら、井上和",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "16:00",
+      "id": "107372"
+    },
+    {
+      "date": "2026-09-17",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -2796,6 +2832,51 @@
         "63101"
       ],
       "id": "105452"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "読売テレビ「テッパン朝ライブ　じゅーっと！」弓木奈於、五百城茉央",
+      "member_uids": [
+        "55387",
+        "55396"
+      ],
+      "time_start": "05:00",
+      "id": "107373"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "ABC朝日放送テレビ「newsおかえり」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "15:40",
+      "id": "107374"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "MBC南日本放送「かごよんフライデー」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "15:49",
+      "id": "107375"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "KKB鹿児島放送「News＋おやっと！」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "17:33",
+      "id": "107376"
     },
     {
       "date": "2026-09-18",

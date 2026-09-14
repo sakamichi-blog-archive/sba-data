@@ -1,5 +1,5 @@
 {
-  "count": 193,
+  "count": 216,
   "events": [
     {
       "date": "2026-08-01",
@@ -794,22 +794,22 @@
     {
       "date": "2026-09-05",
       "category_key": "media",
-      "category_name": "テレビ",
-      "title": "テレビ朝日「デス(青春)ゲーム」",
-      "member_uids": [
-        "51"
-      ],
-      "time_start": "00:30",
-      "id": "12021"
-    },
-    {
-      "date": "2026-09-05",
-      "category_key": "media",
       "category_name": "ラジオ",
       "title": "TBSラジオ「TALK ABOUT」",
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-09-05",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「デス(青春)ゲーム」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "24:30",
+      "id": "12021"
     },
     {
       "date": "2026-09-06",
@@ -980,6 +980,17 @@
     },
     {
       "date": "2026-09-12",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「デス(青春)ゲーム」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "24:30",
+      "id": "12021"
+    },
+    {
+      "date": "2026-09-12",
       "category_key": "shakehands",
       "category_name": "ミート＆グリート",
       "title": "15th Double A-side Single『Lonesome rabbit / What's “KAZOKU”?』発売記念 オンラインミート＆グリート（個別トーク会）",
@@ -1045,12 +1056,96 @@
       "id": "11660"
     },
     {
+      "date": "2026-09-14",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」香川公演リピート配信",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "12078"
+    },
+    {
+      "date": "2026-09-14",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "フジテレビ「映画『踊る大捜査線N.E.W.メトロポリスを駆け抜けろ!』新たな“踊る\"の幕開け 」",
+      "member_uids": [
+        "47"
+      ],
+      "time_start": "24:15",
+      "id": "12079"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "SBC信越放送「ミックスプラス」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "13:20",
+      "id": "12080"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "SBC信越放送「ずぐだせテレビ」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "13:55",
+      "id": "12081"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "長野朝日放送「abnステーション」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "17:33",
+      "id": "12082"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「Sakurazaka46 ARENA TOUR 2026 -What’s lonesome?-」香川公演リピート配信",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "12092"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "フジテレビ「映画『踊る大捜査線N.E.W.メトロポリスを駆け抜けろ!』新たな“踊る\"の幕開け 」",
+      "member_uids": [
+        "47"
+      ],
+      "time_start": "24:15",
+      "id": "12079"
+    },
+    {
       "date": "2026-09-15",
       "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "フジテレビ「映画『踊る大捜査線N.E.W.メトロポリスを駆け抜けろ!』新たな“踊る\"の幕開け 」",
+      "member_uids": [
+        "47"
+      ],
+      "time_start": "24:15",
+      "id": "12079"
     },
     {
       "date": "2026-09-16",
@@ -1086,6 +1181,17 @@
       "date": "2026-09-17",
       "category_key": "media",
       "category_name": "テレビ",
+      "title": "フジテレビ「映画『踊る大捜査線N.E.W.メトロポリスを駆け抜けろ!』新たな“踊る\"の幕開け 」",
+      "member_uids": [
+        "47"
+      ],
+      "time_start": "24:15",
+      "id": "12079"
+    },
+    {
+      "date": "2026-09-17",
+      "category_key": "media",
+      "category_name": "テレビ",
       "title": "テレビ朝日「サクラミーツ」",
       "member_uids": [
         "55",
@@ -1096,6 +1202,132 @@
       ],
       "time_start": "25:56",
       "id": "10371"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "読売テレビ「テッパン朝ライブ　じゅーっと！」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "05:00",
+      "id": "12085"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TNCテレビ西日本「ももち浜ストア」",
+      "member_uids": [
+        "50",
+        "65",
+        "73"
+      ],
+      "time_start": "09:50",
+      "id": "12088"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "tbc東北放送「ひるまでウォッチン！」",
+      "member_uids": [
+        "77"
+      ],
+      "time_start": "09:55",
+      "id": "12083"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "tbc東北放送「ラジオな気分 フライデー2」",
+      "member_uids": [
+        "77"
+      ],
+      "time_start": "12:00",
+      "id": "12084"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "ABC朝日放送テレビ「newsおかえり」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "15:40",
+      "id": "12086"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "RCC放送「イマナマ！」",
+      "member_uids": [
+        "63",
+        "66"
+      ],
+      "time_start": "15:40",
+      "id": "12087"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "RKB毎日放送「タダイマ！」",
+      "member_uids": [
+        "50",
+        "65",
+        "73"
+      ],
+      "time_start": "15:40",
+      "id": "12089"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "MBC南日本放送「かごよんフライデー」",
+      "member_uids": [
+        "54"
+      ],
+      "time_start": "15:49",
+      "id": "12090"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "KTS鹿児島テレビ「KTSライブニュース」",
+      "member_uids": [
+        "54"
+      ],
+      "time_start": "18:09",
+      "id": "12091"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK仙台放送「櫻坂46山川宇衣の宮城を抱きしめたい！」",
+      "member_uids": [
+        "77"
+      ],
+      "time_start": "19:30",
+      "id": "12094"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "フジテレビ「映画『踊る大捜査線N.E.W.メトロポリスを駆け抜けろ!』新たな“踊る\"の幕開け 」",
+      "member_uids": [
+        "47"
+      ],
+      "time_start": "24:45",
+      "id": "12093"
     },
     {
       "date": "2026-09-18",
@@ -1131,6 +1363,17 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-09-19",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「デス(青春)ゲーム」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "24:30",
+      "id": "12021"
     },
     {
       "date": "2026-09-19",
@@ -1274,6 +1517,17 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「デス(青春)ゲーム」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "24:30",
+      "id": "12021"
     },
     {
       "date": "2026-09-27",

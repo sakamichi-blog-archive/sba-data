@@ -1,5 +1,5 @@
 {
-  "count": 290,
+  "count": 293,
   "events": [
     {
       "date": "2026-08-01",
@@ -2652,6 +2652,16 @@
       "id": "107284"
     },
     {
+      "date": "2026-09-13",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「モデルプレス」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "id": "107383"
+    },
+    {
       "date": "2026-09-14",
       "category_key": "web",
       "category_name": "WEB",
@@ -2694,6 +2704,17 @@
       "time_start": "25:29",
       "time_end": "25:59",
       "id": "107257"
+    },
+    {
+      "date": "2026-09-15",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "19:00",
+      "id": "107384"
     },
     {
       "date": "2026-09-15",
@@ -3035,23 +3056,40 @@
       "date": "2026-09-20",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "title": "LuckyFM茨城放送「レバレジーズ presents MUSIC COUNTDOWN 10&10」川﨑桜",
       "member_uids": [
-        "55391"
+        "55400"
       ],
-      "time_start": "18:00",
-      "time_end": "18:30",
-      "id": "105350"
+      "time_start": "15:00",
+      "time_end": "17:00",
+      "id": "107380"
     },
     {
       "date": "2026-09-20",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、池田瑛紗",
+      "member_uids": [
+        "55391",
+        "55397"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107381"
+    },
+    {
+      "date": "2026-09-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」川﨑桜、遠藤さくら、小津玲奈",
+      "member_uids": [
+        "48006",
+        "55400",
+        "63103"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107382"
     },
     {
       "date": "2026-09-20",

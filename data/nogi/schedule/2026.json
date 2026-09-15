@@ -1,5 +1,5 @@
 {
-  "count": 293,
+  "count": 295,
   "events": [
     {
       "date": "2026-08-01",
@@ -3103,6 +3103,18 @@
     },
     {
       "date": "2026-09-21",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ朝日系 「Qさま!! 3時間SP」小津玲奈",
+      "member_uids": [
+        "63103"
+      ],
+      "time_start": "19:00",
+      "time_end": "21:54",
+      "id": "107386"
+    },
+    {
+      "date": "2026-09-21",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
@@ -3460,6 +3472,18 @@
         "48006"
       ],
       "id": "100057"
+    },
+    {
+      "date": "2026-10-05",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「はやウタ」 奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "time_start": "04:15",
+      "time_end": "04:45",
+      "id": "107385"
     },
     {
       "date": "2026-10-05",

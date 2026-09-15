@@ -1,5 +1,5 @@
 {
-  "count": 238,
+  "count": 241,
   "events": [
     {
       "date": "2026-08-01",
@@ -1648,6 +1648,28 @@
       "id": "11771"
     },
     {
+      "date": "2026-09-16",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "SHOWROOM配信(佐藤優羽)",
+      "member_uids": [
+        "42"
+      ],
+      "time_start": "21:00",
+      "id": "12096"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「AI大作戦」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "24:21",
+      "id": "12095"
+    },
+    {
       "date": "2026-09-17",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -1718,6 +1740,16 @@
       "id": "5192"
     },
     {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「non-no」",
+      "member_uids": [
+        "14"
+      ],
+      "id": "12097"
+    },
+    {
       "date": "2026-09-19",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -1727,6 +1759,18 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-09-19",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK「沼にハマってきいてみた」",
+      "member_uids": [
+        "12",
+        "21"
+      ],
+      "time_start": "20:00",
+      "id": "12100"
     },
     {
       "date": "2026-09-20",
@@ -1775,16 +1819,6 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
-    },
-    {
-      "date": "2026-09-20",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「non-no」",
-      "member_uids": [
-        "14"
-      ],
-      "id": "11915"
     },
     {
       "date": "2026-09-21",

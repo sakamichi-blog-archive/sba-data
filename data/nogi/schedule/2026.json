@@ -1,5 +1,5 @@
 {
-  "count": 295,
+  "count": 296,
   "events": [
     {
       "date": "2026-08-01",
@@ -3227,6 +3227,16 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「CanCam」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "id": "107387"
     },
     {
       "date": "2026-09-24",

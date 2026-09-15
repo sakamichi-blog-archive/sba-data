@@ -1,5 +1,5 @@
 {
-  "count": 216,
+  "count": 218,
   "events": [
     {
       "date": "2026-08-01",
@@ -1156,6 +1156,24 @@
         "74"
       ],
       "id": "10467"
+    },
+    {
+      "date": "2026-09-17",
+      "category_key": "release",
+      "category_name": "配信",
+      "title": "16thシングル『愛MUST BE』ストリーミング＆ダウンロード先行配信",
+      "member_uids": [],
+      "time_start": "00:00",
+      "id": "12113"
+    },
+    {
+      "date": "2026-09-17",
+      "category_key": "release",
+      "category_name": "配信",
+      "title": "櫻坂46 OFFICIAL YouTube CHANNEL「16thシングル『愛MUST BE』」MUSIC VIDEO",
+      "member_uids": [],
+      "time_start": "00:00",
+      "id": "12112"
     },
     {
       "date": "2026-09-17",

@@ -1,5 +1,5 @@
 {
-  "count": 241,
+  "count": 249,
   "events": [
     {
       "date": "2026-08-01",
@@ -1773,6 +1773,18 @@
       "id": "12100"
     },
     {
+      "date": "2026-09-19",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ新広島「日向坂46竹内希来里の地元できらる」",
+      "member_uids": [
+        "30",
+        "32"
+      ],
+      "time_start": "26:25",
+      "id": "12101"
+    },
+    {
       "date": "2026-09-20",
       "category_key": "event",
       "category_name": "イベント",
@@ -1832,16 +1844,6 @@
       "id": "10858"
     },
     {
-      "date": "2026-09-23",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「CanCam」",
-      "member_uids": [
-        "38"
-      ],
-      "id": "12003"
-    },
-    {
       "date": "2026-09-24",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -1851,6 +1853,47 @@
       ],
       "time_start": "24:00",
       "id": "11486"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「CanCam」",
+      "member_uids": [
+        "38"
+      ],
+      "id": "12104"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「VOCE」",
+      "member_uids": [
+        "12"
+      ],
+      "id": "12105"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「アップトゥボーイ」vol.367",
+      "member_uids": [
+        "29",
+        "39"
+      ],
+      "id": "12106"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊少年マガジン」43号",
+      "member_uids": [
+        "14"
+      ],
+      "id": "12102"
     },
     {
       "date": "2026-09-25",
@@ -1906,6 +1949,32 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "media",
+      "category_name": "イベント",
+      "title": "「Rakuten GirlsAward 2026 AUTUMN/WINTER」",
+      "member_uids": [
+        "12",
+        "14",
+        "33",
+        "38",
+        "46"
+      ],
+      "time_start": "14:30",
+      "id": "12107"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ愛知「大須テレビ」",
+      "member_uids": [
+        "35"
+      ],
+      "time_start": "24:55",
+      "id": "12108"
     },
     {
       "date": "2026-09-27",
@@ -1968,6 +2037,17 @@
       "id": "10858"
     },
     {
+      "date": "2026-09-28",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「B.L.T.」11月号",
+      "member_uids": [
+        "38",
+        "45"
+      ],
+      "id": "12111"
+    },
+    {
       "date": "2026-10-01",
       "category_key": "media",
       "category_name": "WEB連載",
@@ -2024,6 +2104,16 @@
       ],
       "time_start": "24:00",
       "id": "10111"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「blt graph.」Vol.116",
+      "member_uids": [
+        "27"
+      ],
+      "id": "12110"
     },
     {
       "date": "2026-10-02",

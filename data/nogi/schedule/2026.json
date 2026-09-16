@@ -1,5 +1,5 @@
 {
-  "count": 303,
+  "count": 305,
   "events": [
     {
       "date": "2026-08-01",
@@ -2817,11 +2817,25 @@
       "date": "2026-09-16",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
+      "title": "SHOWROOM「のぎおび」田村真佑",
+      "member_uids": [
+        "48015"
+      ],
+      "time_start": "18:15",
+      "id": "107395"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」五百城茉央、川﨑桜",
+      "member_uids": [
+        "55396",
+        "55400"
+      ],
       "time_start": "19:00",
       "time_end": "21:00",
-      "id": "107117"
+      "id": "107396"
     },
     {
       "date": "2026-09-16",
@@ -2834,6 +2848,17 @@
       "time_start": "24:00",
       "time_end": "24:27",
       "id": "106548"
+    },
+    {
+      "date": "2026-09-16",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「オリコンニュース」川﨑桜、小川彩",
+      "member_uids": [
+        "55392",
+        "55400"
+      ],
+      "id": "107397"
     },
     {
       "date": "2026-09-17",

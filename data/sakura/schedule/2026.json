@@ -1,5 +1,5 @@
 {
-  "count": 218,
+  "count": 221,
   "events": [
     {
       "date": "2026-08-01",
@@ -1374,6 +1374,16 @@
       "id": "8110"
     },
     {
+      "date": "2026-09-18",
+      "category_key": "event",
+      "category_name": "セミナー",
+      "title": "青葉坂46 オーディションセミナー",
+      "member_uids": [
+        "51"
+      ],
+      "id": "12114"
+    },
+    {
       "date": "2026-09-19",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -1486,6 +1496,17 @@
       "id": "8110"
     },
     {
+      "date": "2026-09-23",
+      "category_key": "event",
+      "category_name": "セミナー",
+      "title": "青葉坂46 オーディションセミナー",
+      "member_uids": [
+        "50",
+        "65"
+      ],
+      "id": "12115"
+    },
+    {
       "date": "2026-09-24",
       "category_key": "media",
       "category_name": "テレビ",
@@ -1546,6 +1567,22 @@
       ],
       "time_start": "24:30",
       "id": "12021"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「Rakuten GirlsAward 2026 AUTUMN/WINTER」",
+      "member_uids": [
+        "46",
+        "47",
+        "58",
+        "51",
+        "65",
+        "69",
+        "70"
+      ],
+      "id": "12116"
     },
     {
       "date": "2026-09-27",

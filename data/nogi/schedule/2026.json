@@ -1,5 +1,5 @@
 {
-  "count": 296,
+  "count": 303,
   "events": [
     {
       "date": "2026-08-01",
@@ -3039,6 +3039,17 @@
     },
     {
       "date": "2026-09-19",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
+    },
+    {
+      "date": "2026-09-19",
       "category_key": "live",
       "category_name": "ライブ/イベント",
       "title": "「プロ野球 東北楽天ゴールデンイーグルス vs 福岡ソフトバンクホークス＠楽天モバイル 最強パーク宮城」乃木坂野球部",
@@ -3194,6 +3205,17 @@
     },
     {
       "date": "2026-09-23",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
+    },
+    {
+      "date": "2026-09-23",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
@@ -3309,6 +3331,17 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
     },
     {
       "date": "2026-09-26",
@@ -3441,6 +3474,17 @@
     },
     {
       "date": "2026-09-30",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
+    },
+    {
+      "date": "2026-09-30",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
@@ -3475,6 +3519,17 @@
     },
     {
       "date": "2026-10-03",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
+    },
+    {
+      "date": "2026-10-03",
       "category_key": "birthday",
       "category_name": "誕生日",
       "title": "遠藤 さくら",
@@ -3506,6 +3561,17 @@
       "id": "105460"
     },
     {
+      "date": "2026-10-07",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
+    },
+    {
       "date": "2026-10-08",
       "category_key": "birthday",
       "category_name": "誕生日",
@@ -3514,6 +3580,17 @@
         "36749"
       ],
       "id": "100045"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "time_start": "19:00",
+      "id": "107388"
     },
     {
       "date": "2026-10-20",

@@ -1,5 +1,5 @@
 {
-  "count": 305,
+  "count": 307,
   "events": [
     {
       "date": "2026-08-01",
@@ -2886,6 +2886,17 @@
     },
     {
       "date": "2026-09-17",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "time_start": "19:00",
+      "id": "107398"
+    },
+    {
+      "date": "2026-09-17",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -2895,6 +2906,18 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-09-17",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "ニコニコ生放送「生のアイドルが好き」愛宕心響、田村真佑",
+      "member_uids": [
+        "48015",
+        "63101"
+      ],
+      "time_start": "22:00",
+      "id": "107399"
     },
     {
       "date": "2026-09-17",

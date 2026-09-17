@@ -1,5 +1,5 @@
 {
-  "count": 308,
+  "count": 336,
   "events": [
     {
       "date": "2026-08-01",
@@ -2280,6 +2280,16 @@
     },
     {
       "date": "2026-09-06",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107402"
+    },
+    {
+      "date": "2026-09-06",
       "category_key": "birthday",
       "category_name": "誕生日",
       "title": "吉田 綾乃クリスティー",
@@ -2342,6 +2352,16 @@
       "time_start": "25:29",
       "time_end": "25:59",
       "id": "107257"
+    },
+    {
+      "date": "2026-09-07",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107403"
     },
     {
       "date": "2026-09-08",
@@ -2458,6 +2478,16 @@
       "id": "106569"
     },
     {
+      "date": "2026-09-09",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107410"
+    },
+    {
       "date": "2026-09-10",
       "category_key": "web",
       "category_name": "WEB",
@@ -2479,6 +2509,16 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-09-10",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107411"
     },
     {
       "date": "2026-09-11",
@@ -2579,6 +2619,16 @@
       "id": "107359"
     },
     {
+      "date": "2026-09-11",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107412"
+    },
+    {
       "date": "2026-09-12",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -2660,6 +2710,16 @@
         "55396"
       ],
       "id": "107383"
+    },
+    {
+      "date": "2026-09-13",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107402"
     },
     {
       "date": "2026-09-14",
@@ -2769,6 +2829,16 @@
       "id": "107378"
     },
     {
+      "date": "2026-09-15",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107406"
+    },
+    {
       "date": "2026-09-16",
       "category_key": "tv",
       "category_name": "テレビ",
@@ -2861,6 +2931,16 @@
       "id": "107397"
     },
     {
+      "date": "2026-09-16",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107410"
+    },
+    {
       "date": "2026-09-17",
       "category_key": "tv",
       "category_name": "テレビ",
@@ -2918,6 +2998,16 @@
       ],
       "time_start": "22:00",
       "id": "107399"
+    },
+    {
+      "date": "2026-09-17",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107411"
     },
     {
       "date": "2026-09-17",
@@ -3065,6 +3155,16 @@
     },
     {
       "date": "2026-09-18",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107412"
+    },
+    {
+      "date": "2026-09-18",
       "category_key": "birthday",
       "category_name": "誕生日",
       "title": "冨里 奈央",
@@ -3110,6 +3210,16 @@
         "63108"
       ],
       "id": "106810"
+    },
+    {
+      "date": "2026-09-19",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107408"
     },
     {
       "date": "2026-09-20",
@@ -3161,6 +3271,16 @@
       "id": "107284"
     },
     {
+      "date": "2026-09-20",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107402"
+    },
+    {
       "date": "2026-09-21",
       "category_key": "tv",
       "category_name": "テレビ",
@@ -3204,6 +3324,16 @@
       "time_start": "25:29",
       "time_end": "25:59",
       "id": "107257"
+    },
+    {
+      "date": "2026-09-21",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107404"
     },
     {
       "date": "2026-09-22",
@@ -3299,6 +3429,16 @@
       "id": "107364"
     },
     {
+      "date": "2026-09-23",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107410"
+    },
+    {
       "date": "2026-09-24",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -3381,6 +3521,16 @@
       "id": "107331"
     },
     {
+      "date": "2026-09-25",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107412"
+    },
+    {
       "date": "2026-09-26",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -3452,6 +3602,16 @@
         "63111"
       ],
       "id": "107237"
+    },
+    {
+      "date": "2026-09-27",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107402"
     },
     {
       "date": "2026-09-28",
@@ -3568,6 +3728,36 @@
       "id": "107364"
     },
     {
+      "date": "2026-09-30",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107410"
+    },
+    {
+      "date": "2026-10-01",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107413"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107412"
+    },
+    {
       "date": "2026-10-02",
       "category_key": "birthday",
       "category_name": "誕生日",
@@ -3587,6 +3777,16 @@
       ],
       "time_start": "19:00",
       "id": "107388"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107407"
     },
     {
       "date": "2026-10-03",
@@ -3612,6 +3812,16 @@
     },
     {
       "date": "2026-10-05",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107405"
+    },
+    {
+      "date": "2026-10-05",
       "category_key": "birthday",
       "category_name": "誕生日",
       "title": "森平 麗心",
@@ -3619,6 +3829,16 @@
         "63110"
       ],
       "id": "105460"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107409"
     },
     {
       "date": "2026-10-07",
@@ -3651,6 +3871,66 @@
       ],
       "time_start": "19:00",
       "id": "107388"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107415"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107415"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107415"
+    },
+    {
+      "date": "2026-10-17",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107416"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107416"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル「民王」林瑠奈",
+      "member_uids": [
+        "55385"
+      ],
+      "id": "107416"
     },
     {
       "date": "2026-10-20",

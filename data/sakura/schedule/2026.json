@@ -1,5 +1,5 @@
 {
-  "count": 221,
+  "count": 226,
   "events": [
     {
       "date": "2026-08-01",
@@ -1521,6 +1521,17 @@
       "date": "2026-09-24",
       "category_key": "media",
       "category_name": "テレビ",
+      "title": "日本テレビ系「秘密のケンミンSHOW極」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "20:54",
+      "id": "12118"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "テレビ",
       "title": "テレビ朝日「サクラミーツ」",
       "member_uids": [
         "55",
@@ -1533,12 +1544,44 @@
       "id": "10371"
     },
     {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「ViVi」11/12月号",
+      "member_uids": [
+        "51",
+        "65"
+      ],
+      "id": "12117"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「VOCE」11月号",
+      "member_uids": [
+        "46",
+        "50"
+      ],
+      "id": "12119"
+    },
+    {
       "date": "2026-09-25",
       "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "8817"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "media",
+      "category_name": "映画",
+      "title": "映画「我々は宇宙人」",
+      "member_uids": [
+        "51"
+      ],
+      "id": "12120"
     },
     {
       "date": "2026-09-25",
@@ -1594,6 +1637,17 @@
       ],
       "time_start": "19:00",
       "id": "11479"
+    },
+    {
+      "date": "2026-09-27",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「アメトーーク！」",
+      "member_uids": [
+        "64"
+      ],
+      "time_start": "22:15",
+      "id": "12121"
     },
     {
       "date": "2026-09-27",

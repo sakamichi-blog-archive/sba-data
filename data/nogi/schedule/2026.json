@@ -1,5 +1,5 @@
 {
-  "count": 352,
+  "count": 353,
   "events": [
     {
       "date": "2026-08-01",
@@ -3558,6 +3558,17 @@
       ],
       "time_start": "16:50",
       "id": "107430"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "AIR-G’「IMAREAL」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "18:00",
+      "id": "107431"
     },
     {
       "date": "2026-09-25",

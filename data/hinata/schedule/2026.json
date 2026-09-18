@@ -1,5 +1,5 @@
 {
-  "count": 250,
+  "count": 252,
   "events": [
     {
       "date": "2026-08-01",
@@ -1682,6 +1682,28 @@
       ],
       "time_start": "11:30",
       "id": "11521"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "ABC朝日放送テレビ「newsおかえり」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "15:40",
+      "id": "12124"
+    },
+    {
+      "date": "2026-09-18",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "RCCテレビ「イマナマ！」",
+      "member_uids": [
+        "30"
+      ],
+      "time_start": "15:40",
+      "id": "12123"
     },
     {
       "date": "2026-09-18",

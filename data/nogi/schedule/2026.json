@@ -1,5 +1,5 @@
 {
-  "count": 353,
+  "count": 354,
   "events": [
     {
       "date": "2026-08-01",
@@ -3326,13 +3326,25 @@
     },
     {
       "date": "2026-09-20",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「佑捺の部屋」鈴木佑捺、森平麗心",
+      "member_uids": [
+        "63106",
+        "63110"
+      ],
+      "time_start": "21:00",
+      "id": "107434"
+    },
+    {
+      "date": "2026-09-20",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
-      "time_start": "24:15",
-      "time_end": "24:45",
-      "id": "107284"
+      "time_start": "24:30",
+      "time_end": "25:00",
+      "id": "107433"
     },
     {
       "date": "2026-09-20",
@@ -3715,7 +3727,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107284"
+      "id": "107432"
     },
     {
       "date": "2026-09-27",

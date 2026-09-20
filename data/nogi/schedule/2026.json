@@ -1,5 +1,5 @@
 {
-  "count": 354,
+  "count": 362,
   "events": [
     {
       "date": "2026-08-01",
@@ -3360,6 +3360,42 @@
       "date": "2026-09-21",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "NBNメ〜テレ「ドデスカ！」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "06:00",
+      "id": "107435"
+    },
+    {
+      "date": "2026-09-21",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "カンテレ・フジテレビ系「旬感LIVE とれたてっ！」五百城茉央、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55396"
+      ],
+      "time_start": "13:50",
+      "id": "107440"
+    },
+    {
+      "date": "2026-09-21",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NBNメ〜テレ「ドデスカ＋」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "15:40",
+      "id": "107436"
+    },
+    {
+      "date": "2026-09-21",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ朝日系 「Qさま!! 3時間SP」小津玲奈",
       "member_uids": [
         "63103"
@@ -3564,12 +3600,36 @@
       "date": "2026-09-25",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "NBNメ〜テレ「ドデスカ！」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "06:00",
+      "id": "107439"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "UHBテレビ「みんテレ」長嶋凛桜",
       "member_uids": [
         "63108"
       ],
       "time_start": "16:50",
       "id": "107430"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TVAテレビ愛知「キン・ドニーチ」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "time_start": "17:30",
+      "id": "107438"
     },
     {
       "date": "2026-09-25",
@@ -3701,13 +3761,26 @@
       "date": "2026-09-27",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」菅原咲月",
+      "title": "文化放送「乃木坂46の「の」」菅原咲月、田村真佑",
       "member_uids": [
+        "48015",
         "55391"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "105350"
+      "id": "107444"
+    },
+    {
+      "date": "2026-09-27",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107307"
     },
     {
       "date": "2026-09-27",
@@ -3829,6 +3902,14 @@
       "id": "105027"
     },
     {
+      "date": "2026-09-29",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「42ndSGアンダーライブ」",
+      "member_uids": [],
+      "id": "107442"
+    },
+    {
       "date": "2026-09-30",
       "category_key": "web",
       "category_name": "WEB",
@@ -3872,6 +3953,14 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107364"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「42ndSGアンダーライブ」",
+      "member_uids": [],
+      "id": "107442"
     },
     {
       "date": "2026-09-30",

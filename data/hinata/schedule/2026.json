@@ -1,5 +1,5 @@
 {
-  "count": 255,
+  "count": 256,
   "events": [
     {
       "date": "2026-08-01",
@@ -1877,6 +1877,18 @@
       ],
       "time_start": "24:00",
       "id": "10858"
+    },
+    {
+      "date": "2026-09-22",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK総合「民謡魂 ふるさとの唄」",
+      "member_uids": [
+        "29",
+        "38"
+      ],
+      "time_start": "14:15",
+      "id": "12142"
     },
     {
       "date": "2026-09-23",

@@ -1,5 +1,5 @@
 {
-  "count": 362,
+  "count": 366,
   "events": [
     {
       "date": "2026-08-01",
@@ -3406,6 +3406,17 @@
     },
     {
       "date": "2026-09-21",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "20:00",
+      "id": "107446"
+    },
+    {
+      "date": "2026-09-21",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
@@ -3436,6 +3447,14 @@
       "time_start": "25:29",
       "time_end": "25:59",
       "id": "107257"
+    },
+    {
+      "date": "2026-09-21",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
+      "title": "のぎ動画「33rdSG アンダーライブ」",
+      "member_uids": [],
+      "id": "107443"
     },
     {
       "date": "2026-09-21",
@@ -3610,6 +3629,18 @@
     },
     {
       "date": "2026-09-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK FM（千葉放送局）「花ラジちば」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "11:00",
+      "time_end": "12:00",
+      "id": "107448"
+    },
+    {
+      "date": "2026-09-25",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "UHBテレビ「みんテレ」長嶋凛桜",
@@ -3715,6 +3746,19 @@
     },
     {
       "date": "2026-09-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ系「満天★青空レストラン」井上和、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55395"
+      ],
+      "time_start": "18:30",
+      "time_end": "19:00",
+      "id": "107445"
+    },
+    {
+      "date": "2026-09-26",
       "category_key": "web",
       "category_name": "WEB",
       "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
@@ -3786,11 +3830,14 @@
       "date": "2026-09-27",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、川﨑桜",
+      "member_uids": [
+        "55396",
+        "55400"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107447"
     },
     {
       "date": "2026-09-27",

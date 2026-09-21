@@ -1,5 +1,5 @@
 {
-  "count": 254,
+  "count": 255,
   "events": [
     {
       "date": "2026-08-01",
@@ -1855,6 +1855,17 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
+    },
+    {
+      "date": "2026-09-21",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "広島テレビ「テレビ派」",
+      "member_uids": [
+        "30"
+      ],
+      "time_start": "16:45",
+      "id": "12129"
     },
     {
       "date": "2026-09-21",

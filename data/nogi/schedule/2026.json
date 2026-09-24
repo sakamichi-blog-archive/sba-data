@@ -1,5 +1,5 @@
 {
-  "count": 367,
+  "count": 382,
   "events": [
     {
       "date": "2026-08-01",
@@ -2206,6 +2206,27 @@
       "id": "107352"
     },
     {
+      "date": "2026-09-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「日経エンタテインメント！」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "107455"
+    },
+    {
+      "date": "2026-09-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「月刊GoodsPress」冨里奈央、奥田いろは",
+      "member_uids": [
+        "55393",
+        "55394"
+      ],
+      "id": "107458"
+    },
+    {
       "date": "2026-09-05",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -3166,6 +3187,17 @@
     },
     {
       "date": "2026-09-18",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「non-no」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "id": "107453"
+    },
+    {
+      "date": "2026-09-18",
       "category_key": "mobile",
       "category_name": "モバイル・アプリ",
       "title": "のぎ動画「乃木坂あそぶだけ #85 “縁側であそぼう！”」遠藤さくら、瀬戸口心月、森平麗心、弓木奈於",
@@ -3598,6 +3630,19 @@
       "date": "2026-09-24",
       "category_key": "book",
       "category_name": "書籍",
+      "title": "「Ray」金川紗耶、池田瑛紗、川端晃菜、鈴木佑捺",
+      "member_uids": [
+        "48010",
+        "55397",
+        "63105",
+        "63106"
+      ],
+      "id": "107451"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「UTB」海邉朱莉、森平麗心",
       "member_uids": [
         "63104",
@@ -3616,6 +3661,18 @@
       ],
       "time_start": "06:00",
       "id": "107439"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "KKB鹿児島放送「ですです」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "09:55",
+      "time_end": "10:25",
+      "id": "107460"
     },
     {
       "date": "2026-09-25",
@@ -3714,6 +3771,17 @@
     },
     {
       "date": "2026-09-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ABS秋田放送(ラジオ)「タマリバ」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "id": "107465"
+    },
+    {
+      "date": "2026-09-25",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -3721,6 +3789,29 @@
         "55385"
       ],
       "id": "107412"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "KKB鹿児島放送「ぷらナビ＋」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "09:30",
+      "time_end": "10:15",
+      "id": "107462"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "OX仙台放送「あらあらかしこ」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "10:25",
+      "id": "107467"
     },
     {
       "date": "2026-09-26",
@@ -4021,6 +4112,16 @@
     },
     {
       "date": "2026-10-02",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「日経エンタテインメント！」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "107456"
+    },
+    {
+      "date": "2026-10-02",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4085,9 +4186,20 @@
     },
     {
       "date": "2026-10-04",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "ABS秋田放送「ZIPSUNDAY」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "11:40",
+      "id": "107469"
+    },
+    {
+      "date": "2026-10-04",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "MBSラジオ　乃木坂46「青葉坂46オーディション開催記念特番」　弓木奈於・五百城茉央",
+      "title": "MBSラジオ「青葉坂46オーディション開催記念特番」五百城茉央、弓木奈於",
       "member_uids": [
         "55387",
         "55396"
@@ -4127,6 +4239,16 @@
         "63110"
       ],
       "id": "105460"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「月刊GoodsPress」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "id": "107459"
     },
     {
       "date": "2026-10-06",
@@ -4170,6 +4292,16 @@
         "36749"
       ],
       "id": "100045"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「ar」一ノ瀬美空",
+      "member_uids": [
+        "55390"
+      ],
+      "id": "107457"
     },
     {
       "date": "2026-10-10",
@@ -4282,6 +4414,17 @@
     },
     {
       "date": "2026-10-20",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「non-no」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "id": "107454"
+    },
+    {
+      "date": "2026-10-20",
       "category_key": "live",
       "category_name": "ライブ/イベント",
       "title": "「Spicy Sessions -THE LIVE- 2026」中西アルノ",
@@ -4289,6 +4432,26 @@
         "55395"
       ],
       "id": "107229"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「CanCam」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "id": "107461"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「Ray」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "id": "107452"
     },
     {
       "date": "2026-10-23",

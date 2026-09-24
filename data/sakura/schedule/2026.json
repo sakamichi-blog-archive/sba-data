@@ -1,5 +1,5 @@
 {
-  "count": 226,
+  "count": 236,
   "events": [
     {
       "date": "2026-08-01",
@@ -1481,6 +1481,18 @@
     },
     {
       "date": "2026-09-21",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "広島テレビ「テレビ派 街かど伝言板」",
+      "member_uids": [
+        "63",
+        "66"
+      ],
+      "time_start": "15:48",
+      "id": "12154"
+    },
+    {
+      "date": "2026-09-21",
       "category_key": "event",
       "category_name": "イベント",
       "title": "「ROCK IN JAPAN FESTIVAL 2026」",
@@ -1516,6 +1528,18 @@
       ],
       "time_start": "05:20",
       "id": "9477"
+    },
+    {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "山口朝日放送「YOU！どきっ」",
+      "member_uids": [
+        "63",
+        "66"
+      ],
+      "time_start": "15:55",
+      "id": "12146"
     },
     {
       "date": "2026-09-24",
@@ -1566,6 +1590,28 @@
       "id": "12119"
     },
     {
+      "date": "2026-09-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊TVガイド」10/2号",
+      "member_uids": [
+        "47"
+      ],
+      "id": "12145"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "西日本放送「every. FRIDAY」",
+      "member_uids": [
+        "63",
+        "66"
+      ],
+      "time_start": "15:50",
+      "id": "12147"
+    },
+    {
       "date": "2026-09-25",
       "category_key": "media",
       "category_name": "雑誌",
@@ -1590,6 +1636,39 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "KYT鹿児島讀賣テレビ「かごピタ FAMILIAR」",
+      "member_uids": [
+        "54"
+      ],
+      "time_start": "09:25",
+      "id": "12150"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "OX仙台放送「あらあらかしこ」",
+      "member_uids": [
+        "77"
+      ],
+      "time_start": "10:25",
+      "id": "12148"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NBS長野放送「土曜はこれダネッ」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "18:00",
+      "id": "12149"
     },
     {
       "date": "2026-09-26",
@@ -1700,6 +1779,18 @@
     },
     {
       "date": "2026-09-29",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "KRY山口放送「らいふ」",
+      "member_uids": [
+        "63",
+        "66"
+      ],
+      "time_start": "17:20",
+      "id": "12151"
+    },
+    {
+      "date": "2026-09-29",
       "category_key": "event",
       "category_name": "ライブ",
       "title": "「15th Single BACKS LIVE!!」",
@@ -1799,6 +1890,17 @@
     {
       "date": "2026-10-03",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NBS長野放送「N1」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "10:25",
+      "id": "12152"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "TBSラジオ「TALK ABOUT」",
       "member_uids": [],
@@ -1854,6 +1956,16 @@
       "member_uids": [],
       "time_start": "25:20",
       "id": "8793"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "新聞",
+      "title": "「南日本新聞」",
+      "member_uids": [
+        "54"
+      ],
+      "id": "12153"
     },
     {
       "date": "2026-10-06",

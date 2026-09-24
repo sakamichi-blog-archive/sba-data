@@ -1,5 +1,5 @@
 {
-  "count": 383,
+  "count": 385,
   "events": [
     {
       "date": "2026-08-01",
@@ -3690,6 +3690,17 @@
       "date": "2026-09-25",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "STVテレビ「どさんこワイド」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "15:48",
+      "id": "107474"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "UHBテレビ「みんテレ」長嶋凛桜",
       "member_uids": [
         "63108"
@@ -3719,6 +3730,17 @@
       ],
       "time_start": "18:00",
       "id": "107431"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」遠藤さくら",
+      "member_uids": [
+        "48006"
+      ],
+      "time_start": "19:00",
+      "id": "107473"
     },
     {
       "date": "2026-09-25",

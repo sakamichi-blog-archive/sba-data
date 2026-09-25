@@ -1,5 +1,5 @@
 {
-  "count": 385,
+  "count": 393,
   "events": [
     {
       "date": "2026-08-01",
@@ -3804,6 +3804,28 @@
     },
     {
       "date": "2026-09-25",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」森平麗心",
+      "member_uids": [
+        "63110"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107475"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「Pop'n'Roll」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107471"
+    },
+    {
+      "date": "2026-09-25",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -3882,6 +3904,21 @@
       "time_start": "23:30",
       "time_end": "24:30",
       "id": "107423"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX、群馬テレビ、とちぎテレビ、BS11「映画「GROTESQQQUE-グロテスク-」って何？」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "time_start": "23:30",
+      "time_end": "23:57",
+      "id": "107480"
     },
     {
       "date": "2026-09-26",
@@ -4094,6 +4131,18 @@
     },
     {
       "date": "2026-09-30",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ朝日系 「Qさま!!特別編！水曜プレッシャーSTUDY 3時間SP」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "19:00",
+      "time_end": "21:54",
+      "id": "107481"
+    },
+    {
+      "date": "2026-09-30",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
@@ -4143,6 +4192,29 @@
         "55385"
       ],
       "id": "107413"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107476"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「blt graph.」伊藤理々杏、岩本蓮加",
+      "member_uids": [
+        "36749",
+        "36750"
+      ],
+      "id": "107479"
     },
     {
       "date": "2026-10-02",
@@ -4329,6 +4401,18 @@
     },
     {
       "date": "2026-10-09",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」海邉朱莉",
+      "member_uids": [
+        "63104"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107477"
+    },
+    {
+      "date": "2026-10-09",
       "category_key": "book",
       "category_name": "書籍",
       "title": "「ar」一ノ瀬美空",
@@ -4403,6 +4487,18 @@
         "55385"
       ],
       "id": "107415"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」川端晃菜",
+      "member_uids": [
+        "63105"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107478"
     },
     {
       "date": "2026-10-17",

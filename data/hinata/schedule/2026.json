@@ -1,5 +1,5 @@
 {
-  "count": 257,
+  "count": 261,
   "events": [
     {
       "date": "2026-08-01",
@@ -1987,6 +1987,50 @@
       ],
       "time_start": "11:30",
       "id": "11521"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "札幌テレビ「どさんこワイド179」",
+      "member_uids": [
+        "33"
+      ],
+      "time_start": "15:48",
+      "id": "12156"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "RNC西日本放送「every.フライデー」",
+      "member_uids": [
+        "30"
+      ],
+      "time_start": "15:50",
+      "id": "12155"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "UHB北海道文化放送「みんテレ」",
+      "member_uids": [
+        "33"
+      ],
+      "time_start": "16:50",
+      "id": "12158"
+    },
+    {
+      "date": "2026-09-25",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "AIR-G「IMAREAL」",
+      "member_uids": [
+        "33"
+      ],
+      "time_start": "18:00",
+      "id": "12157"
     },
     {
       "date": "2026-09-25",

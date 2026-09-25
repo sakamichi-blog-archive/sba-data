@@ -1,5 +1,5 @@
 {
-  "count": 236,
+  "count": 240,
   "events": [
     {
       "date": "2026-08-01",
@@ -1631,6 +1631,16 @@
     },
     {
       "date": "2026-09-25",
+      "category_key": "event",
+      "category_name": "映画",
+      "title": "映画「我々は宇宙人」公開初日舞台挨拶",
+      "member_uids": [
+        "51"
+      ],
+      "id": "12159"
+    },
+    {
+      "date": "2026-09-25",
       "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
@@ -1766,6 +1776,16 @@
       "member_uids": [],
       "time_start": "25:20",
       "id": "8793"
+    },
+    {
+      "date": "2026-09-28",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「B.L.T.」11月号",
+      "member_uids": [
+        "57"
+      ],
+      "id": "12160"
     },
     {
       "date": "2026-09-28",
@@ -2223,6 +2243,14 @@
       "id": "8793"
     },
     {
+      "date": "2026-10-18",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "16th Single『愛MUST BE』発売記念 オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12161"
+    },
+    {
       "date": "2026-10-20",
       "category_key": "media",
       "category_name": "ファンクラブ",
@@ -2407,6 +2435,14 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "16th Single『愛MUST BE』発売記念 オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12161"
     }
   ]
 }

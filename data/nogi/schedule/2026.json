@@ -1,5 +1,5 @@
 {
-  "count": 394,
+  "count": 397,
   "events": [
     {
       "date": "2026-08-01",
@@ -3873,6 +3873,18 @@
       "date": "2026-09-26",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "HBCテレビ「サタブラ」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "12:10",
+      "time_end": "13:27",
+      "id": "107483"
+    },
+    {
+      "date": "2026-09-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ系「満天★青空レストラン」井上和、中西アルノ",
       "member_uids": [
         "55389",
@@ -4126,6 +4138,18 @@
     },
     {
       "date": "2026-09-30",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "HTBテレビ「イチモニ！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "06:00",
+      "time_end": "08:00",
+      "id": "107484"
+    },
+    {
+      "date": "2026-09-30",
       "category_key": "web",
       "category_name": "WEB",
       "title": "SHOWROOM「猫舌SHOWROOM」",
@@ -4208,6 +4232,18 @@
         "55385"
       ],
       "id": "107413"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "読売テレビ「音道楽√(ROOT)」　五百城茉央、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55396"
+      ],
+      "time_start": "24:35",
+      "id": "107463"
     },
     {
       "date": "2026-10-02",

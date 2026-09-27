@@ -1,5 +1,5 @@
 {
-  "count": 397,
+  "count": 400,
   "events": [
     {
       "date": "2026-08-01",
@@ -4311,6 +4311,16 @@
     },
     {
       "date": "2026-10-03",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「ほっかいどう秋の大収穫祭」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "id": "107485"
+    },
+    {
+      "date": "2026-10-03",
       "category_key": "streaming",
       "category_name": "映像配信サービス",
       "title": "Lemino「乃木坂MLB学園 集中講座「先生！メジャーリーグって何ですか？」」黒見明香、瀬戸口心月、長嶋凛桜、弓木奈於",
@@ -4365,6 +4375,31 @@
       "time_start": "16:30",
       "time_end": "17:00",
       "id": "107422"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月、賀喜遥香",
+      "member_uids": [
+        "48008",
+        "63107"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107486"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107308"
     },
     {
       "date": "2026-10-05",

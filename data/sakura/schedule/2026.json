@@ -1,5 +1,5 @@
 {
-  "count": 240,
+  "count": 241,
   "events": [
     {
       "date": "2026-08-01",
@@ -1875,6 +1875,17 @@
       ],
       "time_start": "05:20",
       "id": "9477"
+    },
+    {
+      "date": "2026-10-01",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「アメトーーク！」",
+      "member_uids": [
+        "64"
+      ],
+      "time_start": "23:15",
+      "id": "12174"
     },
     {
       "date": "2026-10-01",

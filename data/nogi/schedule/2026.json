@@ -1,5 +1,5 @@
 {
-  "count": 401,
+  "count": 402,
   "events": [
     {
       "date": "2026-08-01",
@@ -4414,6 +4414,19 @@
       "time_start": "20:05",
       "time_end": "22:55",
       "id": "107487"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "ABCテレビ「Music House」五百城茉央、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55396"
+      ],
+      "time_start": "25:45",
+      "time_end": "26:05",
+      "id": "107464"
     },
     {
       "date": "2026-10-05",

@@ -1,5 +1,5 @@
 {
-  "count": 402,
+  "count": 406,
   "events": [
     {
       "date": "2026-08-01",
@@ -4039,6 +4039,28 @@
     },
     {
       "date": "2026-09-28",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」大越ひなの",
+      "member_uids": [
+        "63102"
+      ],
+      "time_start": "18:15",
+      "id": "107490"
+    },
+    {
+      "date": "2026-09-28",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:00",
+      "id": "107489"
+    },
+    {
+      "date": "2026-09-28",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
@@ -4079,6 +4101,17 @@
         "63109"
       ],
       "id": "107427"
+    },
+    {
+      "date": "2026-09-28",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "雑誌「CLASSY.」筒井あやめ・五百城茉央",
+      "member_uids": [
+        "48017",
+        "55396"
+      ],
+      "id": "107503"
     },
     {
       "date": "2026-09-29",
@@ -4135,6 +4168,17 @@
       "title": "「42ndSGアンダーライブ」",
       "member_uids": [],
       "id": "107442"
+    },
+    {
+      "date": "2026-09-29",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「京都新聞夕刊」弓木奈於・五百城茉央",
+      "member_uids": [
+        "55387",
+        "55396"
+      ],
+      "id": "107502"
     },
     {
       "date": "2026-09-30",

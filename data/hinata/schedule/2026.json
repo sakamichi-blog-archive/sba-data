@@ -1,5 +1,5 @@
 {
-  "count": 262,
+  "count": 264,
   "events": [
     {
       "date": "2026-08-01",
@@ -2192,6 +2192,28 @@
         "45"
       ],
       "id": "12111"
+    },
+    {
+      "date": "2026-09-29",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "ABC朝日放送テレビ「おはよう朝日です」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "05:00",
+      "id": "12172"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ新広島「ひろしま満天ママ‼︎」",
+      "member_uids": [
+        "30"
+      ],
+      "time_start": "09:50",
+      "id": "12173"
     },
     {
       "date": "2026-10-01",

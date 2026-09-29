@@ -1,5 +1,5 @@
 {
-  "count": 265,
+  "count": 270,
   "events": [
     {
       "date": "2026-08-01",
@@ -2208,12 +2208,71 @@
       "date": "2026-09-30",
       "category_key": "media",
       "category_name": "テレビ",
+      "title": "HTBテレビ「イチモニ! 」",
+      "member_uids": [
+        "33"
+      ],
+      "time_start": "06:00",
+      "id": "12182"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "media",
+      "category_name": "テレビ",
       "title": "テレビ新広島「ひろしま満天ママ‼︎」",
       "member_uids": [
         "30"
       ],
       "time_start": "09:50",
       "id": "12173"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "朝日放送テレビ「これ余談なんですけど・・・」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "23:10",
+      "id": "12181"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「BUBKA」11月号",
+      "member_uids": [
+        "21",
+        "22",
+        "23",
+        "28",
+        "43",
+        "46"
+      ],
+      "id": "12180"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「Top Yell NEO 2026 AUTUMN」",
+      "member_uids": [
+        "27",
+        "28",
+        "34"
+      ],
+      "id": "12179"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊少年サンデー」44号",
+      "member_uids": [
+        "29"
+      ],
+      "id": "12178"
     },
     {
       "date": "2026-09-30",

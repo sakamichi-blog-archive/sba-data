@@ -1,5 +1,5 @@
 {
-  "count": 407,
+  "count": 409,
   "events": [
     {
       "date": "2026-08-01",
@@ -4357,6 +4357,19 @@
     },
     {
       "date": "2026-10-03",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「DELETE【消すゲーム】消して勝て！負けたら即退場サバイバルゲーム」一ノ瀬美空、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55390"
+      ],
+      "time_start": "13:30",
+      "time_end": "14:30",
+      "id": "107506"
+    },
+    {
+      "date": "2026-10-03",
       "category_key": "web",
       "category_name": "WEB",
       "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
@@ -4471,6 +4484,18 @@
       "time_start": "20:05",
       "time_end": "22:55",
       "id": "107487"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「有吉ぃぃeeeee！～そうだ！今からお前んチでゲームしない？」黒見明香",
+      "member_uids": [
+        "55383"
+      ],
+      "time_start": "22:00",
+      "time_end": "22:48",
+      "id": "107505"
     },
     {
       "date": "2026-10-04",

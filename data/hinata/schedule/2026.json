@@ -1,5 +1,5 @@
 {
-  "count": 264,
+  "count": 265,
   "events": [
     {
       "date": "2026-08-01",
@@ -2214,6 +2214,14 @@
       ],
       "time_start": "09:50",
       "id": "12173"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "release",
+      "category_name": "リリース",
+      "title": "18thシングル「イチャイチャ虫」発売日",
+      "member_uids": [],
+      "id": "12176"
     },
     {
       "date": "2026-10-01",

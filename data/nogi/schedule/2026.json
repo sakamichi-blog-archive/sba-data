@@ -1,5 +1,5 @@
 {
-  "count": 409,
+  "count": 414,
   "events": [
     {
       "date": "2026-08-01",
@@ -4837,6 +4837,57 @@
         "48010"
       ],
       "id": "100060"
+    },
+    {
+      "date": "2026-11-01",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "増田 三莉音",
+      "member_uids": [
+        "63109"
+      ],
+      "id": "105459"
+    },
+    {
+      "date": "2026-11-03",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "『大河ドラマ「豊臣兄弟！」トークライブ in 北近江・長浜～茶々のふるさと北近江～』井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107488"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "movie",
+      "category_name": "映画",
+      "title": "『GROTESQQQUE-グロテスク-』公開　一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107418"
+    },
+    {
+      "date": "2026-11-27",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "id": "107237"
+    },
+    {
+      "date": "2026-11-29",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「GIFT〜Girls Idol Festival Tokyo〜」",
+      "member_uids": [],
+      "id": "107319"
     }
   ]
 }

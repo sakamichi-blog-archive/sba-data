@@ -1,5 +1,5 @@
 {
-  "count": 414,
+  "count": 423,
   "events": [
     {
       "date": "2026-08-01",
@@ -4282,6 +4282,18 @@
     },
     {
       "date": "2026-10-01",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
+      "date": "2026-10-01",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4575,6 +4587,18 @@
     },
     {
       "date": "2026-10-08",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
+      "date": "2026-10-08",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "フジテレビ系「ヤンシナ脚本家応援プロジェクト by SUNTORY『きんつくろい -金繕い-』」遠藤さくら",
@@ -4685,6 +4709,18 @@
       "id": "107415"
     },
     {
+      "date": "2026-10-15",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
       "date": "2026-10-16",
       "category_key": "tv",
       "category_name": "テレビ",
@@ -4760,6 +4796,18 @@
       "id": "107229"
     },
     {
+      "date": "2026-10-22",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
       "date": "2026-10-23",
       "category_key": "book",
       "category_name": "書籍",
@@ -4812,6 +4860,18 @@
     },
     {
       "date": "2026-10-29",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
+      "date": "2026-10-29",
       "category_key": "live",
       "category_name": "ライブ/イベント",
       "title": "「MTV VMAJ 2026」",
@@ -4859,6 +4919,18 @@
       "id": "107488"
     },
     {
+      "date": "2026-11-05",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
       "date": "2026-11-06",
       "category_key": "movie",
       "category_name": "映画",
@@ -4870,6 +4942,42 @@
         "55395"
       ],
       "id": "107418"
+    },
+    {
+      "date": "2026-11-12",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
+      "date": "2026-11-19",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
+    },
+    {
+      "date": "2026-11-26",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "22:00",
+      "time_end": "23:55",
+      "id": "106859"
     },
     {
       "date": "2026-11-27",

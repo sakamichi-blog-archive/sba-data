@@ -1,5 +1,5 @@
 {
-  "count": 270,
+  "count": 271,
   "events": [
     {
       "date": "2026-08-01",
@@ -2339,6 +2339,15 @@
       ],
       "time_start": "24:00",
       "id": "10111"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "日本テレビ「バズリズム02」",
+      "member_uids": [],
+      "time_start": "24:59",
+      "id": "12184"
     },
     {
       "date": "2026-10-02",

@@ -1,5 +1,5 @@
 {
-  "count": 328,
+  "count": 329,
   "events": [
     {
       "date": "2026-08-01",
@@ -2524,6 +2524,17 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「オールナイトニッポン0(ZERO) feat. YAMANO BIG BAND JAZZ CONTEST」",
+      "member_uids": [
+        "22"
+      ],
+      "time_start": "27:00",
+      "id": "12188"
     },
     {
       "date": "2026-10-11",

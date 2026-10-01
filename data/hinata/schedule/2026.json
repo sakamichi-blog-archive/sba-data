@@ -1,5 +1,5 @@
 {
-  "count": 327,
+  "count": 328,
   "events": [
     {
       "date": "2026-08-01",
@@ -2281,6 +2281,17 @@
       "title": "18thシングル「イチャイチャ虫」発売日",
       "member_uids": [],
       "id": "12176"
+    },
+    {
+      "date": "2026-10-01",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "HBC北海道放送「今日ドキッ！」",
+      "member_uids": [
+        "33"
+      ],
+      "time_start": "16:50",
+      "id": "12187"
     },
     {
       "date": "2026-10-01",

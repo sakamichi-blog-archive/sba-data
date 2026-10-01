@@ -1,5 +1,5 @@
 {
-  "count": 423,
+  "count": 575,
   "events": [
     {
       "date": "2026-08-01",
@@ -4294,6 +4294,17 @@
     },
     {
       "date": "2026-10-01",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「中日スポーツ」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "id": "107522"
+    },
+    {
+      "date": "2026-10-01",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4301,6 +4312,67 @@
         "55385"
       ],
       "id": "107413"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "17:45",
+      "time_end": "22:00",
+      "id": "107518"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
     },
     {
       "date": "2026-10-02",
@@ -4325,6 +4397,20 @@
       "time_start": "25:59",
       "time_end": "26:44",
       "id": "107476"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの ※ナレーション：森平麗心",
+      "member_uids": [
+        "55387",
+        "63102",
+        "63110"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107508"
     },
     {
       "date": "2026-10-02",
@@ -4366,6 +4452,18 @@
         "55385"
       ],
       "id": "100070"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
     },
     {
       "date": "2026-10-03",
@@ -4513,6 +4611,16 @@
       "date": "2026-10-04",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "ABCテレビ「Music House」五百城茉央、弓木奈於",
       "member_uids": [
         "55387",
@@ -4536,6 +4644,40 @@
     },
     {
       "date": "2026-10-05",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107516"
+    },
+    {
+      "date": "2026-10-05",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-10-05",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4553,6 +4695,53 @@
         "63110"
       ],
       "id": "105460"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "OX仙台放送「杜の都MUSIC Space」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "25:00",
+      "id": "107520"
     },
     {
       "date": "2026-10-06",
@@ -4576,6 +4765,27 @@
     },
     {
       "date": "2026-10-07",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "MBC南日本放送「てゲてゲ」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "19:00",
+      "id": "107521"
+    },
+    {
+      "date": "2026-10-07",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-10-07",
       "category_key": "web",
       "category_name": "WEB",
       "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
@@ -4584,6 +4794,30 @@
       ],
       "time_start": "19:00",
       "id": "107388"
+    },
+    {
+      "date": "2026-10-07",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-10-07",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
     },
     {
       "date": "2026-10-08",
@@ -4621,6 +4855,55 @@
     },
     {
       "date": "2026-10-09",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-10-09",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」海邉朱莉",
@@ -4633,6 +4916,20 @@
     },
     {
       "date": "2026-10-09",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの ※ナレーション：森平麗心",
+      "member_uids": [
+        "55387",
+        "63102",
+        "63110"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107508"
+    },
+    {
+      "date": "2026-10-09",
       "category_key": "book",
       "category_name": "書籍",
       "title": "「ar」一ノ瀬美空",
@@ -4640,6 +4937,18 @@
         "55390"
       ],
       "id": "107457"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
     },
     {
       "date": "2026-10-10",
@@ -4680,6 +4989,38 @@
     },
     {
       "date": "2026-10-11",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107514"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-10-11",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4687,6 +5028,40 @@
         "55385"
       ],
       "id": "107415"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107517"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
     },
     {
       "date": "2026-10-12",
@@ -4700,6 +5075,42 @@
     },
     {
       "date": "2026-10-13",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
+    },
+    {
+      "date": "2026-10-13",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4707,6 +5118,40 @@
         "55385"
       ],
       "id": "107415"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
     },
     {
       "date": "2026-10-15",
@@ -4722,6 +5167,67 @@
     },
     {
       "date": "2026-10-16",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "17:45",
+      "time_end": "22:00",
+      "id": "107518"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-10-16",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」川端晃菜",
@@ -4731,6 +5237,32 @@
       "time_start": "25:59",
       "time_end": "26:44",
       "id": "107478"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの ※ナレーション：森平麗心",
+      "member_uids": [
+        "55387",
+        "63102",
+        "63110"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107509"
+    },
+    {
+      "date": "2026-10-17",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
     },
     {
       "date": "2026-10-17",
@@ -4756,6 +5288,38 @@
     },
     {
       "date": "2026-10-18",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107514"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-10-18",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4766,6 +5330,40 @@
     },
     {
       "date": "2026-10-19",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107516"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-10-19",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -4773,6 +5371,42 @@
         "55385"
       ],
       "id": "107416"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
     },
     {
       "date": "2026-10-20",
@@ -4796,6 +5430,40 @@
       "id": "107229"
     },
     {
+      "date": "2026-10-21",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
+    },
+    {
       "date": "2026-10-22",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -4806,6 +5474,69 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの ※ナレーション：森平麗心",
+      "member_uids": [
+        "55387",
+        "63102",
+        "63110"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107509"
     },
     {
       "date": "2026-10-23",
@@ -4839,6 +5570,120 @@
       "id": "107450"
     },
     {
+      "date": "2026-10-24",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107514"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-10-26",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107517"
+    },
+    {
+      "date": "2026-10-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-10-27",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-10-27",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-10-27",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
+    },
+    {
       "date": "2026-10-27",
       "category_key": "web",
       "category_name": "WEB",
@@ -4847,6 +5692,40 @@
         "63111"
       ],
       "id": "107237"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
     },
     {
       "date": "2026-10-28",
@@ -4879,6 +5758,79 @@
       "id": "107278"
     },
     {
+      "date": "2026-10-30",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "17:45",
+      "time_end": "22:00",
+      "id": "107518"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
+    },
+    {
       "date": "2026-10-31",
       "category_key": "birthday",
       "category_name": "誕生日",
@@ -4900,6 +5852,36 @@
     },
     {
       "date": "2026-11-01",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」",
+      "member_uids": [],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107515"
+    },
+    {
+      "date": "2026-11-01",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-11-01",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-11-01",
       "category_key": "birthday",
       "category_name": "誕生日",
       "title": "増田 三莉音",
@@ -4907,6 +5889,76 @@
         "63109"
       ],
       "id": "105459"
+    },
+    {
+      "date": "2026-11-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107516"
+    },
+    {
+      "date": "2026-11-02",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-11-03",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-11-03",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-11-03",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
     },
     {
       "date": "2026-11-03",
@@ -4917,6 +5969,40 @@
         "55389"
       ],
       "id": "107488"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
     },
     {
       "date": "2026-11-05",
@@ -4932,6 +6018,80 @@
     },
     {
       "date": "2026-11-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "17:45",
+      "time_end": "22:00",
+      "id": "107518"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの",
+      "member_uids": [
+        "55387",
+        "63102"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107510"
+    },
+    {
+      "date": "2026-11-06",
       "category_key": "movie",
       "category_name": "映画",
       "title": "『GROTESQQQUE-グロテスク-』公開　一ノ瀬美空、井上和、冨里奈央、中西アルノ",
@@ -4942,6 +6102,152 @@
         "55395"
       ],
       "id": "107418"
+    },
+    {
+      "date": "2026-11-07",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
+    },
+    {
+      "date": "2026-11-08",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」",
+      "member_uids": [],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107515"
+    },
+    {
+      "date": "2026-11-08",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-11-08",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-11-09",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107517"
+    },
+    {
+      "date": "2026-11-09",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-11-10",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-11-10",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-11-10",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
+    },
+    {
+      "date": "2026-11-11",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-11-11",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-11-11",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
     },
     {
       "date": "2026-11-12",
@@ -4956,6 +6262,214 @@
       "id": "106859"
     },
     {
+      "date": "2026-11-13",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの",
+      "member_uids": [
+        "55387",
+        "63102"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107511"
+    },
+    {
+      "date": "2026-11-14",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」",
+      "member_uids": [],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107515"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-11-16",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107516"
+    },
+    {
+      "date": "2026-11-16",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-11-17",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-11-17",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-11-17",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
+    },
+    {
+      "date": "2026-11-18",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-11-18",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-11-18",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
+    },
+    {
       "date": "2026-11-19",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -4966,6 +6480,226 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "17:45",
+      "time_end": "22:00",
+      "id": "107518"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの",
+      "member_uids": [
+        "55387",
+        "63102"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107511"
+    },
+    {
+      "date": "2026-11-21",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
+    },
+    {
+      "date": "2026-11-22",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」",
+      "member_uids": [],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107515"
+    },
+    {
+      "date": "2026-11-22",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-11-22",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
+      "date": "2026-11-23",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107517"
+    },
+    {
+      "date": "2026-11-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
+    },
+    {
+      "date": "2026-11-24",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107330"
+    },
+    {
+      "date": "2026-11-24",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 柴田柚菜のDreaming time」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:27",
+      "id": "105431"
+    },
+    {
+      "date": "2026-11-24",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TOKYO MX「小峠英二のなんて美だ！」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:30",
+      "id": "105027"
+    },
+    {
+      "date": "2026-11-25",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107117"
+    },
+    {
+      "date": "2026-11-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "BAYFM「乃木坂46 小川彩のbaby baby maybe」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "24:00",
+      "time_end": "24:27",
+      "id": "106548"
+    },
+    {
+      "date": "2026-11-25",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "25:00",
+      "time_end": "27:00",
+      "id": "107364"
     },
     {
       "date": "2026-11-26",
@@ -4981,6 +6715,68 @@
     },
     {
       "date": "2026-11-27",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:56",
+      "id": "106410"
+    },
+    {
+      "date": "2026-11-27",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "J-WAVE「SYNCREATE（THE REVERSE）」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "20:00",
+      "time_end": "22:00",
+      "id": "106841"
+    },
+    {
+      "date": "2026-11-27",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「ベルク presents 乃木坂46の乃木坂に相談だ！」田村真佑、一ノ瀬美空",
+      "member_uids": [
+        "48015",
+        "55390"
+      ],
+      "time_start": "20:30",
+      "time_end": "20:55",
+      "id": "106963"
+    },
+    {
+      "date": "2026-11-27",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "FM FUJI「沈黙の金曜日」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:00",
+      "id": "107331"
+    },
+    {
+      "date": "2026-11-27",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの",
+      "member_uids": [
+        "55387",
+        "63102"
+      ],
+      "time_start": "26:00",
+      "time_end": "26:30",
+      "id": "107511"
+    },
+    {
+      "date": "2026-11-27",
       "category_key": "web",
       "category_name": "WEB",
       "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
@@ -4990,12 +6786,88 @@
       "id": "107237"
     },
     {
+      "date": "2026-11-28",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "11:30",
+      "time_end": "12:00",
+      "id": "107022"
+    },
+    {
+      "date": "2026-11-29",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「乃木坂46の「の」」",
+      "member_uids": [],
+      "time_start": "18:00",
+      "time_end": "18:30",
+      "id": "107515"
+    },
+    {
+      "date": "2026-11-29",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
+      "time_start": "20:05",
+      "time_end": "22:55",
+      "id": "106124"
+    },
+    {
+      "date": "2026-11-29",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「乃木坂工事中」",
+      "member_uids": [],
+      "time_start": "24:15",
+      "time_end": "24:45",
+      "id": "107432"
+    },
+    {
       "date": "2026-11-29",
       "category_key": "live",
       "category_name": "ライブ/イベント",
       "title": "「GIFT〜Girls Idol Festival Tokyo〜」",
       "member_uids": [],
       "id": "107319"
+    },
+    {
+      "date": "2026-11-30",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "文化放送「レコメン！」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "22:00",
+      "time_end": "25:00",
+      "id": "107516"
+    },
+    {
+      "date": "2026-11-30",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
+      "member_uids": [
+        "63101",
+        "63102",
+        "63103",
+        "63104",
+        "63105",
+        "63106",
+        "63107",
+        "63108",
+        "63109",
+        "63110",
+        "63111"
+      ],
+      "time_start": "25:29",
+      "time_end": "25:59",
+      "id": "107519"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "count": 329,
+  "count": 335,
   "events": [
     {
       "date": "2026-08-01",
@@ -2332,6 +2332,17 @@
     {
       "date": "2026-10-02",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「世界中のカメラが捉えた衝撃的瞬間TOP40」",
+      "member_uids": [
+        "35"
+      ],
+      "time_start": "18:55",
+      "id": "12189"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "J-WAVE「LOGISTEED RADIONOMICS」",
       "member_uids": [
@@ -2350,6 +2361,17 @@
       ],
       "time_start": "24:00",
       "id": "10111"
+    },
+    {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "読売テレビ「音道楽√」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "24:35",
+      "id": "12190"
     },
     {
       "date": "2026-10-02",
@@ -2379,6 +2401,16 @@
       "id": "5192"
     },
     {
+      "date": "2026-10-02",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「りぼん」11月号",
+      "member_uids": [
+        "39"
+      ],
+      "id": "12191"
+    },
+    {
       "date": "2026-10-03",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -2388,6 +2420,18 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「JA全農COUNTDOWN JAPAN」",
+      "member_uids": [
+        "21",
+        "35"
+      ],
+      "time_start": "13:00",
+      "id": "12192"
     },
     {
       "date": "2026-10-03",
@@ -2460,6 +2504,17 @@
       "id": "10858"
     },
     {
+      "date": "2026-10-07",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「AI大作戦」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "24:15",
+      "id": "12193"
+    },
+    {
       "date": "2026-10-08",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -2469,6 +2524,17 @@
       ],
       "time_start": "24:00",
       "id": "12122"
+    },
+    {
+      "date": "2026-10-08",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「BOMB」11月号",
+      "member_uids": [
+        "25",
+        "33"
+      ],
+      "id": "12194"
     },
     {
       "date": "2026-10-09",

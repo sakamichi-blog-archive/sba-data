@@ -1,5 +1,5 @@
 {
-  "count": 335,
+  "count": 336,
   "events": [
     {
       "date": "2026-08-01",
@@ -2463,6 +2463,17 @@
       "member_uids": [],
       "time_start": "25:20",
       "id": "11665"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "ABC朝日放送テレビ「MUSIC HOUSE」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "25:45",
+      "id": "12197"
     },
     {
       "date": "2026-10-04",

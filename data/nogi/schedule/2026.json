@@ -1,5 +1,5 @@
 {
-  "count": 577,
+  "count": 581,
   "events": [
     {
       "date": "2026-08-01",
@@ -4515,6 +4515,14 @@
       "date": "2026-10-03",
       "category_key": "live",
       "category_name": "ライブ/イベント",
+      "title": "「42ndSGアンダーライブ リピート配信」",
+      "member_uids": [],
+      "id": "107533"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
       "title": "「ほっかいどう秋の大収穫祭」金川紗耶",
       "member_uids": [
         "48010"
@@ -4963,6 +4971,18 @@
     },
     {
       "date": "2026-10-10",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHKEテレ1 東京「ヴィランの言い分」中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "10:30",
+      "time_end": "11:00",
+      "id": "107531"
+    },
+    {
+      "date": "2026-10-10",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
@@ -4972,6 +4992,19 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TBSテレビ系「オールスター感謝祭2026秋」池田瑛紗、菅原咲月",
+      "member_uids": [
+        "55391",
+        "55397"
+      ],
+      "time_start": "17:40",
+      "time_end": "23:50",
+      "id": "107532"
     },
     {
       "date": "2026-10-10",
@@ -5175,6 +5208,18 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107526"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "FOD「2026/2027シーズン フィギュアスケート記者会見」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "14:00",
+      "time_end": "14:45",
+      "id": "107530"
     },
     {
       "date": "2026-10-15",

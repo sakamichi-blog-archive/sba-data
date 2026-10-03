@@ -1,5 +1,5 @@
 {
-  "count": 584,
+  "count": 598,
   "events": [
     {
       "date": "2026-08-01",
@@ -5371,6 +5371,16 @@
       "id": "107416"
     },
     {
+      "date": "2026-10-17",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107496"
+    },
+    {
       "date": "2026-10-18",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5411,6 +5421,16 @@
         "55385"
       ],
       "id": "107416"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107496"
     },
     {
       "date": "2026-10-19",
@@ -5514,6 +5534,16 @@
       "id": "107229"
     },
     {
+      "date": "2026-10-20",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107497"
+    },
+    {
       "date": "2026-10-21",
       "category_key": "web",
       "category_name": "WEB",
@@ -5548,6 +5578,16 @@
       "id": "107526"
     },
     {
+      "date": "2026-10-21",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107497"
+    },
+    {
       "date": "2026-10-22",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5558,6 +5598,16 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-10-22",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107497"
     },
     {
       "date": "2026-10-23",
@@ -5654,6 +5704,16 @@
       "id": "107450"
     },
     {
+      "date": "2026-10-23",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107497"
+    },
+    {
       "date": "2026-10-24",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5664,6 +5724,16 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-10-24",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107497"
     },
     {
       "date": "2026-10-25",
@@ -5696,6 +5766,16 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107432"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107497"
     },
     {
       "date": "2026-10-26",
@@ -5778,6 +5858,16 @@
       "id": "107237"
     },
     {
+      "date": "2026-10-27",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107498"
+    },
+    {
       "date": "2026-10-28",
       "category_key": "web",
       "category_name": "WEB",
@@ -5822,6 +5912,16 @@
       "id": "107429"
     },
     {
+      "date": "2026-10-28",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107498"
+    },
+    {
       "date": "2026-10-29",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5840,6 +5940,16 @@
       "title": "「MTV VMAJ 2026」",
       "member_uids": [],
       "id": "107278"
+    },
+    {
+      "date": "2026-10-29",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107498"
     },
     {
       "date": "2026-10-30",
@@ -5928,6 +6038,16 @@
       "id": "107528"
     },
     {
+      "date": "2026-10-30",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107498"
+    },
+    {
       "date": "2026-10-31",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5938,6 +6058,16 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107498"
     },
     {
       "date": "2026-10-31",
@@ -5988,6 +6118,16 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107432"
+    },
+    {
+      "date": "2026-11-01",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "ミュージカル『秘密の花園』奥田いろは",
+      "member_uids": [
+        "55394"
+      ],
+      "id": "107498"
     },
     {
       "date": "2026-11-01",

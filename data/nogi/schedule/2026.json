@@ -1,5 +1,5 @@
 {
-  "count": 598,
+  "count": 614,
   "events": [
     {
       "date": "2026-08-01",
@@ -4436,6 +4436,16 @@
     },
     {
       "date": "2026-10-02",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」大越ひなの",
+      "member_uids": [
+        "63102"
+      ],
+      "id": "107537"
+    },
+    {
+      "date": "2026-10-02",
       "category_key": "book",
       "category_name": "書籍",
       "title": "「blt graph.」伊藤理々杏、岩本蓮加",
@@ -4518,6 +4528,16 @@
       "title": "「42ndSGアンダーライブ リピート配信」",
       "member_uids": [],
       "id": "107533"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」海邉朱莉",
+      "member_uids": [
+        "63104"
+      ],
+      "id": "107536"
     },
     {
       "date": "2026-10-03",
@@ -5714,6 +5734,16 @@
       "id": "107497"
     },
     {
+      "date": "2026-10-23",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107499"
+    },
+    {
       "date": "2026-10-24",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5734,6 +5764,16 @@
         "55394"
       ],
       "id": "107497"
+    },
+    {
+      "date": "2026-10-24",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107499"
     },
     {
       "date": "2026-10-25",
@@ -5776,6 +5816,16 @@
         "55394"
       ],
       "id": "107497"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107499"
     },
     {
       "date": "2026-10-26",
@@ -5868,6 +5918,16 @@
       "id": "107498"
     },
     {
+      "date": "2026-10-27",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107500"
+    },
+    {
       "date": "2026-10-28",
       "category_key": "web",
       "category_name": "WEB",
@@ -5922,6 +5982,16 @@
       "id": "107498"
     },
     {
+      "date": "2026-10-28",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107500"
+    },
+    {
       "date": "2026-10-29",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -5950,6 +6020,16 @@
         "55394"
       ],
       "id": "107498"
+    },
+    {
+      "date": "2026-10-29",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107500"
     },
     {
       "date": "2026-10-30",
@@ -6048,6 +6128,16 @@
       "id": "107498"
     },
     {
+      "date": "2026-10-30",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107500"
+    },
+    {
       "date": "2026-10-31",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -6068,6 +6158,16 @@
         "55394"
       ],
       "id": "107498"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107500"
     },
     {
       "date": "2026-10-31",
@@ -6138,6 +6238,16 @@
         "63109"
       ],
       "id": "105459"
+    },
+    {
+      "date": "2026-11-01",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "舞台「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107500"
     },
     {
       "date": "2026-11-02",
@@ -6211,6 +6321,16 @@
     },
     {
       "date": "2026-11-03",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107501"
+    },
+    {
+      "date": "2026-11-03",
       "category_key": "live",
       "category_name": "ライブ/イベント",
       "title": "『大河ドラマ「豊臣兄弟！」トークライブ in 北近江・長浜～茶々のふるさと北近江～』井上和",
@@ -6254,6 +6374,16 @@
       "id": "107526"
     },
     {
+      "date": "2026-11-04",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107501"
+    },
+    {
       "date": "2026-11-05",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -6264,6 +6394,16 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-11-05",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107501"
     },
     {
       "date": "2026-11-06",
@@ -6341,6 +6481,16 @@
     },
     {
       "date": "2026-11-06",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107501"
+    },
+    {
+      "date": "2026-11-06",
       "category_key": "movie",
       "category_name": "映画",
       "title": "『GROTESQQQUE-グロテスク-』公開　一ノ瀬美空、井上和、冨里奈央、中西アルノ",
@@ -6363,6 +6513,16 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-11-07",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "「春よ来い、マジで来い」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107501"
     },
     {
       "date": "2026-11-08",

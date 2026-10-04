@@ -1,5 +1,5 @@
 {
-  "count": 614,
+  "count": 615,
   "events": [
     {
       "date": "2026-08-01",
@@ -4687,6 +4687,16 @@
       "title": "「42ndシングル「是非に及ばず」発売記念リアルミート＆グリート@幕張メッセ」",
       "member_uids": [],
       "id": "107534"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "id": "107538"
     },
     {
       "date": "2026-10-05",

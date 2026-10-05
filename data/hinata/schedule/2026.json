@@ -1,5 +1,5 @@
 {
-  "count": 336,
+  "count": 337,
   "events": [
     {
       "date": "2026-08-01",
@@ -2560,6 +2560,17 @@
       ],
       "time_start": "11:30",
       "id": "11521"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "ABEMA「しくじり先生 俺みたいになるな!!」",
+      "member_uids": [
+        "32"
+      ],
+      "time_start": "21:30",
+      "id": "12201"
     },
     {
       "date": "2026-10-09",

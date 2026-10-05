@@ -1,5 +1,5 @@
 {
-  "count": 618,
+  "count": 619,
   "events": [
     {
       "date": "2026-08-01",
@@ -4784,6 +4784,17 @@
         "63110"
       ],
       "id": "105460"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」筒井あやめ",
+      "member_uids": [
+        "48017"
+      ],
+      "time_start": "19:00",
+      "id": "107543"
     },
     {
       "date": "2026-10-06",

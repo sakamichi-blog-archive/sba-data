@@ -1,5 +1,5 @@
 {
-  "count": 616,
+  "count": 618,
   "events": [
     {
       "date": "2026-08-01",
@@ -4712,6 +4712,17 @@
     },
     {
       "date": "2026-10-05",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:00",
+      "id": "107539"
+    },
+    {
+      "date": "2026-10-05",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
@@ -4743,6 +4754,16 @@
       "time_start": "25:29",
       "time_end": "25:59",
       "id": "107519"
+    },
+    {
+      "date": "2026-10-05",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」森平麗心",
+      "member_uids": [
+        "63110"
+      ],
+      "id": "107542"
     },
     {
       "date": "2026-10-05",
@@ -5085,13 +5106,14 @@
       "date": "2026-10-11",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」瀬戸口心月",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月、岡本姫奈",
       "member_uids": [
+        "55401",
         "63107"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "107514"
+      "id": "107540"
     },
     {
       "date": "2026-10-11",
@@ -5109,11 +5131,15 @@
       "date": "2026-10-11",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、奥田いろは、中西アルノ",
+      "member_uids": [
+        "55394",
+        "55395",
+        "55396"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107541"
     },
     {
       "date": "2026-10-11",

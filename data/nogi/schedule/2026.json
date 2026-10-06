@@ -1,5 +1,5 @@
 {
-  "count": 619,
+  "count": 623,
   "events": [
     {
       "date": "2026-08-01",
@@ -4787,6 +4787,18 @@
     },
     {
       "date": "2026-10-06",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "MBS「よんチャンTV」五百城茉央、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55396"
+      ],
+      "time_start": "15:40",
+      "id": "107545"
+    },
+    {
+      "date": "2026-10-06",
       "category_key": "web",
       "category_name": "WEB",
       "title": "SHOWROOM「のぎおび」筒井あやめ",
@@ -4845,6 +4857,16 @@
     },
     {
       "date": "2026-10-06",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」小津玲奈",
+      "member_uids": [
+        "63103"
+      ],
+      "id": "107548"
+    },
+    {
+      "date": "2026-10-06",
       "category_key": "book",
       "category_name": "書籍",
       "title": "「月刊GoodsPress」冨里奈央",
@@ -4862,6 +4884,14 @@
         "55385"
       ],
       "id": "107409"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "日刊スポーツ「坂道の火曜日」奥田いろは",
+      "member_uids": [],
+      "id": "107544"
     },
     {
       "date": "2026-10-07",
@@ -6431,6 +6461,16 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107526"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「anan」 岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107546"
     },
     {
       "date": "2026-11-04",

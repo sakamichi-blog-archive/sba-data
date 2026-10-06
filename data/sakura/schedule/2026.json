@@ -1,5 +1,5 @@
 {
-  "count": 296,
+  "count": 305,
   "events": [
     {
       "date": "2026-08-01",
@@ -1922,6 +1922,18 @@
       "date": "2026-10-03",
       "category_key": "media",
       "category_name": "テレビ",
+      "title": "RNB南海放送「ビーンズ・モーニング」",
+      "member_uids": [
+        "63",
+        "66"
+      ],
+      "time_start": "09:55",
+      "id": "12213"
+    },
+    {
+      "date": "2026-10-03",
+      "category_key": "media",
+      "category_name": "テレビ",
       "title": "NBS長野放送「N1」",
       "member_uids": [
         "62"
@@ -1937,17 +1949,6 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
-    },
-    {
-      "date": "2026-10-04",
-      "category_key": "media",
-      "category_name": "ラジオ",
-      "title": "文化放送「櫻坂46の『さ』」",
-      "member_uids": [
-        "66"
-      ],
-      "time_start": "19:00",
-      "id": "11479"
     },
     {
       "date": "2026-10-04",
@@ -1991,6 +1992,17 @@
     {
       "date": "2026-10-04",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "ABC朝日放送テレビ「MUSIC HOUSE」",
+      "member_uids": [
+        "51"
+      ],
+      "time_start": "25:45",
+      "id": "12212"
+    },
+    {
+      "date": "2026-10-04",
+      "category_key": "media",
       "category_name": "新聞",
       "title": "「南日本新聞」",
       "member_uids": [
@@ -2001,10 +2013,43 @@
     {
       "date": "2026-10-06",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "OX仙台放送「杜の都MUSIC Space」",
+      "member_uids": [
+        "77"
+      ],
+      "time_start": "25:00",
+      "id": "12211"
+    },
+    {
+      "date": "2026-10-06",
+      "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-10-07",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "MBC南日本放送「てゲてゲ」",
+      "member_uids": [
+        "54"
+      ],
+      "time_start": "19:00",
+      "id": "12214"
+    },
+    {
+      "date": "2026-10-07",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "中京テレビ「賞金先渡しクイズ SAVE MONEY」",
+      "member_uids": [
+        "54"
+      ],
+      "time_start": "23:59",
+      "id": "12210"
     },
     {
       "date": "2026-10-08",
@@ -2016,6 +2061,17 @@
       ],
       "time_start": "05:20",
       "id": "9477"
+    },
+    {
+      "date": "2026-10-08",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「こねくと」",
+      "member_uids": [
+        "69"
+      ],
+      "time_start": "14:00",
+      "id": "12215"
     },
     {
       "date": "2026-10-08",
@@ -2044,10 +2100,32 @@
     {
       "date": "2026-10-09",
       "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "AIR-G'「IMAREAL」",
+      "member_uids": [
+        "46",
+        "51"
+      ],
+      "time_start": "18:00",
+      "id": "12218"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "8817"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「LAWSONエキサイトマッチ」キックオフセレモニー",
+      "member_uids": [
+        "75"
+      ],
+      "id": "12216"
     },
     {
       "date": "2026-10-09",
@@ -2056,6 +2134,18 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「池上彰のニュースそうだったのか!!」",
+      "member_uids": [
+        "54",
+        "61"
+      ],
+      "time_start": "18:56",
+      "id": "12217"
     },
     {
       "date": "2026-10-10",
@@ -2072,10 +2162,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-10-11",
@@ -2167,6 +2257,19 @@
       "date": "2026-10-15",
       "category_key": "media",
       "category_name": "テレビ",
+      "title": "フジテレビ「STAR」",
+      "member_uids": [
+        "46",
+        "51",
+        "63"
+      ],
+      "time_start": "19:00",
+      "id": "12227"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "media",
+      "category_name": "テレビ",
       "title": "テレビ朝日「サクラミーツ」",
       "member_uids": [
         "55",
@@ -2209,10 +2312,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-10-18",
@@ -2336,10 +2439,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-10-25",
@@ -2461,10 +2564,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-11-01",
@@ -2570,10 +2673,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-11-08",
@@ -2697,10 +2800,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-11-15",
@@ -2822,10 +2925,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-11-22",
@@ -2939,10 +3042,10 @@
       "category_name": "ラジオ",
       "title": "文化放送「櫻坂46の『さ』」",
       "member_uids": [
-        "66"
+        "65"
       ],
       "time_start": "19:00",
-      "id": "11479"
+      "id": "12219"
     },
     {
       "date": "2026-11-29",

@@ -1,5 +1,5 @@
 {
-  "count": 337,
+  "count": 339,
   "events": [
     {
       "date": "2026-08-01",
@@ -2515,6 +2515,14 @@
       "id": "10858"
     },
     {
+      "date": "2026-10-06",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「18th Single ひなた坂46 LIVE」",
+      "member_uids": [],
+      "id": "12226"
+    },
+    {
       "date": "2026-10-07",
       "category_key": "media",
       "category_name": "テレビ",
@@ -2524,6 +2532,14 @@
       ],
       "time_start": "24:15",
       "id": "12193"
+    },
+    {
+      "date": "2026-10-07",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「18th Single ひなた坂46 LIVE」",
+      "member_uids": [],
+      "id": "12226"
     },
     {
       "date": "2026-10-08",

@@ -1,5 +1,5 @@
 {
-  "count": 305,
+  "count": 309,
   "events": [
     {
       "date": "2026-08-01",
@@ -2052,6 +2052,16 @@
       "id": "12210"
     },
     {
+      "date": "2026-10-07",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「anan」No.2514",
+      "member_uids": [
+        "58"
+      ],
+      "id": "12230"
+    },
+    {
       "date": "2026-10-08",
       "category_key": "media",
       "category_name": "テレビ",
@@ -2112,6 +2122,18 @@
     {
       "date": "2026-10-09",
       "category_key": "media",
+      "category_name": "配信",
+      "title": "サクコイYouTubeチャンネル「サクコイパーティLIVEやってみた！」",
+      "member_uids": [
+        "75",
+        "78"
+      ],
+      "time_start": "20:00",
+      "id": "12232"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
@@ -2126,6 +2148,16 @@
         "75"
       ],
       "id": "12216"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「sweet」11月号",
+      "member_uids": [
+        "58"
+      ],
+      "id": "12231"
     },
     {
       "date": "2026-10-09",
@@ -2215,6 +2247,15 @@
         "55"
       ],
       "id": "3787"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK総合「うたコン」",
+      "member_uids": [],
+      "time_start": "19:57",
+      "id": "12233"
     },
     {
       "date": "2026-10-13",

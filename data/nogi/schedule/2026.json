@@ -1,5 +1,5 @@
 {
-  "count": 624,
+  "count": 631,
   "events": [
     {
       "date": "2026-08-01",
@@ -4907,6 +4907,17 @@
     },
     {
       "date": "2026-10-07",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "18:15",
+      "id": "107551"
+    },
+    {
+      "date": "2026-10-07",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "MBC南日本放送「てゲてゲ」瀬戸口心月",
@@ -4920,11 +4931,11 @@
       "date": "2026-10-07",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
+      "title": "SHOWROOM「猫舌SHOWROOM」岡本姫奈、小川 彩",
       "member_uids": [],
       "time_start": "19:00",
       "time_end": "21:00",
-      "id": "107117"
+      "id": "107552"
     },
     {
       "date": "2026-10-07",
@@ -5049,6 +5060,18 @@
       "date": "2026-10-09",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "テレビ朝日「全力！アオハル応援団」川端晃菜",
+      "member_uids": [
+        "63105"
+      ],
+      "time_start": "25:50",
+      "time_end": "26:20",
+      "id": "107559"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「夜バゲット」海邉朱莉",
       "member_uids": [
         "63104"
@@ -5154,6 +5177,18 @@
         "63108"
       ],
       "id": "107426"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「ABUロボコロン2026」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "11:00",
+      "time_end": "11:54",
+      "id": "107560"
     },
     {
       "date": "2026-10-11",
@@ -5360,6 +5395,19 @@
     },
     {
       "date": "2026-10-15",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TBSテレビ系「プレバト！2時間SP」川﨑桜、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55400"
+      ],
+      "time_start": "19:00",
+      "time_end": "21:00",
+      "id": "107561"
+    },
+    {
+      "date": "2026-10-15",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -5532,6 +5580,14 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107432"
+    },
+    {
+      "date": "2026-10-18",
+      "category_key": "meetandgreet",
+      "category_name": "ミート&グリート",
+      "title": "「42ndシングル「是非に及ばず」forTUNE music限定 オンライン ミート＆グリート」",
+      "member_uids": [],
+      "id": "107556"
     },
     {
       "date": "2026-10-18",
@@ -5855,6 +5911,14 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-10-24",
+      "category_key": "meetandgreet",
+      "category_name": "ミート&グリート",
+      "title": "「42ndシングル「是非に及ばず」forTUNE music限定 オンライン ミート＆グリート」",
+      "member_uids": [],
+      "id": "107556"
     },
     {
       "date": "2026-10-24",
@@ -6884,6 +6948,14 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107432"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "meetandgreet",
+      "category_name": "ミート&グリート",
+      "title": "「42ndシングル「是非に及ばず」forTUNE music限定 オンライン ミート＆グリート」",
+      "member_uids": [],
+      "id": "107557"
     },
     {
       "date": "2026-11-16",

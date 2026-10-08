@@ -1,5 +1,5 @@
 {
-  "count": 339,
+  "count": 340,
   "events": [
     {
       "date": "2026-08-01",
@@ -2628,6 +2628,19 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「王様のブランチ」",
+      "member_uids": [
+        "12",
+        "39"
+      ],
+      "time_start": "09:30",
+      "time_end": "17:30",
+      "id": "12235"
     },
     {
       "date": "2026-10-10",

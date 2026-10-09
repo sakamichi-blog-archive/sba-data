@@ -1,5 +1,5 @@
 {
-  "count": 640,
+  "count": 642,
   "events": [
     {
       "date": "2026-08-01",
@@ -5246,6 +5246,18 @@
       "date": "2026-10-11",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "TBSテレビ系「サンデー・ジャポン」中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "09:54",
+      "time_end": "11:35",
+      "id": "107562"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "NHK総合「ABUロボコン2026」井上和",
       "member_uids": [
         "55389"
@@ -5420,6 +5432,18 @@
       "time_start": "19:00",
       "time_end": "21:00",
       "id": "107117"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「奇跡体験！アンビリバボー」中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "20:00",
+      "time_end": "21:00",
+      "id": "107563"
     },
     {
       "date": "2026-10-14",

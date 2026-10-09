@@ -1,5 +1,5 @@
 {
-  "count": 637,
+  "count": 640,
   "events": [
     {
       "date": "2026-08-01",
@@ -4974,15 +4974,14 @@
       "id": "107527"
     },
     {
-      "date": "2026-10-08",
+      "date": "2026-10-07",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「のぎおび」菅原咲月",
+      "title": "「6期生グラビア Nogizaka Colors」長嶋凛桜",
       "member_uids": [
-        "55391"
+        "63108"
       ],
-      "time_start": "19:00",
-      "id": "107569"
+      "id": "107570"
     },
     {
       "date": "2026-10-08",
@@ -5037,6 +5036,17 @@
         "36749"
       ],
       "id": "100045"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:00",
+      "id": "107569"
     },
     {
       "date": "2026-10-09",
@@ -5127,6 +5137,16 @@
     },
     {
       "date": "2026-10-09",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」川端晃菜",
+      "member_uids": [
+        "63105"
+      ],
+      "id": "107571"
+    },
+    {
+      "date": "2026-10-09",
       "category_key": "book",
       "category_name": "書籍",
       "title": "「ar」一ノ瀬美空",
@@ -5134,6 +5154,19 @@
         "55390"
       ],
       "id": "107457"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
+      "title": "のぎ動画「乃木坂あそぶだけ #86 “ロボットとあそぼう！”」大越ひなの、菅原咲月、瀬戸口心月、中西アルノ",
+      "member_uids": [
+        "55391",
+        "55395",
+        "63102",
+        "63107"
+      ],
+      "id": "107572"
     },
     {
       "date": "2026-10-10",
@@ -5213,7 +5246,7 @@
       "date": "2026-10-11",
       "category_key": "tv",
       "category_name": "テレビ",
-      "title": "NHK総合「ABUロボコロン2026」井上和",
+      "title": "NHK総合「ABUロボコン2026」井上和",
       "member_uids": [
         "55389"
       ],

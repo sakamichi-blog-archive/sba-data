@@ -1,5 +1,5 @@
 {
-  "count": 641,
+  "count": 643,
   "events": [
     {
       "date": "2026-08-01",
@@ -5215,6 +5215,26 @@
       ],
       "time_start": "19:00",
       "id": "107388"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」増田三莉音",
+      "member_uids": [
+        "63109"
+      ],
+      "id": "107573"
+    },
+    {
+      "date": "2026-10-10",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「ENCOUNT」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107574"
     },
     {
       "date": "2026-10-10",

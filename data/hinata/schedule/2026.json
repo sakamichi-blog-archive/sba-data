@@ -1,5 +1,5 @@
 {
-  "count": 342,
+  "count": 343,
   "events": [
     {
       "date": "2026-08-01",
@@ -2704,6 +2704,17 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "SHOWROOM配信(金村美玖)",
+      "member_uids": [
+        "12"
+      ],
+      "time_start": "18:00",
+      "id": "12243"
     },
     {
       "date": "2026-10-12",

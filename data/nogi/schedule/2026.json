@@ -1,5 +1,5 @@
 {
-  "count": 643,
+  "count": 649,
   "events": [
     {
       "date": "2026-08-01",
@@ -5019,6 +5019,16 @@
     },
     {
       "date": "2026-10-08",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「NHK大河ドラマ・ガイド 豊臣兄弟！ 完結編」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107577"
+    },
+    {
+      "date": "2026-10-08",
       "category_key": "web",
       "category_name": "WEB",
       "title": "「Walkerplus+」岩本蓮加",
@@ -5154,6 +5164,19 @@
         "55390"
       ],
       "id": "107457"
+    },
+    {
+      "date": "2026-10-09",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「PASH！」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107578"
     },
     {
       "date": "2026-10-09",
@@ -5331,9 +5354,29 @@
       "category_name": "テレビ",
       "title": "テレビ東京系「乃木坂工事中」",
       "member_uids": [],
-      "time_start": "24:15",
-      "time_end": "24:45",
-      "id": "107432"
+      "time_start": "24:55",
+      "time_end": "25:25",
+      "id": "107580"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "id": "107582"
+    },
+    {
+      "date": "2026-10-11",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「ENCOUNT」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "id": "107575"
     },
     {
       "date": "2026-10-11",
@@ -5396,6 +5439,17 @@
         "55385"
       ],
       "id": "107415"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "Instagram「SNIDEL SPECIAL INSTAGRAM LIVE」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "19:00",
+      "id": "107581"
     },
     {
       "date": "2026-10-13",
@@ -5525,6 +5579,22 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「EX大衆」大越ひなの、小津玲奈、金川紗耶、冨里奈央、長嶋凛桜、矢田萌華",
+      "member_uids": [
+        "36750",
+        "48010",
+        "55393",
+        "63102",
+        "63103",
+        "63108",
+        "63111"
+      ],
+      "id": "107576"
     },
     {
       "date": "2026-10-16",
@@ -5689,7 +5759,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-10-18",
@@ -6114,7 +6184,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-10-25",
@@ -6526,7 +6596,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-11-01",
@@ -6858,7 +6928,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-11-09",
@@ -7078,7 +7148,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-11-15",
@@ -7318,7 +7388,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-11-23",
@@ -7548,7 +7618,7 @@
       "member_uids": [],
       "time_start": "24:15",
       "time_end": "24:45",
-      "id": "107432"
+      "id": "107579"
     },
     {
       "date": "2026-11-29",

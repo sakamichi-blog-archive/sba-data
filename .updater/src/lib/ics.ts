@@ -12,8 +12,7 @@ import {
 import {
   getHinataScheduleEventUrl,
   getNogiScheduleEventUrl,
-  getSakuraScheduleUrl,
-  type ScheduleFilter
+  getSakuraScheduleUrl
 } from "@sakamichi-blog-archive/utils/schedule"
 import { createEvents, type DateArray, type EventAttributes } from "ics"
 
@@ -156,19 +155,6 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
   }
 }
 
-// The calendar reaches one month further back than the fetch window. The previous month's events
-// are already in the data files from when it was current, and keeping them on the calendar lets
-// subscribers still see what just happened. Day 1 of the previous month, like monthsToFetch's
-// next month, lets Date.UTC handle the year rollover (Jan -> Dec).
-function calendarMonths(referenceDate: string): ScheduleFilter[] {
-  const [year, month] = referenceDate.split("-").map(Number) as [number, number]
-  const previous = new Date(Date.UTC(year, month - 2, 1))
-  return [
-    { year: previous.getUTCFullYear(), month: previous.getUTCMonth() + 1 },
-    ...monthsToFetch(referenceDate)
-  ]
-}
-
 async function readYear(group: Group, year: number): Promise<ScheduleYearData> {
   const filePath = join(ROOT, dirs[group], `${year}.json`)
   try {
@@ -189,7 +175,7 @@ export async function buildGroupEventsIcs(
   group: Group,
   referenceDate = todayJST()
 ): Promise<string> {
-  const filters = calendarMonths(referenceDate)
+  const filters = monthsToFetch(referenceDate)
   const years = [...new Set(filters.map(f => f.year))]
   const allEvents = await readYears(group, years)
 

@@ -39,6 +39,22 @@ function jstMidnight(date: string): Date {
   return new Date(`${date}T00:00:00+09:00`)
 }
 
+// Every update fetches the previous month first, so an empty one is queued ahead of whatever a
+// test queues for the current and next month. resetAllMocks (not clearAllMocks) drops queued
+// one-shot values a test left unconsumed, e.g. on a group it never fetched.
+function resetFetchMocks(): void {
+  vi.resetAllMocks()
+  fetchHinataScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
+  fetchNogiScheduleEventsMock.mockResolvedValue({ events: [], js: "", url: "" })
+  fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
+  fetchHinataScheduleEventsMock.mockResolvedValueOnce({ events: [], html: "", url: "" })
+  fetchNogiScheduleEventsMock.mockResolvedValueOnce({ events: [], js: "", url: "" })
+  fetchSakuraScheduleEventsMock.mockResolvedValueOnce({ events: [], html: "", url: "" })
+}
+
+// Writes happen in fetch order: previous, current, then next month.
+const CURRENT_MONTH_WRITE = 1
+
 describe("todayJST", () => {
   beforeEach(() => {
     vi.useFakeTimers()
@@ -64,8 +80,9 @@ describe("todayJST", () => {
 })
 
 describe("monthsToFetch", () => {
-  it("returns the current and next month within the same year", () => {
+  it("returns the previous, current, and next month within the same year", () => {
     expect(monthsToFetch("2026-08-15")).toEqual([
+      { year: 2026, month: 7 },
       { year: 2026, month: 8 },
       { year: 2026, month: 9 }
     ])
@@ -73,19 +90,23 @@ describe("monthsToFetch", () => {
 
   it("rolls over to next year in December", () => {
     expect(monthsToFetch("2026-12-01")).toEqual([
+      { year: 2026, month: 11 },
       { year: 2026, month: 12 },
       { year: 2027, month: 1 }
+    ])
+  })
+
+  it("rolls back to the previous year in January", () => {
+    expect(monthsToFetch("2027-01-31")).toEqual([
+      { year: 2026, month: 12 },
+      { year: 2027, month: 1 },
+      { year: 2027, month: 2 }
     ])
   })
 })
 
 describe("updateGroupSchedule", () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-    fetchHinataScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-    fetchNogiScheduleEventsMock.mockResolvedValue({ events: [], js: "", url: "" })
-    fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-  })
+  beforeEach(resetFetchMocks)
 
   it("writes structured events for nogi, resolving member names to uids", async () => {
     readFileMock.mockRejectedValue(enoent())
@@ -110,7 +131,7 @@ describe("updateGroupSchedule", () => {
 
     await updateGroupSchedule("nogi", "2026-08-15")
 
-    const [filePath, contents] = writeFileMock.mock.calls[0]!
+    const [filePath, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     expect(filePath).toContain("data/nogi/schedule/2026.json")
     const written = JSON.parse(contents as string)
     expect(written.count).toBe(1)
@@ -168,7 +189,7 @@ describe("updateGroupSchedule", () => {
 
     expect(fetchHinataScheduleEventMock).toHaveBeenCalledTimes(1)
     expect(fetchHinataScheduleEventMock).toHaveBeenCalledWith("r1")
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events.map((e: { member_uids: string[] }) => e.member_uids)).toEqual([
       ["1"],
@@ -208,7 +229,7 @@ describe("updateGroupSchedule", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events[0]).toMatchObject({ title: "Key only", category_key: "media" })
     expect(written.events[0]).not.toHaveProperty("category_name")
@@ -237,7 +258,7 @@ describe("updateGroupSchedule", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events[0].member_uids).toEqual([])
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("誰かさん"))
@@ -247,7 +268,7 @@ describe("updateGroupSchedule", () => {
     const existing = {
       count: 2,
       events: [
-        { date: "2026-07-20", title: "Old July event", member_uids: [] },
+        { date: "2026-06-20", title: "Old June event", member_uids: [] },
         { date: "2026-08-01", title: "Stale August event", member_uids: [] }
       ]
     }
@@ -270,12 +291,10 @@ describe("updateGroupSchedule", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    const augustCall = writeFileMock.mock.calls.find(call =>
-      (call[0] as string).includes("2026.json")
-    )!
-    const written = JSON.parse(augustCall[1] as string)
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
+    const written = JSON.parse(contents as string)
     expect(written.events).toEqual([
-      { date: "2026-07-20", title: "Old July event", member_uids: [] },
+      { date: "2026-06-20", title: "Old June event", member_uids: [] },
       {
         date: "2026-08-12",
         category_key: undefined,
@@ -289,9 +308,47 @@ describe("updateGroupSchedule", () => {
     ])
   })
 
-  it("fetches both months sequentially so a shared year file reflects both updates", async () => {
-    readFileMock.mockRejectedValueOnce(enoent())
-    readFileMock.mockImplementationOnce(async () => writeFileMock.mock.calls[0]![1] as string)
+  it("refetches the previous month, replacing its stored events", async () => {
+    readFileMock.mockResolvedValue(
+      JSON.stringify({
+        count: 1,
+        events: [{ date: "2026-07-20", title: "Stale July event", member_uids: [] }]
+      })
+    )
+    // Drop the empty previous month resetFetchMocks queued, so July's fetch gets this test's events.
+    fetchSakuraScheduleEventsMock.mockReset()
+    fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
+    fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
+      events: [
+        {
+          categoryKey: "",
+          categoryName: "",
+          date: jstMidnight("2026-07-25"),
+          html: "",
+          id: "e3",
+          members: [],
+          title: "Corrected July event"
+        }
+      ],
+      html: "",
+      url: ""
+    })
+
+    await updateGroupSchedule("sakura", "2026-08-15")
+
+    expect(fetchSakuraScheduleEventsMock).toHaveBeenNthCalledWith(1, { year: 2026, month: 7 })
+    const [, contents] = writeFileMock.mock.calls[0]!
+    const written = JSON.parse(contents as string)
+    expect(written.events.map((e: { title: string }) => e.title)).toEqual(["Corrected July event"])
+  })
+
+  it("fetches every month sequentially so a shared year file reflects all updates", async () => {
+    // Each read sees the previous month's write, as the real shared year file would.
+    readFileMock.mockImplementation(async () => {
+      const lastWrite = writeFileMock.mock.calls.at(-1)
+      if (lastWrite === undefined) throw enoent()
+      return lastWrite[1] as string
+    })
     fetchSakuraScheduleEventsMock.mockResolvedValueOnce({
       events: [
         {
@@ -325,9 +382,9 @@ describe("updateGroupSchedule", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    expect(writeFileMock).toHaveBeenCalledTimes(2)
-    const [, secondContents] = writeFileMock.mock.calls[1]!
-    const written = JSON.parse(secondContents as string)
+    expect(writeFileMock).toHaveBeenCalledTimes(3)
+    const [, lastContents] = writeFileMock.mock.calls[2]!
+    const written = JSON.parse(lastContents as string)
     expect(written.events.map((e: { title: string }) => e.title)).toEqual([
       "August event",
       "September event"
@@ -336,14 +393,9 @@ describe("updateGroupSchedule", () => {
 })
 
 describe("hinata member detail fetching", () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-    fetchHinataScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-    fetchNogiScheduleEventsMock.mockResolvedValue({ events: [], js: "", url: "" })
-    fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-  })
+  beforeEach(resetFetchMocks)
 
-  it("fetches detail once per unique id even when it recurs across both fetched months", async () => {
+  it("fetches detail once per unique id even when it recurs across fetched months", async () => {
     readFileMock.mockRejectedValue(enoent())
     fetchHinataScheduleEventsMock.mockResolvedValueOnce({
       events: [
@@ -403,7 +455,7 @@ describe("hinata member detail fetching", () => {
     await updateGroupSchedule("hinata", "2026-08-15")
 
     expect(fetchHinataScheduleEventMock).not.toHaveBeenCalled()
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events[0].member_uids).toEqual([])
   })
@@ -428,7 +480,7 @@ describe("hinata member detail fetching", () => {
 
     await updateGroupSchedule("hinata", "2026-08-15")
 
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events[0].member_uids).toEqual([])
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("r1"))
@@ -436,12 +488,7 @@ describe("hinata member detail fetching", () => {
 })
 
 describe("date-membership filtering", () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-    fetchHinataScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-    fetchNogiScheduleEventsMock.mockResolvedValue({ events: [], js: "", url: "" })
-    fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-  })
+  beforeEach(resetFetchMocks)
 
   it("drops fetched events whose date falls outside the requested month", async () => {
     readFileMock.mockRejectedValue(enoent())
@@ -473,7 +520,7 @@ describe("date-membership filtering", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events.map((e: { title: string }) => e.title)).toEqual(["In month"])
     expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining("Spillover"))
@@ -481,12 +528,7 @@ describe("date-membership filtering", () => {
 })
 
 describe("compareEvents ordering", () => {
-  beforeEach(() => {
-    vi.clearAllMocks()
-    fetchHinataScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-    fetchNogiScheduleEventsMock.mockResolvedValue({ events: [], js: "", url: "" })
-    fetchSakuraScheduleEventsMock.mockResolvedValue({ events: [], html: "", url: "" })
-  })
+  beforeEach(resetFetchMocks)
 
   it("sorts same-date events by time_start, with undefined last", async () => {
     readFileMock.mockRejectedValue(enoent())
@@ -528,7 +570,7 @@ describe("compareEvents ordering", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events.map((e: { title: string }) => e.title)).toEqual([
       "Morning",
@@ -568,7 +610,7 @@ describe("compareEvents ordering", () => {
 
     await updateGroupSchedule("sakura", "2026-08-15")
 
-    const [, contents] = writeFileMock.mock.calls[0]!
+    const [, contents] = writeFileMock.mock.calls[CURRENT_MONTH_WRITE]!
     const written = JSON.parse(contents as string)
     expect(written.events.map((e: { title: string }) => e.title)).toEqual(["Apple", "Zebra"])
   })

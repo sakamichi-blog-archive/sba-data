@@ -12,8 +12,8 @@ pnpm run archive:blogs               # submits yesterday's blog posts (JST) to t
 pnpm run archive:blogs 2026-07-06    # same, for a specific date
 pnpm run archive:blogs --group=nogi  # same, for one group only (default: all three)
 
-pnpm run update:schedule            # updates the current and next JST calendar month's schedule events
-pnpm run update:schedule 2026-07-06 # same, using this date to determine current/next month
+pnpm run update:schedule            # updates the previous, current, and next JST calendar month's schedule events
+pnpm run update:schedule 2026-07-06 # same, using this date to determine the months
 ```
 
 `archive:blogs` re-fetches the given date's posts independently (it doesn't read the committed

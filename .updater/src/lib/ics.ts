@@ -231,10 +231,11 @@ function birthdayEvent(group: Group, member: Member, year: number): EventAttribu
 }
 
 // Unlike buildGroupEventsIcs, this is generated from the member roster rather than schedule data,
-// and isn't windowed to the current + next JST month. Schedule 誕生日 entries only exist for months
-// the fetcher has actually run for, which would leave the calendar full of gaps; the roster has
-// every active member's birthdate, so it yields a complete, stable one-year-ahead view (current +
-// next calendar year) matching how contacts apps surface birthdays. Graduated members are omitted.
+// and isn't windowed to the previous, current, and next JST month. Schedule 誕生日 entries only
+// exist for months the fetcher has actually run for, which would leave the calendar full of gaps;
+// the roster has every active member's birthdate, so it yields a complete, stable one-year-ahead
+// view (current + next calendar year) matching how contacts apps surface birthdays. Graduated
+// members are omitted.
 export function buildGroupBirthdaysIcs(group: Group, referenceDate = todayJST()): string {
   const currentYear = Number(referenceDate.split("-")[0])
   const years = [currentYear, currentYear + 1]

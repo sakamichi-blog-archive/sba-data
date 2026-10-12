@@ -32,12 +32,17 @@ function formatJstDate(date: Date): string {
   return new Date(date.getTime() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10)
 }
 
+// The previous month is refetched too, so late edits to events that just happened (corrections,
+// added members, cancellations) still land after the month rolls over.
 export function monthsToFetch(referenceDate: string): ScheduleFilter[] {
-  const [year, month] = referenceDate.split("-").map(Number)
-  // Passing the 1-based current month as Date.UTC's 0-based month argument lands on
-  // day 1 of next month, letting the year rollover (e.g. Dec -> Jan) fall out for free.
+  const [year, month] = referenceDate.split("-").map(Number) as [number, number]
+  // Passing the 1-based current month as Date.UTC's 0-based month argument lands on day 1 of
+  // next month, and month - 2 on day 1 of the previous month, letting the year rollover
+  // (Dec -> Jan, Jan -> Dec) fall out for free.
+  const previous = new Date(Date.UTC(year, month - 2, 1))
   const next = new Date(Date.UTC(year, month, 1))
   return [
+    { year: previous.getUTCFullYear(), month: previous.getUTCMonth() + 1 },
     { year, month },
     { year: next.getUTCFullYear(), month: next.getUTCMonth() + 1 }
   ]
@@ -62,7 +67,7 @@ async function fetchRawEvents(group: Group, filter: ScheduleFilter): Promise<Raw
 
 // Unlike nogi/sakura, hinata's list events carry no members — fetch each unique event
 // id's detail once (recurring events share an id across occurrences, including across
-// the two fetched months) rather than once per occurrence. Fetched sequentially, one at
+// the fetched months) rather than once per occurrence. Fetched sequentially, one at
 // a time, to keep load on the official site reasonable; a failed request is tolerated
 // (falls back to empty members) instead of aborting the whole update.
 async function fetchHinataMembersById(events: RawScheduleEvent[]): Promise<Map<string, string[]>> {
@@ -131,10 +136,10 @@ function buildEntries(
 
 export async function updateGroupSchedule(group: Group, referenceDate = todayJST()): Promise<void> {
   const filters = monthsToFetch(referenceDate)
-  // The two months' list fetches are independent reads, safe to run in parallel.
+  // The months' list fetches are independent reads, safe to run in parallel.
   const rawEventsByMonth = await Promise.all(filters.map(filter => fetchRawEvents(group, filter)))
 
-  // Deduped across both months up front, so a recurring event spanning the boundary
+  // Deduped across all months up front, so a recurring event spanning a boundary
   // (e.g. a weekly show occurring in both the current and next month) only triggers
   // one detail request instead of one per month.
   let hinataMembersById: Map<string, string[]> | undefined

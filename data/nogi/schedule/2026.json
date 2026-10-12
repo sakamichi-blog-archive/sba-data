@@ -1,5 +1,5 @@
 {
-  "count": 649,
+  "count": 650,
   "events": [
     {
       "date": "2026-08-01",
@@ -5387,6 +5387,17 @@
         "55385"
       ],
       "id": "107415"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:30",
+      "id": "107583"
     },
     {
       "date": "2026-10-12",

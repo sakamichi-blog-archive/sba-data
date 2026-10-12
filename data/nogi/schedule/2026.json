@@ -1,5 +1,5 @@
 {
-  "count": 651,
+  "count": 654,
   "events": [
     {
       "date": "2026-08-01",
@@ -2301,6 +2301,14 @@
     },
     {
       "date": "2026-09-06",
+      "category_key": "meetandgreet",
+      "category_name": "ミート&グリート",
+      "title": "「42ndシングル「是非に及ばず」全国イベント参加券限定 オンライン ミート＆グリート」",
+      "member_uids": [],
+      "id": "107558"
+    },
+    {
+      "date": "2026-09-06",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル「民王」林瑠奈",
@@ -2721,6 +2729,14 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107284"
+    },
+    {
+      "date": "2026-09-13",
+      "category_key": "meetandgreet",
+      "category_name": "ミート&グリート",
+      "title": "「42ndシングル「是非に及ばず」forTUNE music限定 オンライン ミート＆グリート」",
+      "member_uids": [],
+      "id": "107554"
     },
     {
       "date": "2026-09-13",
@@ -4019,6 +4035,14 @@
     },
     {
       "date": "2026-09-27",
+      "category_key": "meetandgreet",
+      "category_name": "ミート&グリート",
+      "title": "「42ndシングル「是非に及ばず」forTUNE music限定 オンライン ミート＆グリート」",
+      "member_uids": [],
+      "id": "107555"
+    },
+    {
+      "date": "2026-09-27",
       "category_key": "web",
       "category_name": "WEB",
       "title": "「秋田魁新報電子版（さきがけ電子版）」矢田萌華",
@@ -4209,16 +4233,6 @@
       "date": "2026-09-30",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
-      "time_start": "19:00",
-      "time_end": "21:00",
-      "id": "107117"
-    },
-    {
-      "date": "2026-09-30",
-      "category_key": "web",
-      "category_name": "WEB",
       "title": "TBSスパークルショートドラマ「○○ゲーム課」五百城茉央",
       "member_uids": [
         "55396"
@@ -4269,6 +4283,22 @@
       "title": "「42ndSGアンダーライブ」",
       "member_uids": [],
       "id": "107442"
+    },
+    {
+      "date": "2026-09-30",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「Zipper」池田瑛紗、一ノ瀬美空、賀喜遥香、筒井あやめ、中西アルノ、森平麗心、矢田萌華",
+      "member_uids": [
+        "48008",
+        "48017",
+        "55390",
+        "55395",
+        "55397",
+        "63110",
+        "63111"
+      ],
+      "id": "107507"
     },
     {
       "date": "2026-09-30",

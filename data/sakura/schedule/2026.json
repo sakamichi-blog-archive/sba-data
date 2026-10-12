@@ -1,5 +1,5 @@
 {
-  "count": 310,
+  "count": 306,
   "events": [
     {
       "date": "2026-08-01",
@@ -815,17 +815,6 @@
       "date": "2026-09-06",
       "category_key": "media",
       "category_name": "ラジオ",
-      "title": "文化放送「櫻坂46の『さ』」",
-      "member_uids": [
-        "66"
-      ],
-      "time_start": "19:00",
-      "id": "11479"
-    },
-    {
-      "date": "2026-09-06",
-      "category_key": "media",
-      "category_name": "ラジオ",
       "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
       "member_uids": [
         "62"
@@ -996,17 +985,6 @@
       "title": "15th Double A-side Single『Lonesome rabbit / What's “KAZOKU”?』発売記念 オンラインミート＆グリート（個別トーク会）",
       "member_uids": [],
       "id": "11660"
-    },
-    {
-      "date": "2026-09-13",
-      "category_key": "media",
-      "category_name": "ラジオ",
-      "title": "文化放送「櫻坂46の『さ』」",
-      "member_uids": [
-        "66"
-      ],
-      "time_start": "19:00",
-      "id": "11479"
     },
     {
       "date": "2026-09-13",
@@ -1433,17 +1411,6 @@
       "date": "2026-09-20",
       "category_key": "media",
       "category_name": "ラジオ",
-      "title": "文化放送「櫻坂46の『さ』」",
-      "member_uids": [
-        "66"
-      ],
-      "time_start": "19:00",
-      "id": "11479"
-    },
-    {
-      "date": "2026-09-20",
-      "category_key": "media",
-      "category_name": "ラジオ",
       "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
       "member_uids": [
         "62"
@@ -1715,17 +1682,6 @@
         "70"
       ],
       "id": "12116"
-    },
-    {
-      "date": "2026-09-27",
-      "category_key": "media",
-      "category_name": "ラジオ",
-      "title": "文化放送「櫻坂46の『さ』」",
-      "member_uids": [
-        "66"
-      ],
-      "time_start": "19:00",
-      "id": "11479"
     },
     {
       "date": "2026-09-27",

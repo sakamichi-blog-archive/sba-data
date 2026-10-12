@@ -120,12 +120,14 @@ beforeEach(() => {
 })
 
 describe("buildGroupEventsIcs", () => {
-  it("drops events outside the current and next JST month", async () => {
+  it("drops events outside the previous, current, and next JST month", async () => {
     readFileMock.mockResolvedValueOnce(
       JSON.stringify(
         yearData([
-          { date: "2026-07-31", title: "Too early", member_uids: [] },
-          { date: "2026-08-01", title: "In range", member_uids: [] },
+          { date: "2026-06-30", title: "Too early", member_uids: [] },
+          { date: "2026-07-01", title: "Previous month", member_uids: [] },
+          { date: "2026-08-15", title: "Current month", member_uids: [] },
+          { date: "2026-09-30", title: "Next month", member_uids: [] },
           { date: "2026-10-01", title: "Too late", member_uids: [] }
         ])
       )
@@ -134,7 +136,7 @@ describe("buildGroupEventsIcs", () => {
     const ics = await buildGroupEventsIcs("sakura", "2026-08-05")
 
     const events = parseEvents(ics)
-    expect(events.map(e => e.SUMMARY)).toEqual(["In range"])
+    expect(events.map(e => e.SUMMARY)).toEqual(["Previous month", "Current month", "Next month"])
   })
 
   it("converts a timed JST event to UTC and defaults a 1h duration when time_end is absent", async () => {
@@ -434,6 +436,31 @@ describe("buildGroupEventsIcs", () => {
 
     const events = parseEvents(ics)
     expect(events.map(e => e.SUMMARY).toSorted()).toEqual(["December", "January"])
+  })
+
+  it("reads the previous year's file when the previous month is December", async () => {
+    readFileMock.mockImplementation(async (path: unknown) => {
+      const p = path as string
+      if (p.endsWith("2026.json")) {
+        return JSON.stringify(
+          yearData([{ date: "2026-12-15", title: "December", member_uids: [] }])
+        )
+      }
+      if (p.endsWith("2027.json")) {
+        return JSON.stringify(
+          yearData([
+            { date: "2027-01-10", title: "January", member_uids: [] },
+            { date: "2027-02-10", title: "February", member_uids: [] }
+          ])
+        )
+      }
+      throw enoent()
+    })
+
+    const ics = await buildGroupEventsIcs("sakura", "2027-01-20")
+
+    const events = parseEvents(ics)
+    expect(events.map(e => e.SUMMARY).toSorted()).toEqual(["December", "February", "January"])
   })
 
   it("treats a missing year file as having no events instead of throwing", async () => {

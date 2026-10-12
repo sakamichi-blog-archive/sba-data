@@ -26,7 +26,7 @@ data/<group>/schedule/  Schedule data
 Each group publishes 2 subscribable `.ics` calendars:
 
 - `birthdays.ics`: Member birthdays (current + next year)
-- `events.ics`: Upcoming schedule (current + next month), excluding member birthdays
+- `events.ics`: Schedule (previous + current + next month), excluding member birthdays
 
 ### How to subscribe
 

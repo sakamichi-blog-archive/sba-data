@@ -12,7 +12,8 @@ import {
 import {
   getHinataScheduleEventUrl,
   getNogiScheduleEventUrl,
-  getSakuraScheduleUrl
+  getSakuraScheduleUrl,
+  type ScheduleFilter
 } from "@sakamichi-blog-archive/utils/schedule"
 import { createEvents, type DateArray, type EventAttributes } from "ics"
 
@@ -155,6 +156,19 @@ function toIcsEvent(group: Group, event: ScheduleEventEntry): EventAttributes {
   }
 }
 
+// The calendar reaches one month further back than the fetch window. The previous month's events
+// are already in the data files from when it was current, and keeping them on the calendar lets
+// subscribers still see what just happened. Day 1 of the previous month, like monthsToFetch's
+// next month, lets Date.UTC handle the year rollover (Jan -> Dec).
+function calendarMonths(referenceDate: string): ScheduleFilter[] {
+  const [year, month] = referenceDate.split("-").map(Number) as [number, number]
+  const previous = new Date(Date.UTC(year, month - 2, 1))
+  return [
+    { year: previous.getUTCFullYear(), month: previous.getUTCMonth() + 1 },
+    ...monthsToFetch(referenceDate)
+  ]
+}
+
 async function readYear(group: Group, year: number): Promise<ScheduleYearData> {
   const filePath = join(ROOT, dirs[group], `${year}.json`)
   try {
@@ -175,7 +189,7 @@ export async function buildGroupEventsIcs(
   group: Group,
   referenceDate = todayJST()
 ): Promise<string> {
-  const filters = monthsToFetch(referenceDate)
+  const filters = calendarMonths(referenceDate)
   const years = [...new Set(filters.map(f => f.year))]
   const allEvents = await readYears(group, years)
 
@@ -231,10 +245,11 @@ function birthdayEvent(group: Group, member: Member, year: number): EventAttribu
 }
 
 // Unlike buildGroupEventsIcs, this is generated from the member roster rather than schedule data,
-// and isn't windowed to the current + next JST month. Schedule 誕生日 entries only exist for months
-// the fetcher has actually run for, which would leave the calendar full of gaps; the roster has
-// every active member's birthdate, so it yields a complete, stable one-year-ahead view (current +
-// next calendar year) matching how contacts apps surface birthdays. Graduated members are omitted.
+// and isn't windowed to the previous, current, and next JST month. Schedule 誕生日 entries only
+// exist for months the fetcher has actually run for, which would leave the calendar full of gaps;
+// the roster has every active member's birthdate, so it yields a complete, stable one-year-ahead
+// view (current + next calendar year) matching how contacts apps surface birthdays. Graduated
+// members are omitted.
 export function buildGroupBirthdaysIcs(group: Group, referenceDate = todayJST()): string {
   const currentYear = Number(referenceDate.split("-")[0])
   const years = [currentYear, currentYear + 1]

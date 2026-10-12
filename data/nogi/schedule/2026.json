@@ -1,5 +1,5 @@
 {
-  "count": 650,
+  "count": 651,
   "events": [
     {
       "date": "2026-08-01",
@@ -5403,13 +5403,13 @@
       "date": "2026-10-12",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「レコメン！」長嶋凛桜",
+      "title": "文化放送「レコメン！」矢田萌華",
       "member_uids": [
-        "63108"
+        "63111"
       ],
       "time_start": "22:00",
       "time_end": "25:00",
-      "id": "107517"
+      "id": "107585"
     },
     {
       "date": "2026-10-12",
@@ -5440,6 +5440,16 @@
       "title": "「42ndシングル「是非に及ばず」発売記念リアルミート＆グリート@幕張メッセ」",
       "member_uids": [],
       "id": "107535"
+    },
+    {
+      "date": "2026-10-12",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「6期生グラビア Nogizaka Colors」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "id": "107584"
     },
     {
       "date": "2026-10-12",

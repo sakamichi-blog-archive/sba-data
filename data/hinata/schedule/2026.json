@@ -1,5 +1,5 @@
 {
-  "count": 343,
+  "count": 349,
   "events": [
     {
       "date": "2026-08-01",
@@ -2504,6 +2504,14 @@
       "id": "11830"
     },
     {
+      "date": "2026-10-04",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12252"
+    },
+    {
       "date": "2026-10-05",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -2706,6 +2714,14 @@
       "id": "11666"
     },
     {
+      "date": "2026-10-11",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12252"
+    },
+    {
       "date": "2026-10-12",
       "category_key": "media",
       "category_name": "配信",
@@ -2852,6 +2868,14 @@
       "id": "11666"
     },
     {
+      "date": "2026-10-18",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12252"
+    },
+    {
       "date": "2026-10-19",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -2988,6 +3012,14 @@
       "id": "11666"
     },
     {
+      "date": "2026-10-25",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12252"
+    },
+    {
       "date": "2026-10-26",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -3113,6 +3145,14 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
+    },
+    {
+      "date": "2026-11-01",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12253"
     },
     {
       "date": "2026-11-02",
@@ -3633,6 +3673,14 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
+    },
+    {
+      "date": "2026-11-29",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）※森本茉莉のみ",
+      "member_uids": [],
+      "id": "12255"
     },
     {
       "date": "2026-11-30",

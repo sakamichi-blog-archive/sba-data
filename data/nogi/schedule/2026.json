@@ -1,5 +1,5 @@
 {
-  "count": 654,
+  "count": 656,
   "events": [
     {
       "date": "2026-08-01",
@@ -5495,6 +5495,17 @@
       "date": "2026-10-13",
       "category_key": "web",
       "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "18:15",
+      "id": "107586"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "Instagram「SNIDEL SPECIAL INSTAGRAM LIVE」川﨑桜",
       "member_uids": [
         "55400"
@@ -5537,6 +5548,17 @@
       "time_start": "24:00",
       "time_end": "24:30",
       "id": "105027"
+    },
+    {
+      "date": "2026-10-13",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
+      "title": "のぎ動画「良質で文化的な最大限度の乃木坂46を営む。#14 格なむダイジェスト」池田瑛紗、大越ひなの",
+      "member_uids": [
+        "55397",
+        "63102"
+      ],
+      "id": "107587"
     },
     {
       "date": "2026-10-13",

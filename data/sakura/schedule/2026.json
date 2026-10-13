@@ -1,5 +1,5 @@
 {
-  "count": 306,
+  "count": 310,
   "events": [
     {
       "date": "2026-08-01",
@@ -2234,6 +2234,22 @@
     {
       "date": "2026-10-14",
       "category_key": "release",
+      "category_name": "生配信",
+      "title": "櫻坂46 OFFICIAL YouTube CHANNEL「16th Single『愛MUST BE』リリースパーティー」",
+      "member_uids": [
+        "46",
+        "48",
+        "61",
+        "63",
+        "75",
+        "78"
+      ],
+      "time_start": "20:00",
+      "id": "12256"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "release",
       "category_name": "リリース",
       "title": "16th Single『愛MUST BE』",
       "member_uids": [],
@@ -2292,6 +2308,15 @@
     {
       "date": "2026-10-16",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日系「ミュージックステーション」",
+      "member_uids": [],
+      "time_start": "21:00",
+      "id": "12259"
+    },
+    {
+      "date": "2026-10-16",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
@@ -2313,6 +2338,15 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-10-17",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK総合「Venue101」",
+      "member_uids": [],
+      "time_start": "23:00",
+      "id": "12257"
     },
     {
       "date": "2026-10-18",
@@ -2371,6 +2405,15 @@
       "title": "16th Single『愛MUST BE』発売記念 オンラインミート＆グリート（個別トーク会）",
       "member_uids": [],
       "id": "12161"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS系「CDTVライブ！ライブ！」",
+      "member_uids": [],
+      "time_start": "19:00",
+      "id": "12258"
     },
     {
       "date": "2026-10-20",

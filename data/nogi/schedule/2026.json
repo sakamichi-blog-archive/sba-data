@@ -5806,23 +5806,28 @@
       "date": "2026-10-18",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」瀬戸口心月",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月、五百城茉央",
       "member_uids": [
+        "55396",
         "63107"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "107514"
+      "id": "107589"
     },
     {
       "date": "2026-10-18",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」川﨑桜、菅原咲月、池田瑛紗",
+      "member_uids": [
+        "55391",
+        "55397",
+        "55400"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107588"
     },
     {
       "date": "2026-10-18",

@@ -1,5 +1,5 @@
 {
-  "count": 310,
+  "count": 318,
   "events": [
     {
       "date": "2026-08-01",
@@ -2249,11 +2249,52 @@
     },
     {
       "date": "2026-10-14",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊少年マガジン」46号",
+      "member_uids": [
+        "63"
+      ],
+      "id": "12260"
+    },
+    {
+      "date": "2026-10-14",
       "category_key": "release",
       "category_name": "リリース",
       "title": "16th Single『愛MUST BE』",
       "member_uids": [],
       "id": "12048"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "media",
+      "category_name": "WEBメディア",
+      "title": "WEBメディア「ダ・ヴィンチWeb」",
+      "member_uids": [
+        "48",
+        "69"
+      ],
+      "id": "12266"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "media",
+      "category_name": "WEBメディア",
+      "title": "WEBメディア「モデルプレス」",
+      "member_uids": [
+        "69"
+      ],
+      "id": "12267"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "media",
+      "category_name": "WEBメディア",
+      "title": "WEBメディア「モデルプレス」",
+      "member_uids": [
+        "48"
+      ],
+      "id": "12268"
     },
     {
       "date": "2026-10-15",
@@ -2289,6 +2330,18 @@
       ],
       "time_start": "20:54",
       "id": "12234"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!」",
+      "member_uids": [
+        "51",
+        "63"
+      ],
+      "time_start": "22:00",
+      "id": "12261"
     },
     {
       "date": "2026-10-15",
@@ -2329,6 +2382,30 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-10-17",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「JA全農 COUNTDOWN JAPAN」",
+      "member_uids": [
+        "48",
+        "51"
+      ],
+      "time_start": "13:00",
+      "id": "12262"
+    },
+    {
+      "date": "2026-10-17",
+      "category_key": "event",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「JA全農 COUNTDOWN JAPAN」公開生放送",
+      "member_uids": [
+        "48",
+        "51"
+      ],
+      "time_start": "13:00",
+      "id": "12263"
     },
     {
       "date": "2026-10-17",
@@ -2422,6 +2499,16 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊少年サンデー」47号",
+      "member_uids": [
+        "47"
+      ],
+      "id": "12264"
     },
     {
       "date": "2026-10-21",

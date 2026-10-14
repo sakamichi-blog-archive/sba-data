@@ -1,5 +1,5 @@
 {
-  "count": 657,
+  "count": 659,
   "events": [
     {
       "date": "2026-08-01",
@@ -5640,6 +5640,17 @@
     },
     {
       "date": "2026-10-15",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "19:00",
+      "id": "107594"
+    },
+    {
+      "date": "2026-10-15",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "TBSテレビ系「プレバト！2時間SP」川﨑桜、弓木奈於",
@@ -5662,6 +5673,18 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「波うららかに、めおと日和」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "22:00",
+      "time_end": "22:54",
+      "id": "107592"
     },
     {
       "date": "2026-10-15",

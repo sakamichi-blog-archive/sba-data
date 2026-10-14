@@ -1,5 +1,5 @@
 {
-  "count": 656,
+  "count": 657,
   "events": [
     {
       "date": "2026-08-01",
@@ -5569,6 +5569,17 @@
         "55385"
       ],
       "id": "107415"
+    },
+    {
+      "date": "2026-10-14",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "18:15",
+      "id": "107590"
     },
     {
       "date": "2026-10-14",

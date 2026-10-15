@@ -1,5 +1,5 @@
 {
-  "count": 318,
+  "count": 319,
   "events": [
     {
       "date": "2026-08-01",
@@ -2357,6 +2357,16 @@
       ],
       "time_start": "25:56",
       "id": "10371"
+    },
+    {
+      "date": "2026-10-15",
+      "category_key": "media",
+      "category_name": "新聞",
+      "title": "「上毛新聞」",
+      "member_uids": [
+        "59"
+      ],
+      "id": "12272"
     },
     {
       "date": "2026-10-16",

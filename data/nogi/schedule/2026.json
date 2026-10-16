@@ -1,5 +1,5 @@
 {
-  "count": 660,
+  "count": 665,
   "events": [
     {
       "date": "2026-08-01",
@@ -5716,6 +5716,17 @@
     },
     {
       "date": "2026-10-16",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」小津玲奈",
+      "member_uids": [
+        "63103"
+      ],
+      "time_start": "19:00",
+      "id": "107596"
+    },
+    {
+      "date": "2026-10-16",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
@@ -6113,6 +6124,16 @@
     },
     {
       "date": "2026-10-22",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「BRODY」五百城茉央",
+      "member_uids": [
+        "55396"
+      ],
+      "id": "107595"
+    },
+    {
+      "date": "2026-10-22",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル『秘密の花園』奥田いろは",
@@ -6169,6 +6190,18 @@
       "time_start": "21:00",
       "time_end": "23:00",
       "id": "107331"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」増田三莉音",
+      "member_uids": [
+        "63109"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107597"
     },
     {
       "date": "2026-10-23",
@@ -6621,6 +6654,18 @@
     },
     {
       "date": "2026-10-30",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」鈴木佑捺",
+      "member_uids": [
+        "63106"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107598"
+    },
+    {
+      "date": "2026-10-30",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル『秘密の花園』奥田いろは",
@@ -6987,6 +7032,16 @@
         "36750"
       ],
       "id": "107501"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「月刊GoodsPress」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "id": "107599"
     },
     {
       "date": "2026-11-06",

@@ -1,5 +1,5 @@
 {
-  "count": 350,
+  "count": 351,
   "events": [
     {
       "date": "2026-08-01",
@@ -2886,6 +2886,18 @@
       "title": "18thシングル『イチャイチャ虫』発売記念 forTUNE meets オンラインミート＆グリート（個別トーク会）",
       "member_uids": [],
       "id": "12252"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "NHK-FM「ミュージックライン」",
+      "member_uids": [
+        "22",
+        "46"
+      ],
+      "time_start": "21:45",
+      "id": "12277"
     },
     {
       "date": "2026-10-19",

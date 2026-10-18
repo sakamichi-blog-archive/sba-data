@@ -12,12 +12,12 @@
     "typecheck": "astro check"
   },
   "dependencies": {
-    "@astrojs/react": "^7.0.1",
+    "@astrojs/react": "^7.1.0",
     "@sakamichi-blog-archive/utils": "^0.10.0",
-    "astro": "^7.3.8",
+    "astro": "^7.4.0",
     "dayjs": "^1.11.23",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
@@ -25,8 +25,8 @@
     "@types/react-dom": "^19.3.0",
     "sass": "^1.105.1",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.4",
-    "wrangler": "^4.149.0"
+    "vitest": "^5.0.5",
+    "wrangler": "^4.151.0"
   },
   "engines": {
     "node": ">=22.12.0"

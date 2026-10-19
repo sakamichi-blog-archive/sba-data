@@ -1,5 +1,5 @@
 {
-  "count": 673,
+  "count": 677,
   "events": [
     {
       "date": "2026-08-01",
@@ -6021,6 +6021,29 @@
     },
     {
       "date": "2026-10-20",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「午後LIVE ニュースーン」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "16:05",
+      "time_end": "17:00",
+      "id": "107609"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "time_start": "19:00",
+      "id": "107610"
+    },
+    {
+      "date": "2026-10-20",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
@@ -6425,6 +6448,15 @@
         "36750"
       ],
       "id": "107499"
+    },
+    {
+      "date": "2026-10-26",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「【冒頭YouTube Japan同時ライブ配信】週刊乃木坂ニュース特別編！～秋のYouTubeお楽しみ企画発表～」菅原咲月",
+      "member_uids": [],
+      "time_start": "16:00",
+      "id": "107611"
     },
     {
       "date": "2026-10-26",
@@ -7457,6 +7489,20 @@
       "time_start": "25:29",
       "time_end": "25:59",
       "id": "107519"
+    },
+    {
+      "date": "2026-11-16",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「EX大衆」大越ひなの、伊藤理々杏、小川彩、川﨑桜、菅原咲月",
+      "member_uids": [
+        "36749",
+        "55391",
+        "55392",
+        "55400",
+        "63102"
+      ],
+      "id": "107608"
     },
     {
       "date": "2026-11-17",

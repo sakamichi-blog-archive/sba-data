@@ -1,5 +1,5 @@
 {
-  "count": 319,
+  "count": 321,
   "events": [
     {
       "date": "2026-08-01",
@@ -2505,6 +2505,17 @@
     {
       "date": "2026-10-20",
       "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「SWITCH」11月号",
+      "member_uids": [
+        "54",
+        "69"
+      ],
+      "id": "12282"
+    },
+    {
+      "date": "2026-10-20",
+      "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
@@ -2555,6 +2566,16 @@
       ],
       "time_start": "25:56",
       "id": "10371"
+    },
+    {
+      "date": "2026-10-22",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊少年チャンピオン」47号",
+      "member_uids": [
+        "63"
+      ],
+      "id": "12283"
     },
     {
       "date": "2026-10-23",

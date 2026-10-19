@@ -1,5 +1,5 @@
 {
-  "count": 352,
+  "count": 354,
   "events": [
     {
       "date": "2026-08-01",
@@ -2935,6 +2935,17 @@
       "date": "2026-10-22",
       "category_key": "media",
       "category_name": "雑誌",
+      "title": "「BRODY」12月号",
+      "member_uids": [
+        "41",
+        "43"
+      ],
+      "id": "12280"
+    },
+    {
+      "date": "2026-10-22",
+      "category_key": "media",
+      "category_name": "雑誌",
       "title": "「VOCE」",
       "member_uids": [
         "12"
@@ -2994,6 +3005,16 @@
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "5192"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「IDOL AND READ 047」",
+      "member_uids": [
+        "41"
+      ],
+      "id": "12281"
     },
     {
       "date": "2026-10-24",

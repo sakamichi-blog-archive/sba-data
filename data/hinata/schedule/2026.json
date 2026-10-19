@@ -1,5 +1,5 @@
 {
-  "count": 351,
+  "count": 352,
   "events": [
     {
       "date": "2026-08-01",
@@ -2930,6 +2930,16 @@
       ],
       "time_start": "24:00",
       "id": "12122"
+    },
+    {
+      "date": "2026-10-22",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「VOCE」",
+      "member_uids": [
+        "12"
+      ],
+      "id": "12278"
     },
     {
       "date": "2026-10-23",

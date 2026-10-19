@@ -1,5 +1,5 @@
 {
-  "count": 669,
+  "count": 673,
   "events": [
     {
       "date": "2026-08-01",
@@ -5931,6 +5931,28 @@
     },
     {
       "date": "2026-10-19",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "18:15",
+      "id": "107604"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:00",
+      "id": "107606"
+    },
+    {
+      "date": "2026-10-19",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "テレビ朝日系 「Qさま!! 」池田瑛紗",
@@ -5940,6 +5962,18 @@
       "time_start": "20:30",
       "time_end": "21:54",
       "id": "107601"
+    },
+    {
+      "date": "2026-10-19",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "ニコニコ生放送「生のアイドルが好き」愛宕心響、田村真佑",
+      "member_uids": [
+        "48015",
+        "63101"
+      ],
+      "time_start": "21:30",
+      "id": "107605"
     },
     {
       "date": "2026-10-19",
@@ -6725,6 +6759,18 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「ほんとにあった怖い話 秋の特別編2026」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "21:00",
+      "time_end": "23:10",
+      "id": "107607"
     },
     {
       "date": "2026-10-31",

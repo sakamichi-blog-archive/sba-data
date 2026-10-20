@@ -6101,6 +6101,17 @@
     },
     {
       "date": "2026-10-20",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
+      "title": "のぎ動画「良質で文化的な最大限度の乃木坂46を営む。#15 真夏の全国ツアー2026 北海道公演 “命の色”」池田瑛紗、大越ひなの",
+      "member_uids": [
+        "55397",
+        "63102"
+      ],
+      "id": "107616"
+    },
+    {
+      "date": "2026-10-20",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル『秘密の花園』奥田いろは",
@@ -6439,23 +6450,15 @@
       "date": "2026-10-25",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」瀬戸口心月",
+      "title": "文化放送「乃木坂46の「の」」瀬戸口心月、金川紗耶、黒見明香",
       "member_uids": [
+        "48010",
+        "55383",
         "63107"
       ],
       "time_start": "18:00",
       "time_end": "18:30",
       "id": "107514"
-    },
-    {
-      "date": "2026-10-25",
-      "category_key": "radio",
-      "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
-      "time_start": "20:05",
-      "time_end": "22:55",
-      "id": "106124"
     },
     {
       "date": "2026-10-25",
@@ -6500,13 +6503,14 @@
       "date": "2026-10-26",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「レコメン！」長嶋凛桜",
+      "title": "文化放送「レコメン！」長嶋凛桜、田村真佑",
       "member_uids": [
+        "48015",
         "63108"
       ],
       "time_start": "22:00",
       "time_end": "25:00",
-      "id": "107517"
+      "id": "107619"
     },
     {
       "date": "2026-10-26",
@@ -6717,13 +6721,13 @@
       "date": "2026-10-30",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "AIR-G' FM北海道「IMAREAL（乃木坂46 金川紗耶のイマレコ！）」金川紗耶",
+      "title": "AIR-G' FM北海道「IMAREAL」金川紗耶",
       "member_uids": [
         "48010"
       ],
       "time_start": "17:45",
       "time_end": "22:00",
-      "id": "107518"
+      "id": "107618"
     },
     {
       "date": "2026-10-30",
@@ -6909,11 +6913,14 @@
       "date": "2026-11-01",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」川﨑桜、弓木奈於",
+      "member_uids": [
+        "55387",
+        "55400"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107617"
     },
     {
       "date": "2026-11-01",

@@ -1,5 +1,5 @@
 {
-  "count": 321,
+  "count": 327,
   "events": [
     {
       "date": "2026-08-01",
@@ -2524,6 +2524,28 @@
     {
       "date": "2026-10-21",
       "category_key": "media",
+      "category_name": "生配信",
+      "title": "田村保乃Instagram「インスタライブ」",
+      "member_uids": [
+        "46"
+      ],
+      "time_start": "20:30",
+      "id": "12291"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "朝日放送テレビ「これ余談なんですけど・・・」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "23:25",
+      "id": "12286"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「週刊少年サンデー」47号",
       "member_uids": [
@@ -2571,6 +2593,17 @@
       "date": "2026-10-22",
       "category_key": "media",
       "category_name": "雑誌",
+      "title": "「VOCE」12月号",
+      "member_uids": [
+        "46",
+        "50"
+      ],
+      "id": "12287"
+    },
+    {
+      "date": "2026-10-22",
+      "category_key": "media",
+      "category_name": "雑誌",
       "title": "「週刊少年チャンピオン」47号",
       "member_uids": [
         "63"
@@ -2580,10 +2613,32 @@
     {
       "date": "2026-10-23",
       "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM/JFN38局「ONE MORNING」",
+      "member_uids": [
+        "61",
+        "63"
+      ],
+      "time_start": "06:00",
+      "id": "12288"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "8817"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「IDOL AND READ 047」",
+      "member_uids": [
+        "59"
+      ],
+      "id": "12289"
     },
     {
       "date": "2026-10-23",
@@ -2601,6 +2656,16 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-10-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「せんだいタウン情報S-style」11月号",
+      "member_uids": [
+        "77"
+      ],
+      "id": "12290"
     },
     {
       "date": "2026-10-25",

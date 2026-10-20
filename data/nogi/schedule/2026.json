@@ -1,5 +1,5 @@
 {
-  "count": 677,
+  "count": 681,
   "events": [
     {
       "date": "2026-08-01",
@@ -6177,6 +6177,18 @@
     },
     {
       "date": "2026-10-22",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK Eテレ「探究！アニメをつくる」賀喜遥香",
+      "member_uids": [
+        "48008"
+      ],
+      "time_start": "21:30",
+      "time_end": "22:30",
+      "id": "107612"
+    },
+    {
+      "date": "2026-10-22",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -6330,6 +6342,19 @@
       "date": "2026-10-23",
       "category_key": "book",
       "category_name": "書籍",
+      "title": "「TV fan」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107613"
+    },
+    {
+      "date": "2026-10-23",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「アップトゥボーイ」森平麗心、長嶋凛桜",
       "member_uids": [
         "63108",
@@ -6376,6 +6401,19 @@
       "title": "「42ndシングル「是非に及ばず」forTUNE music限定 オンライン ミート＆グリート」",
       "member_uids": [],
       "id": "107556"
+    },
+    {
+      "date": "2026-10-24",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「月刊ザ・テレビジョン」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107614"
     },
     {
       "date": "2026-10-24",
@@ -6591,6 +6629,19 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107526"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「spoon.」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107615"
     },
     {
       "date": "2026-10-28",

@@ -1,5 +1,5 @@
 {
-  "count": 327,
+  "count": 328,
   "events": [
     {
       "date": "2026-08-01",
@@ -2542,6 +2542,17 @@
       ],
       "time_start": "23:25",
       "id": "12286"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「TV station」23号",
+      "member_uids": [
+        "48",
+        "69"
+      ],
+      "id": "12292"
     },
     {
       "date": "2026-10-21",

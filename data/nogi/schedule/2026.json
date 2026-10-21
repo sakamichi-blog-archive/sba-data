@@ -1,5 +1,5 @@
 {
-  "count": 681,
+  "count": 684,
   "events": [
     {
       "date": "2026-08-01",
@@ -6124,6 +6124,17 @@
       "date": "2026-10-21",
       "category_key": "web",
       "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」川端晃菜",
+      "member_uids": [
+        "63105"
+      ],
+      "time_start": "18:00",
+      "id": "107620"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "web",
+      "category_name": "WEB",
       "title": "SHOWROOM「猫舌SHOWROOM」",
       "member_uids": [],
       "time_start": "19:00",
@@ -6175,6 +6186,17 @@
         "36750"
       ],
       "id": "107566"
+    },
+    {
+      "date": "2026-10-21",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「東京カレンダー」遠藤さくら、賀喜遥香",
+      "member_uids": [
+        "48006",
+        "48008"
+      ],
+      "id": "107621"
     },
     {
       "date": "2026-10-21",
@@ -6814,6 +6836,18 @@
       "time_start": "25:59",
       "time_end": "26:44",
       "id": "107598"
+    },
+    {
+      "date": "2026-10-30",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「グラビアチャンピオン」小川彩、賀喜遥香、瀬戸口心月",
+      "member_uids": [
+        "48008",
+        "55392",
+        "63107"
+      ],
+      "id": "107622"
     },
     {
       "date": "2026-10-30",

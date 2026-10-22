@@ -1,5 +1,5 @@
 {
-  "count": 355,
+  "count": 357,
   "events": [
     {
       "date": "2026-08-01",
@@ -3028,6 +3028,17 @@
       "id": "10118"
     },
     {
+      "date": "2026-10-24",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "BSS山陰放送「なすなかの！わが町スーパーマーケット」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "14:00",
+      "id": "12293"
+    },
+    {
       "date": "2026-10-25",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -3038,6 +3049,17 @@
       "time_start": "18:30",
       "time_end": "19:00",
       "id": "9892"
+    },
+    {
+      "date": "2026-10-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「有吉ぃぃeeeee!〜そうだ!今からお前んチでゲームしない?」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "22:00",
+      "id": "12294"
     },
     {
       "date": "2026-10-25",

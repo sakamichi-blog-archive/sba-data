@@ -1,5 +1,5 @@
 {
-  "count": 328,
+  "count": 330,
   "events": [
     {
       "date": "2026-08-01",
@@ -2743,6 +2743,28 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「B.L.T.」12月号",
+      "member_uids": [
+        "48",
+        "63",
+        "75"
+      ],
+      "id": "12296"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「BAILA」12月号",
+      "member_uids": [
+        "58"
+      ],
+      "id": "12297"
     },
     {
       "date": "2026-10-29",

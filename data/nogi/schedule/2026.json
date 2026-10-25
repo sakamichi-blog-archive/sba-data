@@ -1,5 +1,5 @@
 {
-  "count": 706,
+  "count": 707,
   "events": [
     {
       "date": "2026-08-01",
@@ -6556,6 +6556,17 @@
       "member_uids": [],
       "time_start": "16:00",
       "id": "107611"
+    },
+    {
+      "date": "2026-10-26",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」伊藤理々杏",
+      "member_uids": [
+        "36749"
+      ],
+      "time_start": "18:15",
+      "id": "107641"
     },
     {
       "date": "2026-10-26",

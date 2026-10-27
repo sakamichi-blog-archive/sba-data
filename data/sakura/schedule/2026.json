@@ -1,5 +1,5 @@
 {
-  "count": 330,
+  "count": 334,
   "events": [
     {
       "date": "2026-08-01",
@@ -2747,6 +2747,31 @@
     {
       "date": "2026-10-28",
       "category_key": "media",
+      "category_name": "生配信",
+      "title": "櫻坂チャンネル「お婆ちゃんから全力逃走『Dread Flats 凶寓』に挑戦！【生配信】」",
+      "member_uids": [
+        "61",
+        "62",
+        "63",
+        "69"
+      ],
+      "time_start": "20:30",
+      "id": "12302"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "朝日放送テレビ「これ余談なんですけど・・・」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "23:25",
+      "id": "12303"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「B.L.T.」12月号",
       "member_uids": [
@@ -2793,6 +2818,16 @@
       "id": "10371"
     },
     {
+      "date": "2026-10-29",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「週刊少年チャンピオン」48号",
+      "member_uids": [
+        "70"
+      ],
+      "id": "12304"
+    },
+    {
       "date": "2026-10-30",
       "category_key": "media",
       "category_name": "雑誌",
@@ -2807,6 +2842,17 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「いくらかわかる金？」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "20:54",
+      "id": "12305"
     },
     {
       "date": "2026-10-31",

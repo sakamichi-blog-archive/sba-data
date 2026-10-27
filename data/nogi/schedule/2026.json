@@ -1,5 +1,5 @@
 {
-  "count": 711,
+  "count": 714,
   "events": [
     {
       "date": "2026-08-01",
@@ -6702,6 +6702,17 @@
     },
     {
       "date": "2026-10-27",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
+      "title": "のぎ動画「良質で文化的な最大限度の乃木坂46を営む。#16 36thSG アンダーライブ “さ〜ゆ〜Ready？”」池田瑛紗、大越ひなの",
+      "member_uids": [
+        "55397",
+        "63102"
+      ],
+      "id": "107654"
+    },
+    {
+      "date": "2026-10-27",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル『秘密の花園』奥田いろは",
@@ -6734,11 +6745,25 @@
       "date": "2026-10-28",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
+      "title": "SHOWROOM「のぎおび」長嶋凛桜",
+      "member_uids": [
+        "63108"
+      ],
+      "time_start": "18:15",
+      "id": "107651"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「猫舌SHOWROOM」一ノ瀬美空、金川紗耶",
+      "member_uids": [
+        "48010",
+        "55390"
+      ],
       "time_start": "19:00",
       "time_end": "21:00",
-      "id": "107117"
+      "id": "107652"
     },
     {
       "date": "2026-10-28",
@@ -6751,6 +6776,18 @@
       "time_start": "19:00",
       "time_end": "21:00",
       "id": "107640"
+    },
+    {
+      "date": "2026-10-28",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「佑捺の部屋」鈴木佑捺、柴田柚菜",
+      "member_uids": [
+        "48013",
+        "63106"
+      ],
+      "time_start": "22:30",
+      "id": "107653"
     },
     {
       "date": "2026-10-28",

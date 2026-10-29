@@ -1,5 +1,5 @@
 {
-  "count": 335,
+  "count": 337,
   "events": [
     {
       "date": "2026-08-01",
@@ -2933,6 +2933,17 @@
       "id": "8793"
     },
     {
+      "date": "2026-11-02",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「クイズプレゼンバラエティー Qさま!!」",
+      "member_uids": [
+        "72"
+      ],
+      "time_start": "19:00",
+      "id": "12315"
+    },
+    {
       "date": "2026-11-03",
       "category_key": "media",
       "category_name": "ファンクラブ",
@@ -3058,6 +3069,17 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-11-11",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「くりぃむクイズ ミラクル9」",
+      "member_uids": [
+        "72"
+      ],
+      "time_start": "19:00",
+      "id": "12316"
     },
     {
       "date": "2026-11-12",

@@ -1,5 +1,5 @@
 {
-  "count": 359,
+  "count": 361,
   "events": [
     {
       "date": "2026-08-01",
@@ -3310,6 +3310,17 @@
     {
       "date": "2026-11-06",
       "category_key": "media",
+      "category_name": "配信",
+      "title": "ABEMA「カンニング竹山のイチバン研究所」",
+      "member_uids": [
+        "33"
+      ],
+      "time_start": "21:00",
+      "id": "12319"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "J-WAVE「LOGISTEED RADIONOMICS」",
       "member_uids": [
@@ -3460,6 +3471,17 @@
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "5192"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「Platinum FLASH」vol.26",
+      "member_uids": [
+        "23",
+        "29"
+      ],
+      "id": "12320"
     },
     {
       "date": "2026-11-14",

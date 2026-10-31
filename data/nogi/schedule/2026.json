@@ -1,5 +1,5 @@
 {
-  "count": 722,
+  "count": 724,
   "events": [
     {
       "date": "2026-08-01",
@@ -7115,6 +7115,18 @@
       "date": "2026-10-31",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "日本テレビ系「追跡取材 news LOG」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "22:00",
+      "time_end": "22:54",
+      "id": "107667"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "TBSチャンネル1「乃木坂お試し中」 伊藤理々杏、金川紗耶、黒見明香、柴田柚菜、冨里奈央",
       "member_uids": [
         "36749",
@@ -7126,6 +7138,16 @@
       "time_start": "23:00",
       "time_end": "23:30",
       "id": "107655"
+    },
+    {
+      "date": "2026-10-31",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「リアルサウンド」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107664"
     },
     {
       "date": "2026-10-31",

@@ -1,5 +1,5 @@
 {
-  "count": 337,
+  "count": 399,
   "events": [
     {
       "date": "2026-08-01",
@@ -3439,6 +3439,636 @@
       "title": "16th Single『愛MUST BE』発売記念 オンラインミート＆グリート（個別トーク会）",
       "member_uids": [],
       "id": "12162"
+    },
+    {
+      "date": "2026-12-01",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "佐藤 愛桜の誕生日",
+      "member_uids": [
+        "73"
+      ],
+      "id": "10466"
+    },
+    {
+      "date": "2026-12-01",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-03",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-12-03",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-12-04",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-12-04",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-05",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-12-05",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『リアルサイン会』",
+      "member_uids": [],
+      "id": "12202"
+    },
+    {
+      "date": "2026-12-05",
+      "category_key": "shakehands",
+      "category_name": "ミート&グリート",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『リアルミート＆グリート（個別トーク会）』",
+      "member_uids": [],
+      "id": "12207"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "65"
+      ],
+      "time_start": "19:00",
+      "id": "12219"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "LIVE Blu-ray&DVD『5th YEAR ANNIVERSARY LIVE at MUFG STADIUM』スペシャル応募抽選企画『スペシャルトークショー』",
+      "member_uids": [],
+      "id": "12164"
+    },
+    {
+      "date": "2026-12-08",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-10",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-12-10",
+      "category_key": "release",
+      "category_name": "リリース",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『ミニライブ』",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "12204"
+    },
+    {
+      "date": "2026-12-10",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-12-11",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-12-11",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-12",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-12-13",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "65"
+      ],
+      "time_start": "19:00",
+      "id": "12219"
+    },
+    {
+      "date": "2026-12-13",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-12-13",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-12-13",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-12-13",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-12-13",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "16th Single『愛MUST BE』発売記念 オンラインミート＆グリート（個別トーク会）",
+      "member_uids": [],
+      "id": "12163"
+    },
+    {
+      "date": "2026-12-15",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「16th Single BACKS LIVE!!」",
+      "member_uids": [
+        "53",
+        "55",
+        "56",
+        "57",
+        "59",
+        "60",
+        "61",
+        "64",
+        "68",
+        "71",
+        "72",
+        "73",
+        "75",
+        "76",
+        "78"
+      ],
+      "id": "12269"
+    },
+    {
+      "date": "2026-12-15",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-16",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「16th Single BACKS LIVE!!」",
+      "member_uids": [
+        "53",
+        "55",
+        "56",
+        "57",
+        "59",
+        "60",
+        "61",
+        "64",
+        "68",
+        "71",
+        "72",
+        "73",
+        "75",
+        "76",
+        "78"
+      ],
+      "id": "12269"
+    },
+    {
+      "date": "2026-12-17",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-12-17",
+      "category_key": "release",
+      "category_name": "リリース",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『ミニライブ アーカイブ配信』",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "12205"
+    },
+    {
+      "date": "2026-12-17",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-12-18",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-12-18",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-19",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-12-19",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "幸阪 茉里乃の誕生日",
+      "member_uids": [
+        "56"
+      ],
+      "id": "3776"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "65"
+      ],
+      "time_start": "19:00",
+      "id": "12219"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『リアルサイン会』",
+      "member_uids": [],
+      "id": "12203"
+    },
+    {
+      "date": "2026-12-20",
+      "category_key": "shakehands",
+      "category_name": "ミート&グリート",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『リアルミート＆グリート（個別トーク会）』",
+      "member_uids": [],
+      "id": "12208"
+    },
+    {
+      "date": "2026-12-22",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-22",
+      "category_key": "birthday",
+      "category_name": "誕生日",
+      "title": "浅井 恋乃未の誕生日",
+      "member_uids": [
+        "70"
+      ],
+      "id": "10463"
+    },
+    {
+      "date": "2026-12-24",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-12-24",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
+    },
+    {
+      "date": "2026-12-25",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「FRIDAY」",
+      "member_uids": [],
+      "id": "8817"
+    },
+    {
+      "date": "2026-12-25",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-26",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「TALK ABOUT」",
+      "member_uids": [],
+      "time_start": "22:00",
+      "id": "10472"
+    },
+    {
+      "date": "2026-12-26",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「COUNTDOWN JAPAN 26/27」",
+      "member_uids": [],
+      "id": "12312"
+    },
+    {
+      "date": "2026-12-27",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "文化放送「櫻坂46の『さ』」",
+      "member_uids": [
+        "65"
+      ],
+      "time_start": "19:00",
+      "id": "12219"
+    },
+    {
+      "date": "2026-12-27",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "4570"
+    },
+    {
+      "date": "2026-12-27",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「そこ曲がったら、櫻坂？」",
+      "member_uids": [],
+      "time_start": "24:50",
+      "id": "8762"
+    },
+    {
+      "date": "2026-12-27",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「そこ曲がったら、櫻坂？」見逃し配信",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8785"
+    },
+    {
+      "date": "2026-12-27",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "Lemino「ちょこさく」",
+      "member_uids": [],
+      "time_start": "25:20",
+      "id": "8793"
+    },
+    {
+      "date": "2026-12-27",
+      "category_key": "shakehands",
+      "category_name": "ミート&グリート",
+      "title": "16th Single『愛MUST BE』 CD購入者スペシャル応募抽選企画『オンラインミート&グリート』",
+      "member_uids": [],
+      "id": "12209"
+    },
+    {
+      "date": "2026-12-29",
+      "category_key": "media",
+      "category_name": "ファンクラブ",
+      "title": "櫻坂46ファンクラブ「さくみみ」",
+      "member_uids": [],
+      "id": "8110"
+    },
+    {
+      "date": "2026-12-31",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "9477"
+    },
+    {
+      "date": "2026-12-31",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「サクラミーツ」",
+      "member_uids": [
+        "55",
+        "57",
+        "62",
+        "63",
+        "64"
+      ],
+      "time_start": "25:56",
+      "id": "10371"
     }
   ]
 }

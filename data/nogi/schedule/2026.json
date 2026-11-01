@@ -1,5 +1,5 @@
 {
-  "count": 835,
+  "count": 846,
   "events": [
     {
       "date": "2026-08-01",
@@ -6624,6 +6624,16 @@
       "id": "107626"
     },
     {
+      "date": "2026-10-26",
+      "category_key": "movie",
+      "category_name": "映画",
+      "title": "「第39回東京国際映画祭　レッドカーペット」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107672"
+    },
+    {
       "date": "2026-10-27",
       "category_key": "web",
       "category_name": "WEB",
@@ -6689,6 +6699,19 @@
         "63111"
       ],
       "id": "107626"
+    },
+    {
+      "date": "2026-10-27",
+      "category_key": "movie",
+      "category_name": "映画",
+      "title": "「映画『GROTESQQQUE-グロテスク-』東京国際映画祭 舞台挨拶」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107671"
     },
     {
       "date": "2026-10-27",
@@ -7255,6 +7278,17 @@
     },
     {
       "date": "2026-11-02",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」増田三莉音",
+      "member_uids": [
+        "63109"
+      ],
+      "time_start": "18:15",
+      "id": "107674"
+    },
+    {
+      "date": "2026-11-02",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
@@ -7325,6 +7359,16 @@
     },
     {
       "date": "2026-11-03",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「大河ドラマ「豊臣兄弟！」トークライブ in 北近江・長浜～茶々のふるさと北近江～」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107668"
+    },
+    {
+      "date": "2026-11-03",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "「春よ来い、マジで来い」岩本蓮加",
@@ -7391,6 +7435,18 @@
     },
     {
       "date": "2026-11-04",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "BSテレビ東京「漫画クリスタル」田村真佑",
+      "member_uids": [
+        "48015"
+      ],
+      "time_start": "24:36",
+      "time_end": "25:05",
+      "id": "107675"
+    },
+    {
+      "date": "2026-11-04",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
@@ -7400,6 +7456,14 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107638"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "release",
+      "category_name": "CD/音楽配信/映像商品",
+      "title": "「『乃木坂スター誕生！SIX』 Blu-ray BOX 第2巻」",
+      "member_uids": [],
+      "id": "107679"
     },
     {
       "date": "2026-11-04",
@@ -7434,16 +7498,6 @@
         "63111"
       ],
       "id": "107650"
-    },
-    {
-      "date": "2026-11-04",
-      "category_key": "book",
-      "category_name": "書籍",
-      "title": "「週刊SPA!」矢田萌華",
-      "member_uids": [
-        "63111"
-      ],
-      "id": "107646"
     },
     {
       "date": "2026-11-05",
@@ -7568,6 +7622,18 @@
       "date": "2026-11-06",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」矢田萌華",
+      "member_uids": [
+        "63111"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107680"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの、菅原咲月、矢田萌華 ※ナレーション：長嶋凛桜",
       "member_uids": [
         "55387",
@@ -7579,6 +7645,19 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107662"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "movie",
+      "category_name": "映画",
+      "title": "「映画『GROTESQQQUE-グロテスク-』公開記念舞台挨拶・ライブビューイング」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107669"
     },
     {
       "date": "2026-11-06",
@@ -7639,21 +7718,28 @@
       "date": "2026-11-08",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」",
-      "member_uids": [],
+      "title": "文化放送「乃木坂46の「の」」海邉朱莉、中西アルノ",
+      "member_uids": [
+        "55395",
+        "63104"
+      ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "107515"
+      "id": "107673"
     },
     {
       "date": "2026-11-08",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、黒見明香、林瑠奈",
+      "member_uids": [
+        "55383",
+        "55385",
+        "55396"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107678"
     },
     {
       "date": "2026-11-08",
@@ -7803,6 +7889,18 @@
     },
     {
       "date": "2026-11-11",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "BSテレビ東京「漫画クリスタル」田村真佑",
+      "member_uids": [
+        "48015"
+      ],
+      "time_start": "24:30",
+      "time_end": "24:59",
+      "id": "107676"
+    },
+    {
+      "date": "2026-11-11",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "ニッポン放送「乃木坂46のオールナイトニッポン」井上和",
@@ -7910,6 +8008,18 @@
       "date": "2026-11-13",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "日本テレビ「夜バゲット」愛宕心響",
+      "member_uids": [
+        "63101"
+      ],
+      "time_start": "25:59",
+      "time_end": "26:44",
+      "id": "107681"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "テレビ東京系「東京パソコンクラブ」弓木奈於、大越ひなの",
       "member_uids": [
         "55387",
@@ -7930,6 +8040,19 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-11-14",
+      "category_key": "movie",
+      "category_name": "映画",
+      "title": "「映画『GROTESQQQUE-グロテスク-』公開御礼舞台挨拶」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107670"
     },
     {
       "date": "2026-11-15",
@@ -8108,6 +8231,18 @@
       "time_start": "24:00",
       "time_end": "24:27",
       "id": "106548"
+    },
+    {
+      "date": "2026-11-18",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "BSテレビ東京「漫画クリスタル」田村真佑",
+      "member_uids": [
+        "48015"
+      ],
+      "time_start": "24:30",
+      "time_end": "24:59",
+      "id": "107677"
     },
     {
       "date": "2026-11-18",

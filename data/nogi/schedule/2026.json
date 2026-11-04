@@ -7418,11 +7418,13 @@
       "date": "2026-11-04",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
+      "title": "SHOWROOM「猫舌SHOWROOM」小津玲奈、海邉朱莉",
+      "member_uids": [
+        "48010",
+        "48013"
+      ],
       "time_start": "19:00",
-      "time_end": "21:00",
-      "id": "107117"
+      "id": "107686"
     },
     {
       "date": "2026-11-04",
@@ -7771,13 +7773,13 @@
       "date": "2026-11-09",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「レコメン！」長嶋凛桜",
+      "title": "文化放送「レコメン！」矢田萌華",
       "member_uids": [
-        "63108"
+        "63111"
       ],
       "time_start": "22:00",
       "time_end": "25:00",
-      "id": "107517"
+      "id": "107687"
     },
     {
       "date": "2026-11-09",
@@ -8112,13 +8114,13 @@
       "date": "2026-11-16",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「レコメン！」矢田萌華",
+      "title": "文化放送「レコメン！」長嶋凛桜",
       "member_uids": [
-        "63111"
+        "63108"
       ],
       "time_start": "22:00",
       "time_end": "25:00",
-      "id": "107516"
+      "id": "107688"
     },
     {
       "date": "2026-11-16",

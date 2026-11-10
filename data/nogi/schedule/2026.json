@@ -1,5 +1,5 @@
 {
-  "count": 848,
+  "count": 867,
   "events": [
     {
       "date": "2026-08-01",
@@ -7495,6 +7495,45 @@
     },
     {
       "date": "2026-11-04",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "「FLYING POSTMAN PRESS」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107692"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「TV LIFE」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107694"
+    },
+    {
+      "date": "2026-11-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「TVstation」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
+      "member_uids": [
+        "55389",
+        "55390",
+        "55393",
+        "55395"
+      ],
+      "id": "107693"
+    },
+    {
+      "date": "2026-11-04",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "「春よ来い、マジで来い」岩本蓮加",
@@ -7574,6 +7613,17 @@
       "time_start": "17:45",
       "time_end": "22:00",
       "id": "107518"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "19:00",
+      "id": "107695"
     },
     {
       "date": "2026-11-06",
@@ -7711,6 +7761,19 @@
       "id": "107418"
     },
     {
+      "date": "2026-11-06",
+      "category_key": "mobile",
+      "category_name": "モバイル・アプリ",
+      "title": "のぎ動画「紙とペンであそぼう！」愛宕心響、岡本姫奈 、川端晃菜、冨里奈央",
+      "member_uids": [
+        "55393",
+        "55401",
+        "63101",
+        "63105"
+      ],
+      "id": "107697"
+    },
+    {
       "date": "2026-11-07",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -7721,6 +7784,15 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-11-07",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「乃木坂配信中5周年記念！SP生配信～ファンが選ぶ！乃木坂配信中 名作ランキングベスト20&チーム対抗！TVゲームバトル～」",
+      "member_uids": [],
+      "time_start": "21:00",
+      "id": "107698"
     },
     {
       "date": "2026-11-07",
@@ -7771,6 +7843,28 @@
     },
     {
       "date": "2026-11-09",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」岡本姫奈",
+      "member_uids": [
+        "55401"
+      ],
+      "time_start": "17:45",
+      "id": "107706"
+    },
+    {
+      "date": "2026-11-09",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:30",
+      "id": "107707"
+    },
+    {
+      "date": "2026-11-09",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」矢田萌華",
@@ -7816,6 +7910,17 @@
         "63110"
       ],
       "id": "107632"
+    },
+    {
+      "date": "2026-11-10",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」一ノ瀬美空",
+      "member_uids": [
+        "55390"
+      ],
+      "time_start": "18:30",
+      "id": "107709"
     },
     {
       "date": "2026-11-10",
@@ -7874,14 +7979,14 @@
       "id": "107627"
     },
     {
-      "date": "2026-11-11",
+      "date": "2026-11-10",
       "category_key": "web",
       "category_name": "WEB",
-      "title": "SHOWROOM「猫舌SHOWROOM」",
-      "member_uids": [],
-      "time_start": "19:00",
-      "time_end": "21:00",
-      "id": "107117"
+      "title": "「映画チャンネル」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "id": "107710"
     },
     {
       "date": "2026-11-11",
@@ -7951,6 +8056,17 @@
     },
     {
       "date": "2026-11-12",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "Prime Video『アジアプロ野球チャンピオンシップ2026 チャイニーズ・タイペイ 対 日本』柴田柚菜",
+      "member_uids": [
+        "48013"
+      ],
+      "time_start": "19:00",
+      "id": "107689"
+    },
+    {
+      "date": "2026-11-12",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -7972,6 +8088,17 @@
       "time_start": "22:00",
       "time_end": "22:54",
       "id": "107636"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "Prime Video『アジアプロ野球チャンピオンシップ2026 日本 対 韓国』小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "19:00",
+      "id": "107690"
     },
     {
       "date": "2026-11-13",
@@ -8061,6 +8188,17 @@
     },
     {
       "date": "2026-11-14",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "Prime Video『アジアプロ野球チャンピオンシップ2026 オーストラリア 対 日本』瀬戸口心月",
+      "member_uids": [
+        "63107"
+      ],
+      "time_start": "12:00",
+      "id": "107691"
+    },
+    {
+      "date": "2026-11-14",
       "category_key": "movie",
       "category_name": "映画",
       "title": "「映画『GROTESQQQUE-グロテスク-』公開御礼舞台挨拶」一ノ瀬美空、井上和、冨里奈央、中西アルノ",
@@ -8076,21 +8214,52 @@
       "date": "2026-11-15",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」",
-      "member_uids": [],
+      "title": "文化放送「乃木坂46の「の」」海邉朱莉、柴田柚菜",
+      "member_uids": [
+        "48013",
+        "63104"
+      ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "107515"
+      "id": "107704"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "テレビ東京系「後世に残したい！ニッポン神ワザ職人名鑑2」池田瑛紗",
+      "member_uids": [
+        "55397"
+      ],
+      "time_start": "18:30",
+      "time_end": "20:50",
+      "id": "107708"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "MTV「MTV VMAJ 2026」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "19:30",
+      "time_end": "23:00",
+      "id": "107696"
     },
     {
       "date": "2026-11-15",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」川﨑桜、井上和、瀬戸口心月",
+      "member_uids": [
+        "55389",
+        "55400",
+        "63107"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107705"
     },
     {
       "date": "2026-11-15",
@@ -8162,9 +8331,10 @@
       "date": "2026-11-16",
       "category_key": "book",
       "category_name": "書籍",
-      "title": "「EX大衆」大越ひなの、伊藤理々杏、小川彩、川﨑桜、菅原咲月",
+      "title": "「EX大衆」大越ひなの、伊藤理々杏、小川彩、川﨑桜、黒見明香、菅原咲月",
       "member_uids": [
         "36749",
+        "55383",
         "55391",
         "55392",
         "55400",
@@ -8542,11 +8712,12 @@
       "date": "2026-11-24",
       "category_key": "book",
       "category_name": "書籍",
-      "title": "「アップトゥボーイ」川﨑桜、川端晃菜、弓木奈於",
+      "title": "「アップトゥボーイ」森平麗心、川﨑桜、川端晃菜、弓木奈於",
       "member_uids": [
         "55387",
         "55400",
-        "63105"
+        "63105",
+        "63110"
       ],
       "id": "107657"
     },
@@ -8711,6 +8882,17 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-11-28",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「B.L.T.」金川紗耶、瀬戸口心月",
+      "member_uids": [
+        "48010",
+        "63107"
+      ],
+      "id": "107699"
     },
     {
       "date": "2026-11-29",
@@ -8952,6 +9134,16 @@
       "id": "107636"
     },
     {
+      "date": "2026-12-03",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「週刊少年チャンピオン」増田三莉音",
+      "member_uids": [
+        "63109"
+      ],
+      "id": "107700"
+    },
+    {
       "date": "2026-12-04",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -9024,6 +9216,16 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107511"
+    },
+    {
+      "date": "2026-12-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「月刊GoodsPress」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "id": "107703"
     },
     {
       "date": "2026-12-05",
@@ -9193,6 +9395,17 @@
     },
     {
       "date": "2026-12-09",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「BOMB」大越ひなの、中西アルノ",
+      "member_uids": [
+        "55395",
+        "63102"
+      ],
+      "id": "107701"
+    },
+    {
+      "date": "2026-12-09",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "ミュージカル『FOUR MINUTES -4分間のピアニスト-』林瑠奈",
@@ -9224,6 +9437,16 @@
       "time_start": "22:00",
       "time_end": "22:54",
       "id": "107636"
+    },
+    {
+      "date": "2026-12-10",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「週刊少年チャンピオン」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "id": "107702"
     },
     {
       "date": "2026-12-11",

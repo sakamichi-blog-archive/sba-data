@@ -1,5 +1,5 @@
 {
-  "count": 400,
+  "count": 417,
   "events": [
     {
       "date": "2026-08-01",
@@ -2963,6 +2963,16 @@
       "id": "8110"
     },
     {
+      "date": "2026-11-04",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「日経エンタテインメント！」",
+      "member_uids": [
+        "54"
+      ],
+      "id": "12327"
+    },
+    {
       "date": "2026-11-05",
       "category_key": "media",
       "category_name": "テレビ",
@@ -2987,6 +2997,17 @@
       ],
       "time_start": "25:56",
       "id": "10371"
+    },
+    {
+      "date": "2026-11-06",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「全力！アオハル応援団」",
+      "member_uids": [
+        "78"
+      ],
+      "time_start": "25:50",
+      "id": "12328"
     },
     {
       "date": "2026-11-06",
@@ -3023,6 +3044,17 @@
       ],
       "time_start": "19:00",
       "id": "12219"
+    },
+    {
+      "date": "2026-11-08",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「有吉ぃぃeeeee！そうだ!今からお前んチでゲームしない？」",
+      "member_uids": [
+        "46"
+      ],
+      "time_start": "22:00",
+      "id": "12329"
     },
     {
       "date": "2026-11-08",
@@ -3072,6 +3104,17 @@
         "65"
       ],
       "id": "7594"
+    },
+    {
+      "date": "2026-11-09",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「くりぃむナンタラ」",
+      "member_uids": [
+        "54"
+      ],
+      "time_start": "23:45",
+      "id": "12345"
     },
     {
       "date": "2026-11-10",
@@ -3125,6 +3168,14 @@
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "8817"
+    },
+    {
+      "date": "2026-11-13",
+      "category_key": "media",
+      "category_name": "新聞",
+      "title": "「Sakurazaka46Times（櫻坂46タイムズ）vol.2」",
+      "member_uids": [],
+      "id": "12344"
     },
     {
       "date": "2026-11-13",
@@ -3230,6 +3281,15 @@
     },
     {
       "date": "2026-11-19",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「6th YEAR ANNIVERSARY LIVE」DAY1リピート配信",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "12334"
+    },
+    {
+      "date": "2026-11-19",
       "category_key": "media",
       "category_name": "テレビ",
       "title": "テレビ朝日「サクラミーツ」",
@@ -3245,11 +3305,50 @@
     },
     {
       "date": "2026-11-20",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「6th YEAR ANNIVERSARY LIVE」DAY2リピート配信",
+      "member_uids": [],
+      "time_start": "20:00",
+      "id": "12335"
+    },
+    {
+      "date": "2026-11-20",
       "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "8817"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「ViVi」1月号",
+      "member_uids": [
+        "51"
+      ],
+      "id": "12337"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「VOCE」1月号",
+      "member_uids": [
+        "46"
+      ],
+      "id": "12336"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「東京カレンダー」1月号",
+      "member_uids": [
+        "47"
+      ],
+      "id": "12333"
     },
     {
       "date": "2026-11-20",
@@ -3335,12 +3434,33 @@
       "id": "12162"
     },
     {
+      "date": "2026-11-23",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」公開収録",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "14:00",
+      "id": "12338"
+    },
+    {
       "date": "2026-11-24",
       "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-11-25",
+      "category_key": "event",
+      "category_name": "イベント",
+      "title": "「ファジアーノ岡山」vs「清水エスパルス」戦",
+      "member_uids": [
+        "78"
+      ],
+      "id": "12346"
     },
     {
       "date": "2026-11-26",
@@ -3392,6 +3512,17 @@
       "member_uids": [],
       "time_start": "22:00",
       "id": "10472"
+    },
+    {
+      "date": "2026-11-28",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「B.L.T.」1月号",
+      "member_uids": [
+        "72",
+        "76"
+      ],
+      "id": "12361"
     },
     {
       "date": "2026-11-29",
@@ -3506,6 +3637,16 @@
     {
       "date": "2026-12-04",
       "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「日経エンタテインメント！」",
+      "member_uids": [
+        "54"
+      ],
+      "id": "12362"
+    },
+    {
+      "date": "2026-12-04",
+      "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
@@ -3603,6 +3744,15 @@
       "id": "8110"
     },
     {
+      "date": "2026-12-09",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「2026FNS 歌謡祭 第2夜」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12363"
+    },
+    {
       "date": "2026-12-10",
       "category_key": "media",
       "category_name": "テレビ",
@@ -3636,6 +3786,16 @@
       ],
       "time_start": "25:56",
       "id": "10371"
+    },
+    {
+      "date": "2026-12-11",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「ar」1月号",
+      "member_uids": [
+        "50"
+      ],
+      "id": "12364"
     },
     {
       "date": "2026-12-11",
@@ -3988,6 +4148,14 @@
       "title": "「COUNTDOWN JAPAN 26/27」",
       "member_uids": [],
       "id": "12312"
+    },
+    {
+      "date": "2026-12-26",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「SAKURAZAKA46 Live，AEON CARD with YOU！Vol.6」",
+      "member_uids": [],
+      "id": "12343"
     },
     {
       "date": "2026-12-27",

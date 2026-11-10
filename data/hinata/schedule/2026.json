@@ -1,5 +1,5 @@
 {
-  "count": 417,
+  "count": 433,
   "events": [
     {
       "date": "2026-08-01",
@@ -3285,6 +3285,14 @@
       "id": "12330"
     },
     {
+      "date": "2026-11-03",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル「イチャイチャ虫」 発売記念リアルミート＆グリート（個別トーク会）幕張メッセ",
+      "member_uids": [],
+      "id": "12332"
+    },
+    {
       "date": "2026-11-04",
       "category_key": "media",
       "category_name": "雑誌",
@@ -3382,6 +3390,17 @@
     {
       "date": "2026-11-08",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「ポケモンとどこいく！？」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "07:30",
+      "id": "12339"
+    },
+    {
+      "date": "2026-11-08",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "文化放送『日向坂46の「ひ」』",
       "member_uids": [
@@ -3428,6 +3447,39 @@
       ],
       "time_start": "24:00",
       "id": "10858"
+    },
+    {
+      "date": "2026-11-11",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "bayfm「 シン・ラジオ -ヒューマニスタは、かく語りき-」",
+      "member_uids": [
+        "28"
+      ],
+      "time_start": "16:00",
+      "id": "12366"
+    },
+    {
+      "date": "2026-11-11",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「AI大作戦」",
+      "member_uids": [
+        "31"
+      ],
+      "time_start": "24:15",
+      "id": "12365"
+    },
+    {
+      "date": "2026-11-12",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「そもそもミステリー」",
+      "member_uids": [
+        "14"
+      ],
+      "time_start": "18:25",
+      "id": "12367"
     },
     {
       "date": "2026-11-12",
@@ -3496,6 +3548,16 @@
       "id": "12320"
     },
     {
+      "date": "2026-11-13",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「コマーシャル・フォト」連載",
+      "member_uids": [
+        "12"
+      ],
+      "id": "12368"
+    },
+    {
       "date": "2026-11-14",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -3505,6 +3567,17 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-11-15",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "NHK総合「有吉のお金発見　突撃！カネオくん」",
+      "member_uids": [
+        "29"
+      ],
+      "time_start": "18:05",
+      "id": "12370"
     },
     {
       "date": "2026-11-15",
@@ -3544,16 +3617,6 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
-    },
-    {
-      "date": "2026-11-15",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「コマーシャル・フォト」連載",
-      "member_uids": [
-        "12"
-      ],
-      "id": "11771"
     },
     {
       "date": "2026-11-16",
@@ -3643,6 +3706,24 @@
       "id": "10118"
     },
     {
+      "date": "2026-11-21",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "17:30",
+      "id": "12341"
+    },
+    {
+      "date": "2026-11-22",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "17:30",
+      "id": "12341"
+    },
+    {
       "date": "2026-11-22",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -3680,6 +3761,15 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
+    },
+    {
+      "date": "2026-11-23",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "17:30",
+      "id": "12341"
     },
     {
       "date": "2026-11-23",
@@ -3990,6 +4080,24 @@
       "id": "10215"
     },
     {
+      "date": "2026-12-09",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12342"
+    },
+    {
+      "date": "2026-12-10",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12342"
+    },
+    {
       "date": "2026-12-10",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -4013,6 +4121,15 @@
       ],
       "time_start": "11:30",
       "id": "11521"
+    },
+    {
+      "date": "2026-12-11",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12342"
     },
     {
       "date": "2026-12-11",
@@ -4113,7 +4230,7 @@
       "member_uids": [
         "12"
       ],
-      "id": "11771"
+      "id": "12369"
     },
     {
       "date": "2026-12-17",
@@ -4182,6 +4299,14 @@
       "id": "10118"
     },
     {
+      "date": "2026-12-19",
+      "category_key": "shakehands",
+      "category_name": "ミート＆グリート",
+      "title": "18thシングル「イチャイチャ虫」 発売記念リアルミート＆グリート（個別トーク会）京都パルスプラザ",
+      "member_uids": [],
+      "id": "12331"
+    },
+    {
       "date": "2026-12-20",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -4242,6 +4367,24 @@
       "id": "10858"
     },
     {
+      "date": "2026-12-22",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12342"
+    },
+    {
+      "date": "2026-12-23",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12342"
+    },
+    {
       "date": "2026-12-23",
       "category_key": "media",
       "category_name": "雑誌",
@@ -4250,6 +4393,15 @@
         "38"
       ],
       "id": "12003"
+    },
+    {
+      "date": "2026-12-24",
+      "category_key": "event",
+      "category_name": "ライブ",
+      "title": "「ひなくり2026」",
+      "member_uids": [],
+      "time_start": "18:30",
+      "id": "12342"
     },
     {
       "date": "2026-12-24",

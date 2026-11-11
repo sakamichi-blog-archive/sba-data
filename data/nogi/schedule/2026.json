@@ -1,5 +1,5 @@
 {
-  "count": 868,
+  "count": 870,
   "events": [
     {
       "date": "2026-08-01",
@@ -8344,6 +8344,18 @@
     },
     {
       "date": "2026-11-17",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "関西テレビ「やすとも・友近のキメツケ! ※あくまで個人の感想です」弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:59",
+      "id": "107713"
+    },
+    {
+      "date": "2026-11-17",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
@@ -8774,6 +8786,16 @@
         "63111"
       ],
       "id": "107629"
+    },
+    {
+      "date": "2026-11-25",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「NPB AWARDS 2026 supported by リポビタンＤ」黒見明香",
+      "member_uids": [
+        "55383"
+      ],
+      "id": "107712"
     },
     {
       "date": "2026-11-26",

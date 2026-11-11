@@ -1,5 +1,5 @@
 {
-  "count": 419,
+  "count": 421,
   "events": [
     {
       "date": "2026-08-01",
@@ -3199,6 +3199,17 @@
     {
       "date": "2026-11-14",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「いくらかわかる金？」",
+      "member_uids": [
+        "62"
+      ],
+      "time_start": "20:54",
+      "id": "12375"
+    },
+    {
+      "date": "2026-11-14",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "TBSラジオ「TALK ABOUT」",
       "member_uids": [],
@@ -3270,6 +3281,21 @@
       "title": "「6th YEAR ANNIVERSARY LIVE」「松田里奈 卒業セレモニー」",
       "member_uids": [],
       "id": "12075"
+    },
+    {
+      "date": "2026-11-16",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "フジテレビ「ネプリーグ」",
+      "member_uids": [
+        "54",
+        "48",
+        "62",
+        "63",
+        "77"
+      ],
+      "time_start": "19:00",
+      "id": "12374"
     },
     {
       "date": "2026-11-17",

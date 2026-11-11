@@ -1,5 +1,5 @@
 {
-  "count": 433,
+  "count": 435,
   "events": [
     {
       "date": "2026-08-01",
@@ -2918,7 +2918,7 @@
       "member_uids": [
         "14"
       ],
-      "id": "11915"
+      "id": "12378"
     },
     {
       "date": "2026-10-22",
@@ -2996,7 +2996,7 @@
       "member_uids": [
         "38"
       ],
-      "id": "12003"
+      "id": "12380"
     },
     {
       "date": "2026-10-23",
@@ -3630,6 +3630,17 @@
       "id": "10858"
     },
     {
+      "date": "2026-11-17",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "日本テレビ「ザ！世界仰天ニュース」",
+      "member_uids": [
+        "12"
+      ],
+      "time_start": "20:00",
+      "id": "12376"
+    },
+    {
       "date": "2026-11-19",
       "category_key": "media",
       "category_name": "ラジオ",
@@ -3639,6 +3650,16 @@
       ],
       "time_start": "24:00",
       "id": "12122"
+    },
+    {
+      "date": "2026-11-19",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「non-no」",
+      "member_uids": [
+        "14"
+      ],
+      "id": "12377"
     },
     {
       "date": "2026-11-20",
@@ -3680,6 +3701,16 @@
       "date": "2026-11-20",
       "category_key": "media",
       "category_name": "雑誌",
+      "title": "「CanCam」",
+      "member_uids": [
+        "38"
+      ],
+      "id": "12381"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "media",
+      "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
       "id": "5192"
@@ -3688,11 +3719,11 @@
       "date": "2026-11-20",
       "category_key": "media",
       "category_name": "雑誌",
-      "title": "「non-no」",
+      "title": "「VOCE」",
       "member_uids": [
-        "14"
+        "12"
       ],
-      "id": "11915"
+      "id": "12379"
     },
     {
       "date": "2026-11-21",
@@ -3783,14 +3814,15 @@
       "id": "10858"
     },
     {
-      "date": "2026-11-23",
+      "date": "2026-11-25",
       "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「CanCam」",
+      "category_name": "テレビ",
+      "title": "テレビ朝日「AI大作戦」",
       "member_uids": [
-        "38"
+        "31"
       ],
-      "id": "12003"
+      "time_start": "24:15",
+      "id": "12382"
     },
     {
       "date": "2026-11-26",
@@ -4344,16 +4376,6 @@
       "member_uids": [],
       "time_start": "25:50",
       "id": "11666"
-    },
-    {
-      "date": "2026-12-20",
-      "category_key": "media",
-      "category_name": "雑誌",
-      "title": "「non-no」",
-      "member_uids": [
-        "14"
-      ],
-      "id": "11915"
     },
     {
       "date": "2026-12-21",

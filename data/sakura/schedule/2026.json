@@ -1,5 +1,5 @@
 {
-  "count": 417,
+  "count": 419,
   "events": [
     {
       "date": "2026-08-01",
@@ -3119,6 +3119,17 @@
     {
       "date": "2026-11-10",
       "category_key": "media",
+      "category_name": "生配信",
+      "title": "的野美青Instagram「インスタライブ」",
+      "member_uids": [
+        "46"
+      ],
+      "time_start": "20:00",
+      "id": "12372"
+    },
+    {
+      "date": "2026-11-10",
+      "category_key": "media",
       "category_name": "ファンクラブ",
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
@@ -3443,6 +3454,17 @@
       ],
       "time_start": "14:00",
       "id": "12338"
+    },
+    {
+      "date": "2026-11-24",
+      "category_key": "media",
+      "category_name": "雑誌",
+      "title": "「MARQUEE」Vol.164",
+      "member_uids": [
+        "70",
+        "76"
+      ],
+      "id": "12371"
     },
     {
       "date": "2026-11-24",

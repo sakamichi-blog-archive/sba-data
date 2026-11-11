@@ -1,5 +1,5 @@
 {
-  "count": 867,
+  "count": 868,
   "events": [
     {
       "date": "2026-08-01",
@@ -8882,6 +8882,16 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-11-28",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「B.L.T.」 冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "id": "107711"
     },
     {
       "date": "2026-11-28",

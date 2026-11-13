@@ -1,5 +1,5 @@
 {
-  "count": 870,
+  "count": 874,
   "events": [
     {
       "date": "2026-08-01",
@@ -8102,6 +8102,17 @@
     },
     {
       "date": "2026-11-13",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」冨里奈央",
+      "member_uids": [
+        "55393"
+      ],
+      "time_start": "19:00",
+      "id": "107714"
+    },
+    {
+      "date": "2026-11-13",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "FM FUJI「～DJ KOO PRESENTS～ BEAT GOES ON」鈴木佑捺",
@@ -8176,6 +8187,18 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107663"
+    },
+    {
+      "date": "2026-11-14",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TBS系「王様のブランチ」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "time_start": "09:30",
+      "time_end": "14:00",
+      "id": "107715"
     },
     {
       "date": "2026-11-14",
@@ -8422,6 +8445,18 @@
       "time_start": "19:00",
       "time_end": "21:00",
       "id": "107117"
+    },
+    {
+      "date": "2026-11-18",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "TBSラジオ「佐倉綾音 論理×ロンリー」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "22:00",
+      "time_end": "22:55",
+      "id": "107716"
     },
     {
       "date": "2026-11-18",
@@ -10192,6 +10227,16 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-12-26",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「プロスピAファンフェスタ2026 in 大阪」黒見明香",
+      "member_uids": [
+        "55383"
+      ],
+      "id": "107717"
     },
     {
       "date": "2026-12-26",

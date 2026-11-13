@@ -1,5 +1,5 @@
 {
-  "count": 874,
+  "count": 880,
   "events": [
     {
       "date": "2026-08-01",
@@ -8189,6 +8189,16 @@
       "id": "107663"
     },
     {
+      "date": "2026-11-13",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
+      "title": "朗読劇「名前を呼んで、もう一度」伊藤理々杏",
+      "member_uids": [
+        "36749"
+      ],
+      "id": "107722"
+    },
+    {
       "date": "2026-11-14",
       "category_key": "tv",
       "category_name": "テレビ",
@@ -8628,6 +8638,17 @@
       "id": "107022"
     },
     {
+      "date": "2026-11-21",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「F FES 2026 supported by Fanatics」金川紗耶、黒見明香",
+      "member_uids": [
+        "48010",
+        "55383"
+      ],
+      "id": "107723"
+    },
+    {
       "date": "2026-11-22",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -8971,6 +8992,16 @@
       "id": "107699"
     },
     {
+      "date": "2026-11-28",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「プロスピA プロリーグ」2026シーズン　黒見明香",
+      "member_uids": [
+        "55383"
+      ],
+      "id": "107719"
+    },
+    {
       "date": "2026-11-29",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -9007,6 +9038,16 @@
       "title": "「GIFT〜Girls Idol Festival Tokyo〜」",
       "member_uids": [],
       "id": "107319"
+    },
+    {
+      "date": "2026-11-29",
+      "category_key": "live",
+      "category_name": "ライブ/イベント",
+      "title": "「プロスピA プロリーグ」2026シーズン　黒見明香",
+      "member_uids": [
+        "55383"
+      ],
+      "id": "107720"
     },
     {
       "date": "2026-11-30",
@@ -10062,6 +10103,16 @@
       "date": "2026-12-22",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
+      "title": "『私、こんな役、演じてみたいんですけど。』弓木奈於",
+      "member_uids": [
+        "55387"
+      ],
+      "id": "107729"
+    },
+    {
+      "date": "2026-12-22",
+      "category_key": "musical",
+      "category_name": "舞台/ミュージカル",
       "title": "ミュージカル『FOUR MINUTES -4分間のピアニスト-』林瑠奈",
       "member_uids": [
         "55385"
@@ -10401,6 +10452,16 @@
       "time_start": "25:00",
       "time_end": "27:00",
       "id": "107638"
+    },
+    {
+      "date": "2026-12-31",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「第77回NHK紅白歌合戦」",
+      "member_uids": [],
+      "time_start": "19:20",
+      "time_end": "23:45",
+      "id": "107718"
     },
     {
       "date": "2026-12-31",

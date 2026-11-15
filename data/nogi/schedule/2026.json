@@ -1,5 +1,5 @@
 {
-  "count": 880,
+  "count": 882,
   "events": [
     {
       "date": "2026-08-01",
@@ -8317,6 +8317,17 @@
     },
     {
       "date": "2026-11-16",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "18:15",
+      "id": "107731"
+    },
+    {
+      "date": "2026-11-16",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
@@ -8652,21 +8663,40 @@
       "date": "2026-11-22",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」",
-      "member_uids": [],
+      "title": "文化放送「乃木坂46の「の」」海邉朱莉、冨里奈央",
+      "member_uids": [
+        "55393",
+        "63104"
+      ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "107515"
+      "id": "107730"
+    },
+    {
+      "date": "2026-11-22",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "NHK総合「大河ドラマ『豊臣兄弟！』」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "20:00",
+      "time_end": "20:45",
+      "id": "107642"
     },
     {
       "date": "2026-11-22",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」五百城茉央、海邉朱莉、森平麗心",
+      "member_uids": [
+        "55396",
+        "63104",
+        "63110"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
-      "id": "106124"
+      "id": "107732"
     },
     {
       "date": "2026-11-22",

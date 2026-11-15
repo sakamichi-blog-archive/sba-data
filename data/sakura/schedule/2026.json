@@ -1,5 +1,5 @@
 {
-  "count": 422,
+  "count": 423,
   "events": [
     {
       "date": "2026-08-01",
@@ -3307,6 +3307,18 @@
       ],
       "time_start": "19:00",
       "id": "12374"
+    },
+    {
+      "date": "2026-11-16",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "NHK-FM「ミュージックライン」",
+      "member_uids": [
+        "61",
+        "66"
+      ],
+      "time_start": "21:45",
+      "id": "12385"
     },
     {
       "date": "2026-11-17",

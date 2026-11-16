@@ -1,5 +1,5 @@
 {
-  "count": 884,
+  "count": 885,
   "events": [
     {
       "date": "2026-08-01",
@@ -8399,6 +8399,17 @@
         "63102"
       ],
       "id": "107608"
+    },
+    {
+      "date": "2026-11-17",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "19:00",
+      "id": "107735"
     },
     {
       "date": "2026-11-17",

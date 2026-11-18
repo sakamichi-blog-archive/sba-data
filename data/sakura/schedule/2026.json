@@ -1,5 +1,5 @@
 {
-  "count": 423,
+  "count": 422,
   "events": [
     {
       "date": "2026-08-01",
@@ -2801,17 +2801,6 @@
       ],
       "time_start": "05:20",
       "id": "9477"
-    },
-    {
-      "date": "2026-10-29",
-      "category_key": "media",
-      "category_name": "テレビ",
-      "title": "TBS「ラヴィット！」",
-      "member_uids": [
-        "58"
-      ],
-      "time_start": "08:00",
-      "id": "12311"
     },
     {
       "date": "2026-10-29",

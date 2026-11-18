@@ -1,5 +1,5 @@
 {
-  "count": 422,
+  "count": 424,
   "events": [
     {
       "date": "2026-08-01",
@@ -3330,6 +3330,17 @@
     },
     {
       "date": "2026-11-19",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「ラヴィット！」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "08:00",
+      "id": "12311"
+    },
+    {
+      "date": "2026-11-19",
       "category_key": "event",
       "category_name": "イベント",
       "title": "「6th YEAR ANNIVERSARY LIVE」DAY1リピート配信",
@@ -3434,6 +3445,17 @@
       ],
       "time_start": "19:00",
       "id": "12219"
+    },
+    {
+      "date": "2026-11-22",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "テレビ東京「有吉ぃぃeeeee！そうだ!今からお前んチでゲームしない？」",
+      "member_uids": [
+        "46"
+      ],
+      "time_start": "22:00",
+      "id": "12389"
     },
     {
       "date": "2026-11-22",

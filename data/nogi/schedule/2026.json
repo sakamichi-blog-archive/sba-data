@@ -1,5 +1,5 @@
 {
-  "count": 888,
+  "count": 894,
   "events": [
     {
       "date": "2026-08-01",
@@ -7523,6 +7523,16 @@
     },
     {
       "date": "2026-11-04",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「日経エンタテインメント！」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "107740"
+    },
+    {
+      "date": "2026-11-04",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "「春よ来い、マジで来い」岩本蓮加",
@@ -8606,6 +8616,17 @@
       "id": "107636"
     },
     {
+      "date": "2026-11-19",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「non-no」井上和、遠藤さくら",
+      "member_uids": [
+        "48006",
+        "55389"
+      ],
+      "id": "107743"
+    },
+    {
       "date": "2026-11-20",
       "category_key": "radio",
       "category_name": "ラジオ",
@@ -8693,6 +8714,26 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107663"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「CanCam」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "id": "107745"
+    },
+    {
+      "date": "2026-11-20",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「Ray」金川紗耶",
+      "member_uids": [
+        "48010"
+      ],
+      "id": "107742"
     },
     {
       "date": "2026-11-21",
@@ -9426,6 +9467,16 @@
       "date": "2026-12-04",
       "category_key": "book",
       "category_name": "書籍",
+      "title": "「日経エンタテインメント！」菅原咲月",
+      "member_uids": [
+        "55391"
+      ],
+      "id": "107741"
+    },
+    {
+      "date": "2026-12-04",
+      "category_key": "book",
+      "category_name": "書籍",
       "title": "「月刊GoodsPress」冨里奈央",
       "member_uids": [
         "55393"
@@ -9714,6 +9765,16 @@
       "time_start": "26:00",
       "time_end": "26:30",
       "id": "107511"
+    },
+    {
+      "date": "2026-12-11",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「ar」一ノ瀬美空",
+      "member_uids": [
+        "55390"
+      ],
+      "id": "107744"
     },
     {
       "date": "2026-12-11",

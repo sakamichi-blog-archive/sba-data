@@ -1,5 +1,5 @@
 {
-  "count": 425,
+  "count": 428,
   "events": [
     {
       "date": "2026-08-01",
@@ -3507,6 +3507,17 @@
     {
       "date": "2026-11-23",
       "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「THE TIME,」",
+      "member_uids": [
+        "48"
+      ],
+      "time_start": "05:20",
+      "id": "12395"
+    },
+    {
+      "date": "2026-11-23",
+      "category_key": "media",
       "category_name": "ラジオ",
       "title": "ニッポン放送「櫻坂46 こちら有楽町星空放送局」公開収録",
       "member_uids": [
@@ -3536,6 +3547,17 @@
     },
     {
       "date": "2026-11-25",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "CBCテレビ「太田×石井のデララバ」",
+      "member_uids": [
+        "71"
+      ],
+      "time_start": "19:00",
+      "id": "12393"
+    },
+    {
+      "date": "2026-11-25",
       "category_key": "event",
       "category_name": "イベント",
       "title": "「ファジアーノ岡山」vs「清水エスパルス」戦",
@@ -3554,6 +3576,17 @@
       ],
       "time_start": "05:20",
       "id": "9477"
+    },
+    {
+      "date": "2026-11-26",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「ゴールデンラヴィット！」",
+      "member_uids": [
+        "58"
+      ],
+      "time_start": "20:54",
+      "id": "12394"
     },
     {
       "date": "2026-11-26",

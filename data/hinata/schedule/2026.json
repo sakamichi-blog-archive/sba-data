@@ -1,5 +1,5 @@
 {
-  "count": 436,
+  "count": 435,
   "events": [
     {
       "date": "2026-08-01",
@@ -3823,17 +3823,6 @@
       ],
       "time_start": "24:00",
       "id": "10858"
-    },
-    {
-      "date": "2026-11-25",
-      "category_key": "media",
-      "category_name": "テレビ",
-      "title": "テレビ朝日「AI大作戦」",
-      "member_uids": [
-        "31"
-      ],
-      "time_start": "24:15",
-      "id": "12382"
     },
     {
       "date": "2026-11-26",

@@ -20,3 +20,8 @@ packageExtensions:
   "@astrojs/astro2tsx@0.1":
     dependencies:
       "@emnapi/runtime": "^1.11.3"
+overrides:
+  # cheerio 1.2.0 pins a vulnerable undici (GHSA advisories fixed in 7.30.1).
+  "undici@>=7.0.0 <7.30.1": "^7.30.1"
+  # @sakamichi-blog-archive/utils 0.10.0 pins a vulnerable zod (fixed in 4.6.6).
+  "zod@>=4.0.0 <4.6.6": "^4.6.6"

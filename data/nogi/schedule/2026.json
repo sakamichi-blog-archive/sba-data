@@ -9110,21 +9110,28 @@
     },
     {
       "date": "2026-11-28",
-      "category_key": "book",
-      "category_name": "書籍",
-      "title": "「B.L.T.」 冨里奈央",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TBSチャンネル1「乃木坂お試し中」伊藤理々杏、金川紗耶、黒見明香、柴田柚菜、冨里奈央",
       "member_uids": [
+        "36749",
+        "48010",
+        "48013",
+        "55383",
         "55393"
       ],
-      "id": "107711"
+      "time_start": "23:00",
+      "time_end": "23:30",
+      "id": "107748"
     },
     {
       "date": "2026-11-28",
       "category_key": "book",
       "category_name": "書籍",
-      "title": "「B.L.T.」金川紗耶、瀬戸口心月",
+      "title": "「B.L.T.」金川紗耶、瀬戸口心月、冨里奈央",
       "member_uids": [
         "48010",
+        "55393",
         "63107"
       ],
       "id": "107699"

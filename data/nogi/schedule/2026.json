@@ -1,5 +1,5 @@
 {
-  "count": 896,
+  "count": 897,
   "events": [
     {
       "date": "2026-08-01",
@@ -8815,6 +8815,19 @@
       "time_start": "24:15",
       "time_end": "24:45",
       "id": "107579"
+    },
+    {
+      "date": "2026-11-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "日本テレビ「DayDay.」川端晃菜、長嶋凛桜",
+      "member_uids": [
+        "63105",
+        "63108"
+      ],
+      "time_start": "09:00",
+      "time_end": "11:10",
+      "id": "107749"
     },
     {
       "date": "2026-11-23",

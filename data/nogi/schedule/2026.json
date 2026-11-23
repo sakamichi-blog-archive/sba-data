@@ -1,5 +1,5 @@
 {
-  "count": 899,
+  "count": 901,
   "events": [
     {
       "date": "2026-08-01",
@@ -8844,6 +8844,17 @@
     },
     {
       "date": "2026-11-23",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "YouTube「週刊乃木坂ニュース～『君ロス』ユニット曲解禁SP～」菅原咲月 ※ゲストメンバーあり",
+      "member_uids": [
+        "55391"
+      ],
+      "time_start": "20:00",
+      "id": "107752"
+    },
+    {
+      "date": "2026-11-23",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "文化放送「レコメン！」長嶋凛桜",
@@ -9176,11 +9187,14 @@
       "date": "2026-11-29",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "文化放送「乃木坂46の「の」」",
-      "member_uids": [],
+      "title": "文化放送「乃木坂46の「の」」海邉朱莉、弓木奈於",
+      "member_uids": [
+        "55387",
+        "63104"
+      ],
       "time_start": "18:00",
       "time_end": "18:30",
-      "id": "107515"
+      "id": "107753"
     },
     {
       "date": "2026-11-29",
@@ -9198,11 +9212,8 @@
       "date": "2026-11-29",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」海邉朱莉、弓木奈於",
-      "member_uids": [
-        "55387",
-        "63104"
-      ],
+      "title": "NHK AM「らじらー！サンデー」",
+      "member_uids": [],
       "time_start": "20:05",
       "time_end": "22:55",
       "id": "107751"
@@ -10410,6 +10421,18 @@
       "time_start": "22:00",
       "time_end": "23:55",
       "id": "106859"
+    },
+    {
+      "date": "2026-12-24",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「波うららかに、めおと日和」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "22:00",
+      "time_end": "22:54",
+      "id": "107636"
     },
     {
       "date": "2026-12-24",

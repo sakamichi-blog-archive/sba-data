@@ -1,5 +1,5 @@
 {
-  "count": 901,
+  "count": 902,
   "events": [
     {
       "date": "2026-08-01",
@@ -8900,6 +8900,17 @@
         "63111"
       ],
       "id": "107634"
+    },
+    {
+      "date": "2026-11-24",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」田村真佑",
+      "member_uids": [
+        "48015"
+      ],
+      "time_start": "18:15",
+      "id": "107754"
     },
     {
       "date": "2026-11-24",

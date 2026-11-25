@@ -1,5 +1,5 @@
 {
-  "count": 906,
+  "count": 915,
   "events": [
     {
       "date": "2026-08-01",
@@ -9083,6 +9083,41 @@
     },
     {
       "date": "2026-11-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「めざましテレビ」小川彩",
+      "member_uids": [
+        "55392"
+      ],
+      "time_start": "05:25",
+      "time_end": "09:00",
+      "id": "107765"
+    },
+    {
+      "date": "2026-11-26",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」海邉朱莉",
+      "member_uids": [
+        "63104"
+      ],
+      "time_start": "19:00",
+      "id": "107763"
+    },
+    {
+      "date": "2026-11-26",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "フラクタル生配信 「佑捺の部屋」岩本蓮加、鈴木佑捺",
+      "member_uids": [
+        "36750",
+        "63106"
+      ],
+      "time_start": "21:30",
+      "id": "107764"
+    },
+    {
+      "date": "2026-11-26",
       "category_key": "radio",
       "category_name": "ラジオ",
       "title": "TOKYO FM「SCHOOL OF LOCK!（ARTIST LOCKS!「乃木坂LOCKS!」）」賀喜遥香",
@@ -9271,8 +9306,12 @@
       "date": "2026-11-29",
       "category_key": "radio",
       "category_name": "ラジオ",
-      "title": "NHK AM「らじらー！サンデー」",
-      "member_uids": [],
+      "title": "NHK AM「らじらー！サンデー」川﨑桜、奥田いろは、冨里奈央",
+      "member_uids": [
+        "55393",
+        "55394",
+        "55400"
+      ],
       "time_start": "20:05",
       "time_end": "22:55",
       "id": "107751"
@@ -9501,6 +9540,30 @@
         "63111"
       ],
       "id": "107630"
+    },
+    {
+      "date": "2026-12-02",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「TV station」五百城茉央、金川紗耶、川﨑桜",
+      "member_uids": [
+        "48010",
+        "55396",
+        "55400"
+      ],
+      "id": "107761"
+    },
+    {
+      "date": "2026-12-02",
+      "category_key": "book",
+      "category_name": "書籍",
+      "title": "「週刊テレビガイド」五百城茉央、金川紗耶、川﨑桜",
+      "member_uids": [
+        "48010",
+        "55396",
+        "55400"
+      ],
+      "id": "107762"
     },
     {
       "date": "2026-12-03",
@@ -10341,6 +10404,18 @@
       "date": "2026-12-21",
       "category_key": "tv",
       "category_name": "テレビ",
+      "title": "フジテレビ系「フレンチ オン アイス～聖夜のLevel4～」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "24:15",
+      "time_end": "24:25",
+      "id": "107760"
+    },
+    {
+      "date": "2026-12-21",
+      "category_key": "tv",
+      "category_name": "テレビ",
       "title": "日本テレビ「乃木坂スター誕生！SIX」6期生",
       "member_uids": [
         "63101",
@@ -10397,6 +10472,18 @@
     },
     {
       "date": "2026-12-22",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「フレンチ オン アイス～聖夜のLevel4～」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "24:15",
+      "time_end": "24:25",
+      "id": "107760"
+    },
+    {
+      "date": "2026-12-22",
       "category_key": "musical",
       "category_name": "舞台/ミュージカル",
       "title": "『私、こんな役、演じてみたいんですけど。』弓木奈於",
@@ -10436,6 +10523,18 @@
       "time_start": "24:00",
       "time_end": "24:27",
       "id": "106548"
+    },
+    {
+      "date": "2026-12-23",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「フレンチ オン アイス～聖夜のLevel4～」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "24:15",
+      "time_end": "24:25",
+      "id": "107760"
     },
     {
       "date": "2026-12-23",
@@ -10492,6 +10591,18 @@
       "time_start": "22:00",
       "time_end": "22:54",
       "id": "107636"
+    },
+    {
+      "date": "2026-12-24",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "フジテレビ系「フレンチ オン アイス～聖夜のLevel4～」川﨑桜",
+      "member_uids": [
+        "55400"
+      ],
+      "time_start": "24:15",
+      "time_end": "24:25",
+      "id": "107760"
     },
     {
       "date": "2026-12-24",

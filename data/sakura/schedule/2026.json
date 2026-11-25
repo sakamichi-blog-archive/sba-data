@@ -1,5 +1,5 @@
 {
-  "count": 429,
+  "count": 434,
   "events": [
     {
       "date": "2026-08-01",
@@ -3773,6 +3773,17 @@
     {
       "date": "2026-12-04",
       "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!」",
+      "member_uids": [
+        "72"
+      ],
+      "time_start": "22:00",
+      "id": "12402"
+    },
+    {
+      "date": "2026-12-04",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
@@ -3930,6 +3941,17 @@
       ],
       "time_start": "25:56",
       "id": "10371"
+    },
+    {
+      "date": "2026-12-11",
+      "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!」",
+      "member_uids": [
+        "72"
+      ],
+      "time_start": "22:00",
+      "id": "12402"
     },
     {
       "date": "2026-12-11",
@@ -4118,6 +4140,17 @@
     {
       "date": "2026-12-18",
       "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!」",
+      "member_uids": [
+        "72"
+      ],
+      "time_start": "22:00",
+      "id": "12402"
+    },
+    {
+      "date": "2026-12-18",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
@@ -4263,6 +4296,17 @@
     {
       "date": "2026-12-25",
       "category_key": "media",
+      "category_name": "ラジオ",
+      "title": "TOKYO FM「SCHOOL OF LOCK!」",
+      "member_uids": [
+        "72"
+      ],
+      "time_start": "22:00",
+      "id": "12402"
+    },
+    {
+      "date": "2026-12-25",
+      "category_key": "media",
       "category_name": "雑誌",
       "title": "「FRIDAY」",
       "member_uids": [],
@@ -4366,6 +4410,15 @@
       "title": "櫻坂46ファンクラブ「さくみみ」",
       "member_uids": [],
       "id": "8110"
+    },
+    {
+      "date": "2026-12-30",
+      "category_key": "media",
+      "category_name": "テレビ",
+      "title": "TBS「第68回 輝く！日本レコード大賞」",
+      "member_uids": [],
+      "time_start": "17:30",
+      "id": "12403"
     },
     {
       "date": "2026-12-31",

@@ -1,5 +1,5 @@
 {
-  "count": 915,
+  "count": 921,
   "events": [
     {
       "date": "2026-08-01",
@@ -9415,6 +9415,18 @@
       "date": "2026-12-01",
       "category_key": "radio",
       "category_name": "ラジオ",
+      "title": "ニッポン放送「峯村健司と松本秀夫のジェントル！ジェントル？」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "18:00",
+      "time_end": "20:00",
+      "id": "107766"
+    },
+    {
+      "date": "2026-12-01",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "FM FUJI「フニャフニャ伝説」愛宕心響",
       "member_uids": [
         "63101"
@@ -9479,6 +9491,18 @@
     },
     {
       "date": "2026-12-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「高田文夫のラジオビバリー昼ズ」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "11:30",
+      "time_end": "13:00",
+      "id": "107767"
+    },
+    {
+      "date": "2026-12-02",
       "category_key": "tv",
       "category_name": "テレビ",
       "title": "フジテレビ系「2026FNS歌謡祭 第1夜」",
@@ -9523,6 +9547,18 @@
     },
     {
       "date": "2026-12-02",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「上柳昌彦 あさぼらけ」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "28:30",
+      "time_end": "29:00",
+      "id": "107768"
+    },
+    {
+      "date": "2026-12-02",
       "category_key": "live",
       "category_name": "ライブ/イベント",
       "title": "「6期生全国ツアー2026 福岡公演」",
@@ -9564,6 +9600,18 @@
         "55400"
       ],
       "id": "107762"
+    },
+    {
+      "date": "2026-12-03",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「垣花正あなたとハッピー！」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "08:00",
+      "time_end": "11:00",
+      "id": "107769"
     },
     {
       "date": "2026-12-03",
@@ -9697,6 +9745,18 @@
       "date": "2026-12-05",
       "category_key": "radio",
       "category_name": "ラジオ",
+      "title": "ニッポン放送「八木亜希子 LOVE & MELODY」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "08:30",
+      "time_end": "11:00",
+      "id": "107770"
+    },
+    {
+      "date": "2026-12-05",
+      "category_key": "radio",
+      "category_name": "ラジオ",
       "title": "TOKAI RADIO「乃木坂46　岡本姫奈のおかひな時間」岡本姫奈",
       "member_uids": [
         "55401"
@@ -9704,6 +9764,18 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-12-06",
+      "category_key": "radio",
+      "category_name": "ラジオ",
+      "title": "ニッポン放送「三宅裕司 サンデーヒットパラダイス」井上和",
+      "member_uids": [
+        "55389"
+      ],
+      "time_start": "09:00",
+      "time_end": "12:00",
+      "id": "107771"
     },
     {
       "date": "2026-12-06",

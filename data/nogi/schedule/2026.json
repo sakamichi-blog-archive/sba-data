@@ -1,5 +1,5 @@
 {
-  "count": 921,
+  "count": 922,
   "events": [
     {
       "date": "2026-08-01",
@@ -9139,6 +9139,17 @@
       "time_start": "22:00",
       "time_end": "22:54",
       "id": "107636"
+    },
+    {
+      "date": "2026-11-27",
+      "category_key": "web",
+      "category_name": "WEB",
+      "title": "SHOWROOM「のぎおび」岩本蓮加",
+      "member_uids": [
+        "36750"
+      ],
+      "time_start": "19:00",
+      "id": "107772"
     },
     {
       "date": "2026-11-27",

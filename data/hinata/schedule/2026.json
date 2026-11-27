@@ -1,5 +1,5 @@
 {
-  "count": 437,
+  "count": 438,
   "events": [
     {
       "date": "2026-08-01",
@@ -3912,6 +3912,17 @@
       ],
       "time_start": "08:30",
       "id": "10118"
+    },
+    {
+      "date": "2026-11-28",
+      "category_key": "media",
+      "category_name": "配信",
+      "title": "ABEMA「裏垢ウララカ」",
+      "member_uids": [
+        "12"
+      ],
+      "time_start": "23:00",
+      "id": "12415"
     },
     {
       "date": "2026-11-28",

@@ -1,5 +1,5 @@
 {
-  "count": 923,
+  "count": 925,
   "events": [
     {
       "date": "2026-08-01",
@@ -9257,6 +9257,18 @@
     },
     {
       "date": "2026-11-28",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TBSチャンネル1「Spicy Sessions -THE LIVE- 2026 with 松崎しげる・真山りか＆安本彩花（私立恵比寿中学）」出演：中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "23:30",
+      "time_end": "25:00",
+      "id": "107777"
+    },
+    {
+      "date": "2026-11-28",
       "category_key": "book",
       "category_name": "書籍",
       "title": "「B.L.T.」金川紗耶、瀬戸口心月、冨里奈央",
@@ -10803,6 +10815,18 @@
       "time_start": "11:30",
       "time_end": "12:00",
       "id": "107022"
+    },
+    {
+      "date": "2026-12-26",
+      "category_key": "tv",
+      "category_name": "テレビ",
+      "title": "TBSチャンネル1「Spicy Sessions -THE LIVE- 2026 with K・家入レオ」出演：中西アルノ",
+      "member_uids": [
+        "55395"
+      ],
+      "time_start": "23:30",
+      "time_end": "25:00",
+      "id": "107778"
     },
     {
       "date": "2026-12-26",
